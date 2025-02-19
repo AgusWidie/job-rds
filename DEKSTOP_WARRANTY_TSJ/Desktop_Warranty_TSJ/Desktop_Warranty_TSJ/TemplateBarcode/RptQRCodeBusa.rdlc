@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Rectangle Name="Rectangle1">
+            <ReportItems>
+              <Image Name="ImgQRCode">
+                <Source>Database</Source>
+                <Value>=Convert.FromBase64String(Parameters!Base64QRCode.Value)</Value>
+                <MIMEType>image/bmp</MIMEType>
+                <Sizing>Fit</Sizing>
+                <Top>0.31945in</Top>
+                <Left>4.79061in</Left>
+                <Height>2.06666in</Height>
+                <Width>1.71752in</Width>
+                <Style>
+                  <Border>
+                    <Style>Solid</Style>
+                  </Border>
+                </Style>
+              </Image>
+              <Image Name="ImgQRCode2">
+                <Source>Database</Source>
+                <Value>=Convert.FromBase64String(Parameters!Base64SerialCode.Value)</Value>
+                <MIMEType>image/bmp</MIMEType>
+                <Sizing>Fit</Sizing>
+                <Top>0.31945in</Top>
+                <Left>1.76508in</Left>
+                <Height>2.06666in</Height>
+                <Width>2.95608in</Width>
+                <ZIndex>1</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>Solid</Style>
+                  </Border>
+                </Style>
+              </Image>
+              <Textbox Name="RegistrationCode">
+                <CanGrow>true</CanGrow>
+                <KeepTogether>true</KeepTogether>
+                <Paragraphs>
+                  <Paragraph>
+                    <TextRuns>
+                      <TextRun>
+                        <Value>=Parameters!RegistrationCode.Value</Value>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                        </Style>
+                      </TextRun>
+                    </TextRuns>
+                    <Style>
+                      <TextAlign>Left</TextAlign>
+                    </Style>
+                  </Paragraph>
+                </Paragraphs>
+                <rd:DefaultName>RegistrationCode</rd:DefaultName>
+                <Top>7.03527cm</Top>
+                <Left>7.93346cm</Left>
+                <Height>0.6cm</Height>
+                <Width>8.59718cm</Width>
+                <ZIndex>2</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                  </Border>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+              </Textbox>
+              <Image Name="ImgLogo">
+                <Source>Database</Source>
+                <Value>=System.Convert.FromBase64String(Parameters!Base64Logo.Value)</Value>
+                <MIMEType>image/bmp</MIMEType>
+                <Sizing>Fit</Sizing>
+                <Top>0.31945in</Top>
+                <Left>0.09788in</Left>
+                <Height>2.06666in</Height>
+                <Width>1.59775in</Width>
+                <ZIndex>3</ZIndex>
+                <Style>
+                  <Border>
+                    <Style>Solid</Style>
+                  </Border>
+                </Style>
+              </Image>
+            </ReportItems>
+            <KeepTogether>true</KeepTogether>
+            <Top>0.35137cm</Top>
+            <Left>0.18336cm</Left>
+            <Height>8.34673cm</Height>
+            <Width>16.89566cm</Width>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+              </Border>
+            </Style>
+          </Rectangle>
+        </ReportItems>
+        <Height>8.6981cm</Height>
+        <Style />
+      </Body>
+      <Width>17.38716cm</Width>
+      <Page>
+        <PageHeight>14.8cm</PageHeight>
+        <PageWidth>21cm</PageWidth>
+        <LeftMargin>0cm</LeftMargin>
+        <RightMargin>0cm</RightMargin>
+        <TopMargin>0cm</TopMargin>
+        <BottomMargin>0cm</BottomMargin>
+        <ColumnSpacing>1.27cm</ColumnSpacing>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="RegistrationCode">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="SerialCode">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CreatedAt">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Base64QRCode">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Base64SerialCode">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Base64Logo">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>4</NumberOfColumns>
+      <NumberOfRows>3</NumberOfRows>
+      <CellDefinitions>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>RegistrationCode</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>1</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>SerialCode</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>CreatedAt</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>2</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>Base64QRCode</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>3</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>Base64SerialCode</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>2</RowIndex>
+          <ParameterName>Base64Logo</ParameterName>
+        </CellDefinition>
+      </CellDefinitions>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
+  <EmbeddedImages>
+    <EmbeddedImage Name="imglogovita">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>a8310067-a2db-4a96-adca-7681d8927f3a</rd:ReportID>
+</Report>

@@ -1,0 +1,271 @@
+[
+  {
+    "ContainingType": "WEB_API_WARRANTY_TSJ.Controllers.ActivationQRController",
+    "Method": "AddActivationQR",
+    "RelativePath": "api/ActivationQR/AddActivationQR",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "param",
+        "Type": "WEB_API_WARRANTY_TSJ.Models.QRCode.ActivationQrRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WEB_API_WARRANTY_TSJ.Controllers.ActivationQRController",
+    "Method": "ListDataActivationQR",
+    "RelativePath": "api/ActivationQR/ListDataActivationQR",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ActivationCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SelectDate",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "CreatedAtFrom",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "CreatedAtTo",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WEB_API_WARRANTY_TSJ.Controllers.BarcodeSerialQRController",
+    "Method": "AddBarcodeSerialQRInoac",
+    "RelativePath": "api/BarcodeSerialQR/AddBarcodeSerialQRInoac",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "param",
+        "Type": "WEB_API_WARRANTY_TSJ.Models.BarcodeSerialQr",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WEB_API_WARRANTY_TSJ.Controllers.BarcodeSerialQRController",
+    "Method": "AddBarcodeSerialQRTSJ",
+    "RelativePath": "api/BarcodeSerialQR/AddBarcodeSerialQRTSJ",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "param",
+        "Type": "WEB_API_WARRANTY_TSJ.Models.BarcodeSerialQr",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WEB_API_WARRANTY_TSJ.Controllers.BarcodeSerialQRController",
+    "Method": "ListDataBarcodeSerialQR",
+    "RelativePath": "api/BarcodeSerialQR/ListDataBarcodeSerialQR",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SerialCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Source",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SelectDate",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "CreatedAtFrom",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "CreatedAtTo",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WEB_API_WARRANTY_TSJ.Controllers.ErrorController",
+    "Method": "ListDataError",
+    "RelativePath": "api/Error/ListDataError",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "errorDateFrom",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "errorDateTo",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WEB_API_WARRANTY_TSJ.Controllers.LoginController",
+    "Method": "LoginUserMobile",
+    "RelativePath": "api/Login/LoginUserMobile",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "param",
+        "Type": "WEB_API_WARRANTY_TSJ.ModelsDBERP.Login.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WEB_API_WARRANTY_TSJ.Controllers.LoginController",
+    "Method": "LoginUserWeb",
+    "RelativePath": "api/Login/LoginUserWeb",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "param",
+        "Type": "WEB_API_WARRANTY_TSJ.ModelsDBERP.Login.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WEB_API_WARRANTY_TSJ.Controllers.LoginController",
+    "Method": "RefreshToken",
+    "RelativePath": "api/Login/RefreshToken",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "param",
+        "Type": "WEB_API_WARRANTY_TSJ.ModelsDBERP.Login.RefreshTokenRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WEB_API_WARRANTY_TSJ.Controllers.PrinterController",
+    "Method": "GetPrinterName",
+    "RelativePath": "api/Printer/GetPrinterName",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PrinterValue",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WEB_API_WARRANTY_TSJ.Controllers.WarrantyController",
+    "Method": "AddWarranty",
+    "RelativePath": "api/Warranty/AddWarranty",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "param",
+        "Type": "System.Collections.Generic.List\u00601[[WEB_API_WARRANTY_TSJ.Models.Warranty.WarrantyRequest, WEB_API_WARRANTY_TSJ, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WEB_API_WARRANTY_TSJ.Controllers.WarrantyController",
+    "Method": "ListDataWarranty",
+    "RelativePath": "api/Warranty/ListDataWarranty",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createdAtFrom",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "createdAtTo",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WEB_API_WARRANTY_TSJ.Controllers.WarrantyController",
+    "Method": "ListGetDataWarrantyRegistration",
+    "RelativePath": "api/Warranty/ListGetDataWarrantyRegistration",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registrationCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WEB_API_WARRANTY_TSJ.Controllers.WarrantyController",
+    "Method": "UpdateWarrantyRegistration",
+    "RelativePath": "api/Warranty/UpdateWarrantyRegistration",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "param",
+        "Type": "WEB_API_WARRANTY_TSJ.Models.Warranty.LogWarrantyRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

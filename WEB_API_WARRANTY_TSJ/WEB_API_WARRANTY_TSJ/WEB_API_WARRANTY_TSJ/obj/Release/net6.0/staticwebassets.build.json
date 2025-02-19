@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "ncJJhvFw5CNfwsmQMrbe4VtUwtaQreehDREhAWMfn8o=",
+  "Source": "WEB_API_WARRANTY_TSJ",
+  "BasePath": "_content/WEB_API_WARRANTY_TSJ",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
