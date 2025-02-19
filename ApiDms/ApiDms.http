@@ -1,0 +1,6 @@
+@ApiDms_HostAddress = http://localhost:5052
+
+GET {{ApiDms_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

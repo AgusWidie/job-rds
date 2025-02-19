@@ -1,0 +1,147 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = WebSiram
+build_property.RootNamespace = WebSiram
+build_property.ProjectDir = D:\IMI\SIRAM\aplikasi\SIRAM\WebSiram\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\IMI\SIRAM\aplikasi\SIRAM\WebSiram
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/IMI/SIRAM/aplikasi/SIRAM/WebSiram/Views/Activities/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0aXZpdGllc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IMI/SIRAM/aplikasi/SIRAM/WebSiram/Views/Activities/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0aXZpdGllc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IMI/SIRAM/aplikasi/SIRAM/WebSiram/Views/Auth/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IMI/SIRAM/aplikasi/SIRAM/WebSiram/Views/Divisi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGl2aXNpXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IMI/SIRAM/aplikasi/SIRAM/WebSiram/Views/Groups/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3JvdXBzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IMI/SIRAM/aplikasi/SIRAM/WebSiram/Views/HomeDashboard/Index - Copy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZURhc2hib2FyZFxJbmRleCAtIENvcHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IMI/SIRAM/aplikasi/SIRAM/WebSiram/Views/HomeDashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZURhc2hib2FyZFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IMI/SIRAM/aplikasi/SIRAM/WebSiram/Views/HomeDashboard/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZURhc2hib2FyZFxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IMI/SIRAM/aplikasi/SIRAM/WebSiram/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IMI/SIRAM/aplikasi/SIRAM/WebSiram/Views/Jabatan/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSmFiYXRhblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IMI/SIRAM/aplikasi/SIRAM/WebSiram/Views/Komando/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29tYW5kb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IMI/SIRAM/aplikasi/SIRAM/WebSiram/Views/Main/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IMI/SIRAM/aplikasi/SIRAM/WebSiram/Views/Pangkat/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFuZ2thdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IMI/SIRAM/aplikasi/SIRAM/WebSiram/Views/Personel/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uZWxcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IMI/SIRAM/aplikasi/SIRAM/WebSiram/Views/Registration/Ektp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cmF0aW9uXEVrdHAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IMI/SIRAM/aplikasi/SIRAM/WebSiram/Views/Registration/Enroll - Copy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cmF0aW9uXEVucm9sbCAtIENvcHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IMI/SIRAM/aplikasi/SIRAM/WebSiram/Views/Registration/Enroll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cmF0aW9uXEVucm9sbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IMI/SIRAM/aplikasi/SIRAM/WebSiram/Views/Roles/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IMI/SIRAM/aplikasi/SIRAM/WebSiram/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IMI/SIRAM/aplikasi/SIRAM/WebSiram/Views/Shared/_LayoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IMI/SIRAM/aplikasi/SIRAM/WebSiram/Views/Shared/_LayoutLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IMI/SIRAM/aplikasi/SIRAM/WebSiram/Views/Shared/_LayoutMain.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRNYWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IMI/SIRAM/aplikasi/SIRAM/WebSiram/Views/Shared/_LayoutUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IMI/SIRAM/aplikasi/SIRAM/WebSiram/Views/Shared/_MenuSettings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NZW51U2V0dGluZ3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IMI/SIRAM/aplikasi/SIRAM/WebSiram/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IMI/SIRAM/aplikasi/SIRAM/WebSiram/Views/Users/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IMI/SIRAM/aplikasi/SIRAM/WebSiram/Views/Users/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IMI/SIRAM/aplikasi/SIRAM/WebSiram/Views/Users/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IMI/SIRAM/aplikasi/SIRAM/WebSiram/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IMI/SIRAM/aplikasi/SIRAM/WebSiram/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IMI/SIRAM/aplikasi/SIRAM/WebSiram/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/IMI/SIRAM/aplikasi/SIRAM/WebSiram/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-uoj77ezfah

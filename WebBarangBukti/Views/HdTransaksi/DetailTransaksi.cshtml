@@ -1,0 +1,662 @@
+﻿@model IEnumerable<WebBarangBukti.Models.HdTransaksi>
+
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1></h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Detail Transaksi</a></li>
+                        <li class="breadcrumb-item active">Index</li>
+                    </ol>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2">
+                    @await Html.PartialAsync("_MenuSettings")
+                </div>
+                <!-- /.col -->
+
+                <div class="col-md-10">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row mt-0 me-3 ms-3">
+                                <div class="col-6">
+                                    <label for="inputText" class="col-sm-5 col-form-label" style="font-size: 16px;">Nama Transaksi</label>
+                                    <div class="input-group input-group-outline">
+                                        <input type="text" id="NoRegistrasi" class="multisteps-form__input form-control" value="@Model.FirstOrDefault().NamaTransaksi" style="font-size: 16px;" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <label for="inputText" class="col-sm-5 col-form-label" style="font-size:16px;">Judul Transaksi</label>
+                                    <div class="input-group input-group-outline">
+                                        <input type="text" id="JudulTransaksi" class="multisteps-form__input form-control" value="@Model.FirstOrDefault().JudulTransaksi" style="font-size: 16px;" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <label for="inputText" class="col-sm-5 col-form-label" style="font-size: 16px;">Jenis Transkasi</label>
+                                    <div class="input-group input-group-outline">
+                                        @{
+                                            string jenisTransaksi = "";
+                                            if (Model.FirstOrDefault().JenisTransaksi == 0) {
+                                                jenisTransaksi = "Disita";
+                                            } else {
+                                                jenisTransaksi = "Dilelang";
+                                            }
+                                        }
+                                        <input type="text" id="JenisTransaksi" class="multisteps-form__input form-control" value="@jenisTransaksi" style="font-size: 16px;" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <label for="inputText" class="col-sm-5 col-form-label" style="font-size:16px;">No Perkara</label>
+                                    <div class="input-group input-group-outline">
+                                        <input type="text" id="NoPerkara" class="multisteps-form__input form-control" value="@Model.FirstOrDefault().NoPerkara" style="font-size: 16px;" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <label for="inputText" class="col-sm-5 col-form-label" style="font-size:16px;">PIC</label>
+                                    <div class="input-group input-group-outline">
+                                        <input type="text" id="PIC" class="multisteps-form__input form-control" value="@Model.FirstOrDefault().Pic" style="font-size: 16px;" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    @{
+                                        string tglTrans = "";
+                                        if (Model.FirstOrDefault().TanggalTransaksi != null)
+                                        {
+                                            tglTrans = Convert.ToDateTime(Model.FirstOrDefault().TanggalTransaksi).ToString("yyyy-MM-dd");
+                                        }
+                                    }
+                                    <label for="inputText" class="col-sm-5 col-form-label" style="font-size:16px;">Tanggal Transaksi</label>
+                                    <div class="input-group input-group-outline">
+                                        <input type="text" id="TanggalPenyerahan" class="multisteps-form__input form-control" value="@tglTrans" style="font-size: 16px;" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <label for="inputText" class="col-sm-5 col-form-label" style="font-size:16px;">File</label>
+                                    <div class="input-group input-group-outline">
+                                       @*  <input type="text" id="File" class="multisteps-form__input form-control" style="font-size: 14px;" disabled> *@
+                                        <a href="#" onclick="GetPreviewFile('@Model.FirstOrDefault().IdTransaksi','@Model.FirstOrDefault().Extension');">@Model.FirstOrDefault().FileName</a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <br />
+                        </div>
+                        
+                        <div class="card-header p-2">
+                            <button type="button" class="btn btn-siram ml-3" onclick="modalAddDetailTransaksi();">Tambah Detail Transaksi</button><button type="button" title="Refresh" class="btn btn-siram ml-3" onclick="RefreshDataDetailTransaction();" style="text-align: right;"><i class="fa fa-refresh"></i>&nbsp; Refresh</button><button type="button" title="Back" class="btn btn-siram ml-3" onclick="history.back()" style="text-align: right;"><i class="fa fa-reply"></i>&nbsp; Back</button>
+                        </div><!-- /.card-header -->
+                        <div class="card-body">
+                            <input type="hidden" class="form-control" id="IdHdTrans" name="IdHdTransaksi" value="@Model.FirstOrDefault().IdTransaksi">
+                            <table id="tblDetailTransaksi" class="table table-bordered table-striped" aria-describedby="example1_info" style="overflow-x:auto;">
+                                <thead>
+                                    <tr>
+                                        <th>Aksi</th>
+                                        <th>Id Transaksi</th>
+                                        <th>Id Barang Bukti</th>
+                                        <th>Nama Barang Bukti</th>
+                                        <th>Jenis Transaksi</th>
+                                        <th>Pemenang Lelang Instansi</th>
+                                        <th>Harga</th>
+                                        <th>Tanggal Terjual</th>
+                                        <th>Tanggal Penyerahan</th>
+                                        <th>File</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                </tbody>
+
+                            </table>
+
+                        </div><!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="CreateDetailTransaksi">
+        <div class="modal-dialog modal-lg">
+            <form asp-controller="DtTransaksi" asp-action="CreateDetailTransaksi" method="post" enctype="multipart/form-data">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Tambah Detail Transaksi</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="hidden" class="form-control" id="IdHdTransaksi" name="IdTransaksi">
+                        <input type="hidden" class="form-control" id="NoPerkaraCreate" name="NoPerkara">
+                        <div class="form-group row">
+                            <label for="input-document_type_name" class="col-sm-4 col-form-label">Nama Barang Bukti</label>
+                            <div class="col-sm-8">
+                                <select id="IdBarangBukti" name="IdBarangBukti" asp-items="(IEnumerable<SelectListItem>)@ViewBag.NamaBarangBukti" class="form-control"></select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="input-document_type_name" class="col-sm-4 col-form-label">Jenis Transaksi</label>
+                            <div class="col-sm-8">
+                                <select id="JenisTransaksi" name="JenisTransaksi" asp-items="(IEnumerable<SelectListItem>)@ViewBag.JenisTransaksi" class="form-control"></select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="input-description" class="col-sm-4 col-form-label">Pemenang Lelang/Instansi</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="PemenangLelangInstansi" name="PemenangLelangInstansi" placeholder="Pemenang Lelang Instansi">
+                            </div>
+                        </div>
+                       
+                        <div class="form-group row">
+                            <label for="input-description" class="col-sm-4 col-form-label">Harga</label>
+                            <div class="col-sm-8">
+                                <input type="number" class="form-control" id="Harga" name="Harga" placeholder="Harga">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="input-description" class="col-sm-4 col-form-label">Tanggal Terjual</label>
+                            <div class="col-sm-8">
+                                <input type="date" class="form-control" id="TanggalTerjual" name="TanggalTerjual">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="input-description" class="col-sm-4 col-form-label">Tanggal Penyerahan</label>
+                            <div class="col-sm-8">
+                                <input type="date" class="form-control" id="TanggalPenyerahan" name="TanggalPenyerahan">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="input-description" class="col-sm-4 col-form-label">File</label>
+                            <div class="col-sm-8">
+                                <input type="file" name="files">
+                                <span for="FileUpload FormFile"></span>
+                            </div>
+                        </div>
+                     
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-siram ml-3">Save</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </form>
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="UpdateDetailTransaksi">
+        <div class="modal-dialog modal-lg">
+            <form asp-controller="DtTransaksi" asp-action="UpdateDetailTransaksi" method="post" enctype="multipart/form-data">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Edit Transaksi</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="hidden" class="form-control" id="Id" name="Id">
+                        <input type="hidden" class="form-control" id="IdHdTransaksiEdit" name="IdTransaksi">
+                        <input type="hidden" class="form-control" id="NoPerkaraEdit" name="NoPerkara">
+                        <div class="form-group row">
+                            <label for="input-document_type_name" class="col-sm-4 col-form-label">Nama Barang Bukti</label>
+                            <div class="col-sm-8">
+                                <select id="IdBarangBukti1" name="IdBarangBukti" asp-items="(IEnumerable<SelectListItem>)@ViewBag.NamaBarangBukti" class="form-control"></select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="input-document_type_name" class="col-sm-4 col-form-label">Jenis Transaksi</label>
+                            <div class="col-sm-8">
+                                <select id="JenisTransaksi1" name="JenisTransaksi" asp-items="(IEnumerable<SelectListItem>)@ViewBag.JenisTransaksi" class="form-control"></select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="input-description" class="col-sm-4 col-form-label">Pemenang Lelang/Instansi</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="PemenangLelangInstansi1" name="PemenangLelangInstansi" placeholder="Pemenang Lelang Instansi">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="input-description" class="col-sm-4 col-form-label">Harga</label>
+                            <div class="col-sm-8">
+                                <input type="number" class="form-control" id="Harga1" name="Harga" placeholder="Harga">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="input-description" class="col-sm-4 col-form-label">Tanggal Terjual</label>
+                            <div class="col-sm-8">
+                                <input type="date" class="form-control" id="TanggalTerjual1" name="TanggalTerjual">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="input-description" class="col-sm-4 col-form-label">Tanggal Penyerahan</label>
+                            <div class="col-sm-8">
+                                <input type="date" class="form-control" id="TanggalPenyerahan1" name="TanggalPenyerahan">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="input-description" class="col-sm-4 col-form-label">File</label>
+                            <div class="col-sm-8">
+                                <input type="file" name="files">
+                                <span for="FileUpload FormFile"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-siram ml-3">Update</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </form>
+        </div>
+        <!-- /.modal-dialog -->
+
+        <div class="modal fade" id="PreviewFilePDF" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Preview File</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="pdf_container">
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.modal -->
+</div>
+<!-- /.content-wrapper -->
+
+<link href="~/content/select2.min.css" rel="stylesheet">
+<script src="~/content/select2.min.js"></script>
+
+<link href="~/content/select2/select2-bootstrap.css" rel="stylesheet">
+<link href="~/content/select2/select2.min.css" rel="stylesheet">
+<script src="~/content/select2/select2.full.js"></script>
+
+<link href="~/adminlte/plugins/sweetalert2/sweetalert2.min.css" rel="stylesheet">
+<script src="~/adminlte/plugins/sweetalert2/sweetalert2.min.js"></script>
+
+<script type="text/javascript" src="~/template/js/pdf.min.js"></script>
+@* <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.6.0/fabric.min.js"></script> *@
+
+<script src="~/template/js/fabric.min.js"></script>
+<script src="~/template/js/jspdf.umd.min.js"></script>
+<script src="~/template/js/run_prettify.js"></script>
+
+<script src="~/template/js/arrow.fabric.js"></script>
+<script src="~/template/js/pdfannotate.js"></script>
+<script src="~/template/js/script.js"></script>
+<link href="~/template/css/prettify.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="~/template/css/styles.css">
+<link rel="stylesheet" href="~/template/css/pdfannotate.css">
+
+<link href="~/template/css/pdf_viewer.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
+
+<script>
+
+    $(function() {
+        // var dtTableDetailBarangBukti = $("#tblDetailBarangBukti").DataTable({
+
+        //       "responsive": true, 
+        //       "lengthChange": true, 
+        //       "autoWidth": true, 
+        //       "scrollX": true,
+        //       "sScrollXInner": "160%",
+        //       "fixedHeader": true,
+        //       columnDefs: [
+        //               {
+        //                    width: 120,
+        //                    targets: [0],
+        //                    className: 'text-center'
+
+        //               },
+        //               {
+        //                   autoWidth: true,
+        //                   targets: [1, 2, 3, 4, 5, 6, 7, 8],
+        //                   className: 'text-center'
+
+        //               }
+        //        ],
+        //       "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+        // });
+
+        var messageSuccess = '@TempData["MessageSuccessDetailTransaksi"]';
+        var messageError = '@TempData["MessageErrorDetailTransaksi"]';
+         
+        if(messageSuccess != null && messageSuccess != "") {
+                Swal.fire({
+                    title: "Data Transaksi",
+                    text: messageSuccess,
+                    icon: "success"
+                });
+              
+        }
+
+        if(messageError != null && messageError != "") {
+                Swal.fire({
+                    title: "Data Transaksi",
+                    text: messageError,
+                    icon: "warning"
+                });
+
+        }
+    });
+
+    $("#IdBarangBukti").select2({
+        placeholder: "",
+        width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+        dropdownParent: $("#CreateDetailTransaksi"),
+    });
+
+    $("#IdBarangBukti1").select2({
+        placeholder: "",
+        width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+        dropdownParent: $("#UpdateDetailTransaksi"),
+    });
+
+    function SetValueForSelect2(SelectId, Value) {
+        $("#" + SelectId).val(Value).trigger("change");
+    }
+
+    function modalAddDetailTransaksi() {
+
+        document.getElementById("IdHdTransaksi").value = document.getElementById("IdHdTrans").value;
+        document.getElementById("NoPerkaraCreate").value = document.getElementById("NoPerkara").value;
+        
+        $('#CreateDetailTransaksi').modal({
+            backdrop: 'static',
+            keyboard: false
+        });
+        $('#CreateDetailTransaksi').modal('show');
+
+    }
+
+    GetDetailTransaksi();
+    function GetDetailTransaksi(){
+
+        var IdHdTransaksi = document.getElementById("IdHdTrans").value;
+        var NoPerkara = document.getElementById("NoPerkara").value;
+
+        var dtTableDetaiTransaksi = $("#tblDetailTransaksi").DataTable({
+              "processing": true, // for show progress bar,
+               retrieve: true,
+              "scrollX": true,
+              "sScrollXInner": "130%",
+              "fixedHeader": true,
+              columnDefs: [
+                      {
+                           width: 80,
+                           targets: [0],
+                           className: 'text-center'
+
+                      },
+                      {
+                          autoWidth: true,
+                          targets: [1, 2, 3, 4, 5, 6, 7, 8],
+                          className: 'text-center'
+
+                      },
+                      {
+                          width: 40,
+                          targets: [9],
+                          className: 'text-center'
+
+                      }
+               ],
+              "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+        });
+
+        $.ajax({
+            type: "GET",
+            url: "@Url.Action("GetDataDetailTransaksi", "DtTransaksi")",
+            data: { IdHdTransaksi: IdHdTransaksi, NoPerkara: NoPerkara },
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (data) {
+
+                if(data.error == false) {
+
+                    var action = "";
+                    dtTableDetaiTransaksi.clear();
+                    $('#tblDetailTransaksi thead th').css('text-align', 'center');
+
+                    for (var i = 0; i <= data.res.length; i++) {
+
+                        action = "";
+                        var Id = data.res[i].id.toString();
+                        var IdTransaksi = data.res[i].idTransaksi.toString();
+                        var IdBarangBukti = data.res[i].idBarangBukti.toString();
+                        var NamaBarangBukti = data.res[i].namaBarangBukti.toString();
+                        var JenisTransaksi = data.res[i].jenisTransaksi.toString();
+                        var PemenangLelangInstansi = data.res[i].pemenangLelangInstansi.toString();
+                        var Harga = data.res[i].harga.toString();
+                        var TanggalTerjual = data.res[i].tanggalTerjual.toString();
+                        var TanggalPenyerahan = data.res[i].tanggalPenyerahan.toString();
+                        var File = data.res[i].file.toString();
+
+                        var JenisTransStr = "";
+                        if(JenisTransaksi == "0") {
+                            JenisTransStr = "Sita";
+                        } else {
+                            JenisTransStr = "Lelang";
+                        }
+
+                        var actionPreviewFile = '<button type="button" title="Preview File" class="btn btn-sm btn-info" onclick="GetPreviewFileDetail(\'' + Id + '\')"><i class="fa fa-eye"></i></button>'
+                        action = '<button type="button" title="Edit Transaksi" class="btn btn-warning" onclick="editDetailTransaksi(\'' + Id + '\',\'' + IdBarangBukti + '\',\'' + JenisTransaksi + '\',\'' + PemenangLelangInstansi + '\',\'' + Harga + '\',\'' + TanggalTerjual + '\',\'' + TanggalPenyerahan + '\');"><i class="fa fa-edit"></i></button> '
+                        dtTableDetaiTransaksi.row.add([action, IdTransaksi, IdBarangBukti, NamaBarangBukti, JenisTransStr, PemenangLelangInstansi, Harga, TanggalTerjual, TanggalPenyerahan, actionPreviewFile]).draw();
+                    }
+
+                } else {
+
+                    dtTableDetaiTransaksi.clear();
+                    dtTableDetaiTransaksi.draw();
+                }
+
+            },
+            error: function (error) { },
+        });
+    }
+
+    function editDetailTransaksi(id, idBarangBukti, jenisTransaksi, pemenangLelangInstansi, harga, tanggalTerjual, tanggalPenyerahan) {
+
+        document.getElementById("Id").value = id;
+        document.getElementById("IdHdTransaksiEdit").value = document.getElementById("IdHdTrans").value;
+        document.getElementById("NoPerkaraEdit").value = document.getElementById("NoPerkara").value;
+        // document.getElementById("IdDtBarangBuktiEdit").value = idBarangBukti;
+        SetValueForSelect2("IdBarangBukti1", "" + idBarangBukti + "");
+        document.getElementById("JenisTransaksi1").value = jenisTransaksi;
+        document.getElementById("PemenangLelangInstansi1").value = pemenangLelangInstansi;
+        document.getElementById("Harga1").value = harga;
+        document.getElementById("TanggalTerjual1").value = tanggalTerjual;
+        document.getElementById("TanggalPenyerahan1").value = tanggalPenyerahan;
+
+        $('#UpdateDetailTransaksi').modal({
+            backdrop: 'static',
+            keyboard: false
+        });
+        $('#UpdateDetailTransaksi').modal('show');
+    }
+
+    var pdfjsLib = window['pdfjs-dist/build/pdf'];
+    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.worker.min.js';
+
+    var pdfDoc = null;
+    var scale = 1.8; //Set Scale for zooming PDF.
+    var resolution = 1; //Set Resolution to Adjust PDF clarity.
+
+
+    function GetPreviewFile(IdHdTransaksi, Extention)
+    {
+
+        $.ajax({
+            type: "GET",
+            url: "@Url.Action("PreviewFile", "HdTransaksi")",
+            data: { IdHdTransaksi: IdHdTransaksi},
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (data) {
+
+                //alert(JSON.stringify(data));
+
+                openFile(data.res.base64File, data.res.contentType, Extention);
+            },
+            error: function (error) { },
+        });
+    }
+
+    function GetPreviewFileDetail(Id)
+    {
+
+        $.ajax({
+            type: "GET",
+            url: "@Url.Action("PreviewFile", "DtTransaksi")",
+            data: { Id: Id},
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (data) {
+
+                //alert(JSON.stringify(data.res.base64File));
+
+                openFile(data.res.base64File, data.res.contentType, data.res.extension);
+            },
+            error: function (error) { },
+        });
+    }
+
+    function openFile(base64, content_type, extention) {
+
+        const arrayBuffer = base64ToArrayBuffer(base64);
+        const blob = new Blob([arrayBuffer], { type: '' + content_type + ''});
+        const url = window.URL.createObjectURL(blob);
+
+        window.open(url, '_blank');
+
+        // LoadPdfFromUrl(url);
+
+        // $('#PreviewFilePDF').modal({
+        //     backdrop: 'static',
+        //     keyboard: false
+        // });
+        // $('#PreviewFilePDF').modal('show');
+
+    }
+
+    function base64ToArrayBuffer(base64) {
+
+        const binaryString =  window.atob(base64);
+        const binaryLen = binaryString.length;
+        const bytes = new Uint8Array(binaryLen);
+        for (let i = 0; i < binaryLen; i++)        {
+            const ascii = binaryString.charCodeAt(i);
+            bytes[i] = ascii;
+        }
+        return bytes;
+    }
+
+     function LoadPdfFromUrl(url) {
+
+        while (pdf_container.hasChildNodes()) {
+                pdf_container.removeChild(pdf_container.firstChild);
+        }
+        //Read PDF from URL.
+        pdfjsLib.getDocument(url).promise.then(function (pdfDoc_) {
+            pdfDoc = pdfDoc_;
+
+            //Reference the Container DIV.
+            var pdf_container = document.getElementById("pdf_container");
+            pdf_container.style.display = "block";
+
+            //Loop and render all pages.
+            for (var i = 1; i <= pdfDoc.numPages; i++) {
+                RenderPage(pdf_container, i);
+            }
+        });
+    };
+
+    function RenderPage(pdf_container, num) {
+        pdfDoc.getPage(num).then(function (page) {
+            //Create Canvas element and append to the Container DIV.
+            var canvas = document.createElement('canvas');
+            canvas.id = 'pdf-' + num;
+            ctx = canvas.getContext('2d');
+            pdf_container.appendChild(canvas);
+
+            //Create and add empty DIV to add SPACE between pages.
+            var spacer = document.createElement("div");
+            spacer.style.height = "25px";
+            spacer.style.width = "600px";
+            pdf_container.appendChild(spacer);
+
+            //Set the Canvas dimensions using ViewPort and Scale.
+            var viewport = page.getViewport({ scale: scale });
+            canvas.height = resolution * viewport.height;
+            canvas.width = resolution * viewport.width;
+
+            //Render the PDF page.
+            var renderContext = {
+                canvasContext: ctx,
+                viewport: viewport,
+                transform: [resolution, 0, 0, resolution, 0, 0]
+            };
+
+            page.render(renderContext);
+        });
+    };
+
+   
+    function RefreshDataDetailTransaction()
+    {
+        location.reload();
+    }
+
+    const toSnakeCase = (str) => {
+          if (!str) return "";
+          const regex =
+            /[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g;
+          return str
+            .match(regex)
+            .map((x) => x.toLowerCase())
+            .join("_");
+    };
+    
+</script>

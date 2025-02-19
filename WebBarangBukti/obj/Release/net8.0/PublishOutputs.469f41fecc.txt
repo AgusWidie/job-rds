@@ -1,0 +1,8 @@
+D:\IMI\Siram\aplikasi\SIRAM\WebSiram\obj\Release\net8.0\PubTmp\Out\WebSiram.exe
+D:\IMI\Siram\aplikasi\SIRAM\WebSiram\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+D:\IMI\Siram\aplikasi\SIRAM\WebSiram\obj\Release\net8.0\PubTmp\Out\appsettings.json
+D:\IMI\Siram\aplikasi\SIRAM\WebSiram\obj\Release\net8.0\PubTmp\Out\WebSiram.dll
+D:\IMI\Siram\aplikasi\SIRAM\WebSiram\obj\Release\net8.0\PubTmp\Out\WebSiram.deps.json
+D:\IMI\Siram\aplikasi\SIRAM\WebSiram\obj\Release\net8.0\PubTmp\Out\WebSiram.runtimeconfig.json
+D:\IMI\Siram\aplikasi\SIRAM\WebSiram\obj\Release\net8.0\PubTmp\Out\WebSiram.pdb
+D:\IMI\Siram\aplikasi\SIRAM\WebSiram\obj\Release\net8.0\PubTmp\Out\Newtonsoft.Json.dll
