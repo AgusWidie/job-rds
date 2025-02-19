@@ -1,0 +1,2835 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBERPModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="APPROVAL_ORDER">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="approve_id" Type="varchar" MaxLength="14" />
+    <Property Name="user_approve" Type="varchar" MaxLength="10" />
+    <Property Name="id_detail" Type="int" />
+    <Property Name="order_id" Type="varchar" MaxLength="14" />
+    <Property Name="so_id" Type="varchar" MaxLength="14" />
+    <Property Name="item_id" Type="varchar" MaxLength="30" />
+    <Property Name="alias_customer" Type="varchar" MaxLength="100" />
+    <Property Name="item_code_1" Type="varchar" MaxLength="30" />
+    <Property Name="item_code_2" Type="varchar" MaxLength="30" />
+    <Property Name="from_qty" Type="int" />
+    <Property Name="to_qty" Type="int" />
+    <Property Name="volume" Type="decimal" Precision="15" Scale="4" />
+    <Property Name="dimention" Type="varchar" MaxLength="12" />
+    <Property Name="from_order_type" Type="varchar" MaxLength="10" />
+    <Property Name="to_order_type" Type="varchar" MaxLength="10" />
+    <Property Name="status_order" Type="int" />
+    <Property Name="status_approve" Type="int" />
+    <Property Name="remark" Type="varchar" MaxLength="255" />
+    <Property Name="remark_approve" Type="varchar" MaxLength="255" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+    <Property Name="approve_at" Type="datetime" />
+    <Property Name="approve_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="CHAT">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="so_id" Type="varchar" MaxLength="14" />
+    <Property Name="message" Type="text" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="DRAFT_DT_DNSP">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="header_id" Type="int" />
+    <Property Name="so_id" Type="varchar" MaxLength="14" />
+    <Property Name="item_id" Type="varchar" MaxLength="30" />
+    <Property Name="so_detail_id" Type="int" />
+    <Property Name="alias_customer" Type="varchar" MaxLength="100" />
+    <Property Name="item_code_1" Type="varchar" MaxLength="30" />
+    <Property Name="item_code_2" Type="varchar" MaxLength="30" />
+    <Property Name="qty" Type="int" />
+    <Property Name="volume" Type="decimal" Precision="15" Scale="4" />
+    <Property Name="dimention" Type="varchar" MaxLength="12" />
+    <Property Name="status" Type="int" />
+    <Property Name="status_pick" Type="bit" />
+    <Property Name="pick_at" Type="datetime" />
+    <Property Name="status_received" Type="bit" />
+    <Property Name="received_at" Type="datetime" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="DRIVER">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nik" Type="varchar" MaxLength="17" />
+    <Property Name="full_name" Type="varchar" MaxLength="60" />
+    <Property Name="place_of_birth" Type="varchar" MaxLength="50" />
+    <Property Name="date_of_birth" Type="date" />
+    <Property Name="gender" Type="varchar" MaxLength="10" />
+    <Property Name="address" Type="varchar" MaxLength="255" />
+    <Property Name="rt" Type="varchar" MaxLength="3" />
+    <Property Name="rw" Type="varchar" MaxLength="3" />
+    <Property Name="village" Type="varchar" MaxLength="50" />
+    <Property Name="districts" Type="varchar" MaxLength="50" />
+    <Property Name="city" Type="varchar" MaxLength="50" />
+    <Property Name="state" Type="varchar" MaxLength="50" />
+    <Property Name="religion" Type="varchar" MaxLength="20" />
+    <Property Name="marital_status" Type="varchar" MaxLength="20" />
+    <Property Name="occupation" Type="varchar" MaxLength="50" />
+    <Property Name="nationality" Type="varchar" MaxLength="3" />
+    <Property Name="tax_id" Type="varchar" MaxLength="30" />
+    <Property Name="vehicel_id" Type="int" />
+    <Property Name="status" Type="int" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="last_updated_at" Type="datetime" />
+    <Property Name="deleted_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="DT_DNPSP">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="header_id" Type="int" />
+    <Property Name="so_id" Type="varchar" MaxLength="14" />
+    <Property Name="item_id" Type="varchar" MaxLength="30" />
+    <Property Name="so_detail_id" Type="int" />
+    <Property Name="alias_customer" Type="varchar" MaxLength="100" />
+    <Property Name="item_code_1" Type="varchar" MaxLength="30" />
+    <Property Name="item_code_2" Type="varchar" MaxLength="30" />
+    <Property Name="qty" Type="int" />
+    <Property Name="volume" Type="decimal" Precision="15" Scale="4" />
+    <Property Name="dimention" Type="varchar" MaxLength="12" />
+    <Property Name="status" Type="int" />
+    <Property Name="status_pick" Type="bit" />
+    <Property Name="pick_at" Type="datetime" />
+    <Property Name="status_received" Type="bit" />
+    <Property Name="received_at" Type="datetime" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="DT_ITEMS">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="company_id" Type="varchar" MaxLength="10" />
+    <Property Name="item_id" Type="varchar" MaxLength="10" />
+    <Property Name="external_id" Type="varchar" MaxLength="50" />
+    <Property Name="item_code_1" Type="varchar" MaxLength="30" />
+    <Property Name="item_code_2" Type="varchar" MaxLength="30" />
+    <Property Name="item_code_3" Type="varchar" MaxLength="30" />
+    <Property Name="item_code_4" Type="varchar" MaxLength="30" />
+    <Property Name="item_code_5" Type="varchar" MaxLength="30" />
+    <Property Name="item_code_6" Type="varchar" MaxLength="30" />
+    <Property Name="uom_id" Type="varchar" MaxLength="12" />
+    <Property Name="status" Type="int" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="last_updated_at" Type="datetime" />
+    <Property Name="deleted_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="DT_ORDER">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="order_id" Type="varchar" MaxLength="14" Nullable="false" />
+    <Property Name="so_id" Type="varchar" MaxLength="14" />
+    <Property Name="item_id" Type="varchar" MaxLength="30" />
+    <Property Name="alias_customer" Type="varchar" MaxLength="100" />
+    <Property Name="item_code_1" Type="varchar" MaxLength="30" />
+    <Property Name="item_code_2" Type="varchar" MaxLength="30" />
+    <Property Name="qty" Type="int" />
+    <Property Name="volume" Type="decimal" Precision="15" Scale="4" />
+    <Property Name="dimention" Type="varchar" MaxLength="12" />
+    <Property Name="order_type" Type="varchar" MaxLength="10" />
+    <Property Name="status" Type="int" />
+    <Property Name="remark_detail" Type="varchar" MaxLength="255" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="EMAIL_SETUP">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="mail_address" Type="varchar" MaxLength="50" />
+    <Property Name="smtp_server" Type="varchar" MaxLength="50" />
+    <Property Name="smtp_port" Type="int" Nullable="false" />
+    <Property Name="credentials" Type="bit" Nullable="false" />
+    <Property Name="enable_ssl" Type="bit" Nullable="false" />
+    <Property Name="bcc" Type="varchar" MaxLength="50" />
+    <Property Name="username" Type="varchar" MaxLength="50" />
+    <Property Name="password" Type="varchar" MaxLength="100" />
+    <Property Name="status" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FAVORITE_ITEMS">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="company_id" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="customer_id" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="detail_item_id" Type="int" Nullable="false" />
+    <Property Name="is_favorite" Type="bit" Nullable="false" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="FILES">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="file_group" Type="varchar" MaxLength="50" />
+    <Property Name="title" Type="varchar" MaxLength="150" />
+    <Property Name="snippet" Type="varchar" MaxLength="255" />
+    <Property Name="content" Type="text" />
+    <Property Name="file_name" Type="varchar" MaxLength="100" />
+    <Property Name="file_ext" Type="varchar" MaxLength="5" />
+    <Property Name="content_type" Type="varchar" MaxLength="50" />
+    <Property Name="file_path" Type="varchar" MaxLength="255" />
+    <Property Name="file_binary" Type="varbinary(max)" />
+    <Property Name="file_base64" Type="varchar(max)" />
+    <Property Name="status" Type="int" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="last_updated_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="HD_DNPSP">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="delivery_id" Type="varchar" MaxLength="14" />
+    <Property Name="delivery_date" Type="date" />
+    <Property Name="driver_id" Type="int" />
+    <Property Name="volume_m3" Type="decimal" Precision="15" Scale="4" />
+    <Property Name="vehicel_id" Type="int" />
+    <Property Name="rit" Type="int" />
+    <Property Name="start_time" Type="varchar" MaxLength="8" />
+    <Property Name="end_time" Type="varchar" MaxLength="8" />
+    <Property Name="total_qty" Type="int" />
+    <Property Name="total_volume" Type="decimal" Precision="15" Scale="4" />
+    <Property Name="status" Type="int" />
+    <Property Name="sj_file" Type="varchar" MaxLength="255" />
+    <Property Name="sj_base64" Type="varchar(max)" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="last_updated_at" Type="datetime" />
+    <Property Name="deleted_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+    <Property Name="security" Type="varchar(max)" />
+    <Property Name="security_check" Type="bit" />
+    <Property Name="security_check_at" Type="datetime" />
+    <Property Name="security_sign" Type="varchar(max)" />
+    <Property Name="recived_at" Type="datetime" />
+    <Property Name="received_by" Type="varchar" MaxLength="10" />
+    <Property Name="received_name" Type="varchar" MaxLength="100" />
+    <Property Name="recived_sign" Type="varchar(max)" />
+    <Property Name="driver_sign" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="HD_ORDER">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="order_id" Type="varchar" MaxLength="14" Nullable="false" />
+    <Property Name="order_date" Type="date" />
+    <Property Name="sales_approve_date" Type="date" />
+    <Property Name="admin_so_approve_date" Type="date" />
+    <Property Name="completed_date" Type="datetime" />
+    <Property Name="cancel_date" Type="datetime" />
+    <Property Name="so_id" Type="varchar" MaxLength="14" />
+    <Property Name="company_id" Type="varchar" MaxLength="10" />
+    <Property Name="customer_id" Type="varchar" MaxLength="10" />
+    <Property Name="group_status" Type="bit" />
+    <Property Name="shipping_id" Type="int" />
+    <Property Name="status" Type="int" />
+    <Property Name="export_status" Type="int" />
+    <Property Name="export_at" Type="datetime" />
+    <Property Name="export_by" Type="varchar" MaxLength="10" />
+    <Property Name="dbf_status" Type="int" />
+    <Property Name="dbf_at" Type="datetime" />
+    <Property Name="dbf_by" Type="varchar" MaxLength="10" />
+    <Property Name="remark_header_1" Type="text" />
+    <Property Name="remark_header_2" Type="text" />
+    <Property Name="remark_header_3" Type="text" />
+    <Property Name="remark_header_4" Type="text" />
+    <Property Name="remark_header_5" Type="text" />
+    <Property Name="remark_header_6" Type="text" />
+    <Property Name="remark_header_7" Type="text" />
+    <Property Name="remark_header_8" Type="text" />
+    <Property Name="remark_header_9" Type="text" />
+    <Property Name="remark_header_10" Type="text" />
+    <Property Name="invoice_file" Type="varchar" MaxLength="255" />
+    <Property Name="invoice_base64" Type="varchar(max)" />
+    <Property Name="invoice_file_price" Type="varchar" MaxLength="255" />
+    <Property Name="invoice_base64_price" Type="varchar(max)" />
+    <Property Name="source_name" Type="varchar" MaxLength="100" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="last_updated_at" Type="datetime" />
+    <Property Name="deleted_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="LOG_DELIVERY">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="delivery_id" Type="varchar" MaxLength="14" />
+    <Property Name="so_id" Type="varchar" MaxLength="14" />
+    <Property Name="type_delivery" Type="varchar" MaxLength="50" />
+    <Property Name="recived_at" Type="datetime" />
+    <Property Name="receiver" Type="varchar(max)" />
+    <Property Name="received_name" Type="varchar" MaxLength="100" />
+    <Property Name="recived_sign" Type="varchar(max)" />
+    <Property Name="driver_sign" Type="varchar(max)" />
+    <Property Name="latitude" Type="varchar" MaxLength="50" />
+    <Property Name="longitude" Type="varchar" MaxLength="50" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="LOG_TRANSACTION">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="order_id" Type="varchar" MaxLength="50" />
+    <Property Name="status" Type="varchar" MaxLength="50" />
+    <Property Name="description" Type="varchar" MaxLength="255" />
+    <Property Name="circle_color" Type="varchar" MaxLength="7" />
+    <Property Name="line_color" Type="varchar" MaxLength="7" />
+    <Property Name="status_color" Type="int" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="MS_COMPANY">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="company_id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="company_id" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="company_name" Type="varchar" MaxLength="60" />
+    <Property Name="address" Type="varchar" MaxLength="255" />
+    <Property Name="telepon" Type="varchar" MaxLength="13" />
+    <Property Name="fax" Type="varchar" MaxLength="30" />
+    <Property Name="email" Type="varchar" MaxLength="100" />
+    <Property Name="status" Type="int" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="last_updated_at" Type="datetime" />
+    <Property Name="deleted_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="MS_CS_SPECIAL_PRODUCT">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="customer_id" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="item_id" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="commission_persentage" Type="decimal" Precision="3" Scale="2" />
+    <Property Name="status" Type="int" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="last_updated_at" Type="datetime" />
+    <Property Name="deleted_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="MS_CUSTOMER">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="company_id" Type="varchar" MaxLength="10" />
+    <Property Name="group_id" Type="varchar" MaxLength="10" />
+    <Property Name="sales_id" Type="varchar" MaxLength="10" />
+    <Property Name="region_id" Type="varchar" MaxLength="10" />
+    <Property Name="customer_id" Type="varchar" MaxLength="10" />
+    <Property Name="customer_name" Type="varchar" MaxLength="60" />
+    <Property Name="email" Type="varchar" MaxLength="100" />
+    <Property Name="telepon" Type="varchar" MaxLength="50" />
+    <Property Name="telepon1" Type="varchar" MaxLength="13" />
+    <Property Name="telepon2" Type="varchar" MaxLength="13" />
+    <Property Name="fax" Type="varchar" MaxLength="20" />
+    <Property Name="customer_address" Type="varchar" MaxLength="255" />
+    <Property Name="latitude" Type="varchar" MaxLength="50" />
+    <Property Name="longitude" Type="varchar" MaxLength="50" />
+    <Property Name="nik" Type="varchar" MaxLength="17" />
+    <Property Name="full_name" Type="varchar" MaxLength="60" />
+    <Property Name="place_of_birth" Type="varchar" MaxLength="50" />
+    <Property Name="date_of_birth" Type="date" />
+    <Property Name="gender" Type="varchar" MaxLength="10" />
+    <Property Name="address" Type="varchar" MaxLength="255" />
+    <Property Name="rt" Type="varchar" MaxLength="3" />
+    <Property Name="rw" Type="varchar" MaxLength="3" />
+    <Property Name="village" Type="varchar" MaxLength="50" />
+    <Property Name="districts" Type="varchar" MaxLength="50" />
+    <Property Name="city" Type="varchar" MaxLength="50" />
+    <Property Name="state" Type="varchar" MaxLength="50" />
+    <Property Name="religion" Type="varchar" MaxLength="20" />
+    <Property Name="marital_status" Type="varchar" MaxLength="20" />
+    <Property Name="occupation" Type="varchar" MaxLength="50" />
+    <Property Name="nationality" Type="varchar" MaxLength="3" />
+    <Property Name="tax_id" Type="varchar" MaxLength="30" />
+    <Property Name="tax_type" Type="varchar" MaxLength="20" />
+    <Property Name="limit" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="limit_order" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="limit_usage" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="limit_order_usage" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="count_usage" Type="int" />
+    <Property Name="term" Type="int" />
+    <Property Name="margin" Type="decimal" Precision="3" Scale="1" />
+    <Property Name="special_product" Type="bit" />
+    <Property Name="coa_id" Type="varchar" MaxLength="10" />
+    <Property Name="bank_account" Type="varchar" MaxLength="60" />
+    <Property Name="bank_id" Type="varchar" MaxLength="30" />
+    <Property Name="bank_name" Type="varchar" MaxLength="30" />
+    <Property Name="is_parent" Type="int" />
+    <Property Name="parent_id" Type="varchar" MaxLength="10" />
+    <Property Name="status" Type="int" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="last_updated_at" Type="datetime" />
+    <Property Name="deleted_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="MS_FIELDS">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="field_key" Type="varchar" MaxLength="30" />
+    <Property Name="field_name" Type="varchar" MaxLength="50" />
+    <Property Name="field_value" Type="varchar" MaxLength="255" />
+    <Property Name="description" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="MS_FOAM">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="supplier_id" Type="varchar" MaxLength="10" />
+    <Property Name="foam_id" Type="varchar" MaxLength="10" />
+    <Property Name="foam_id_1" Type="varchar" MaxLength="10" />
+    <Property Name="foam_id_2" Type="varchar" MaxLength="10" />
+    <Property Name="foam_id_3" Type="varchar" MaxLength="10" />
+    <Property Name="foam_id_4" Type="varchar" MaxLength="10" />
+    <Property Name="foam_id_5" Type="varchar" MaxLength="10" />
+    <Property Name="foam_id_6" Type="varchar" MaxLength="10" />
+    <Property Name="foam_name" Type="varchar" MaxLength="50" />
+    <Property Name="density" Type="int" />
+    <Property Name="initials" Type="varchar" MaxLength="50" />
+    <Property Name="description" Type="varchar" MaxLength="255" />
+    <Property Name="status" Type="int" />
+    <Property Name="external_id" Type="varchar" MaxLength="50" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="last_updated_at" Type="datetime" />
+    <Property Name="deleted_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="MS_GROUP_ACCESS">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="role_id" Type="varchar" MaxLength="10" />
+    <Property Name="menu_id" Type="varchar" MaxLength="10" />
+    <Property Name="parent_id" Type="int" />
+    <Property Name="status" Type="int" />
+  </EntityType>
+  <EntityType Name="MS_GROUP_CUSTOMER">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="group_id" Type="varchar" MaxLength="10" />
+    <Property Name="group_name" Type="varchar" MaxLength="60" />
+    <Property Name="status" Type="int" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="last_updated_at" Type="datetime" />
+    <Property Name="deleted_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="MS_GROUP_ITEMS">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="group_item_id" Type="varchar" MaxLength="10" />
+    <Property Name="group_item_name" Type="varchar" MaxLength="50" />
+    <Property Name="description" Type="varchar" MaxLength="255" />
+    <Property Name="status" Type="int" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="last_updated_at" Type="datetime" />
+    <Property Name="deleted_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="MS_HOME_SLIDERS">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="file_name" Type="varchar" MaxLength="100" />
+    <Property Name="file_ext" Type="varchar" MaxLength="5" />
+    <Property Name="content_type" Type="varchar" MaxLength="50" />
+    <Property Name="file_path" Type="varchar" MaxLength="255" />
+    <Property Name="file_binary" Type="varbinary(max)" />
+    <Property Name="file_base64" Type="varchar(max)" />
+    <Property Name="status" Type="int" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="last_updated_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="MS_ITEMS">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="company_id" Type="varchar" MaxLength="10" />
+    <Property Name="group_item_id" Type="varchar" MaxLength="10" />
+    <Property Name="item_id" Type="varchar" MaxLength="10" />
+    <Property Name="foam_id" Type="varchar" MaxLength="10" />
+    <Property Name="foam_id_1" Type="varchar" MaxLength="10" />
+    <Property Name="foam_id_2" Type="varchar" MaxLength="10" />
+    <Property Name="foam_id_3" Type="varchar" MaxLength="10" />
+    <Property Name="foam_id_4" Type="varchar" MaxLength="10" />
+    <Property Name="foam_id_5" Type="varchar" MaxLength="10" />
+    <Property Name="foam_id_6" Type="varchar" MaxLength="10" />
+    <Property Name="external_id_1" Type="varchar" MaxLength="50" />
+    <Property Name="external_id_2" Type="varchar" MaxLength="50" />
+    <Property Name="external_id_3" Type="varchar" MaxLength="50" />
+    <Property Name="external_id_4" Type="varchar" MaxLength="50" />
+    <Property Name="external_id_5" Type="varchar" MaxLength="50" />
+    <Property Name="external_id_6" Type="varchar" MaxLength="50" />
+    <Property Name="item_name_1" Type="varchar" MaxLength="100" />
+    <Property Name="item_name_2" Type="varchar" MaxLength="100" />
+    <Property Name="item_name_3" Type="varchar" MaxLength="100" />
+    <Property Name="item_name_4" Type="varchar" MaxLength="100" />
+    <Property Name="item_name_5" Type="varchar" MaxLength="100" />
+    <Property Name="item_name_6" Type="varchar" MaxLength="100" />
+    <Property Name="item_name_7" Type="varchar" MaxLength="100" />
+    <Property Name="item_name_8" Type="varchar" MaxLength="100" />
+    <Property Name="item_name_9" Type="varchar" MaxLength="100" />
+    <Property Name="item_name_10" Type="varchar" MaxLength="100" />
+    <Property Name="alias_customer" Type="varchar" MaxLength="100" />
+    <Property Name="alias_po" Type="varchar" MaxLength="100" />
+    <Property Name="is_po_visible" Type="bit" Nullable="false" />
+    <Property Name="measurement" Type="varchar" MaxLength="10" />
+    <Property Name="price" Type="money" />
+    <Property Name="status" Type="int" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="last_updated_at" Type="datetime" />
+    <Property Name="deleted_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+    <Property Name="base64_image" Type="varchar(max)" />
+    <Property Name="file_name" Type="varchar" MaxLength="100" />
+    <Property Name="file_ext" Type="varchar" MaxLength="5" />
+    <Property Name="content_type" Type="varchar" MaxLength="50" />
+    <Property Name="file_path" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="MS_LOG_LOGIN">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="user_id" Type="varchar" MaxLength="10" />
+    <Property Name="login_at" Type="datetime" />
+    <Property Name="login_status" Type="int" />
+    <Property Name="message" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="MS_MENU">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="menu_name" Type="varchar" MaxLength="50" />
+    <Property Name="menu_name_shortcut" Type="varchar" MaxLength="50" />
+    <Property Name="site_url" Type="varchar" MaxLength="50" />
+    <Property Name="icon" Type="varchar" MaxLength="50" />
+    <Property Name="parent" Type="bit" />
+    <Property Name="parent_id" Type="int" />
+    <Property Name="sequance" Type="int" />
+    <Property Name="status" Type="int" />
+  </EntityType>
+  <EntityType Name="MS_NOTIFICATION">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="notif_from" Type="varchar" MaxLength="100" />
+    <Property Name="topic" Type="varchar" MaxLength="10" />
+    <Property Name="notif_to" Type="varchar" MaxLength="100" />
+    <Property Name="subject" Type="varchar" MaxLength="255" />
+    <Property Name="snippet" Type="varchar" MaxLength="255" />
+    <Property Name="message" Type="text" />
+    <Property Name="status" Type="int" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="last_updated_at" Type="datetime" />
+    <Property Name="publish_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="MS_PRICE">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="item_id" Type="varchar" MaxLength="10" />
+    <Property Name="hpp" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="price_1" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="desc_1" Type="varchar" MaxLength="50" />
+    <Property Name="price_2" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="desc_2" Type="varchar" MaxLength="50" />
+    <Property Name="price_3" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="desc_3" Type="varchar" MaxLength="50" />
+    <Property Name="price_4" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="desc_4" Type="varchar" MaxLength="50" />
+    <Property Name="price_5" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="desc_5" Type="varchar" MaxLength="50" />
+    <Property Name="price_6" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="desc_6" Type="varchar" MaxLength="50" />
+    <Property Name="price_7" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="desc_7" Type="varchar" MaxLength="50" />
+    <Property Name="price_8" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="desc_8" Type="varchar" MaxLength="50" />
+    <Property Name="price_9" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="desc_9" Type="varchar" MaxLength="50" />
+    <Property Name="price_10" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="desc_10" Type="varchar" MaxLength="50" />
+    <Property Name="seq" Type="int" />
+    <Property Name="status" Type="int" />
+    <Property Name="start_at" Type="datetime" />
+    <Property Name="stop_at" Type="datetime" />
+    <Property Name="coa_id" Type="varchar" MaxLength="10" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="MS_REGION">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="region_id" Type="varchar" MaxLength="10" />
+    <Property Name="region_name" Type="varchar" MaxLength="60" />
+    <Property Name="status" Type="int" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="last_updated_at" Type="datetime" />
+    <Property Name="deleted_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="MS_ROLES">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="role_id" Type="varchar" MaxLength="10" />
+    <Property Name="role_name" Type="varchar" MaxLength="50" />
+    <Property Name="status" Type="int" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="last_updated_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="MS_SALES">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="sales_id" Type="varchar" MaxLength="10" />
+    <Property Name="sales_name" Type="varchar" MaxLength="60" />
+    <Property Name="email" Type="varchar" MaxLength="100" />
+    <Property Name="telepon" Type="varchar" MaxLength="13" />
+    <Property Name="sales_address" Type="varchar" MaxLength="255" />
+    <Property Name="nik" Type="varchar" MaxLength="16" />
+    <Property Name="full_name" Type="varchar" MaxLength="60" />
+    <Property Name="place_of_birth" Type="varchar" MaxLength="50" />
+    <Property Name="date_of_birth" Type="date" />
+    <Property Name="gender" Type="varchar" MaxLength="10" />
+    <Property Name="address" Type="varchar" MaxLength="255" />
+    <Property Name="rt" Type="varchar" MaxLength="3" />
+    <Property Name="rw" Type="varchar" MaxLength="3" />
+    <Property Name="village" Type="varchar" MaxLength="50" />
+    <Property Name="districts" Type="varchar" MaxLength="50" />
+    <Property Name="city" Type="varchar" MaxLength="50" />
+    <Property Name="state" Type="varchar" MaxLength="50" />
+    <Property Name="religion" Type="varchar" MaxLength="20" />
+    <Property Name="marital_status" Type="varchar" MaxLength="20" />
+    <Property Name="occupation" Type="varchar" MaxLength="50" />
+    <Property Name="nationality" Type="varchar" MaxLength="3" />
+    <Property Name="tax_id" Type="varchar" MaxLength="30" />
+    <Property Name="tax_type" Type="varchar" MaxLength="20" />
+    <Property Name="coa_id" Type="varchar" MaxLength="10" />
+    <Property Name="bank_account" Type="varchar" MaxLength="60" />
+    <Property Name="bank_id" Type="varchar" MaxLength="30" />
+    <Property Name="bank_name" Type="varchar" MaxLength="30" />
+    <Property Name="status" Type="int" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="last_updated_at" Type="datetime" />
+    <Property Name="deleted_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="MS_SEND_NOTIFICATION">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="notif_id" Type="varchar" MaxLength="50" />
+    <Property Name="notif_type" Type="varchar" MaxLength="50" />
+    <Property Name="notif_from" Type="varchar" MaxLength="100" />
+    <Property Name="topic" Type="varchar" MaxLength="10" />
+    <Property Name="notif_to" Type="varchar" MaxLength="100" />
+    <Property Name="subject" Type="varchar" MaxLength="255" />
+    <Property Name="snippet" Type="varchar" MaxLength="255" />
+    <Property Name="fcm_token" Type="varchar" MaxLength="255" />
+    <Property Name="message" Type="text" />
+    <Property Name="action_link" Type="varchar" MaxLength="100" />
+    <Property Name="status" Type="int" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+    <Property Name="read_by" Type="varchar" MaxLength="10" />
+    <Property Name="read_date" Type="datetime" />
+  </EntityType>
+  <EntityType Name="MS_SHIPPING_ADDRESS">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="customer_id" Type="varchar" MaxLength="10" />
+    <Property Name="title" Type="varchar" MaxLength="60" />
+    <Property Name="recipient" Type="varchar" MaxLength="60" />
+    <Property Name="telepon" Type="varchar" MaxLength="255" />
+    <Property Name="shipping_address" Type="varchar" MaxLength="255" />
+    <Property Name="latitude" Type="varchar" MaxLength="50" />
+    <Property Name="longitude" Type="varchar" MaxLength="50" />
+    <Property Name="price" Type="money" />
+    <Property Name="status" Type="int" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="last_updated_at" Type="datetime" />
+    <Property Name="deleted_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="MS_SUPPLIER">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="supplier_id" Type="varchar" MaxLength="10" />
+    <Property Name="supplier_name" Type="varchar" MaxLength="100" />
+    <Property Name="email" Type="varchar" MaxLength="100" />
+    <Property Name="telepon" Type="varchar" MaxLength="50" />
+    <Property Name="telepon1" Type="varchar" MaxLength="13" />
+    <Property Name="telepon2" Type="varchar" MaxLength="13" />
+    <Property Name="fax" Type="varchar" MaxLength="20" />
+    <Property Name="region_id" Type="varchar" MaxLength="10" />
+    <Property Name="address1" Type="varchar" MaxLength="255" />
+    <Property Name="address2" Type="varchar" MaxLength="255" />
+    <Property Name="address3" Type="varchar" MaxLength="255" />
+    <Property Name="tax_id" Type="varchar" MaxLength="30" />
+    <Property Name="coa_id" Type="varchar" MaxLength="10" />
+    <Property Name="bank_account" Type="varchar" MaxLength="60" />
+    <Property Name="bank_id" Type="varchar" MaxLength="30" />
+    <Property Name="bank_name" Type="varchar" MaxLength="30" />
+    <Property Name="pic_name" Type="varchar" MaxLength="100" />
+    <Property Name="pic_telepon" Type="varchar" MaxLength="13" />
+    <Property Name="pic_email" Type="varchar" MaxLength="100" />
+    <Property Name="status" Type="int" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="last_updated_at" Type="datetime" />
+    <Property Name="deleted_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="MS_UOM">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="uom_id" Type="varchar" MaxLength="10" />
+    <Property Name="dimention" Type="varchar" MaxLength="12" />
+    <Property Name="long" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="wide" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="tall" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="measurement" Type="varchar" MaxLength="10" />
+    <Property Name="description" Type="varchar" MaxLength="255" />
+    <Property Name="status" Type="int" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="last_updated_at" Type="datetime" />
+    <Property Name="deleted_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="MS_USERS">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="user_id" Type="varchar" MaxLength="10" />
+    <Property Name="username" Type="varchar" MaxLength="60" />
+    <Property Name="email" Type="varchar" MaxLength="100" />
+    <Property Name="telepon" Type="varchar" MaxLength="100" />
+    <Property Name="password" Type="varchar" MaxLength="128" />
+    <Property Name="role_id" Type="varchar" MaxLength="255" />
+    <Property Name="device_id" Type="varchar" MaxLength="50" />
+    <Property Name="web_id" Type="varchar" MaxLength="50" />
+    <Property Name="otp" Type="varchar" MaxLength="6" />
+    <Property Name="pin" Type="varchar" MaxLength="10" />
+    <Property Name="refresh_token" Type="varchar" MaxLength="50" />
+    <Property Name="fcm_token" Type="varchar" MaxLength="255" />
+    <Property Name="invalid_login" Type="int" />
+    <Property Name="reset_password" Type="int" />
+    <Property Name="avatar" Type="varchar(max)" />
+    <Property Name="status" Type="int" />
+    <Property Name="company_id" Type="varchar" MaxLength="10" />
+    <Property Name="general_id" Type="varchar" MaxLength="10" />
+    <Property Name="customer_id" Type="varchar" MaxLength="10" />
+    <Property Name="user_erp" Type="varchar" MaxLength="10" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="last_updated_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="NEWS">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="title" Type="varchar" MaxLength="150" />
+    <Property Name="snippet" Type="varchar" MaxLength="255" />
+    <Property Name="content" Type="text" />
+    <Property Name="file_name" Type="varchar" MaxLength="100" />
+    <Property Name="file_ext" Type="varchar" MaxLength="5" />
+    <Property Name="content_type" Type="varchar" MaxLength="50" />
+    <Property Name="file_path" Type="varchar" MaxLength="255" />
+    <Property Name="file_binary" Type="varbinary(max)" />
+    <Property Name="file_base64" Type="varchar(max)" />
+    <Property Name="top_status" Type="int" />
+    <Property Name="top_seq" Type="int" />
+    <Property Name="status" Type="int" />
+    <Property Name="start_at" Type="datetime" />
+    <Property Name="expired_at" Type="datetime" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="last_updated_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="PENDING_ORDER">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="approve_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="order_id" Type="varchar" MaxLength="14" Nullable="false" />
+    <Property Name="order_date" Type="date" />
+    <Property Name="sales_approve_date" Type="date" />
+    <Property Name="admin_so_approve_date" Type="date" />
+    <Property Name="completed_date" Type="datetime" />
+    <Property Name="so_id" Type="varchar" MaxLength="14" />
+    <Property Name="company_id" Type="varchar" MaxLength="10" />
+    <Property Name="customer_id" Type="varchar" MaxLength="10" />
+    <Property Name="shipping_id" Type="int" />
+    <Property Name="status" Type="int" />
+    <Property Name="status_approve" Type="int" />
+    <Property Name="export_status" Type="int" />
+    <Property Name="export_at" Type="datetime" />
+    <Property Name="export_by" Type="varchar" MaxLength="10" />
+    <Property Name="remark_header_1" Type="text" />
+    <Property Name="remark_header_2" Type="text" />
+    <Property Name="remark_header_3" Type="text" />
+    <Property Name="remark_header_4" Type="text" />
+    <Property Name="remark_header_5" Type="text" />
+    <Property Name="remark_header_6" Type="text" />
+    <Property Name="remark_header_7" Type="text" />
+    <Property Name="remark_header_8" Type="text" />
+    <Property Name="remark_header_9" Type="text" />
+    <Property Name="remark_header_10" Type="text" />
+    <Property Name="remark_approve" Type="varchar" MaxLength="255" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+    <Property Name="approve_at" Type="datetime" />
+    <Property Name="approve_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="SUPPLIER_PRICE">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="supplier_id" Type="varchar" MaxLength="10" />
+    <Property Name="item_id" Type="varchar" MaxLength="10" />
+    <Property Name="seq" Type="int" />
+    <Property Name="price" Type="money" />
+    <Property Name="discount_1" Type="decimal" Precision="3" Scale="2" />
+    <Property Name="discount_2" Type="decimal" Precision="3" Scale="2" />
+    <Property Name="discount_3" Type="decimal" Precision="3" Scale="2" />
+    <Property Name="discount_4" Type="decimal" Precision="3" Scale="2" />
+    <Property Name="discount_5" Type="decimal" Precision="3" Scale="2" />
+    <Property Name="net_price" Type="money" />
+    <Property Name="special_price" Type="money" />
+    <Property Name="status" Type="int" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="TEMP_AVAILABLE_DN">
+    <Key>
+      <PropertyRef Name="idNo" />
+    </Key>
+    <Property Name="idNo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id" Type="varchar" MaxLength="200" />
+    <Property Name="parent" Type="varchar" MaxLength="200" />
+    <Property Name="parent_id" Type="varchar" MaxLength="200" />
+    <Property Name="text" Type="varchar" MaxLength="200" />
+    <Property Name="qty" Type="int" />
+    <Property Name="volume" Type="decimal" Precision="15" Scale="4" />
+    <Property Name="type" Type="varchar" MaxLength="50" />
+    <Property Name="icon" Type="varchar" MaxLength="200" />
+    <Property Name="selected" Type="int" />
+    <Property Name="status" Type="int" />
+    <Property Name="created_at" Type="date" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="TEMP_DN">
+    <Key>
+      <PropertyRef Name="idNo" />
+    </Key>
+    <Property Name="idNo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id" Type="varchar" MaxLength="200" />
+    <Property Name="hd_dnsp_id" Type="int" />
+    <Property Name="parent" Type="varchar" MaxLength="200" />
+    <Property Name="parent_id" Type="varchar" MaxLength="200" />
+    <Property Name="text" Type="varchar" MaxLength="200" />
+    <Property Name="qty" Type="int" />
+    <Property Name="volume" Type="decimal" Precision="15" Scale="4" />
+    <Property Name="type" Type="varchar" MaxLength="50" />
+    <Property Name="icon" Type="varchar" MaxLength="200" />
+    <Property Name="selected" Type="int" />
+    <Property Name="status" Type="int" />
+    <Property Name="created_at" Type="date" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="TMP_ITEMS">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nama_barang" Type="varchar" MaxLength="100" />
+    <Property Name="group_item" Type="varchar" MaxLength="100" />
+    <Property Name="mobile_item" Type="varchar" MaxLength="255" />
+    <Property Name="long" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="wide" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="tall" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="ukuran" Type="varchar" MaxLength="100" />
+    <Property Name="kode" Type="varchar" MaxLength="100" />
+    <Property Name="kode_1" Type="varchar" MaxLength="50" />
+    <Property Name="kode_2" Type="varchar" MaxLength="50" />
+    <Property Name="kode_3" Type="varchar" MaxLength="50" />
+    <Property Name="satuan" Type="varchar" MaxLength="50" />
+    <Property Name="kelompok_barang" Type="varchar" MaxLength="50" />
+    <Property Name="item_name_1" Type="varchar" MaxLength="100" />
+    <Property Name="item_name_2" Type="varchar" MaxLength="100" />
+    <Property Name="item_name_3" Type="varchar" MaxLength="100" />
+    <Property Name="item_name_4" Type="varchar" MaxLength="100" />
+    <Property Name="item_name_5" Type="varchar" MaxLength="100" />
+    <Property Name="item_name_6" Type="varchar" MaxLength="100" />
+    <Property Name="item_name_7" Type="varchar" MaxLength="100" />
+    <Property Name="item_name_8" Type="varchar" MaxLength="100" />
+    <Property Name="item_name_9" Type="varchar" MaxLength="100" />
+    <Property Name="item_name_10" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="VEHICLE">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="police_number" Type="varchar" MaxLength="20" />
+    <Property Name="brand_type" Type="varchar" MaxLength="50" />
+    <Property Name="address" Type="varchar" MaxLength="255" />
+    <Property Name="model" Type="varchar" MaxLength="50" />
+    <Property Name="assembly_year" Type="varchar" MaxLength="10" />
+    <Property Name="color" Type="varchar" MaxLength="20" />
+    <Property Name="horse_power" Type="varchar" MaxLength="10" />
+    <Property Name="chassis_number" Type="varchar" MaxLength="20" />
+    <Property Name="machine_number" Type="varchar" MaxLength="20" />
+    <Property Name="coding" Type="int" />
+    <Property Name="bpkb_number" Type="varchar" MaxLength="20" />
+    <Property Name="fuel" Type="varchar" MaxLength="20" />
+    <Property Name="weight" Type="int" />
+    <Property Name="volume_m3" Type="decimal" Precision="15" Scale="4" />
+    <Property Name="status" Type="int" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="last_updated_at" Type="datetime" />
+    <Property Name="deleted_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBSO.dbo.MV_CS_ITEMS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="MV_CS_ITEMS">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="is_po_visible" />
+      <PropertyRef Name="price" />
+      <PropertyRef Name="status_cover" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="company_id" Type="varchar" MaxLength="10" />
+    <Property Name="group_item_id" Type="varchar" MaxLength="10" />
+    <Property Name="item_id" Type="varchar" MaxLength="10" />
+    <Property Name="alias_customer" Type="varchar" MaxLength="100" />
+    <Property Name="alias_po" Type="varchar" MaxLength="100" />
+    <Property Name="is_po_visible" Type="bit" Nullable="false" />
+    <Property Name="customer_id" Type="varchar" MaxLength="10" />
+    <Property Name="price" Type="decimal" Precision="15" Scale="2" Nullable="false" />
+    <Property Name="status_cover" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBSO.dbo.MV_ITEMS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="MV_ITEMS">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="is_po_visible" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="company_id" Type="varchar" MaxLength="10" />
+    <Property Name="group_item_id" Type="varchar" MaxLength="10" />
+    <Property Name="item_id" Type="varchar" MaxLength="10" />
+    <Property Name="alias_customer" Type="varchar" MaxLength="100" />
+    <Property Name="alias_po" Type="varchar" MaxLength="100" />
+    <Property Name="is_po_visible" Type="bit" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBSO.dbo.V_APPROVAL' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="V_APPROVAL">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="approve_id" Type="varchar" MaxLength="14" />
+    <Property Name="user_approve" Type="varchar" MaxLength="10" />
+    <Property Name="id_detail" Type="int" />
+    <Property Name="order_id" Type="varchar" MaxLength="14" />
+    <Property Name="so_id" Type="varchar" MaxLength="14" />
+    <Property Name="company_id" Type="varchar" MaxLength="10" />
+    <Property Name="company_name" Type="varchar" MaxLength="60" />
+    <Property Name="item_id" Type="varchar" MaxLength="30" />
+    <Property Name="alias_customer" Type="varchar" MaxLength="100" />
+    <Property Name="item_code_1" Type="varchar" MaxLength="30" />
+    <Property Name="item_code_2" Type="varchar" MaxLength="30" />
+    <Property Name="from_qty" Type="int" />
+    <Property Name="to_qty" Type="int" />
+    <Property Name="volume" Type="decimal" Precision="15" Scale="4" />
+    <Property Name="dimention" Type="varchar" MaxLength="12" />
+    <Property Name="from_order_type" Type="varchar" MaxLength="10" />
+    <Property Name="to_order_type" Type="varchar" MaxLength="10" />
+    <Property Name="status_order" Type="int" />
+    <Property Name="status_order_name" Type="varchar" MaxLength="10" />
+    <Property Name="status_approve" Type="int" />
+    <Property Name="approve_status_name" Type="varchar" MaxLength="20" />
+    <Property Name="remark" Type="varchar" MaxLength="255" />
+    <Property Name="remark_approve" Type="varchar" MaxLength="255" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+    <Property Name="created_name" Type="varchar" MaxLength="60" />
+    <Property Name="approve_at" Type="datetime" />
+    <Property Name="approve_by" Type="varchar" MaxLength="10" />
+    <Property Name="approve_name" Type="varchar" MaxLength="60" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBSO.dbo.V_CART_HEADER' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="V_CART_HEADER">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="order_id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="order_id" Type="varchar" MaxLength="14" Nullable="false" />
+    <Property Name="order_date" Type="date" />
+    <Property Name="so_id" Type="varchar" MaxLength="14" />
+    <Property Name="company_id" Type="varchar" MaxLength="10" />
+    <Property Name="customer_id" Type="varchar" MaxLength="10" />
+    <Property Name="shipping_id" Type="int" />
+    <Property Name="shipping_address" Type="varchar" MaxLength="255" />
+    <Property Name="recipient" Type="varchar" MaxLength="60" />
+    <Property Name="title" Type="varchar" MaxLength="60" />
+    <Property Name="telepon" Type="varchar" MaxLength="255" />
+    <Property Name="status" Type="int" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="last_updated_at" Type="datetime" />
+    <Property Name="deleted_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBSO.dbo.V_CHAT' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="V_CHAT">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="order_id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="so_id" Type="varchar" MaxLength="14" />
+    <Property Name="message" Type="text" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+    <Property Name="username" Type="varchar" MaxLength="60" />
+    <Property Name="order_id" Type="varchar" MaxLength="14" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBSO.dbo.V_CS_SPECIAL_PRODUCT' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="V_CS_SPECIAL_PRODUCT">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="customer_id" />
+      <PropertyRef Name="item_id" />
+      <PropertyRef Name="id_cust" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="customer_id" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="customer_name" Type="varchar" MaxLength="60" />
+    <Property Name="item_id" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="alias_customer" Type="varchar" MaxLength="100" />
+    <Property Name="group_item_id" Type="varchar" MaxLength="10" />
+    <Property Name="group_item_name" Type="varchar" MaxLength="50" />
+    <Property Name="commission_persentage" Type="decimal" Precision="3" Scale="2" />
+    <Property Name="status" Type="int" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="last_updated_at" Type="datetime" />
+    <Property Name="deleted_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+    <Property Name="item_id_price" Type="int" />
+    <Property Name="id_cust" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBSO.dbo.V_CUSTOMER' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="V_CUSTOMER">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="company_id" Type="varchar" MaxLength="10" />
+    <Property Name="company_name" Type="varchar" MaxLength="60" />
+    <Property Name="group_id" Type="varchar" MaxLength="10" />
+    <Property Name="group_name" Type="varchar" MaxLength="60" />
+    <Property Name="sales_id" Type="varchar" MaxLength="10" />
+    <Property Name="sales_name" Type="varchar" MaxLength="60" />
+    <Property Name="region_id" Type="varchar" MaxLength="10" />
+    <Property Name="region_name" Type="varchar" MaxLength="60" />
+    <Property Name="customer_id" Type="varchar" MaxLength="10" />
+    <Property Name="customer_name" Type="varchar" MaxLength="60" />
+    <Property Name="email" Type="varchar" MaxLength="100" />
+    <Property Name="telepon" Type="varchar" MaxLength="50" />
+    <Property Name="telepon1" Type="varchar" MaxLength="13" />
+    <Property Name="telepon2" Type="varchar" MaxLength="13" />
+    <Property Name="fax" Type="varchar" MaxLength="20" />
+    <Property Name="customer_address" Type="varchar" MaxLength="255" />
+    <Property Name="latitude" Type="varchar" MaxLength="50" />
+    <Property Name="longitude" Type="varchar" MaxLength="50" />
+    <Property Name="nik" Type="varchar" MaxLength="17" />
+    <Property Name="full_name" Type="varchar" MaxLength="60" />
+    <Property Name="place_of_birth" Type="varchar" MaxLength="50" />
+    <Property Name="date_of_birth" Type="date" />
+    <Property Name="gender" Type="varchar" MaxLength="10" />
+    <Property Name="address" Type="varchar" MaxLength="255" />
+    <Property Name="rt" Type="varchar" MaxLength="3" />
+    <Property Name="rw" Type="varchar" MaxLength="3" />
+    <Property Name="village" Type="varchar" MaxLength="50" />
+    <Property Name="districts" Type="varchar" MaxLength="50" />
+    <Property Name="city" Type="varchar" MaxLength="50" />
+    <Property Name="state" Type="varchar" MaxLength="50" />
+    <Property Name="religion" Type="varchar" MaxLength="20" />
+    <Property Name="marital_status" Type="varchar" MaxLength="20" />
+    <Property Name="occupation" Type="varchar" MaxLength="50" />
+    <Property Name="nationality" Type="varchar" MaxLength="3" />
+    <Property Name="tax_id" Type="varchar" MaxLength="30" />
+    <Property Name="tax_type" Type="varchar" MaxLength="20" />
+    <Property Name="limit" Type="money" />
+    <Property Name="term" Type="int" />
+    <Property Name="margin" Type="decimal" Precision="3" Scale="1" />
+    <Property Name="special_product" Type="bit" />
+    <Property Name="coa_id" Type="varchar" MaxLength="10" />
+    <Property Name="bank_account" Type="varchar" MaxLength="60" />
+    <Property Name="bank_id" Type="varchar" MaxLength="30" />
+    <Property Name="bank_name" Type="varchar" MaxLength="30" />
+    <Property Name="is_parent" Type="int" />
+    <Property Name="parent_id" Type="varchar" MaxLength="10" />
+    <Property Name="status" Type="int" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="last_updated_at" Type="datetime" />
+    <Property Name="deleted_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBSO.dbo.V_DRIVER' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="V_DRIVER">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="nik" Type="varchar" MaxLength="17" />
+    <Property Name="full_name" Type="varchar" MaxLength="60" />
+    <Property Name="place_of_birth" Type="varchar" MaxLength="50" />
+    <Property Name="date_of_birth" Type="date" />
+    <Property Name="gender" Type="varchar" MaxLength="10" />
+    <Property Name="address" Type="varchar" MaxLength="255" />
+    <Property Name="rt" Type="varchar" MaxLength="3" />
+    <Property Name="rw" Type="varchar" MaxLength="3" />
+    <Property Name="village" Type="varchar" MaxLength="50" />
+    <Property Name="districts" Type="varchar" MaxLength="50" />
+    <Property Name="city" Type="varchar" MaxLength="50" />
+    <Property Name="state" Type="varchar" MaxLength="50" />
+    <Property Name="religion" Type="varchar" MaxLength="20" />
+    <Property Name="marital_status" Type="varchar" MaxLength="20" />
+    <Property Name="occupation" Type="varchar" MaxLength="50" />
+    <Property Name="nationality" Type="varchar" MaxLength="3" />
+    <Property Name="tax_id" Type="varchar" MaxLength="30" />
+    <Property Name="police_number" Type="varchar" MaxLength="20" />
+    <Property Name="status" Type="int" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="last_updated_at" Type="datetime" />
+    <Property Name="deleted_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBSO.dbo.V_DT_CART' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="V_DT_CART">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="order_id" />
+      <PropertyRef Name="volume" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="order_id" Type="varchar" MaxLength="14" Nullable="false" />
+    <Property Name="alias_customer" Type="varchar" MaxLength="100" />
+    <Property Name="dimention" Type="varchar" MaxLength="12" />
+    <Property Name="qty" Type="int" />
+    <Property Name="volume" Type="decimal" Precision="15" Scale="4" Nullable="false" />
+    <Property Name="item_id" Type="varchar" MaxLength="30" />
+    <Property Name="item_code_1" Type="varchar" MaxLength="30" />
+    <Property Name="item_code_2" Type="varchar" MaxLength="30" />
+    <Property Name="status" Type="int" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBSO.dbo.V_DT_DELIVERY_DNSP' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="V_DT_DELIVERY_DNSP">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="order_id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="header_id" Type="int" />
+    <Property Name="order_id" Type="varchar" MaxLength="14" Nullable="false" />
+    <Property Name="so_id" Type="varchar" MaxLength="14" />
+    <Property Name="item_id" Type="varchar" MaxLength="30" />
+    <Property Name="alias_customer" Type="varchar" MaxLength="100" />
+    <Property Name="item_code_1" Type="varchar" MaxLength="30" />
+    <Property Name="item_code_2" Type="varchar" MaxLength="30" />
+    <Property Name="qty" Type="int" />
+    <Property Name="qty_delivery" Type="int" />
+    <Property Name="volume" Type="decimal" Precision="15" Scale="4" />
+    <Property Name="dimention" Type="varchar" MaxLength="12" />
+    <Property Name="order_type" Type="varchar" MaxLength="10" />
+    <Property Name="status" Type="int" />
+    <Property Name="transaction_status" Type="varchar" MaxLength="16" />
+    <Property Name="status_header" Type="int" />
+    <Property Name="remark_detail" Type="varchar" MaxLength="255" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+    <Property Name="approve_id" Type="varchar" MaxLength="14" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBSO.dbo.V_DT_DELIVERY_ORDER' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="V_DT_DELIVERY_ORDER">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="order_id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="order_id" Type="varchar" MaxLength="14" Nullable="false" />
+    <Property Name="so_id" Type="varchar" MaxLength="14" />
+    <Property Name="item_id" Type="varchar" MaxLength="30" />
+    <Property Name="alias_customer" Type="varchar" MaxLength="100" />
+    <Property Name="item_code_1" Type="varchar" MaxLength="30" />
+    <Property Name="item_code_2" Type="varchar" MaxLength="30" />
+    <Property Name="qty" Type="int" />
+    <Property Name="qty_delivery" Type="int" />
+    <Property Name="volume" Type="decimal" Precision="15" Scale="4" />
+    <Property Name="dimention" Type="varchar" MaxLength="12" />
+    <Property Name="order_type" Type="varchar" MaxLength="10" />
+    <Property Name="status" Type="int" />
+    <Property Name="transaction_status" Type="varchar" MaxLength="16" />
+    <Property Name="status_header" Type="int" />
+    <Property Name="remark_detail" Type="varchar" MaxLength="255" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+    <Property Name="approve_id" Type="varchar" MaxLength="14" />
+    <Property Name="cover_id" Type="varchar" MaxLength="35" />
+    <Property Name="cover_name" Type="varchar" MaxLength="1000" />
+    <Property Name="cover_dimention" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBSO.dbo.V_DT_DNPSP' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="V_DT_DNPSP">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="delivery_id" Type="varchar" MaxLength="14" />
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="header_id" Type="int" />
+    <Property Name="so_id" Type="varchar" MaxLength="14" />
+    <Property Name="item_id" Type="varchar" MaxLength="30" />
+    <Property Name="so_detail_id" Type="int" />
+    <Property Name="alias_customer" Type="varchar" MaxLength="100" />
+    <Property Name="item_code_1" Type="varchar" MaxLength="30" />
+    <Property Name="item_code_2" Type="varchar" MaxLength="30" />
+    <Property Name="qty" Type="int" />
+    <Property Name="volume" Type="decimal" Precision="15" Scale="4" />
+    <Property Name="dimention" Type="varchar" MaxLength="12" />
+    <Property Name="status" Type="int" />
+    <Property Name="status_header" Type="int" />
+    <Property Name="item_qrcode" Type="varchar" MaxLength="61" />
+    <Property Name="item_qrcode_inoac" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBSO.dbo.V_DT_ITEM' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="V_DT_ITEM">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="company_id" />
+      <PropertyRef Name="is_favorite" />
+      <PropertyRef Name="dt_cover" />
+      <PropertyRef Name="status_cover" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="company_id" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="company_name" Type="varchar" MaxLength="60" />
+    <Property Name="uom_id" Type="varchar" MaxLength="12" />
+    <Property Name="Dimention" Type="varchar" MaxLength="12" />
+    <Property Name="long" Type="varchar" MaxLength="8000" />
+    <Property Name="wide" Type="varchar" MaxLength="8000" />
+    <Property Name="tall" Type="varchar" MaxLength="8000" />
+    <Property Name="measurement" Type="varchar" MaxLength="10" />
+    <Property Name="volume" Type="numeric" Precision="5" Scale="4" />
+    <Property Name="description" Type="varchar" MaxLength="255" />
+    <Property Name="item_id" Type="varchar" MaxLength="10" />
+    <Property Name="group_item_id" Type="varchar" MaxLength="10" />
+    <Property Name="external_id" Type="varchar" MaxLength="50" />
+    <Property Name="item_code_1" Type="varchar" MaxLength="30" />
+    <Property Name="item_code_2" Type="varchar" MaxLength="30" />
+    <Property Name="item_code_3" Type="varchar" MaxLength="30" />
+    <Property Name="item_code_4" Type="varchar" MaxLength="30" />
+    <Property Name="item_code_5" Type="varchar" MaxLength="30" />
+    <Property Name="item_code_6" Type="varchar" MaxLength="30" />
+    <Property Name="alias_customer" Type="varchar" MaxLength="100" />
+    <Property Name="alias_po" Type="varchar" MaxLength="100" />
+    <Property Name="status" Type="int" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="last_updated_at" Type="datetime" />
+    <Property Name="deleted_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+    <Property Name="is_favorite" Type="bit" Nullable="false" />
+    <Property Name="dt_cover" Type="int" Nullable="false" />
+    <Property Name="status_cover" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBSO.dbo.V_DT_ORDER' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="V_DT_ORDER">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="order_id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="order_id" Type="varchar" MaxLength="14" Nullable="false" />
+    <Property Name="so_id" Type="varchar" MaxLength="14" />
+    <Property Name="item_id" Type="varchar" MaxLength="30" />
+    <Property Name="alias_customer" Type="varchar" MaxLength="100" />
+    <Property Name="item_code_1" Type="varchar" MaxLength="30" />
+    <Property Name="item_code_2" Type="varchar" MaxLength="30" />
+    <Property Name="qty" Type="int" />
+    <Property Name="volume" Type="decimal" Precision="26" Scale="4" />
+    <Property Name="dimention" Type="varchar" MaxLength="12" />
+    <Property Name="order_type" Type="varchar" MaxLength="10" />
+    <Property Name="status" Type="int" />
+    <Property Name="transaction_status" Type="varchar" MaxLength="16" />
+    <Property Name="status_header" Type="int" />
+    <Property Name="remark_detail" Type="varchar" MaxLength="255" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+    <Property Name="approve_id" Type="varchar" MaxLength="14" />
+    <Property Name="cover_id" Type="varchar" MaxLength="35" />
+    <Property Name="cover_name" Type="varchar" MaxLength="1000" />
+    <Property Name="cover_dimention" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBSO.dbo.V_DT_ORDER_DBF' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="V_DT_ORDER_DBF">
+    <Key>
+      <PropertyRef Name="order_id" />
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="order_date" Type="date" />
+    <Property Name="company_id" Type="varchar" MaxLength="10" />
+    <Property Name="customer_id" Type="varchar" MaxLength="10" />
+    <Property Name="order_id" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="so_id" Type="varchar" MaxLength="14" />
+    <Property Name="seq" Type="bigint" />
+    <Property Name="order_type" Type="varchar" MaxLength="10" />
+    <Property Name="export_status" Type="int" />
+    <Property Name="external_id" Type="varchar" MaxLength="50" />
+    <Property Name="external_id_so" Type="varchar" MaxLength="50" />
+    <Property Name="external_id_spk" Type="varchar" MaxLength="50" />
+    <Property Name="external_id_sjs" Type="varchar" MaxLength="50" />
+    <Property Name="external_id_detail" Type="varchar" MaxLength="50" />
+    <Property Name="long" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="wide" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="tall" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="qty" Type="int" />
+    <Property Name="volume" Type="decimal" Precision="15" Scale="4" />
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="item_code_1" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBSO.dbo.V_FAVORITE_ITEMS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="V_FAVORITE_ITEMS">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="company_id" />
+      <PropertyRef Name="customer_id" />
+      <PropertyRef Name="is_favorite" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="company_id" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="customer_id" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="company_name" Type="varchar" MaxLength="60" />
+    <Property Name="uom_id" Type="varchar" MaxLength="12" />
+    <Property Name="Dimention" Type="varchar" MaxLength="12" />
+    <Property Name="long" Type="varchar" MaxLength="8000" />
+    <Property Name="wide" Type="varchar" MaxLength="8000" />
+    <Property Name="tall" Type="varchar" MaxLength="8000" />
+    <Property Name="measurement" Type="varchar" MaxLength="10" />
+    <Property Name="volume" Type="numeric" Precision="5" Scale="4" />
+    <Property Name="description" Type="varchar" MaxLength="255" />
+    <Property Name="item_id" Type="varchar" MaxLength="10" />
+    <Property Name="item_code_1" Type="varchar" MaxLength="30" />
+    <Property Name="item_code_2" Type="varchar" MaxLength="30" />
+    <Property Name="alias_customer" Type="varchar" MaxLength="100" />
+    <Property Name="alias_po" Type="varchar" MaxLength="100" />
+    <Property Name="status" Type="int" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="last_updated_at" Type="datetime" />
+    <Property Name="deleted_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+    <Property Name="is_favorite" Type="bit" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBSO.dbo.V_FILES' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="V_FILES">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="file_group" Type="varchar" MaxLength="50" />
+    <Property Name="title" Type="varchar" MaxLength="150" />
+    <Property Name="snippet" Type="varchar" MaxLength="255" />
+    <Property Name="file_name" Type="varchar" MaxLength="100" />
+    <Property Name="file_ext" Type="varchar" MaxLength="5" />
+    <Property Name="content_type" Type="varchar" MaxLength="50" />
+    <Property Name="file_path" Type="varchar" MaxLength="255" />
+    <Property Name="status" Type="int" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="last_updated_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBSO.dbo.V_GROUP_ACCESS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="V_GROUP_ACCESS">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="role_id" Type="varchar" MaxLength="10" />
+    <Property Name="role_name" Type="varchar" MaxLength="50" />
+    <Property Name="menu_id" Type="varchar" MaxLength="10" />
+    <Property Name="menu_name" Type="varchar" MaxLength="50" />
+    <Property Name="site_url" Type="varchar" MaxLength="50" />
+    <Property Name="icon" Type="varchar" MaxLength="50" />
+    <Property Name="parent" Type="bit" />
+    <Property Name="parent_id" Type="int" />
+    <Property Name="status" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBSO.dbo.V_HD_DNSP' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="V_HD_DNSP">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="surat_jalan" Type="varchar" MaxLength="14" />
+    <Property Name="delivery_date" Type="date" />
+    <Property Name="customer_name" Type="nvarchar(max)" />
+    <Property Name="driver_id" Type="int" />
+    <Property Name="driver_name" Type="varchar" MaxLength="60" />
+    <Property Name="vehicel_id" Type="int" />
+    <Property Name="police_number" Type="varchar" MaxLength="20" />
+    <Property Name="volume_m3" Type="decimal" Precision="15" Scale="4" />
+    <Property Name="rit" Type="int" />
+    <Property Name="start_time" Type="varchar" MaxLength="8" />
+    <Property Name="end_time" Type="varchar" MaxLength="8" />
+    <Property Name="status" Type="int" />
+    <Property Name="status_delivery" Type="varchar" MaxLength="8" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="last_updated_at" Type="datetime" />
+    <Property Name="deleted_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+    <Property Name="security_check" Type="bit" />
+    <Property Name="security_check_at" Type="datetime" />
+    <Property Name="security_sign" Type="varchar(max)" />
+    <Property Name="recived_at" Type="datetime" />
+    <Property Name="received_by" Type="varchar" MaxLength="10" />
+    <Property Name="received_name" Type="varchar" MaxLength="100" />
+    <Property Name="recived_sign" Type="varchar(max)" />
+    <Property Name="driver_sign" Type="varchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBSO.dbo.V_HD_DT_ORDER' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="V_HD_DT_ORDER">
+    <Key>
+      <PropertyRef Name="order_id" />
+      <PropertyRef Name="detail_id" />
+    </Key>
+    <Property Name="order_id" Type="varchar" MaxLength="14" Nullable="false" />
+    <Property Name="SO_ID" Type="varchar" MaxLength="14" />
+    <Property Name="order_date" Type="date" />
+    <Property Name="sales_approve_date" Type="date" />
+    <Property Name="admin_so_approve_date" Type="date" />
+    <Property Name="detail_id" Type="int" Nullable="false" />
+    <Property Name="order_type" Type="varchar" MaxLength="10" />
+    <Property Name="status" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBSO.dbo.V_HD_ORDER' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="V_HD_ORDER">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="order_id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="order_id" Type="varchar" MaxLength="14" Nullable="false" />
+    <Property Name="order_date" Type="date" />
+    <Property Name="sales_approve_date" Type="date" />
+    <Property Name="admin_so_approve_date" Type="date" />
+    <Property Name="completed_date" Type="datetime" />
+    <Property Name="so_id" Type="varchar" MaxLength="14" />
+    <Property Name="company_id" Type="varchar" MaxLength="10" />
+    <Property Name="company_name" Type="varchar" MaxLength="60" />
+    <Property Name="customer_id" Type="varchar" MaxLength="10" />
+    <Property Name="customer_name" Type="varchar" MaxLength="60" />
+    <Property Name="shipping_id" Type="int" />
+    <Property Name="title" Type="varchar" MaxLength="60" />
+    <Property Name="recipient" Type="varchar" MaxLength="60" />
+    <Property Name="telepon" Type="varchar" MaxLength="255" />
+    <Property Name="shipping_address" Type="varchar" MaxLength="255" />
+    <Property Name="status" Type="int" />
+    <Property Name="transaction_status" Type="varchar" MaxLength="16" />
+    <Property Name="remark_header_1" Type="text" />
+    <Property Name="remark_header_2" Type="text" />
+    <Property Name="remark_header_3" Type="text" />
+    <Property Name="remark_header_4" Type="text" />
+    <Property Name="remark_header_5" Type="text" />
+    <Property Name="remark_header_6" Type="text" />
+    <Property Name="remark_header_7" Type="text" />
+    <Property Name="remark_header_8" Type="text" />
+    <Property Name="remark_header_9" Type="text" />
+    <Property Name="remark_header_10" Type="text" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="invoice_file" Type="varchar" MaxLength="255" />
+    <Property Name="invoice_base64" Type="varchar(max)" />
+    <Property Name="export_status" Type="int" />
+    <Property Name="export_at" Type="datetime" />
+    <Property Name="export_by" Type="varchar" MaxLength="10" />
+    <Property Name="source_id" Type="varchar" MaxLength="100" />
+    <Property Name="source_name" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBSO.dbo.V_ITEM' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="V_ITEM">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="is_po_visible" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="company_id" Type="varchar" MaxLength="10" />
+    <Property Name="company_name" Type="varchar" MaxLength="60" />
+    <Property Name="group_item_id" Type="varchar" MaxLength="10" />
+    <Property Name="group_item_name" Type="varchar" MaxLength="50" />
+    <Property Name="item_id" Type="varchar" MaxLength="10" />
+    <Property Name="item_name_1" Type="varchar" MaxLength="100" />
+    <Property Name="item_name_2" Type="varchar" MaxLength="100" />
+    <Property Name="item_name_3" Type="varchar" MaxLength="100" />
+    <Property Name="item_name_4" Type="varchar" MaxLength="100" />
+    <Property Name="item_name_5" Type="varchar" MaxLength="100" />
+    <Property Name="item_name_6" Type="varchar" MaxLength="100" />
+    <Property Name="item_name_7" Type="varchar" MaxLength="100" />
+    <Property Name="item_name_8" Type="varchar" MaxLength="100" />
+    <Property Name="item_name_9" Type="varchar" MaxLength="100" />
+    <Property Name="item_name_10" Type="varchar" MaxLength="100" />
+    <Property Name="foam_id" Type="varchar" MaxLength="10" />
+    <Property Name="supplier_id" Type="varchar" MaxLength="10" />
+    <Property Name="external_id" Type="varchar" MaxLength="50" />
+    <Property Name="external_id_1" Type="varchar" MaxLength="50" />
+    <Property Name="external_id_2" Type="varchar" MaxLength="50" />
+    <Property Name="external_id_3" Type="varchar" MaxLength="50" />
+    <Property Name="external_id_4" Type="varchar" MaxLength="50" />
+    <Property Name="external_id_5" Type="varchar" MaxLength="50" />
+    <Property Name="alias_customer" Type="varchar" MaxLength="100" />
+    <Property Name="alias_po" Type="varchar" MaxLength="100" />
+    <Property Name="measurement" Type="varchar" MaxLength="10" />
+    <Property Name="is_po_visible" Type="bit" Nullable="false" />
+    <Property Name="price" Type="money" />
+    <Property Name="status" Type="int" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="last_updated_at" Type="datetime" />
+    <Property Name="deleted_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+    <Property Name="base64_image" Type="varchar(max)" />
+    <Property Name="file_name" Type="varchar" MaxLength="100" />
+    <Property Name="file_path" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBSO.dbo.V_LOG_LOGIN' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="V_LOG_LOGIN">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="user_id" Type="varchar" MaxLength="10" />
+    <Property Name="username" Type="varchar" MaxLength="60" />
+    <Property Name="telepon" Type="varchar" MaxLength="100" />
+    <Property Name="role_name" Type="varchar" MaxLength="50" />
+    <Property Name="login_at" Type="datetime" />
+    <Property Name="login_status" Type="int" />
+    <Property Name="message" Type="varchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBSO.dbo.V_LOGIN' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="V_LOGIN">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="company_id" Type="varchar" MaxLength="10" />
+    <Property Name="user_id" Type="varchar" MaxLength="10" />
+    <Property Name="user_erp" Type="varchar" MaxLength="10" />
+    <Property Name="general_id" Type="varchar" MaxLength="10" />
+    <Property Name="username" Type="varchar" MaxLength="60" />
+    <Property Name="email" Type="varchar" MaxLength="100" />
+    <Property Name="telepon" Type="varchar" MaxLength="100" />
+    <Property Name="password" Type="varchar" MaxLength="128" />
+    <Property Name="invalid_login" Type="int" />
+    <Property Name="reset_password" Type="int" />
+    <Property Name="role_id" Type="varchar" MaxLength="255" />
+    <Property Name="role" Type="varchar" MaxLength="50" />
+    <Property Name="status" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBSO.dbo.V_MS_PRICE' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="V_MS_PRICE">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="item_id" Type="varchar" MaxLength="10" />
+    <Property Name="seq" Type="int" />
+    <Property Name="alias_customer" Type="varchar" MaxLength="100" />
+    <Property Name="alias_po" Type="varchar" MaxLength="100" />
+    <Property Name="company_id" Type="varchar" MaxLength="10" />
+    <Property Name="company_name" Type="varchar" MaxLength="60" />
+    <Property Name="price_1" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="desc_1" Type="varchar" MaxLength="50" />
+    <Property Name="price_2" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="desc_2" Type="varchar" MaxLength="50" />
+    <Property Name="price_3" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="desc_3" Type="varchar" MaxLength="50" />
+    <Property Name="price_4" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="desc_4" Type="varchar" MaxLength="50" />
+    <Property Name="price_5" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="desc_5" Type="varchar" MaxLength="50" />
+    <Property Name="price_6" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="desc_6" Type="varchar" MaxLength="50" />
+    <Property Name="price_7" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="desc_7" Type="varchar" MaxLength="50" />
+    <Property Name="price_8" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="desc_8" Type="varchar" MaxLength="50" />
+    <Property Name="price_9" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="desc_9" Type="varchar" MaxLength="50" />
+    <Property Name="price_10" Type="decimal" Precision="15" Scale="2" />
+    <Property Name="desc_10" Type="varchar" MaxLength="50" />
+    <Property Name="status" Type="int" />
+    <Property Name="start_at" Type="datetime" />
+    <Property Name="created_at" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBSO.dbo.V_PENDING_ORDER' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="V_PENDING_ORDER">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="approve_id" />
+      <PropertyRef Name="order_id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="approve_id" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="order_id" Type="varchar" MaxLength="14" Nullable="false" />
+    <Property Name="order_date" Type="date" />
+    <Property Name="sales_approve_date" Type="date" />
+    <Property Name="admin_so_approve_date" Type="date" />
+    <Property Name="completed_date" Type="datetime" />
+    <Property Name="so_id" Type="varchar" MaxLength="14" />
+    <Property Name="company_id" Type="varchar" MaxLength="10" />
+    <Property Name="company_name" Type="varchar" MaxLength="60" />
+    <Property Name="customer_id" Type="varchar" MaxLength="10" />
+    <Property Name="customer_name" Type="varchar" MaxLength="60" />
+    <Property Name="shipping_id" Type="int" />
+    <Property Name="title" Type="varchar" MaxLength="60" />
+    <Property Name="recipient" Type="varchar" MaxLength="60" />
+    <Property Name="telepon" Type="varchar" MaxLength="255" />
+    <Property Name="shipping_address" Type="varchar" MaxLength="255" />
+    <Property Name="status" Type="int" />
+    <Property Name="transaction_status" Type="varchar" MaxLength="16" />
+    <Property Name="status_approve" Type="int" />
+    <Property Name="approve_status_name" Type="varchar" MaxLength="20" />
+    <Property Name="remark_header_1" Type="text" />
+    <Property Name="remark_header_2" Type="text" />
+    <Property Name="remark_header_3" Type="text" />
+    <Property Name="remark_header_4" Type="text" />
+    <Property Name="remark_header_5" Type="text" />
+    <Property Name="remark_header_6" Type="text" />
+    <Property Name="remark_header_7" Type="text" />
+    <Property Name="remark_header_8" Type="text" />
+    <Property Name="remark_header_9" Type="text" />
+    <Property Name="remark_header_10" Type="text" />
+    <Property Name="remark_approve" Type="varchar" MaxLength="255" />
+    <Property Name="invoice_file" Type="varchar" MaxLength="255" />
+    <Property Name="invoice_base64" Type="varchar(max)" />
+    <Property Name="export_status" Type="int" />
+    <Property Name="export_at" Type="datetime" />
+    <Property Name="export_by" Type="varchar" MaxLength="10" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+    <Property Name="created_name" Type="varchar" MaxLength="60" />
+    <Property Name="approve_at" Type="datetime" />
+    <Property Name="approve_by" Type="varchar" MaxLength="10" />
+    <Property Name="approve_name" Type="varchar" MaxLength="60" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBSO.dbo.V_RPT_DNSP' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="V_RPT_DNSP">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="driver_id" Type="int" />
+    <Property Name="full_name" Type="varchar" MaxLength="60" />
+    <Property Name="police_number" Type="varchar" MaxLength="20" />
+    <Property Name="rit" Type="int" />
+    <Property Name="delivery_date" Type="date" />
+    <Property Name="so_id" Type="varchar" MaxLength="14" />
+    <Property Name="order_type" Type="varchar" MaxLength="10" />
+    <Property Name="start_time" Type="varchar" MaxLength="8" />
+    <Property Name="end_time" Type="varchar" MaxLength="8" />
+    <Property Name="item_code_1" Type="varchar" MaxLength="30" />
+    <Property Name="item_code_2" Type="varchar" MaxLength="30" />
+    <Property Name="item_code_3" Type="varchar" MaxLength="30" />
+    <Property Name="item_code_4" Type="varchar" MaxLength="30" />
+    <Property Name="item_code_5" Type="varchar" MaxLength="30" />
+    <Property Name="item_code_6" Type="varchar" MaxLength="30" />
+    <Property Name="status" Type="int" />
+    <Property Name="source_name" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBSO.dbo.V_SLIDERS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="V_SLIDERS">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="file_name" Type="varchar" MaxLength="100" />
+    <Property Name="file_ext" Type="varchar" MaxLength="5" />
+    <Property Name="content_type" Type="varchar" MaxLength="50" />
+    <Property Name="file_path" Type="varchar" MaxLength="255" />
+    <Property Name="file_base64" Type="varchar(max)" />
+    <Property Name="status" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBSO.dbo.V_SO_ID' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="V_SO_ID">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="so_id" Type="varchar" MaxLength="14" />
+    <Property Name="item_id" Type="varchar" MaxLength="30" />
+    <Property Name="alias_customer" Type="varchar" MaxLength="100" />
+    <Property Name="qty" Type="int" />
+    <Property Name="dimention" Type="varchar" MaxLength="12" />
+    <Property Name="order_type" Type="varchar" MaxLength="10" />
+    <Property Name="company_id" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBSO.dbo.V_SUPPLIER' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="V_SUPPLIER">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="supplier_id" Type="varchar" MaxLength="10" />
+    <Property Name="supplier_name" Type="varchar" MaxLength="100" />
+    <Property Name="email" Type="varchar" MaxLength="100" />
+    <Property Name="telepon" Type="varchar" MaxLength="50" />
+    <Property Name="telepon1" Type="varchar" MaxLength="13" />
+    <Property Name="telepon2" Type="varchar" MaxLength="13" />
+    <Property Name="fax" Type="varchar" MaxLength="20" />
+    <Property Name="region_id" Type="varchar" MaxLength="10" />
+    <Property Name="region_name" Type="varchar" MaxLength="60" />
+    <Property Name="address1" Type="varchar" MaxLength="255" />
+    <Property Name="address2" Type="varchar" MaxLength="255" />
+    <Property Name="address3" Type="varchar" MaxLength="255" />
+    <Property Name="tax_id" Type="varchar" MaxLength="30" />
+    <Property Name="coa_id" Type="varchar" MaxLength="10" />
+    <Property Name="bank_account" Type="varchar" MaxLength="60" />
+    <Property Name="bank_id" Type="varchar" MaxLength="30" />
+    <Property Name="bank_name" Type="varchar" MaxLength="30" />
+    <Property Name="pic_name" Type="varchar" MaxLength="100" />
+    <Property Name="pic_telepon" Type="varchar" MaxLength="13" />
+    <Property Name="pic_email" Type="varchar" MaxLength="100" />
+    <Property Name="status" Type="int" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="last_updated_at" Type="datetime" />
+    <Property Name="deleted_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBSO.dbo.V_SUPPLIER_PRICE' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="V_SUPPLIER_PRICE">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="supplier_id" Type="varchar" MaxLength="10" />
+    <Property Name="supplier_name" Type="varchar" MaxLength="100" />
+    <Property Name="item_id" Type="varchar" MaxLength="10" />
+    <Property Name="foam_id" Type="varchar" MaxLength="10" />
+    <Property Name="alias_customer" Type="varchar" MaxLength="100" />
+    <Property Name="alias_po" Type="varchar" MaxLength="100" />
+    <Property Name="max_seq" Type="int" />
+    <Property Name="price" Type="money" />
+    <Property Name="discount_1" Type="decimal" Precision="3" Scale="2" />
+    <Property Name="discount_2" Type="decimal" Precision="3" Scale="2" />
+    <Property Name="discount_3" Type="decimal" Precision="3" Scale="2" />
+    <Property Name="discount_4" Type="decimal" Precision="3" Scale="2" />
+    <Property Name="discount_5" Type="decimal" Precision="3" Scale="2" />
+    <Property Name="net_price" Type="money" />
+    <Property Name="special_price" Type="money" />
+    <Property Name="status" Type="int" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBSO.dbo.V_TRANSACTION' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="V_TRANSACTION">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="order_id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="order_id" Type="varchar" MaxLength="14" Nullable="false" />
+    <Property Name="order_date" Type="date" />
+    <Property Name="completed_date" Type="datetime" />
+    <Property Name="sales_approve_date" Type="date" />
+    <Property Name="admin_so_approve_date" Type="date" />
+    <Property Name="cancel_date" Type="datetime" />
+    <Property Name="report_date" Type="datetime" />
+    <Property Name="so_id" Type="varchar" MaxLength="14" />
+    <Property Name="company_id" Type="varchar" MaxLength="10" />
+    <Property Name="customer_id" Type="varchar" MaxLength="10" />
+    <Property Name="shipping_id" Type="int" />
+    <Property Name="title" Type="varchar" MaxLength="60" />
+    <Property Name="recipient" Type="varchar" MaxLength="60" />
+    <Property Name="telepon" Type="varchar" MaxLength="255" />
+    <Property Name="shipping_address" Type="varchar" MaxLength="255" />
+    <Property Name="volume" Type="decimal" Precision="38" Scale="4" />
+    <Property Name="status" Type="int" />
+    <Property Name="transaction_status" Type="varchar" MaxLength="16" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="last_updated_at" Type="datetime" />
+    <Property Name="deleted_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+    <Property Name="sales_id" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBSO.dbo.V_UOM' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="V_UOM">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="uom_id" Type="varchar" MaxLength="10" />
+    <Property Name="dimention" Type="varchar" MaxLength="12" />
+    <Property Name="long" Type="varchar" MaxLength="8000" />
+    <Property Name="wide" Type="varchar" MaxLength="8000" />
+    <Property Name="tall" Type="varchar" MaxLength="8000" />
+    <Property Name="volume" Type="decimal" Precision="15" Scale="4" />
+    <Property Name="measurement" Type="varchar" MaxLength="10" />
+    <Property Name="description" Type="varchar" MaxLength="255" />
+    <Property Name="status" Type="int" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="last_updated_at" Type="datetime" />
+    <Property Name="deleted_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBSO.dbo.V_USER' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="V_USER">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="company_id" Type="varchar" MaxLength="10" />
+    <Property Name="user_id" Type="varchar" MaxLength="10" />
+    <Property Name="role_id" Type="varchar" MaxLength="255" />
+    <Property Name="parent_id" Type="varchar" MaxLength="10" />
+    <Property Name="parent_name" Type="varchar" MaxLength="60" />
+    <Property Name="parent_phone" Type="varchar" MaxLength="100" />
+    <Property Name="general_id" Type="varchar" MaxLength="10" />
+    <Property Name="user_erp" Type="varchar" MaxLength="10" />
+    <Property Name="role" Type="varchar" MaxLength="50" />
+    <Property Name="username" Type="varchar" MaxLength="60" />
+    <Property Name="email" Type="varchar" MaxLength="100" />
+    <Property Name="telepon" Type="varchar" MaxLength="100" />
+    <Property Name="device_id" Type="varchar" MaxLength="50" />
+    <Property Name="fcm_token" Type="varchar" MaxLength="255" />
+    <Property Name="refresh_token" Type="varchar" MaxLength="50" />
+    <Property Name="invalid_login" Type="int" />
+    <Property Name="reset_password" Type="int" />
+    <Property Name="avatar" Type="varchar(max)" />
+    <Property Name="status" Type="int" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="last_updated_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <Function Name="SP_GET_DATA_ITEM_SO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="item_code" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_RN_ITEM" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_USER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="DBERPModelStoreContainer">
+    <EntitySet Name="APPROVAL_ORDER" EntityType="Self.APPROVAL_ORDER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CHAT" EntityType="Self.CHAT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DRAFT_DT_DNSP" EntityType="Self.DRAFT_DT_DNSP" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DRIVER" EntityType="Self.DRIVER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DT_DNPSP" EntityType="Self.DT_DNPSP" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DT_ITEMS" EntityType="Self.DT_ITEMS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DT_ORDER" EntityType="Self.DT_ORDER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EMAIL_SETUP" EntityType="Self.EMAIL_SETUP" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FAVORITE_ITEMS" EntityType="Self.FAVORITE_ITEMS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FILES" EntityType="Self.FILES" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HD_DNPSP" EntityType="Self.HD_DNPSP" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HD_ORDER" EntityType="Self.HD_ORDER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LOG_DELIVERY" EntityType="Self.LOG_DELIVERY" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LOG_TRANSACTION" EntityType="Self.LOG_TRANSACTION" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MS_COMPANY" EntityType="Self.MS_COMPANY" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MS_CS_SPECIAL_PRODUCT" EntityType="Self.MS_CS_SPECIAL_PRODUCT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MS_CUSTOMER" EntityType="Self.MS_CUSTOMER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MS_FIELDS" EntityType="Self.MS_FIELDS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MS_FOAM" EntityType="Self.MS_FOAM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MS_GROUP_ACCESS" EntityType="Self.MS_GROUP_ACCESS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MS_GROUP_CUSTOMER" EntityType="Self.MS_GROUP_CUSTOMER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MS_GROUP_ITEMS" EntityType="Self.MS_GROUP_ITEMS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MS_HOME_SLIDERS" EntityType="Self.MS_HOME_SLIDERS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MS_ITEMS" EntityType="Self.MS_ITEMS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MS_LOG_LOGIN" EntityType="Self.MS_LOG_LOGIN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MS_MENU" EntityType="Self.MS_MENU" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MS_NOTIFICATION" EntityType="Self.MS_NOTIFICATION" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MS_PRICE" EntityType="Self.MS_PRICE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MS_REGION" EntityType="Self.MS_REGION" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MS_ROLES" EntityType="Self.MS_ROLES" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MS_SALES" EntityType="Self.MS_SALES" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MS_SEND_NOTIFICATION" EntityType="Self.MS_SEND_NOTIFICATION" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MS_SHIPPING_ADDRESS" EntityType="Self.MS_SHIPPING_ADDRESS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MS_SUPPLIER" EntityType="Self.MS_SUPPLIER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MS_UOM" EntityType="Self.MS_UOM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MS_USERS" EntityType="Self.MS_USERS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NEWS" EntityType="Self.NEWS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PENDING_ORDER" EntityType="Self.PENDING_ORDER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SUPPLIER_PRICE" EntityType="Self.SUPPLIER_PRICE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TEMP_AVAILABLE_DN" EntityType="Self.TEMP_AVAILABLE_DN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TEMP_DN" EntityType="Self.TEMP_DN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TMP_ITEMS" EntityType="Self.TMP_ITEMS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VEHICLE" EntityType="Self.VEHICLE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MV_CS_ITEMS" EntityType="Self.MV_CS_ITEMS" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [MV_CS_ITEMS].[id] AS [id], 
+    [MV_CS_ITEMS].[company_id] AS [company_id], 
+    [MV_CS_ITEMS].[group_item_id] AS [group_item_id], 
+    [MV_CS_ITEMS].[item_id] AS [item_id], 
+    [MV_CS_ITEMS].[alias_customer] AS [alias_customer], 
+    [MV_CS_ITEMS].[alias_po] AS [alias_po], 
+    [MV_CS_ITEMS].[is_po_visible] AS [is_po_visible], 
+    [MV_CS_ITEMS].[customer_id] AS [customer_id], 
+    [MV_CS_ITEMS].[price] AS [price], 
+    [MV_CS_ITEMS].[status_cover] AS [status_cover]
+    FROM [dbo].[MV_CS_ITEMS] AS [MV_CS_ITEMS]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MV_ITEMS" EntityType="Self.MV_ITEMS" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [MV_ITEMS].[id] AS [id], 
+    [MV_ITEMS].[company_id] AS [company_id], 
+    [MV_ITEMS].[group_item_id] AS [group_item_id], 
+    [MV_ITEMS].[item_id] AS [item_id], 
+    [MV_ITEMS].[alias_customer] AS [alias_customer], 
+    [MV_ITEMS].[alias_po] AS [alias_po], 
+    [MV_ITEMS].[is_po_visible] AS [is_po_visible]
+    FROM [dbo].[MV_ITEMS] AS [MV_ITEMS]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="V_APPROVAL" EntityType="Self.V_APPROVAL" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [V_APPROVAL].[id] AS [id], 
+    [V_APPROVAL].[approve_id] AS [approve_id], 
+    [V_APPROVAL].[user_approve] AS [user_approve], 
+    [V_APPROVAL].[id_detail] AS [id_detail], 
+    [V_APPROVAL].[order_id] AS [order_id], 
+    [V_APPROVAL].[so_id] AS [so_id], 
+    [V_APPROVAL].[company_id] AS [company_id], 
+    [V_APPROVAL].[company_name] AS [company_name], 
+    [V_APPROVAL].[item_id] AS [item_id], 
+    [V_APPROVAL].[alias_customer] AS [alias_customer], 
+    [V_APPROVAL].[item_code_1] AS [item_code_1], 
+    [V_APPROVAL].[item_code_2] AS [item_code_2], 
+    [V_APPROVAL].[from_qty] AS [from_qty], 
+    [V_APPROVAL].[to_qty] AS [to_qty], 
+    [V_APPROVAL].[volume] AS [volume], 
+    [V_APPROVAL].[dimention] AS [dimention], 
+    [V_APPROVAL].[from_order_type] AS [from_order_type], 
+    [V_APPROVAL].[to_order_type] AS [to_order_type], 
+    [V_APPROVAL].[status_order] AS [status_order], 
+    [V_APPROVAL].[status_order_name] AS [status_order_name], 
+    [V_APPROVAL].[status_approve] AS [status_approve], 
+    [V_APPROVAL].[approve_status_name] AS [approve_status_name], 
+    [V_APPROVAL].[remark] AS [remark], 
+    [V_APPROVAL].[remark_approve] AS [remark_approve], 
+    [V_APPROVAL].[created_at] AS [created_at], 
+    [V_APPROVAL].[created_by] AS [created_by], 
+    [V_APPROVAL].[created_name] AS [created_name], 
+    [V_APPROVAL].[approve_at] AS [approve_at], 
+    [V_APPROVAL].[approve_by] AS [approve_by], 
+    [V_APPROVAL].[approve_name] AS [approve_name]
+    FROM [dbo].[V_APPROVAL] AS [V_APPROVAL]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="V_CART_HEADER" EntityType="Self.V_CART_HEADER" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [V_CART_HEADER].[id] AS [id], 
+    [V_CART_HEADER].[order_id] AS [order_id], 
+    [V_CART_HEADER].[order_date] AS [order_date], 
+    [V_CART_HEADER].[so_id] AS [so_id], 
+    [V_CART_HEADER].[company_id] AS [company_id], 
+    [V_CART_HEADER].[customer_id] AS [customer_id], 
+    [V_CART_HEADER].[shipping_id] AS [shipping_id], 
+    [V_CART_HEADER].[shipping_address] AS [shipping_address], 
+    [V_CART_HEADER].[recipient] AS [recipient], 
+    [V_CART_HEADER].[title] AS [title], 
+    [V_CART_HEADER].[telepon] AS [telepon], 
+    [V_CART_HEADER].[status] AS [status], 
+    [V_CART_HEADER].[created_at] AS [created_at], 
+    [V_CART_HEADER].[updated_at] AS [updated_at], 
+    [V_CART_HEADER].[last_updated_at] AS [last_updated_at], 
+    [V_CART_HEADER].[deleted_at] AS [deleted_at], 
+    [V_CART_HEADER].[created_by] AS [created_by]
+    FROM [dbo].[V_CART_HEADER] AS [V_CART_HEADER]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="V_CHAT" EntityType="Self.V_CHAT" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [V_CHAT].[id] AS [id], 
+    [V_CHAT].[so_id] AS [so_id], 
+    [V_CHAT].[message] AS [message], 
+    [V_CHAT].[created_at] AS [created_at], 
+    [V_CHAT].[created_by] AS [created_by], 
+    [V_CHAT].[username] AS [username], 
+    [V_CHAT].[order_id] AS [order_id]
+    FROM [dbo].[V_CHAT] AS [V_CHAT]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="V_CS_SPECIAL_PRODUCT" EntityType="Self.V_CS_SPECIAL_PRODUCT" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [V_CS_SPECIAL_PRODUCT].[id] AS [id], 
+    [V_CS_SPECIAL_PRODUCT].[customer_id] AS [customer_id], 
+    [V_CS_SPECIAL_PRODUCT].[customer_name] AS [customer_name], 
+    [V_CS_SPECIAL_PRODUCT].[item_id] AS [item_id], 
+    [V_CS_SPECIAL_PRODUCT].[alias_customer] AS [alias_customer], 
+    [V_CS_SPECIAL_PRODUCT].[group_item_id] AS [group_item_id], 
+    [V_CS_SPECIAL_PRODUCT].[group_item_name] AS [group_item_name], 
+    [V_CS_SPECIAL_PRODUCT].[commission_persentage] AS [commission_persentage], 
+    [V_CS_SPECIAL_PRODUCT].[status] AS [status], 
+    [V_CS_SPECIAL_PRODUCT].[created_at] AS [created_at], 
+    [V_CS_SPECIAL_PRODUCT].[updated_at] AS [updated_at], 
+    [V_CS_SPECIAL_PRODUCT].[last_updated_at] AS [last_updated_at], 
+    [V_CS_SPECIAL_PRODUCT].[deleted_at] AS [deleted_at], 
+    [V_CS_SPECIAL_PRODUCT].[created_by] AS [created_by], 
+    [V_CS_SPECIAL_PRODUCT].[item_id_price] AS [item_id_price], 
+    [V_CS_SPECIAL_PRODUCT].[id_cust] AS [id_cust]
+    FROM [dbo].[V_CS_SPECIAL_PRODUCT] AS [V_CS_SPECIAL_PRODUCT]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="V_CUSTOMER" EntityType="Self.V_CUSTOMER" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [V_CUSTOMER].[id] AS [id], 
+    [V_CUSTOMER].[company_id] AS [company_id], 
+    [V_CUSTOMER].[company_name] AS [company_name], 
+    [V_CUSTOMER].[group_id] AS [group_id], 
+    [V_CUSTOMER].[group_name] AS [group_name], 
+    [V_CUSTOMER].[sales_id] AS [sales_id], 
+    [V_CUSTOMER].[sales_name] AS [sales_name], 
+    [V_CUSTOMER].[region_id] AS [region_id], 
+    [V_CUSTOMER].[region_name] AS [region_name], 
+    [V_CUSTOMER].[customer_id] AS [customer_id], 
+    [V_CUSTOMER].[customer_name] AS [customer_name], 
+    [V_CUSTOMER].[email] AS [email], 
+    [V_CUSTOMER].[telepon] AS [telepon], 
+    [V_CUSTOMER].[telepon1] AS [telepon1], 
+    [V_CUSTOMER].[telepon2] AS [telepon2], 
+    [V_CUSTOMER].[fax] AS [fax], 
+    [V_CUSTOMER].[customer_address] AS [customer_address], 
+    [V_CUSTOMER].[latitude] AS [latitude], 
+    [V_CUSTOMER].[longitude] AS [longitude], 
+    [V_CUSTOMER].[nik] AS [nik], 
+    [V_CUSTOMER].[full_name] AS [full_name], 
+    [V_CUSTOMER].[place_of_birth] AS [place_of_birth], 
+    [V_CUSTOMER].[date_of_birth] AS [date_of_birth], 
+    [V_CUSTOMER].[gender] AS [gender], 
+    [V_CUSTOMER].[address] AS [address], 
+    [V_CUSTOMER].[rt] AS [rt], 
+    [V_CUSTOMER].[rw] AS [rw], 
+    [V_CUSTOMER].[village] AS [village], 
+    [V_CUSTOMER].[districts] AS [districts], 
+    [V_CUSTOMER].[city] AS [city], 
+    [V_CUSTOMER].[state] AS [state], 
+    [V_CUSTOMER].[religion] AS [religion], 
+    [V_CUSTOMER].[marital_status] AS [marital_status], 
+    [V_CUSTOMER].[occupation] AS [occupation], 
+    [V_CUSTOMER].[nationality] AS [nationality], 
+    [V_CUSTOMER].[tax_id] AS [tax_id], 
+    [V_CUSTOMER].[tax_type] AS [tax_type], 
+    [V_CUSTOMER].[limit] AS [limit], 
+    [V_CUSTOMER].[term] AS [term], 
+    [V_CUSTOMER].[margin] AS [margin], 
+    [V_CUSTOMER].[special_product] AS [special_product], 
+    [V_CUSTOMER].[coa_id] AS [coa_id], 
+    [V_CUSTOMER].[bank_account] AS [bank_account], 
+    [V_CUSTOMER].[bank_id] AS [bank_id], 
+    [V_CUSTOMER].[bank_name] AS [bank_name], 
+    [V_CUSTOMER].[is_parent] AS [is_parent], 
+    [V_CUSTOMER].[parent_id] AS [parent_id], 
+    [V_CUSTOMER].[status] AS [status], 
+    [V_CUSTOMER].[created_at] AS [created_at], 
+    [V_CUSTOMER].[updated_at] AS [updated_at], 
+    [V_CUSTOMER].[last_updated_at] AS [last_updated_at], 
+    [V_CUSTOMER].[deleted_at] AS [deleted_at], 
+    [V_CUSTOMER].[created_by] AS [created_by]
+    FROM [dbo].[V_CUSTOMER] AS [V_CUSTOMER]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="V_DRIVER" EntityType="Self.V_DRIVER" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [V_DRIVER].[id] AS [id], 
+    [V_DRIVER].[nik] AS [nik], 
+    [V_DRIVER].[full_name] AS [full_name], 
+    [V_DRIVER].[place_of_birth] AS [place_of_birth], 
+    [V_DRIVER].[date_of_birth] AS [date_of_birth], 
+    [V_DRIVER].[gender] AS [gender], 
+    [V_DRIVER].[address] AS [address], 
+    [V_DRIVER].[rt] AS [rt], 
+    [V_DRIVER].[rw] AS [rw], 
+    [V_DRIVER].[village] AS [village], 
+    [V_DRIVER].[districts] AS [districts], 
+    [V_DRIVER].[city] AS [city], 
+    [V_DRIVER].[state] AS [state], 
+    [V_DRIVER].[religion] AS [religion], 
+    [V_DRIVER].[marital_status] AS [marital_status], 
+    [V_DRIVER].[occupation] AS [occupation], 
+    [V_DRIVER].[nationality] AS [nationality], 
+    [V_DRIVER].[tax_id] AS [tax_id], 
+    [V_DRIVER].[police_number] AS [police_number], 
+    [V_DRIVER].[status] AS [status], 
+    [V_DRIVER].[created_at] AS [created_at], 
+    [V_DRIVER].[updated_at] AS [updated_at], 
+    [V_DRIVER].[last_updated_at] AS [last_updated_at], 
+    [V_DRIVER].[deleted_at] AS [deleted_at], 
+    [V_DRIVER].[created_by] AS [created_by]
+    FROM [dbo].[V_DRIVER] AS [V_DRIVER]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="V_DT_CART" EntityType="Self.V_DT_CART" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [V_DT_CART].[id] AS [id], 
+    [V_DT_CART].[order_id] AS [order_id], 
+    [V_DT_CART].[alias_customer] AS [alias_customer], 
+    [V_DT_CART].[dimention] AS [dimention], 
+    [V_DT_CART].[qty] AS [qty], 
+    [V_DT_CART].[volume] AS [volume], 
+    [V_DT_CART].[item_id] AS [item_id], 
+    [V_DT_CART].[item_code_1] AS [item_code_1], 
+    [V_DT_CART].[item_code_2] AS [item_code_2], 
+    [V_DT_CART].[status] AS [status], 
+    [V_DT_CART].[created_by] AS [created_by]
+    FROM [dbo].[V_DT_CART] AS [V_DT_CART]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="V_DT_DELIVERY_DNSP" EntityType="Self.V_DT_DELIVERY_DNSP" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [V_DT_DELIVERY_DNSP].[id] AS [id], 
+    [V_DT_DELIVERY_DNSP].[header_id] AS [header_id], 
+    [V_DT_DELIVERY_DNSP].[order_id] AS [order_id], 
+    [V_DT_DELIVERY_DNSP].[so_id] AS [so_id], 
+    [V_DT_DELIVERY_DNSP].[item_id] AS [item_id], 
+    [V_DT_DELIVERY_DNSP].[alias_customer] AS [alias_customer], 
+    [V_DT_DELIVERY_DNSP].[item_code_1] AS [item_code_1], 
+    [V_DT_DELIVERY_DNSP].[item_code_2] AS [item_code_2], 
+    [V_DT_DELIVERY_DNSP].[qty] AS [qty], 
+    [V_DT_DELIVERY_DNSP].[qty_delivery] AS [qty_delivery], 
+    [V_DT_DELIVERY_DNSP].[volume] AS [volume], 
+    [V_DT_DELIVERY_DNSP].[dimention] AS [dimention], 
+    [V_DT_DELIVERY_DNSP].[order_type] AS [order_type], 
+    [V_DT_DELIVERY_DNSP].[status] AS [status], 
+    [V_DT_DELIVERY_DNSP].[transaction_status] AS [transaction_status], 
+    [V_DT_DELIVERY_DNSP].[status_header] AS [status_header], 
+    [V_DT_DELIVERY_DNSP].[remark_detail] AS [remark_detail], 
+    [V_DT_DELIVERY_DNSP].[created_at] AS [created_at], 
+    [V_DT_DELIVERY_DNSP].[created_by] AS [created_by], 
+    [V_DT_DELIVERY_DNSP].[approve_id] AS [approve_id]
+    FROM [dbo].[V_DT_DELIVERY_DNSP] AS [V_DT_DELIVERY_DNSP]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="V_DT_DELIVERY_ORDER" EntityType="Self.V_DT_DELIVERY_ORDER" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [V_DT_DELIVERY_ORDER].[id] AS [id], 
+    [V_DT_DELIVERY_ORDER].[order_id] AS [order_id], 
+    [V_DT_DELIVERY_ORDER].[so_id] AS [so_id], 
+    [V_DT_DELIVERY_ORDER].[item_id] AS [item_id], 
+    [V_DT_DELIVERY_ORDER].[alias_customer] AS [alias_customer], 
+    [V_DT_DELIVERY_ORDER].[item_code_1] AS [item_code_1], 
+    [V_DT_DELIVERY_ORDER].[item_code_2] AS [item_code_2], 
+    [V_DT_DELIVERY_ORDER].[qty] AS [qty], 
+    [V_DT_DELIVERY_ORDER].[qty_delivery] AS [qty_delivery], 
+    [V_DT_DELIVERY_ORDER].[volume] AS [volume], 
+    [V_DT_DELIVERY_ORDER].[dimention] AS [dimention], 
+    [V_DT_DELIVERY_ORDER].[order_type] AS [order_type], 
+    [V_DT_DELIVERY_ORDER].[status] AS [status], 
+    [V_DT_DELIVERY_ORDER].[transaction_status] AS [transaction_status], 
+    [V_DT_DELIVERY_ORDER].[status_header] AS [status_header], 
+    [V_DT_DELIVERY_ORDER].[remark_detail] AS [remark_detail], 
+    [V_DT_DELIVERY_ORDER].[created_at] AS [created_at], 
+    [V_DT_DELIVERY_ORDER].[created_by] AS [created_by], 
+    [V_DT_DELIVERY_ORDER].[approve_id] AS [approve_id], 
+    [V_DT_DELIVERY_ORDER].[cover_id] AS [cover_id], 
+    [V_DT_DELIVERY_ORDER].[cover_name] AS [cover_name], 
+    [V_DT_DELIVERY_ORDER].[cover_dimention] AS [cover_dimention]
+    FROM [dbo].[V_DT_DELIVERY_ORDER] AS [V_DT_DELIVERY_ORDER]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="V_DT_DNPSP" EntityType="Self.V_DT_DNPSP" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [V_DT_DNPSP].[delivery_id] AS [delivery_id], 
+    [V_DT_DNPSP].[id] AS [id], 
+    [V_DT_DNPSP].[header_id] AS [header_id], 
+    [V_DT_DNPSP].[so_id] AS [so_id], 
+    [V_DT_DNPSP].[item_id] AS [item_id], 
+    [V_DT_DNPSP].[so_detail_id] AS [so_detail_id], 
+    [V_DT_DNPSP].[alias_customer] AS [alias_customer], 
+    [V_DT_DNPSP].[item_code_1] AS [item_code_1], 
+    [V_DT_DNPSP].[item_code_2] AS [item_code_2], 
+    [V_DT_DNPSP].[qty] AS [qty], 
+    [V_DT_DNPSP].[volume] AS [volume], 
+    [V_DT_DNPSP].[dimention] AS [dimention], 
+    [V_DT_DNPSP].[status] AS [status], 
+    [V_DT_DNPSP].[status_header] AS [status_header], 
+    [V_DT_DNPSP].[item_qrcode] AS [item_qrcode], 
+    [V_DT_DNPSP].[item_qrcode_inoac] AS [item_qrcode_inoac]
+    FROM [dbo].[V_DT_DNPSP] AS [V_DT_DNPSP]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="V_DT_ITEM" EntityType="Self.V_DT_ITEM" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [V_DT_ITEM].[id] AS [id], 
+    [V_DT_ITEM].[company_id] AS [company_id], 
+    [V_DT_ITEM].[company_name] AS [company_name], 
+    [V_DT_ITEM].[uom_id] AS [uom_id], 
+    [V_DT_ITEM].[Dimention] AS [Dimention], 
+    [V_DT_ITEM].[long] AS [long], 
+    [V_DT_ITEM].[wide] AS [wide], 
+    [V_DT_ITEM].[tall] AS [tall], 
+    [V_DT_ITEM].[measurement] AS [measurement], 
+    [V_DT_ITEM].[volume] AS [volume], 
+    [V_DT_ITEM].[description] AS [description], 
+    [V_DT_ITEM].[item_id] AS [item_id], 
+    [V_DT_ITEM].[group_item_id] AS [group_item_id], 
+    [V_DT_ITEM].[external_id] AS [external_id], 
+    [V_DT_ITEM].[item_code_1] AS [item_code_1], 
+    [V_DT_ITEM].[item_code_2] AS [item_code_2], 
+    [V_DT_ITEM].[item_code_3] AS [item_code_3], 
+    [V_DT_ITEM].[item_code_4] AS [item_code_4], 
+    [V_DT_ITEM].[item_code_5] AS [item_code_5], 
+    [V_DT_ITEM].[item_code_6] AS [item_code_6], 
+    [V_DT_ITEM].[alias_customer] AS [alias_customer], 
+    [V_DT_ITEM].[alias_po] AS [alias_po], 
+    [V_DT_ITEM].[status] AS [status], 
+    [V_DT_ITEM].[created_at] AS [created_at], 
+    [V_DT_ITEM].[updated_at] AS [updated_at], 
+    [V_DT_ITEM].[last_updated_at] AS [last_updated_at], 
+    [V_DT_ITEM].[deleted_at] AS [deleted_at], 
+    [V_DT_ITEM].[created_by] AS [created_by], 
+    [V_DT_ITEM].[is_favorite] AS [is_favorite], 
+    [V_DT_ITEM].[dt_cover] AS [dt_cover], 
+    [V_DT_ITEM].[status_cover] AS [status_cover]
+    FROM [dbo].[V_DT_ITEM] AS [V_DT_ITEM]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="V_DT_ORDER" EntityType="Self.V_DT_ORDER" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [V_DT_ORDER].[id] AS [id], 
+    [V_DT_ORDER].[order_id] AS [order_id], 
+    [V_DT_ORDER].[so_id] AS [so_id], 
+    [V_DT_ORDER].[item_id] AS [item_id], 
+    [V_DT_ORDER].[alias_customer] AS [alias_customer], 
+    [V_DT_ORDER].[item_code_1] AS [item_code_1], 
+    [V_DT_ORDER].[item_code_2] AS [item_code_2], 
+    [V_DT_ORDER].[qty] AS [qty], 
+    [V_DT_ORDER].[volume] AS [volume], 
+    [V_DT_ORDER].[dimention] AS [dimention], 
+    [V_DT_ORDER].[order_type] AS [order_type], 
+    [V_DT_ORDER].[status] AS [status], 
+    [V_DT_ORDER].[transaction_status] AS [transaction_status], 
+    [V_DT_ORDER].[status_header] AS [status_header], 
+    [V_DT_ORDER].[remark_detail] AS [remark_detail], 
+    [V_DT_ORDER].[created_at] AS [created_at], 
+    [V_DT_ORDER].[created_by] AS [created_by], 
+    [V_DT_ORDER].[approve_id] AS [approve_id], 
+    [V_DT_ORDER].[cover_id] AS [cover_id], 
+    [V_DT_ORDER].[cover_name] AS [cover_name], 
+    [V_DT_ORDER].[cover_dimention] AS [cover_dimention]
+    FROM [dbo].[V_DT_ORDER] AS [V_DT_ORDER]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="V_DT_ORDER_DBF" EntityType="Self.V_DT_ORDER_DBF" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [V_DT_ORDER_DBF].[order_date] AS [order_date], 
+    [V_DT_ORDER_DBF].[company_id] AS [company_id], 
+    [V_DT_ORDER_DBF].[customer_id] AS [customer_id], 
+    [V_DT_ORDER_DBF].[order_id] AS [order_id], 
+    [V_DT_ORDER_DBF].[so_id] AS [so_id], 
+    [V_DT_ORDER_DBF].[seq] AS [seq], 
+    [V_DT_ORDER_DBF].[order_type] AS [order_type], 
+    [V_DT_ORDER_DBF].[export_status] AS [export_status], 
+    [V_DT_ORDER_DBF].[external_id] AS [external_id], 
+    [V_DT_ORDER_DBF].[external_id_so] AS [external_id_so], 
+    [V_DT_ORDER_DBF].[external_id_spk] AS [external_id_spk], 
+    [V_DT_ORDER_DBF].[external_id_sjs] AS [external_id_sjs], 
+    [V_DT_ORDER_DBF].[external_id_detail] AS [external_id_detail], 
+    [V_DT_ORDER_DBF].[long] AS [long], 
+    [V_DT_ORDER_DBF].[wide] AS [wide], 
+    [V_DT_ORDER_DBF].[tall] AS [tall], 
+    [V_DT_ORDER_DBF].[qty] AS [qty], 
+    [V_DT_ORDER_DBF].[volume] AS [volume], 
+    [V_DT_ORDER_DBF].[id] AS [id], 
+    [V_DT_ORDER_DBF].[item_code_1] AS [item_code_1]
+    FROM [dbo].[V_DT_ORDER_DBF] AS [V_DT_ORDER_DBF]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="V_FAVORITE_ITEMS" EntityType="Self.V_FAVORITE_ITEMS" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [V_FAVORITE_ITEMS].[id] AS [id], 
+    [V_FAVORITE_ITEMS].[company_id] AS [company_id], 
+    [V_FAVORITE_ITEMS].[customer_id] AS [customer_id], 
+    [V_FAVORITE_ITEMS].[company_name] AS [company_name], 
+    [V_FAVORITE_ITEMS].[uom_id] AS [uom_id], 
+    [V_FAVORITE_ITEMS].[Dimention] AS [Dimention], 
+    [V_FAVORITE_ITEMS].[long] AS [long], 
+    [V_FAVORITE_ITEMS].[wide] AS [wide], 
+    [V_FAVORITE_ITEMS].[tall] AS [tall], 
+    [V_FAVORITE_ITEMS].[measurement] AS [measurement], 
+    [V_FAVORITE_ITEMS].[volume] AS [volume], 
+    [V_FAVORITE_ITEMS].[description] AS [description], 
+    [V_FAVORITE_ITEMS].[item_id] AS [item_id], 
+    [V_FAVORITE_ITEMS].[item_code_1] AS [item_code_1], 
+    [V_FAVORITE_ITEMS].[item_code_2] AS [item_code_2], 
+    [V_FAVORITE_ITEMS].[alias_customer] AS [alias_customer], 
+    [V_FAVORITE_ITEMS].[alias_po] AS [alias_po], 
+    [V_FAVORITE_ITEMS].[status] AS [status], 
+    [V_FAVORITE_ITEMS].[created_at] AS [created_at], 
+    [V_FAVORITE_ITEMS].[updated_at] AS [updated_at], 
+    [V_FAVORITE_ITEMS].[last_updated_at] AS [last_updated_at], 
+    [V_FAVORITE_ITEMS].[deleted_at] AS [deleted_at], 
+    [V_FAVORITE_ITEMS].[created_by] AS [created_by], 
+    [V_FAVORITE_ITEMS].[is_favorite] AS [is_favorite]
+    FROM [dbo].[V_FAVORITE_ITEMS] AS [V_FAVORITE_ITEMS]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="V_FILES" EntityType="Self.V_FILES" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [V_FILES].[id] AS [id], 
+    [V_FILES].[file_group] AS [file_group], 
+    [V_FILES].[title] AS [title], 
+    [V_FILES].[snippet] AS [snippet], 
+    [V_FILES].[file_name] AS [file_name], 
+    [V_FILES].[file_ext] AS [file_ext], 
+    [V_FILES].[content_type] AS [content_type], 
+    [V_FILES].[file_path] AS [file_path], 
+    [V_FILES].[status] AS [status], 
+    [V_FILES].[created_at] AS [created_at], 
+    [V_FILES].[updated_at] AS [updated_at], 
+    [V_FILES].[last_updated_at] AS [last_updated_at], 
+    [V_FILES].[created_by] AS [created_by]
+    FROM [dbo].[V_FILES] AS [V_FILES]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="V_GROUP_ACCESS" EntityType="Self.V_GROUP_ACCESS" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [V_GROUP_ACCESS].[id] AS [id], 
+    [V_GROUP_ACCESS].[role_id] AS [role_id], 
+    [V_GROUP_ACCESS].[role_name] AS [role_name], 
+    [V_GROUP_ACCESS].[menu_id] AS [menu_id], 
+    [V_GROUP_ACCESS].[menu_name] AS [menu_name], 
+    [V_GROUP_ACCESS].[site_url] AS [site_url], 
+    [V_GROUP_ACCESS].[icon] AS [icon], 
+    [V_GROUP_ACCESS].[parent] AS [parent], 
+    [V_GROUP_ACCESS].[parent_id] AS [parent_id], 
+    [V_GROUP_ACCESS].[status] AS [status]
+    FROM [dbo].[V_GROUP_ACCESS] AS [V_GROUP_ACCESS]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="V_HD_DNSP" EntityType="Self.V_HD_DNSP" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [V_HD_DNSP].[id] AS [id], 
+    [V_HD_DNSP].[surat_jalan] AS [surat_jalan], 
+    [V_HD_DNSP].[delivery_date] AS [delivery_date], 
+    [V_HD_DNSP].[customer_name] AS [customer_name], 
+    [V_HD_DNSP].[driver_id] AS [driver_id], 
+    [V_HD_DNSP].[driver_name] AS [driver_name], 
+    [V_HD_DNSP].[vehicel_id] AS [vehicel_id], 
+    [V_HD_DNSP].[police_number] AS [police_number], 
+    [V_HD_DNSP].[volume_m3] AS [volume_m3], 
+    [V_HD_DNSP].[rit] AS [rit], 
+    [V_HD_DNSP].[start_time] AS [start_time], 
+    [V_HD_DNSP].[end_time] AS [end_time], 
+    [V_HD_DNSP].[status] AS [status], 
+    [V_HD_DNSP].[status_delivery] AS [status_delivery], 
+    [V_HD_DNSP].[created_at] AS [created_at], 
+    [V_HD_DNSP].[updated_at] AS [updated_at], 
+    [V_HD_DNSP].[last_updated_at] AS [last_updated_at], 
+    [V_HD_DNSP].[deleted_at] AS [deleted_at], 
+    [V_HD_DNSP].[created_by] AS [created_by], 
+    [V_HD_DNSP].[security_check] AS [security_check], 
+    [V_HD_DNSP].[security_check_at] AS [security_check_at], 
+    [V_HD_DNSP].[security_sign] AS [security_sign], 
+    [V_HD_DNSP].[recived_at] AS [recived_at], 
+    [V_HD_DNSP].[received_by] AS [received_by], 
+    [V_HD_DNSP].[received_name] AS [received_name], 
+    [V_HD_DNSP].[recived_sign] AS [recived_sign], 
+    [V_HD_DNSP].[driver_sign] AS [driver_sign]
+    FROM [dbo].[V_HD_DNSP] AS [V_HD_DNSP]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="V_HD_DT_ORDER" EntityType="Self.V_HD_DT_ORDER" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [V_HD_DT_ORDER].[order_id] AS [order_id], 
+    [V_HD_DT_ORDER].[SO_ID] AS [SO_ID], 
+    [V_HD_DT_ORDER].[order_date] AS [order_date], 
+    [V_HD_DT_ORDER].[sales_approve_date] AS [sales_approve_date], 
+    [V_HD_DT_ORDER].[admin_so_approve_date] AS [admin_so_approve_date], 
+    [V_HD_DT_ORDER].[detail_id] AS [detail_id], 
+    [V_HD_DT_ORDER].[order_type] AS [order_type], 
+    [V_HD_DT_ORDER].[status] AS [status]
+    FROM [dbo].[V_HD_DT_ORDER] AS [V_HD_DT_ORDER]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="V_HD_ORDER" EntityType="Self.V_HD_ORDER" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [V_HD_ORDER].[id] AS [id], 
+    [V_HD_ORDER].[order_id] AS [order_id], 
+    [V_HD_ORDER].[order_date] AS [order_date], 
+    [V_HD_ORDER].[sales_approve_date] AS [sales_approve_date], 
+    [V_HD_ORDER].[admin_so_approve_date] AS [admin_so_approve_date], 
+    [V_HD_ORDER].[completed_date] AS [completed_date], 
+    [V_HD_ORDER].[so_id] AS [so_id], 
+    [V_HD_ORDER].[company_id] AS [company_id], 
+    [V_HD_ORDER].[company_name] AS [company_name], 
+    [V_HD_ORDER].[customer_id] AS [customer_id], 
+    [V_HD_ORDER].[customer_name] AS [customer_name], 
+    [V_HD_ORDER].[shipping_id] AS [shipping_id], 
+    [V_HD_ORDER].[title] AS [title], 
+    [V_HD_ORDER].[recipient] AS [recipient], 
+    [V_HD_ORDER].[telepon] AS [telepon], 
+    [V_HD_ORDER].[shipping_address] AS [shipping_address], 
+    [V_HD_ORDER].[status] AS [status], 
+    [V_HD_ORDER].[transaction_status] AS [transaction_status], 
+    [V_HD_ORDER].[remark_header_1] AS [remark_header_1], 
+    [V_HD_ORDER].[remark_header_2] AS [remark_header_2], 
+    [V_HD_ORDER].[remark_header_3] AS [remark_header_3], 
+    [V_HD_ORDER].[remark_header_4] AS [remark_header_4], 
+    [V_HD_ORDER].[remark_header_5] AS [remark_header_5], 
+    [V_HD_ORDER].[remark_header_6] AS [remark_header_6], 
+    [V_HD_ORDER].[remark_header_7] AS [remark_header_7], 
+    [V_HD_ORDER].[remark_header_8] AS [remark_header_8], 
+    [V_HD_ORDER].[remark_header_9] AS [remark_header_9], 
+    [V_HD_ORDER].[remark_header_10] AS [remark_header_10], 
+    [V_HD_ORDER].[created_at] AS [created_at], 
+    [V_HD_ORDER].[invoice_file] AS [invoice_file], 
+    [V_HD_ORDER].[invoice_base64] AS [invoice_base64], 
+    [V_HD_ORDER].[export_status] AS [export_status], 
+    [V_HD_ORDER].[export_at] AS [export_at], 
+    [V_HD_ORDER].[export_by] AS [export_by], 
+    [V_HD_ORDER].[source_id] AS [source_id], 
+    [V_HD_ORDER].[source_name] AS [source_name]
+    FROM [dbo].[V_HD_ORDER] AS [V_HD_ORDER]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="V_ITEM" EntityType="Self.V_ITEM" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [V_ITEM].[id] AS [id], 
+    [V_ITEM].[company_id] AS [company_id], 
+    [V_ITEM].[company_name] AS [company_name], 
+    [V_ITEM].[group_item_id] AS [group_item_id], 
+    [V_ITEM].[group_item_name] AS [group_item_name], 
+    [V_ITEM].[item_id] AS [item_id], 
+    [V_ITEM].[item_name_1] AS [item_name_1], 
+    [V_ITEM].[item_name_2] AS [item_name_2], 
+    [V_ITEM].[item_name_3] AS [item_name_3], 
+    [V_ITEM].[item_name_4] AS [item_name_4], 
+    [V_ITEM].[item_name_5] AS [item_name_5], 
+    [V_ITEM].[item_name_6] AS [item_name_6], 
+    [V_ITEM].[item_name_7] AS [item_name_7], 
+    [V_ITEM].[item_name_8] AS [item_name_8], 
+    [V_ITEM].[item_name_9] AS [item_name_9], 
+    [V_ITEM].[item_name_10] AS [item_name_10], 
+    [V_ITEM].[foam_id] AS [foam_id], 
+    [V_ITEM].[supplier_id] AS [supplier_id], 
+    [V_ITEM].[external_id] AS [external_id], 
+    [V_ITEM].[external_id_1] AS [external_id_1], 
+    [V_ITEM].[external_id_2] AS [external_id_2], 
+    [V_ITEM].[external_id_3] AS [external_id_3], 
+    [V_ITEM].[external_id_4] AS [external_id_4], 
+    [V_ITEM].[external_id_5] AS [external_id_5], 
+    [V_ITEM].[alias_customer] AS [alias_customer], 
+    [V_ITEM].[alias_po] AS [alias_po], 
+    [V_ITEM].[measurement] AS [measurement], 
+    [V_ITEM].[is_po_visible] AS [is_po_visible], 
+    [V_ITEM].[price] AS [price], 
+    [V_ITEM].[status] AS [status], 
+    [V_ITEM].[created_at] AS [created_at], 
+    [V_ITEM].[updated_at] AS [updated_at], 
+    [V_ITEM].[last_updated_at] AS [last_updated_at], 
+    [V_ITEM].[deleted_at] AS [deleted_at], 
+    [V_ITEM].[created_by] AS [created_by], 
+    [V_ITEM].[base64_image] AS [base64_image], 
+    [V_ITEM].[file_name] AS [file_name], 
+    [V_ITEM].[file_path] AS [file_path]
+    FROM [dbo].[V_ITEM] AS [V_ITEM]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="V_LOG_LOGIN" EntityType="Self.V_LOG_LOGIN" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [V_LOG_LOGIN].[id] AS [id], 
+    [V_LOG_LOGIN].[user_id] AS [user_id], 
+    [V_LOG_LOGIN].[username] AS [username], 
+    [V_LOG_LOGIN].[telepon] AS [telepon], 
+    [V_LOG_LOGIN].[role_name] AS [role_name], 
+    [V_LOG_LOGIN].[login_at] AS [login_at], 
+    [V_LOG_LOGIN].[login_status] AS [login_status], 
+    [V_LOG_LOGIN].[message] AS [message]
+    FROM [dbo].[V_LOG_LOGIN] AS [V_LOG_LOGIN]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="V_LOGIN" EntityType="Self.V_LOGIN" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [V_LOGIN].[id] AS [id], 
+    [V_LOGIN].[company_id] AS [company_id], 
+    [V_LOGIN].[user_id] AS [user_id], 
+    [V_LOGIN].[user_erp] AS [user_erp], 
+    [V_LOGIN].[general_id] AS [general_id], 
+    [V_LOGIN].[username] AS [username], 
+    [V_LOGIN].[email] AS [email], 
+    [V_LOGIN].[telepon] AS [telepon], 
+    [V_LOGIN].[password] AS [password], 
+    [V_LOGIN].[invalid_login] AS [invalid_login], 
+    [V_LOGIN].[reset_password] AS [reset_password], 
+    [V_LOGIN].[role_id] AS [role_id], 
+    [V_LOGIN].[role] AS [role], 
+    [V_LOGIN].[status] AS [status]
+    FROM [dbo].[V_LOGIN] AS [V_LOGIN]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="V_MS_PRICE" EntityType="Self.V_MS_PRICE" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [V_MS_PRICE].[id] AS [id], 
+    [V_MS_PRICE].[item_id] AS [item_id], 
+    [V_MS_PRICE].[seq] AS [seq], 
+    [V_MS_PRICE].[alias_customer] AS [alias_customer], 
+    [V_MS_PRICE].[alias_po] AS [alias_po], 
+    [V_MS_PRICE].[company_id] AS [company_id], 
+    [V_MS_PRICE].[company_name] AS [company_name], 
+    [V_MS_PRICE].[price_1] AS [price_1], 
+    [V_MS_PRICE].[desc_1] AS [desc_1], 
+    [V_MS_PRICE].[price_2] AS [price_2], 
+    [V_MS_PRICE].[desc_2] AS [desc_2], 
+    [V_MS_PRICE].[price_3] AS [price_3], 
+    [V_MS_PRICE].[desc_3] AS [desc_3], 
+    [V_MS_PRICE].[price_4] AS [price_4], 
+    [V_MS_PRICE].[desc_4] AS [desc_4], 
+    [V_MS_PRICE].[price_5] AS [price_5], 
+    [V_MS_PRICE].[desc_5] AS [desc_5], 
+    [V_MS_PRICE].[price_6] AS [price_6], 
+    [V_MS_PRICE].[desc_6] AS [desc_6], 
+    [V_MS_PRICE].[price_7] AS [price_7], 
+    [V_MS_PRICE].[desc_7] AS [desc_7], 
+    [V_MS_PRICE].[price_8] AS [price_8], 
+    [V_MS_PRICE].[desc_8] AS [desc_8], 
+    [V_MS_PRICE].[price_9] AS [price_9], 
+    [V_MS_PRICE].[desc_9] AS [desc_9], 
+    [V_MS_PRICE].[price_10] AS [price_10], 
+    [V_MS_PRICE].[desc_10] AS [desc_10], 
+    [V_MS_PRICE].[status] AS [status], 
+    [V_MS_PRICE].[start_at] AS [start_at], 
+    [V_MS_PRICE].[created_at] AS [created_at]
+    FROM [dbo].[V_MS_PRICE] AS [V_MS_PRICE]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="V_PENDING_ORDER" EntityType="Self.V_PENDING_ORDER" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [V_PENDING_ORDER].[id] AS [id], 
+    [V_PENDING_ORDER].[approve_id] AS [approve_id], 
+    [V_PENDING_ORDER].[order_id] AS [order_id], 
+    [V_PENDING_ORDER].[order_date] AS [order_date], 
+    [V_PENDING_ORDER].[sales_approve_date] AS [sales_approve_date], 
+    [V_PENDING_ORDER].[admin_so_approve_date] AS [admin_so_approve_date], 
+    [V_PENDING_ORDER].[completed_date] AS [completed_date], 
+    [V_PENDING_ORDER].[so_id] AS [so_id], 
+    [V_PENDING_ORDER].[company_id] AS [company_id], 
+    [V_PENDING_ORDER].[company_name] AS [company_name], 
+    [V_PENDING_ORDER].[customer_id] AS [customer_id], 
+    [V_PENDING_ORDER].[customer_name] AS [customer_name], 
+    [V_PENDING_ORDER].[shipping_id] AS [shipping_id], 
+    [V_PENDING_ORDER].[title] AS [title], 
+    [V_PENDING_ORDER].[recipient] AS [recipient], 
+    [V_PENDING_ORDER].[telepon] AS [telepon], 
+    [V_PENDING_ORDER].[shipping_address] AS [shipping_address], 
+    [V_PENDING_ORDER].[status] AS [status], 
+    [V_PENDING_ORDER].[transaction_status] AS [transaction_status], 
+    [V_PENDING_ORDER].[status_approve] AS [status_approve], 
+    [V_PENDING_ORDER].[approve_status_name] AS [approve_status_name], 
+    [V_PENDING_ORDER].[remark_header_1] AS [remark_header_1], 
+    [V_PENDING_ORDER].[remark_header_2] AS [remark_header_2], 
+    [V_PENDING_ORDER].[remark_header_3] AS [remark_header_3], 
+    [V_PENDING_ORDER].[remark_header_4] AS [remark_header_4], 
+    [V_PENDING_ORDER].[remark_header_5] AS [remark_header_5], 
+    [V_PENDING_ORDER].[remark_header_6] AS [remark_header_6], 
+    [V_PENDING_ORDER].[remark_header_7] AS [remark_header_7], 
+    [V_PENDING_ORDER].[remark_header_8] AS [remark_header_8], 
+    [V_PENDING_ORDER].[remark_header_9] AS [remark_header_9], 
+    [V_PENDING_ORDER].[remark_header_10] AS [remark_header_10], 
+    [V_PENDING_ORDER].[remark_approve] AS [remark_approve], 
+    [V_PENDING_ORDER].[invoice_file] AS [invoice_file], 
+    [V_PENDING_ORDER].[invoice_base64] AS [invoice_base64], 
+    [V_PENDING_ORDER].[export_status] AS [export_status], 
+    [V_PENDING_ORDER].[export_at] AS [export_at], 
+    [V_PENDING_ORDER].[export_by] AS [export_by], 
+    [V_PENDING_ORDER].[created_at] AS [created_at], 
+    [V_PENDING_ORDER].[created_by] AS [created_by], 
+    [V_PENDING_ORDER].[created_name] AS [created_name], 
+    [V_PENDING_ORDER].[approve_at] AS [approve_at], 
+    [V_PENDING_ORDER].[approve_by] AS [approve_by], 
+    [V_PENDING_ORDER].[approve_name] AS [approve_name]
+    FROM [dbo].[V_PENDING_ORDER] AS [V_PENDING_ORDER]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="V_RPT_DNSP" EntityType="Self.V_RPT_DNSP" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [V_RPT_DNSP].[id] AS [id], 
+    [V_RPT_DNSP].[driver_id] AS [driver_id], 
+    [V_RPT_DNSP].[full_name] AS [full_name], 
+    [V_RPT_DNSP].[police_number] AS [police_number], 
+    [V_RPT_DNSP].[rit] AS [rit], 
+    [V_RPT_DNSP].[delivery_date] AS [delivery_date], 
+    [V_RPT_DNSP].[so_id] AS [so_id], 
+    [V_RPT_DNSP].[order_type] AS [order_type], 
+    [V_RPT_DNSP].[start_time] AS [start_time], 
+    [V_RPT_DNSP].[end_time] AS [end_time], 
+    [V_RPT_DNSP].[item_code_1] AS [item_code_1], 
+    [V_RPT_DNSP].[item_code_2] AS [item_code_2], 
+    [V_RPT_DNSP].[item_code_3] AS [item_code_3], 
+    [V_RPT_DNSP].[item_code_4] AS [item_code_4], 
+    [V_RPT_DNSP].[item_code_5] AS [item_code_5], 
+    [V_RPT_DNSP].[item_code_6] AS [item_code_6], 
+    [V_RPT_DNSP].[status] AS [status], 
+    [V_RPT_DNSP].[source_name] AS [source_name]
+    FROM [dbo].[V_RPT_DNSP] AS [V_RPT_DNSP]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="V_SLIDERS" EntityType="Self.V_SLIDERS" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [V_SLIDERS].[id] AS [id], 
+    [V_SLIDERS].[file_name] AS [file_name], 
+    [V_SLIDERS].[file_ext] AS [file_ext], 
+    [V_SLIDERS].[content_type] AS [content_type], 
+    [V_SLIDERS].[file_path] AS [file_path], 
+    [V_SLIDERS].[file_base64] AS [file_base64], 
+    [V_SLIDERS].[status] AS [status]
+    FROM [dbo].[V_SLIDERS] AS [V_SLIDERS]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="V_SO_ID" EntityType="Self.V_SO_ID" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [V_SO_ID].[id] AS [id], 
+    [V_SO_ID].[so_id] AS [so_id], 
+    [V_SO_ID].[item_id] AS [item_id], 
+    [V_SO_ID].[alias_customer] AS [alias_customer], 
+    [V_SO_ID].[qty] AS [qty], 
+    [V_SO_ID].[dimention] AS [dimention], 
+    [V_SO_ID].[order_type] AS [order_type], 
+    [V_SO_ID].[company_id] AS [company_id]
+    FROM [dbo].[V_SO_ID] AS [V_SO_ID]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="V_SUPPLIER" EntityType="Self.V_SUPPLIER" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [V_SUPPLIER].[id] AS [id], 
+    [V_SUPPLIER].[supplier_id] AS [supplier_id], 
+    [V_SUPPLIER].[supplier_name] AS [supplier_name], 
+    [V_SUPPLIER].[email] AS [email], 
+    [V_SUPPLIER].[telepon] AS [telepon], 
+    [V_SUPPLIER].[telepon1] AS [telepon1], 
+    [V_SUPPLIER].[telepon2] AS [telepon2], 
+    [V_SUPPLIER].[fax] AS [fax], 
+    [V_SUPPLIER].[region_id] AS [region_id], 
+    [V_SUPPLIER].[region_name] AS [region_name], 
+    [V_SUPPLIER].[address1] AS [address1], 
+    [V_SUPPLIER].[address2] AS [address2], 
+    [V_SUPPLIER].[address3] AS [address3], 
+    [V_SUPPLIER].[tax_id] AS [tax_id], 
+    [V_SUPPLIER].[coa_id] AS [coa_id], 
+    [V_SUPPLIER].[bank_account] AS [bank_account], 
+    [V_SUPPLIER].[bank_id] AS [bank_id], 
+    [V_SUPPLIER].[bank_name] AS [bank_name], 
+    [V_SUPPLIER].[pic_name] AS [pic_name], 
+    [V_SUPPLIER].[pic_telepon] AS [pic_telepon], 
+    [V_SUPPLIER].[pic_email] AS [pic_email], 
+    [V_SUPPLIER].[status] AS [status], 
+    [V_SUPPLIER].[created_at] AS [created_at], 
+    [V_SUPPLIER].[updated_at] AS [updated_at], 
+    [V_SUPPLIER].[last_updated_at] AS [last_updated_at], 
+    [V_SUPPLIER].[deleted_at] AS [deleted_at], 
+    [V_SUPPLIER].[created_by] AS [created_by]
+    FROM [dbo].[V_SUPPLIER] AS [V_SUPPLIER]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="V_SUPPLIER_PRICE" EntityType="Self.V_SUPPLIER_PRICE" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [V_SUPPLIER_PRICE].[id] AS [id], 
+    [V_SUPPLIER_PRICE].[supplier_id] AS [supplier_id], 
+    [V_SUPPLIER_PRICE].[supplier_name] AS [supplier_name], 
+    [V_SUPPLIER_PRICE].[item_id] AS [item_id], 
+    [V_SUPPLIER_PRICE].[foam_id] AS [foam_id], 
+    [V_SUPPLIER_PRICE].[alias_customer] AS [alias_customer], 
+    [V_SUPPLIER_PRICE].[alias_po] AS [alias_po], 
+    [V_SUPPLIER_PRICE].[max_seq] AS [max_seq], 
+    [V_SUPPLIER_PRICE].[price] AS [price], 
+    [V_SUPPLIER_PRICE].[discount_1] AS [discount_1], 
+    [V_SUPPLIER_PRICE].[discount_2] AS [discount_2], 
+    [V_SUPPLIER_PRICE].[discount_3] AS [discount_3], 
+    [V_SUPPLIER_PRICE].[discount_4] AS [discount_4], 
+    [V_SUPPLIER_PRICE].[discount_5] AS [discount_5], 
+    [V_SUPPLIER_PRICE].[net_price] AS [net_price], 
+    [V_SUPPLIER_PRICE].[special_price] AS [special_price], 
+    [V_SUPPLIER_PRICE].[status] AS [status], 
+    [V_SUPPLIER_PRICE].[created_at] AS [created_at], 
+    [V_SUPPLIER_PRICE].[created_by] AS [created_by]
+    FROM [dbo].[V_SUPPLIER_PRICE] AS [V_SUPPLIER_PRICE]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="V_TRANSACTION" EntityType="Self.V_TRANSACTION" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [V_TRANSACTION].[id] AS [id], 
+    [V_TRANSACTION].[order_id] AS [order_id], 
+    [V_TRANSACTION].[order_date] AS [order_date], 
+    [V_TRANSACTION].[completed_date] AS [completed_date], 
+    [V_TRANSACTION].[sales_approve_date] AS [sales_approve_date], 
+    [V_TRANSACTION].[admin_so_approve_date] AS [admin_so_approve_date], 
+    [V_TRANSACTION].[cancel_date] AS [cancel_date], 
+    [V_TRANSACTION].[report_date] AS [report_date], 
+    [V_TRANSACTION].[so_id] AS [so_id], 
+    [V_TRANSACTION].[company_id] AS [company_id], 
+    [V_TRANSACTION].[customer_id] AS [customer_id], 
+    [V_TRANSACTION].[shipping_id] AS [shipping_id], 
+    [V_TRANSACTION].[title] AS [title], 
+    [V_TRANSACTION].[recipient] AS [recipient], 
+    [V_TRANSACTION].[telepon] AS [telepon], 
+    [V_TRANSACTION].[shipping_address] AS [shipping_address], 
+    [V_TRANSACTION].[volume] AS [volume], 
+    [V_TRANSACTION].[status] AS [status], 
+    [V_TRANSACTION].[transaction_status] AS [transaction_status], 
+    [V_TRANSACTION].[created_at] AS [created_at], 
+    [V_TRANSACTION].[updated_at] AS [updated_at], 
+    [V_TRANSACTION].[last_updated_at] AS [last_updated_at], 
+    [V_TRANSACTION].[deleted_at] AS [deleted_at], 
+    [V_TRANSACTION].[created_by] AS [created_by], 
+    [V_TRANSACTION].[sales_id] AS [sales_id]
+    FROM [dbo].[V_TRANSACTION] AS [V_TRANSACTION]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="V_UOM" EntityType="Self.V_UOM" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [V_UOM].[id] AS [id], 
+    [V_UOM].[uom_id] AS [uom_id], 
+    [V_UOM].[dimention] AS [dimention], 
+    [V_UOM].[long] AS [long], 
+    [V_UOM].[wide] AS [wide], 
+    [V_UOM].[tall] AS [tall], 
+    [V_UOM].[volume] AS [volume], 
+    [V_UOM].[measurement] AS [measurement], 
+    [V_UOM].[description] AS [description], 
+    [V_UOM].[status] AS [status], 
+    [V_UOM].[created_at] AS [created_at], 
+    [V_UOM].[updated_at] AS [updated_at], 
+    [V_UOM].[last_updated_at] AS [last_updated_at], 
+    [V_UOM].[deleted_at] AS [deleted_at], 
+    [V_UOM].[created_by] AS [created_by]
+    FROM [dbo].[V_UOM] AS [V_UOM]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="V_USER" EntityType="Self.V_USER" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [V_USER].[id] AS [id], 
+    [V_USER].[company_id] AS [company_id], 
+    [V_USER].[user_id] AS [user_id], 
+    [V_USER].[role_id] AS [role_id], 
+    [V_USER].[parent_id] AS [parent_id], 
+    [V_USER].[parent_name] AS [parent_name], 
+    [V_USER].[parent_phone] AS [parent_phone], 
+    [V_USER].[general_id] AS [general_id], 
+    [V_USER].[user_erp] AS [user_erp], 
+    [V_USER].[role] AS [role], 
+    [V_USER].[username] AS [username], 
+    [V_USER].[email] AS [email], 
+    [V_USER].[telepon] AS [telepon], 
+    [V_USER].[device_id] AS [device_id], 
+    [V_USER].[fcm_token] AS [fcm_token], 
+    [V_USER].[refresh_token] AS [refresh_token], 
+    [V_USER].[invalid_login] AS [invalid_login], 
+    [V_USER].[reset_password] AS [reset_password], 
+    [V_USER].[avatar] AS [avatar], 
+    [V_USER].[status] AS [status], 
+    [V_USER].[created_at] AS [created_at], 
+    [V_USER].[updated_at] AS [updated_at], 
+    [V_USER].[last_updated_at] AS [last_updated_at], 
+    [V_USER].[created_by] AS [created_by]
+    FROM [dbo].[V_USER] AS [V_USER]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

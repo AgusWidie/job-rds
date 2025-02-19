@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WEB_DASHBOARD_INV", "WEB_DASHBOARD_INV\WEB_DASHBOARD_INV.csproj", "{0E717546-57A1-4BE0-BA03-7F809E1871F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E717546-57A1-4BE0-BA03-7F809E1871F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E717546-57A1-4BE0-BA03-7F809E1871F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E717546-57A1-4BE0-BA03-7F809E1871F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E717546-57A1-4BE0-BA03-7F809E1871F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8DFCADA7-ED2B-4D15-908C-567917981FD0}
+	EndGlobalSection
+EndGlobal

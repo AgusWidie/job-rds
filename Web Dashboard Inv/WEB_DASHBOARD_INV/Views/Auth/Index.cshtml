@@ -1,0 +1,215 @@
+﻿
+@{
+    ViewBag.Title = "Login Dashboard Inventory";
+    Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+
+<style>
+    .input-group .form-label {
+        top: -0.6125rem;
+    }
+
+    .input-group.input-group-outline .form-label {
+        top: -0.6125rem;
+        display: flex;
+        line-height: 3.925 !important;
+        /*top: -0.375rem;*/
+        margin-bottom: 0;
+    }
+</style>
+
+<script src="https://kit.fontawesome.com/1a27af16cc.js" crossorigin="anonymous"></script>
+
+<main class="main-content  mt-0">
+    <div class="page-header align-items-start min-vh-100">
+        <span class="mask bg-gradient-dark opacity-6"></span>
+        <div class="container my-auto">
+            <div class="row">
+                <div class="col-lg-4 col-md-8 col-12 mx-auto">
+                    <div class="card z-index-0 fadeIn4 fadeInBottom">
+                        <div class="card-header p-0 text-center mt-n4 mx-3 z-index-2">
+                            <img src=" ~/Content/assets/img/img-logo-vita.png" alt="logo" class="text-center mt-2">
+                        </div>
+                        <div class="card-body">
+                         
+                            <label class="form-label">User ID</label>
+                            <div class="input-group-text input-group-sm">
+                                <input type="text" class="form-control" id="user_id" name="user_id" required style="font-size: 15px; height: 20px;">
+                            </div>
+
+                            <label class="form-label">Password</label>
+                            <div class="input-group-text input-group-sm">
+                                <input type="password" class="form-control" id="Txtpassword" name="password" required style="font-size: 15px; height: 20px;">
+                                <span class="fa fa-fw fa-eye-slash field_icon toggle-password"></span>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="button" id="btnLogin" class="btn bg-gradient-info w-100 my-4 mb-2" onclick="LoginUser();">Login</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div class="modal fade" id="LoadingModal">
+    <div class="modal-dialog modal-llg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-header">
+                    <h5 class="modal-title">Loading....</h5>
+                    <button type="button" id="LoadingClose" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="card-header pb-0">
+                    <div style="text-align: center;">
+                        <img src="~/Content/img/loading.gif" style="width: 320px; height: 250px;" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div><!-- End Basic Modal-->
+
+<div class="modal fade" id="MessageWarning">
+    <div class="modal-dialog modal-llg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div style="text-align: center;">
+                    <img src="~/Content/img/warning.gif" width="170" height="150" />
+                </div>
+                <br />
+                <div style="text-align: center;">
+                    <span style="font-size: 16px;" id="SpanMessageWarning"></span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" style="font-size:12px;" data-bs-dismiss="modal" onclick="LoadingHide();">OK</button>
+            </div>
+        </div>
+    </div>
+</div><!-- End Basic Modal-->
+
+<script src="~/Content/js/jquery-3.5.1.js"></script>
+<script src="~/Content/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+@*<script src="~/Content/assets/libs/jquery/jquery.min.js"></script>*@
+
+<script>
+
+    $(document).ready(function () {
+         var tempMessage = '@TempData["MessageLogin"]';
+         if (tempMessage != null && tempMessage != '') {
+             document.getElementById("SpanMessageWarning").innerHTML = tempMessage;
+             $('#MessageWarning').modal('show');
+        }
+
+    });
+
+   
+    $(".toggle-password").click(function () {
+
+        $(this).toggleClass("fa-eye fa-eye-slash");
+        var input = $("#Txtpassword");
+        if (input.attr("type") == "password") {
+            input.attr("type", "text");
+        } else {
+            input.attr("type", "password");
+        }
+    });
+
+    var user_id = document.getElementById("user_id");
+    user_id.addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            document.getElementById("btnLogin").click();
+        }
+    });
+
+    var password = document.getElementById("Txtpassword");
+    password.addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            document.getElementById("btnLogin").click();
+        }
+    });
+
+    function LoginUser() {
+
+        var user_id = document.getElementById("user_id").value;
+        var password = document.getElementById("Txtpassword").value;
+
+        if (user_id == null || user_id == "") {
+
+            document.getElementById("SpanMessageWarning").innerHTML = "User Id Cannot Be Empty.";
+            $('#MessageWarning').modal({
+                backdrop: 'static',
+                keyboard: false
+            });
+            $('#MessageWarning').modal('show');
+            return;
+        }
+
+        if (password == null || password == "") {
+
+            document.getElementById("SpanMessageWarning").innerHTML = "Password Cannot Be Empty.";
+            $('#MessageWarning').modal({
+                backdrop: 'static',
+                keyboard: false
+            });
+            $('#MessageWarning').modal('show');
+            return;
+        }
+
+        var data = {
+            user_id: user_id,
+            password: password
+        };
+
+        $('#LoadingModal').modal({
+            backdrop: 'static',
+            keyboard: false
+        });
+        $('#LoadingModal').modal('show');
+
+        var stringData = JSON.stringify(data);
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("Login", "Auth")",
+            data: stringData,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (data) {
+                if (data._res.message !== null) {
+
+                    if (data._res.message.substring(0, 7) == "Warning") {
+
+                        document.getElementById("SpanMessageWarning").innerHTML = data._res.message;
+                        $('#MessageWarning').modal({
+                            backdrop: 'static',
+                            keyboard: false
+                        });
+                        $('#MessageWarning').modal('show');
+
+                    }
+                    else {
+                        var actionUrl = '@Url.Action("Index", "Home")';
+                        window.location.href = actionUrl;
+                    }
+                }
+
+            },
+            error: function (error) { },
+        });
+    }
+
+    function LoadingHide() {
+        $('#LoadingModal').modal('hide');
+    }
+</script>  

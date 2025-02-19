@@ -1,0 +1,742 @@
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\WEB_ERP_TSJ.dll.config
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\WEB_ERP_TSJ.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\WEB_ERP_TSJ.pdb
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\csc.exe
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\csc.exe.config
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\csc.rsp
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\csi.exe
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\csi.exe.config
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\csi.rsp
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.AppContext.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Collections.Immutable.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Console.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Globalization.Calendars.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.IO.Compression.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.IO.FileSystem.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Net.Http.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Net.Sockets.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Reflection.Metadata.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.ValueTuple.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Xml.XPath.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\vbc.exe
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\vbc.exe.config
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\vbc.rsp
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\VBCSCompiler.exe
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\VBCSCompiler.exe.config
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Antlr3.Runtime.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Microsoft.Web.Infrastructure.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Newtonsoft.Json.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.Helpers.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.Mvc.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.Optimization.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.Razor.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.WebPages.Deployment.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.WebPages.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.WebPages.Razor.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\WebGrease.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.Helpers.xml
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.Mvc.xml
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.Optimization.xml
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.Razor.xml
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.WebPages.xml
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.WebPages.Deployment.xml
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.WebPages.Razor.xml
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Newtonsoft.Json.xml
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Antlr3.Runtime.pdb
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\obj\Debug\WEB_ERP_TSJ.csproj.AssemblyReference.cache
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\obj\Debug\WEB_ERP_TSJ.csproj.CoreCompileInputs.cache
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\obj\Debug\WEB_ERP_TSJ.csproj.CopyComplete
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\obj\Debug\WEB_ERP_TSJ.dll
+D:\Project\ERP TSJ\WEB_ERP_TSJ\WEB_ERP_TSJ\obj\Debug\WEB_ERP_TSJ.pdb
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\WEB_ERP_TSJ.dll.config
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\WEB_ERP_TSJ.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\WEB_ERP_TSJ.pdb
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\csc.exe
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\csc.exe.config
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\csc.rsp
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\csi.exe
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\csi.exe.config
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\csi.rsp
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.AppContext.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Collections.Immutable.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Console.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Globalization.Calendars.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.IO.Compression.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.IO.FileSystem.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Net.Http.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Net.Sockets.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Reflection.Metadata.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.ValueTuple.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Xml.XPath.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\vbc.exe
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\vbc.exe.config
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\vbc.rsp
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\VBCSCompiler.exe
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\VBCSCompiler.exe.config
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Antlr3.Runtime.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Microsoft.Web.Infrastructure.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Newtonsoft.Json.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.Helpers.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.Mvc.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.Optimization.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.Razor.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.WebPages.Deployment.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.WebPages.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.WebPages.Razor.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\WebGrease.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.Helpers.xml
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.Mvc.xml
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.Optimization.xml
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.Razor.xml
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.WebPages.xml
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.WebPages.Deployment.xml
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.WebPages.Razor.xml
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Newtonsoft.Json.xml
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Antlr3.Runtime.pdb
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\obj\Debug\WEB_ERP_TSJ.csproj.AssemblyReference.cache
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\obj\Debug\WEB_ERP_TSJ.csproj.CoreCompileInputs.cache
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\obj\Debug\WEB_ERP_TSJ.csproj.CopyComplete
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\obj\Debug\WEB_ERP_TSJ.dll
+D:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\obj\Debug\WEB_ERP_TSJ.pdb
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\WEB_ERP_TSJ.dll.config
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\WEB_ERP_TSJ.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\WEB_ERP_TSJ.pdb
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\csc.exe
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\csc.exe.config
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\csc.rsp
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\csi.exe
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\csi.exe.config
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\csi.rsp
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.Managed.Core.targets
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.AppContext.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Collections.Immutable.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Console.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Globalization.Calendars.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.IO.Compression.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.IO.FileSystem.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Net.Http.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Net.Sockets.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Reflection.Metadata.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.ValueTuple.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Xml.XmlDocument.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Xml.XPath.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\vbc.exe
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\vbc.exe.config
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\vbc.rsp
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\VBCSCompiler.exe
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\VBCSCompiler.exe.config
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Antlr3.Runtime.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Microsoft.Web.Infrastructure.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Newtonsoft.Json.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.Helpers.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.Mvc.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.Optimization.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.Razor.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.WebPages.Deployment.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.WebPages.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.WebPages.Razor.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\WebGrease.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.Helpers.xml
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.Mvc.xml
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.Optimization.xml
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.Razor.xml
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.WebPages.xml
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.WebPages.Deployment.xml
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.WebPages.Razor.xml
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Newtonsoft.Json.xml
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Antlr3.Runtime.pdb
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\obj\Debug\WEB_ERP_TSJ.csproj.AssemblyReference.cache
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\obj\Debug\WEB_ERP_TSJ.csproj.CoreCompileInputs.cache
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\obj\Debug\WEB_ERP_TSJ.csproj.CopyComplete
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\obj\Debug\WEB_ERP_TSJ.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\obj\Debug\WEB_ERP_TSJ.pdb
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\zxing.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\zxing.presentation.dll
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\zxing.xml
+D:\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\zxing.presentation.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\WEB_ERP_TSJ.dll.config
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\WEB_ERP_TSJ.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\WEB_ERP_TSJ.pdb
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\csc.exe
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\csc.exe.config
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\csc.rsp
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\csi.exe
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\csi.exe.config
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\csi.rsp
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.AppContext.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Collections.Immutable.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Console.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Globalization.Calendars.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.IO.Compression.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.IO.FileSystem.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Net.Http.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Net.Sockets.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Reflection.Metadata.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.ValueTuple.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Xml.XPath.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\vbc.exe
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\vbc.exe.config
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\vbc.rsp
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\VBCSCompiler.exe
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\roslyn\VBCSCompiler.exe.config
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Antlr3.Runtime.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Microsoft.Web.Infrastructure.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Newtonsoft.Json.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.Helpers.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.Mvc.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.Optimization.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.Razor.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.WebPages.Deployment.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.WebPages.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.WebPages.Razor.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\WebGrease.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\zxing.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\zxing.presentation.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.Helpers.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.Mvc.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.Optimization.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.Razor.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.WebPages.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.WebPages.Deployment.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.Web.WebPages.Razor.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Newtonsoft.Json.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Antlr3.Runtime.pdb
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\zxing.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\zxing.presentation.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\obj\Debug\WEB_ERP_TSJ.csproj.AssemblyReference.cache
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\obj\Debug\WEB_ERP_TSJ.csproj.CoreCompileInputs.cache
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\obj\Debug\WEB_ERP_TSJ.csproj.CopyComplete
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\obj\Debug\WEB_ERP_TSJ.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\obj\Debug\WEB_ERP_TSJ.pdb
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\EPPlus.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\EPPlus.Interfaces.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\EPPlus.System.Drawing.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\System.ComponentModel.Annotations.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\EPPlus.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Microsoft.IO.RecyclableMemoryStream.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Microsoft.ReportViewer.WinForms.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Microsoft.SqlServer.Types.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Microsoft.ReportViewer.WinForms.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Microsoft.ReportViewer.Common.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Microsoft.ReportViewer.DataVisualization.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Microsoft.ReportViewer.WebForms.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Microsoft.ReportViewer.Design.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\Microsoft.ReportViewer.WebDesign.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\EnvDTE.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\BouncyCastle.Crypto.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\itextsharp.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\itextsharp.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\x86\SqlServerSpatial160.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\x64\SqlServerSpatial160.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\de\Microsoft.SqlServer.Types.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\es\Microsoft.SqlServer.Types.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\it\Microsoft.SqlServer.Types.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\stdole.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ\WEB_ERP_TSJ\bin\RawPrint.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\x86\SqlServerSpatial160.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\x64\SqlServerSpatial160.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\WEB_ERP_TSJ.dll.config
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\WEB_ERP_TSJ.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\WEB_ERP_TSJ.pdb
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\csc.exe
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\csc.exe.config
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\csc.rsp
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\csi.exe
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\csi.exe.config
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\csi.rsp
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\System.AppContext.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\System.Collections.Immutable.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\System.Console.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\System.Globalization.Calendars.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\System.IO.Compression.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\System.IO.FileSystem.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\System.Net.Http.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\System.Net.Sockets.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\System.Reflection.Metadata.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\System.ValueTuple.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\System.Xml.XPath.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\vbc.exe
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\vbc.exe.config
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\vbc.rsp
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\VBCSCompiler.exe
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\roslyn\VBCSCompiler.exe.config
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\Antlr3.Runtime.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\BouncyCastle.Crypto.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\EPPlus.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\EPPlus.Interfaces.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\EPPlus.System.Drawing.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\itextsharp.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\Microsoft.ReportViewer.Common.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\Microsoft.ReportViewer.DataVisualization.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\Microsoft.ReportViewer.Design.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\Microsoft.ReportViewer.WebDesign.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\Microsoft.ReportViewer.WebForms.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\Microsoft.ReportViewer.WinForms.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\Microsoft.SqlServer.Types.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\Microsoft.Web.Infrastructure.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\Newtonsoft.Json.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\RawPrint.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\System.ComponentModel.Annotations.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\System.Web.Helpers.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\System.Web.Mvc.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\System.Web.Optimization.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\System.Web.Razor.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\System.Web.WebPages.Deployment.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\System.Web.WebPages.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\System.Web.WebPages.Razor.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\WebGrease.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\zxing.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\zxing.presentation.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\EnvDTE.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\stdole.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\EPPlus.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\itextsharp.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\Microsoft.IO.RecyclableMemoryStream.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\Microsoft.ReportViewer.WinForms.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\System.Web.Helpers.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\System.Web.Mvc.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\System.Web.Optimization.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\System.Web.Razor.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\System.Web.WebPages.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\System.Web.WebPages.Deployment.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\System.Web.WebPages.Razor.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\Newtonsoft.Json.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\Antlr3.Runtime.pdb
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\zxing.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\zxing.presentation.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\de\Microsoft.SqlServer.Types.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\es\Microsoft.SqlServer.Types.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\it\Microsoft.SqlServer.Types.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\obj\Debug\WEB_ERP_TSJ.csproj.AssemblyReference.cache
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\obj\Debug\WEB_ERP_TSJ.csproj.CoreCompileInputs.cache
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\obj\Debug\WEB_ERP_TSJ.csproj.CopyComplete
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\obj\Debug\WEB_ERP_TSJ.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - uat\WEB_ERP_TSJ\obj\Debug\WEB_ERP_TSJ.pdb
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\x86\SqlServerSpatial160.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\x64\SqlServerSpatial160.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\WEB_ERP_TSJ.dll.config
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\WEB_ERP_TSJ.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\WEB_ERP_TSJ.pdb
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\csc.exe
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\csc.exe.config
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\csc.rsp
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\csi.exe
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\csi.exe.config
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\csi.rsp
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\System.AppContext.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\System.Collections.Immutable.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\System.Console.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\System.Globalization.Calendars.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\System.IO.Compression.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\System.IO.FileSystem.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\System.Net.Http.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\System.Net.Sockets.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\System.Reflection.Metadata.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\System.ValueTuple.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\System.Xml.XPath.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\vbc.exe
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\vbc.exe.config
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\vbc.rsp
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\VBCSCompiler.exe
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\roslyn\VBCSCompiler.exe.config
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\Antlr3.Runtime.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\BouncyCastle.Crypto.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\EPPlus.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\EPPlus.Interfaces.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\EPPlus.System.Drawing.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\itextsharp.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\Microsoft.ReportViewer.Common.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\Microsoft.ReportViewer.DataVisualization.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\Microsoft.ReportViewer.Design.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\Microsoft.ReportViewer.WebDesign.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\Microsoft.ReportViewer.WebForms.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\Microsoft.ReportViewer.WinForms.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\Microsoft.SqlServer.Types.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\Microsoft.Web.Infrastructure.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\Newtonsoft.Json.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\RawPrint.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\System.ComponentModel.Annotations.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\System.Web.Helpers.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\System.Web.Mvc.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\System.Web.Optimization.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\System.Web.Razor.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\System.Web.WebPages.Deployment.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\System.Web.WebPages.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\System.Web.WebPages.Razor.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\WebGrease.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\zxing.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\zxing.presentation.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\EnvDTE.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\stdole.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\EPPlus.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\itextsharp.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\Microsoft.IO.RecyclableMemoryStream.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\Microsoft.ReportViewer.WinForms.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\System.Web.Helpers.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\System.Web.Mvc.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\System.Web.Optimization.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\System.Web.Razor.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\System.Web.WebPages.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\System.Web.WebPages.Deployment.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\System.Web.WebPages.Razor.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\Newtonsoft.Json.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\Antlr3.Runtime.pdb
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\zxing.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\zxing.presentation.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\de\Microsoft.SqlServer.Types.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\es\Microsoft.SqlServer.Types.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\it\Microsoft.SqlServer.Types.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\bin\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\obj\Debug\WEB_ERP_TSJ.csproj.AssemblyReference.cache
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\obj\Debug\WEB_ERP_TSJ.csproj.CoreCompileInputs.cache
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\obj\Debug\WEB_ERP_TSJ.dll
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\obj\Debug\WEB_ERP_TSJ.pdb
+C:\Project\TSJ INVENTORY\WEB_ERP_TSJ - db_erp\WEB_ERP_TSJ\obj\Debug\WEB_ERP_.63246098.Up2Date

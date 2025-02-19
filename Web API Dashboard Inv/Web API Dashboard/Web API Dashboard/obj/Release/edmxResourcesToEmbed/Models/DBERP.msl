@@ -1,0 +1,620 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBERP3ModelStoreContainer" CdmEntityContainer="DBERPEntities">
+    <FunctionImportMapping FunctionImportName="SP_RN_REQ_MANUAL" FunctionName="DBERP3Model.Store.SP_RN_REQ_MANUAL" />
+    <FunctionImportMapping FunctionImportName="SP_RN_REQ_MANUAL_DOC" FunctionName="DBERP3Model.Store.SP_RN_REQ_MANUAL_DOC" />
+    <FunctionImportMapping FunctionImportName="SP_TEMP_DT_OPERATION_SO" FunctionName="DBERP3Model.Store.SP_TEMP_DT_OPERATION_SO">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBERP3Model.SP_TEMP_DT_OPERATION_SO_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="operation_id" ColumnName="operation_id" />
+          <ScalarProperty Name="so_id" ColumnName="so_id" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_RN_FOAM" FunctionName="DBERP3Model.Store.SP_RN_FOAM" />
+    <FunctionImportMapping FunctionImportName="SP_RN_UOM" FunctionName="DBERP3Model.Store.SP_RN_UOM" />
+    <FunctionImportMapping FunctionImportName="SP_RN_PRODUCT_CATEGORY" FunctionName="DBERP3Model.Store.SP_RN_PRODUCT_CATEGORY" />
+    <FunctionImportMapping FunctionImportName="SP_RN_PRODUCT_GROUP" FunctionName="DBERP3Model.Store.SP_RN_PRODUCT_GROUP" />
+    <FunctionImportMapping FunctionImportName="SP_RN_PRODUCT_TYPE" FunctionName="DBERP3Model.Store.SP_RN_PRODUCT_TYPE" />
+    <FunctionImportMapping FunctionImportName="SP_RN_MACHINE" FunctionName="DBERP3Model.Store.SP_RN_MACHINE" />
+    <FunctionImportMapping FunctionImportName="SP_RN_PRODUCT_VARIANT" FunctionName="DBERP3Model.Store.SP_RN_PRODUCT_VARIANT" />
+    <FunctionImportMapping FunctionImportName="SP_RN_PRODUCT" FunctionName="DBERP3Model.Store.SP_RN_PRODUCT" />
+    <FunctionImportMapping FunctionImportName="SP_RN_SUPPLIER" FunctionName="DBERP3Model.Store.SP_RN_SUPPLIER" />
+    <FunctionImportMapping FunctionImportName="SP_REPORT_CALCULATE_LOG_STOCK_MOVE" FunctionName="DBERP3Model.Store.SP_REPORT_CALCULATE_LOG_STOCK_MOVE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBERP3Model.SP_REPORT_CALCULATE_LOG_STOCK_MOVE">
+          <ScalarProperty Name="product_id" ColumnName="product_id" />
+          <ScalarProperty Name="wh_id" ColumnName="wh_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="stock_after" ColumnName="stock_after" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_REPORT_CALCULATE_LOG_STOCK_MOVE_WARHOUSE" FunctionName="DBERP3Model.Store.SP_REPORT_CALCULATE_LOG_STOCK_MOVE_WAREHOUSE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBERP3Model.SP_REPORT_CALCULATE_LOG_STOCK_MOVE_WAREHOUSE">
+          <ScalarProperty Name="wh_id" ColumnName="wh_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="stock_after" ColumnName="stock_after" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GET_DATA_ITEM_SO" FunctionName="DBERP3Model.Store.SP_GET_DATA_ITEM_SO">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBERP3Model.SP_GET_DATA_ITEM_SO">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="external_id" ColumnName="external_id" />
+          <ScalarProperty Name="item_code_1" ColumnName="item_code_1" />
+          <ScalarProperty Name="item_code_2" ColumnName="item_code_2" />
+          <ScalarProperty Name="item_code_3" ColumnName="item_code_3" />
+          <ScalarProperty Name="item_code_4" ColumnName="item_code_4" />
+          <ScalarProperty Name="item_code_5" ColumnName="item_code_5" />
+          <ScalarProperty Name="item_code_6" ColumnName="item_code_6" />
+          <ScalarProperty Name="uom_id" ColumnName="uom_id" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_RN_INV_TRANSFER" FunctionName="DBERP3Model.Store.SP_RN_INV_TRANSFER" />
+    <FunctionImportMapping FunctionImportName="SP_CHECK_UOM" FunctionName="DBERP3Model.Store.SP_CHECK_UOM" />
+    <FunctionImportMapping FunctionImportName="SP_GROUP_ITEM" FunctionName="DBERP3Model.Store.SP_GROUP_ITEM">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBERP3Model.SP_GROUP_ITEM">
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="product_name" ColumnName="product_name" />
+          <ScalarProperty Name="minimum_stock" ColumnName="minimum_stock" />
+          <ScalarProperty Name="on_hand_stock" ColumnName="on_hand_stock" />
+          <ScalarProperty Name="stok_in" ColumnName="stok_in" />
+          <ScalarProperty Name="stok_out" ColumnName="stok_out" />
+          <ScalarProperty Name="stok" ColumnName="stok" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_PRODUCT_ITEM" FunctionName="DBERP3Model.Store.SP_PRODUCT_ITEM">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBERP3Model.SP_PRODUCT_ITEM">
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="product_name" ColumnName="product_name" />
+          <ScalarProperty Name="product_item" ColumnName="product_item" />
+          <ScalarProperty Name="minimum_stock" ColumnName="minimum_stock" />
+          <ScalarProperty Name="on_hand_stock" ColumnName="on_hand_stock" />
+          <ScalarProperty Name="stok_in" ColumnName="stok_in" />
+          <ScalarProperty Name="stok_out" ColumnName="stok_out" />
+          <ScalarProperty Name="stok" ColumnName="stok" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_RPT_STOCK" FunctionName="DBERP3Model.Store.SP_RPT_STOCK">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBERP3Model.SP_RPT_STOCK">
+          <ScalarProperty Name="product_group_id" ColumnName="product_group_id" />
+          <ScalarProperty Name="product_item" ColumnName="product_item" />
+          <ScalarProperty Name="stock" ColumnName="stock" />
+          <ScalarProperty Name="scan_in" ColumnName="scan_in" />
+          <ScalarProperty Name="scan_out" ColumnName="scan_out" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_RN_MACHINE_TYPE" FunctionName="DBERP3Model.Store.SP_RN_MACHINE_TYPE" />
+    <FunctionImportMapping FunctionImportName="SP_GET_PRODUCT_BOM" FunctionName="DBERP3Model.Store.SP_GET_PRODUCT_BOM">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBERP3Model.SP_GET_PRODUCT_BOM">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="company_name" ColumnName="company_name" />
+          <ScalarProperty Name="group_item_id" ColumnName="group_item_id" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="product_id" ColumnName="product_id" />
+          <ScalarProperty Name="supplier_id" ColumnName="supplier_id" />
+          <ScalarProperty Name="alias_customer" ColumnName="alias_customer" />
+          <ScalarProperty Name="measurement" ColumnName="measurement" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GET_PRODUCT_BOM_DETAIL" FunctionName="DBERP3Model.Store.SP_GET_PRODUCT_BOM_DETAIL">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBERP3Model.SP_GET_PRODUCT_BOM_DETAIL">
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="company_name" ColumnName="company_name" />
+          <ScalarProperty Name="product_group_id" ColumnName="product_group_id" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="product_id" ColumnName="product_id" />
+          <ScalarProperty Name="product_name" ColumnName="product_name" />
+          <ScalarProperty Name="measurement" ColumnName="measurement" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_RN_OPERATION" FunctionName="DBERP3Model.Store.SP_RN_OPERATION" />
+    <FunctionImportMapping FunctionImportName="SP_USER" FunctionName="DBERP3Model.Store.SP_USER" />
+    <FunctionImportMapping FunctionImportName="SP_RN_ITEM" FunctionName="DBERP3Model.Store.SP_RN_ITEM" />
+    <FunctionImportMapping FunctionImportName="SP_SUMARY_STOCK" FunctionName="DBERP3Model.Store.SP_SUMARY_STOCK">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBERP3Model.SP_SUMARY_STOCK">
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="product_id" ColumnName="product_id" />
+          <ScalarProperty Name="product_name" ColumnName="product_name" />
+          <ScalarProperty Name="size" ColumnName="size" />
+          <ScalarProperty Name="variant_id" ColumnName="variant_id" />
+          <ScalarProperty Name="uom_id" ColumnName="uom_id" />
+          <ScalarProperty Name="panjang" ColumnName="panjang" />
+          <ScalarProperty Name="lebar" ColumnName="lebar" />
+          <ScalarProperty Name="tinggi" ColumnName="tinggi" />
+          <ScalarProperty Name="product_item" ColumnName="product_item" />
+          <ScalarProperty Name="minimum_stock" ColumnName="minimum_stock" />
+          <ScalarProperty Name="on_hand_stock" ColumnName="on_hand_stock" />
+          <ScalarProperty Name="tahun" ColumnName="tahun" />
+          <ScalarProperty Name="bulan" ColumnName="bulan" />
+          <ScalarProperty Name="stok" ColumnName="stok" />
+          <ScalarProperty Name="stok_in" ColumnName="stok_in" />
+          <ScalarProperty Name="stok_out" ColumnName="stok_out" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_SUMARY_STOCK_LONG_WIDE" FunctionName="DBERP3Model.Store.SP_SUMARY_STOCK_LONG_WIDE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBERP3Model.SP_SUMARY_STOCK_LONG_WIDE">
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="product_name" ColumnName="product_name" />
+          <ScalarProperty Name="product_item" ColumnName="product_item" />
+          <ScalarProperty Name="minimum_stock" ColumnName="minimum_stock" />
+          <ScalarProperty Name="on_hand_stock" ColumnName="on_hand_stock" />
+          <ScalarProperty Name="stok_in" ColumnName="stok_in" />
+          <ScalarProperty Name="stok_out" ColumnName="stok_out" />
+          <ScalarProperty Name="stok" ColumnName="stok" />
+          <ScalarProperty Name="on_hand_stock_m3" ColumnName="on_hand_stock_m3" />
+          <ScalarProperty Name="stok_in_m3" ColumnName="stok_in_m3" />
+          <ScalarProperty Name="stok_out_m3" ColumnName="stok_out_m3" />
+          <ScalarProperty Name="stok_m3" ColumnName="stok_m3" />
+          <ScalarProperty Name="panjang" ColumnName="panjang" />
+          <ScalarProperty Name="lebar" ColumnName="lebar" />
+          <ScalarProperty Name="tinggi" ColumnName="tinggi" />
+          <ScalarProperty Name="dimensi" ColumnName="dimensi" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_SUMARY_STOCK_LONG_WIDE_BLOCK" FunctionName="DBERP3Model.Store.SP_SUMARY_STOCK_LONG_WIDE_BLOCK">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBERP3Model.SP_SUMARY_STOCK_LONG_WIDE_BLOCK">
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="lebar" ColumnName="lebar" />
+          <ScalarProperty Name="panjang" ColumnName="panjang" />
+          <ScalarProperty Name="minimum_stock" ColumnName="minimum_stock" />
+          <ScalarProperty Name="on_hand_stock" ColumnName="on_hand_stock" />
+          <ScalarProperty Name="stok" ColumnName="stok" />
+          <ScalarProperty Name="stok_in" ColumnName="stok_in" />
+          <ScalarProperty Name="stok_out" ColumnName="stok_out" />
+          <ScalarProperty Name="stok_in_m3" ColumnName="stok_in_m3" />
+          <ScalarProperty Name="stok_out_m3" ColumnName="stok_out_m3" />
+          <ScalarProperty Name="stok_m3" ColumnName="stok_m3" />
+          <ScalarProperty Name="product_item" ColumnName="product_item" />
+          <ScalarProperty Name="product_name" ColumnName="product_name" />
+          <ScalarProperty Name="on_hand_stock_m3" ColumnName="on_hand_stock_m3" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_SUMARY_STOCK_LONG_WIDE_BLOCK_EXPORT" FunctionName="DBERP3Model.Store.SP_SUMARY_STOCK_LONG_WIDE_BLOCK_EXPORT">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBERP3Model.SP_SUMARY_STOCK_LONG_WIDE_BLOCK_EXPORT">
+          <ScalarProperty Name="product_item" ColumnName="product_item" />
+          <ScalarProperty Name="product_name" ColumnName="product_name" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="size" ColumnName="size" />
+          <ScalarProperty Name="minimum_stock" ColumnName="minimum_stock" />
+          <ScalarProperty Name="on_hand_stock" ColumnName="on_hand_stock" />
+          <ScalarProperty Name="stock_in" ColumnName="stock_in" />
+          <ScalarProperty Name="stock_out" ColumnName="stock_out" />
+          <ScalarProperty Name="stock" ColumnName="stock" />
+          <ScalarProperty Name="bulan" ColumnName="bulan" />
+          <ScalarProperty Name="tahun" ColumnName="tahun" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_SUMARY_STOCK_LONG_WIDE_COVER_EXPORT" FunctionName="DBERP3Model.Store.SP_SUMARY_STOCK_LONG_WIDE_COVER_EXPORT">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBERP3Model.SP_SUMARY_STOCK_LONG_WIDE_COVER_EXPORT">
+          <ScalarProperty Name="bulan" ColumnName="bulan" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="minimum_stock" ColumnName="minimum_stock" />
+          <ScalarProperty Name="on_hand_stock" ColumnName="on_hand_stock" />
+          <ScalarProperty Name="product_item" ColumnName="product_item" />
+          <ScalarProperty Name="product_name" ColumnName="product_name" />
+          <ScalarProperty Name="size" ColumnName="size" />
+          <ScalarProperty Name="stock" ColumnName="stock" />
+          <ScalarProperty Name="stock_in" ColumnName="stock_in" />
+          <ScalarProperty Name="stock_out" ColumnName="stock_out" />
+          <ScalarProperty Name="tahun" ColumnName="tahun" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_SUMARY_STOCK_LONG_WIDE_COVER" FunctionName="DBERP3Model.Store.SP_SUMARY_STOCK_LONG_WIDE_COVER">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBERP3Model.SP_SUMARY_STOCK_LONG_WIDE_COVER">
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="lebar" ColumnName="lebar" />
+          <ScalarProperty Name="minimum_stock" ColumnName="minimum_stock" />
+          <ScalarProperty Name="on_hand_stock" ColumnName="on_hand_stock" />
+          <ScalarProperty Name="panjang" ColumnName="panjang" />
+          <ScalarProperty Name="product_item" ColumnName="product_item" />
+          <ScalarProperty Name="product_name" ColumnName="product_name" />
+          <ScalarProperty Name="stok" ColumnName="stok" />
+          <ScalarProperty Name="stok_in" ColumnName="stok_in" />
+          <ScalarProperty Name="stok_in_m3" ColumnName="stok_in_m3" />
+          <ScalarProperty Name="stok_m3" ColumnName="stok_m3" />
+          <ScalarProperty Name="stok_out" ColumnName="stok_out" />
+          <ScalarProperty Name="stok_out_m3" ColumnName="stok_out_m3" />
+          <ScalarProperty Name="on_hand_stock_m3" ColumnName="on_hand_stock_m3" />
+          <ScalarProperty Name="dimensi" ColumnName="dimensi" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_DATE_SUMARY_STOCK" FunctionName="DBERP3Model.Store.SP_DATE_SUMARY_STOCK">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBERP3Model.SP_DATE_SUMARY_STOCK">
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="product_id" ColumnName="product_id" />
+          <ScalarProperty Name="product_name" ColumnName="product_name" />
+          <ScalarProperty Name="size" ColumnName="size" />
+          <ScalarProperty Name="variant_id" ColumnName="variant_id" />
+          <ScalarProperty Name="uom_id" ColumnName="uom_id" />
+          <ScalarProperty Name="panjang" ColumnName="panjang" />
+          <ScalarProperty Name="lebar" ColumnName="lebar" />
+          <ScalarProperty Name="tinggi" ColumnName="tinggi" />
+          <ScalarProperty Name="product_item" ColumnName="product_item" />
+          <ScalarProperty Name="minimum_stock" ColumnName="minimum_stock" />
+          <ScalarProperty Name="on_hand_stock" ColumnName="on_hand_stock" />
+          <ScalarProperty Name="bulan" ColumnName="bulan" />
+          <ScalarProperty Name="tahun" ColumnName="tahun" />
+          <ScalarProperty Name="stock" ColumnName="stock" />
+          <ScalarProperty Name="stock_in" ColumnName="stock_in" />
+          <ScalarProperty Name="stock_out" ColumnName="stock_out" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_RN_HD_BOM" FunctionName="DBERP3Model.Store.SP_RN_HD_BOM" />
+    <FunctionImportMapping FunctionImportName="SP_GET_PRODUCT_BOM_DETAIL_DIMENTION" FunctionName="DBERP3Model.Store.SP_GET_PRODUCT_BOM_DETAIL_DIMENTION">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBERP3Model.SP_GET_PRODUCT_BOM_DETAIL_DIMENTION">
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="company_name" ColumnName="company_name" />
+          <ScalarProperty Name="product_group_id" ColumnName="product_group_id" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="product_id" ColumnName="product_id" />
+          <ScalarProperty Name="product_name" ColumnName="product_name" />
+          <ScalarProperty Name="measurement" ColumnName="measurement" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_GET_DIMENTION_BOM" FunctionName="DBERP3Model.Store.SP_GET_DIMENTION_BOM">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBERP3Model.SP_GET_DIMENTION_BOM">
+          <ScalarProperty Name="uom_id" ColumnName="uom_id" />
+          <ScalarProperty Name="uom_name" ColumnName="uom_name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_RN_STOCKOPNAME" FunctionName="DBERP3Model.Store.SP_RN_STOCKOPNAME" />
+    <FunctionImportMapping FunctionImportName="SP_ON_HAND_STOCK_OPNAME" FunctionName="DBERP3Model.Store.SP_ON_HAND_STOCK_OPNAME">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBERP3Model.SP_ON_HAND_STOCK_OPNAME">
+          <ScalarProperty Name="stockopname_id" ColumnName="stockopname_id" />
+          <ScalarProperty Name="product_id" ColumnName="product_id" />
+          <ScalarProperty Name="on_hand_stock" ColumnName="on_hand_stock" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="product_name" ColumnName="product_name" />
+          <ScalarProperty Name="last_updated_stock" ColumnName="last_updated_stock" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_LIST_DT_QTY_SCAN_OUT_STOCK_OPNAME" FunctionName="DBERP3Model.Store.SP_LIST_DT_QTY_SCAN_OUT_STOCK_OPNAME">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBERP3Model.SP_LIST_DT_QTY_SCAN_OUT_STOCK_OPNAME">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="product_id" ColumnName="product_id" />
+          <ScalarProperty Name="barcode_qr_code" ColumnName="barcode_qr_code" />
+          <ScalarProperty Name="create_at_qr_code" ColumnName="create_at_qr_code" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_ON_HAND_STOCK_OPNAME_COVER" FunctionName="DBERP3Model.Store.SP_ON_HAND_STOCK_OPNAME_COVER">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBERP3Model.SP_ON_HAND_STOCK_OPNAME_COVER">
+          <ScalarProperty Name="on_hand_stock" ColumnName="on_hand_stock" />
+          <ScalarProperty Name="product_id" ColumnName="product_id" />
+          <ScalarProperty Name="product_name" ColumnName="product_name" />
+          <ScalarProperty Name="stockopname_id" ColumnName="stockopname_id" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="last_updated_stock" ColumnName="last_updated_stock" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_LIST_QR_BEFORE_SCAN" FunctionName="DBERP3Model.Store.SP_LIST_QR_BEFORE_SCAN">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBERP3Model.SP_LIST_QR_BEFORE_SCAN">
+          <ScalarProperty Name="id_stock" ColumnName="id_stock" />
+          <ScalarProperty Name="product_id" ColumnName="product_id" />
+          <ScalarProperty Name="barcode_qr_code" ColumnName="barcode_qr_code" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_RN_SO_IN" FunctionName="DBERP3Model.Store.SP_RN_SO_IN" />
+    <FunctionImportMapping FunctionImportName="SP_RN_WH_IN" FunctionName="DBERP3Model.Store.SP_RN_WH_IN" />
+    <FunctionImportMapping FunctionImportName="SP_SUMARY_STOCK_LONG_WIDE_BLOCK_DAILY" FunctionName="DBERP3Model.Store.SP_SUMARY_STOCK_LONG_WIDE_BLOCK_DAILY">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBERP3Model.SP_SUMARY_STOCK_LONG_WIDE_BLOCK">
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="lebar" ColumnName="lebar" />
+          <ScalarProperty Name="panjang" ColumnName="panjang" />
+          <ScalarProperty Name="minimum_stock" ColumnName="minimum_stock" />
+          <ScalarProperty Name="on_hand_stock" ColumnName="on_hand_stock" />
+          <ScalarProperty Name="stok" ColumnName="stok" />
+          <ScalarProperty Name="stok_in" ColumnName="stok_in" />
+          <ScalarProperty Name="stok_out" ColumnName="stok_out" />
+          <ScalarProperty Name="stok_in_m3" ColumnName="stok_in_m3" />
+          <ScalarProperty Name="stok_out_m3" ColumnName="stok_out_m3" />
+          <ScalarProperty Name="stok_m3" ColumnName="stok_m3" />
+          <ScalarProperty Name="product_item" ColumnName="product_item" />
+          <ScalarProperty Name="product_name" ColumnName="product_name" />
+          <ScalarProperty Name="on_hand_stock_m3" ColumnName="on_hand_stock_m3" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_SUMARY_STOCK_LONG_WIDE_COVER_DAILY" FunctionName="DBERP3Model.Store.SP_SUMARY_STOCK_LONG_WIDE_COVER_DAILY">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBERP3Model.SP_SUMARY_STOCK_LONG_WIDE_COVER">
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="lebar" ColumnName="lebar" />
+          <ScalarProperty Name="minimum_stock" ColumnName="minimum_stock" />
+          <ScalarProperty Name="on_hand_stock" ColumnName="on_hand_stock" />
+          <ScalarProperty Name="panjang" ColumnName="panjang" />
+          <ScalarProperty Name="product_item" ColumnName="product_item" />
+          <ScalarProperty Name="product_name" ColumnName="product_name" />
+          <ScalarProperty Name="stok" ColumnName="stok" />
+          <ScalarProperty Name="stok_in" ColumnName="stok_in" />
+          <ScalarProperty Name="stok_in_m3" ColumnName="stok_in_m3" />
+          <ScalarProperty Name="stok_m3" ColumnName="stok_m3" />
+          <ScalarProperty Name="stok_out" ColumnName="stok_out" />
+          <ScalarProperty Name="stok_out_m3" ColumnName="stok_out_m3" />
+          <ScalarProperty Name="on_hand_stock_m3" ColumnName="on_hand_stock_m3" />
+          <ScalarProperty Name="dimensi" ColumnName="dimensi" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_REPORT_DETAIL_LOG_STOCK_MOVE" FunctionName="DBERP3Model.Store.SP_REPORT_DETAIL_LOG_STOCK_MOVE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBERP3Model.SP_REPORT_DETAIL_LOG_STOCK_MOVE_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="move_date" ColumnName="move_date" />
+          <ScalarProperty Name="move_date_filter" ColumnName="move_date_filter" />
+          <ScalarProperty Name="product_id" ColumnName="product_id" />
+          <ScalarProperty Name="product_name" ColumnName="product_name" />
+          <ScalarProperty Name="from_wh_id" ColumnName="from_wh_id" />
+          <ScalarProperty Name="to_wh_id" ColumnName="to_wh_id" />
+          <ScalarProperty Name="from_wh_name" ColumnName="from_wh_name" />
+          <ScalarProperty Name="to_wh_name" ColumnName="to_wh_name" />
+          <ScalarProperty Name="qty_done" ColumnName="qty_done" />
+          <ScalarProperty Name="lot" ColumnName="lot" />
+          <ScalarProperty Name="scan_status" ColumnName="scan_status" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="product_group_id" ColumnName="product_group_id" />
+          <ScalarProperty Name="product_group_name" ColumnName="product_group_name" />
+          <ScalarProperty Name="transfer_status" ColumnName="transfer_status" />
+          <ScalarProperty Name="product_category_name" ColumnName="product_category_name" />
+          <ScalarProperty Name="variant_id" ColumnName="variant_id" />
+          <ScalarProperty Name="variant_name" ColumnName="variant_name" />
+          <ScalarProperty Name="allow_material_finish_good" ColumnName="allow_material_finish_good" />
+          <ScalarProperty Name="id_stock" ColumnName="id_stock" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_DT_MATERIAL_BOM" FunctionName="DBERP3Model.Store.SP_DT_MATERIAL_BOM">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBERP3Model.SP_DT_MATERIAL_BOM">
+          <ScalarProperty Name="product_id_header" ColumnName="product_id_header" />
+          <ScalarProperty Name="bom_id" ColumnName="bom_id" />
+          <ScalarProperty Name="product_id" ColumnName="product_id" />
+          <ScalarProperty Name="product_name" ColumnName="product_name" />
+          <ScalarProperty Name="on_hand_stock" ColumnName="on_hand_stock" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="allow_material_finish_good" ColumnName="allow_material_finish_good" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_DT_MATERIAL_SUMMARY" FunctionName="DBERP3Model.Store.SP_DT_MATERIAL_SUMMARY">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBERP3Model.SP_DT_MATERIAL_SUMMARY">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="operation_id" ColumnName="operation_id" />
+          <ScalarProperty Name="so_id" ColumnName="so_id" />
+          <ScalarProperty Name="variant_name" ColumnName="variant_name" />
+          <ScalarProperty Name="wide" ColumnName="wide" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="meter_kubik" ColumnName="meter_kubik" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_WORK_ORDER_ASSEMBLY_LIST" FunctionName="DBERP3Model.Store.SP_WORK_ORDER_ASSEMBLY_LIST">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBERP3Model.SP_WORK_ORDER_ASSEMBLY_LIST">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="operation_id" ColumnName="operation_id" />
+          <ScalarProperty Name="operation_date" ColumnName="operation_date" />
+          <ScalarProperty Name="operation_date_str" ColumnName="operation_date_str" />
+          <ScalarProperty Name="hd_operation_status" ColumnName="hd_operation_status" />
+          <ScalarProperty Name="hd_operation_status_name" ColumnName="hd_operation_status_name" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="company_name" ColumnName="company_name" />
+          <ScalarProperty Name="priority_status" ColumnName="priority_status" />
+          <ScalarProperty Name="work_order_internal" ColumnName="work_order_internal" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_DT_MATERIAL_BOM_INSUFICIENT" FunctionName="DBERP3Model.Store.SP_DT_MATERIAL_BOM_INSUFICIENT">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBERP3Model.SP_DT_MATERIAL_BOM">
+          <ScalarProperty Name="product_id_header" ColumnName="product_id_header" />
+          <ScalarProperty Name="bom_id" ColumnName="bom_id" />
+          <ScalarProperty Name="product_id" ColumnName="product_id" />
+          <ScalarProperty Name="product_name" ColumnName="product_name" />
+          <ScalarProperty Name="on_hand_stock" ColumnName="on_hand_stock" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="allow_material_finish_good" ColumnName="allow_material_finish_good" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_RN_DISASSEMBLY" FunctionName="DBERP3Model.Store.SP_RN_DISASSEMBLY" />
+    <FunctionImportMapping FunctionImportName="SP_UPDATE_SUBMIT_SIPOT" FunctionName="DBERP3Model.Store.SP_UPDATE_SUBMIT_SIPOT" />
+    <FunctionImportMapping FunctionImportName="SP_LIST_COUNT_STOCK_OPNAME" FunctionName="DBERP3Model.Store.SP_LIST_COUNT_STOCK_OPNAME">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBERP3Model.SP_LIST_COUNT_STOCK_OPNAME">
+          <ScalarProperty Name="barcode" ColumnName="barcode" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="product_id" ColumnName="product_id" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_LIST_COUNT_STOCK_OPNAME_COVER" FunctionName="DBERP3Model.Store.SP_LIST_COUNT_STOCK_OPNAME_COVER">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBERP3Model.SP_LIST_COUNT_STOCK_OPNAME_COVER">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="barcode" ColumnName="barcode" />
+          <ScalarProperty Name="product_id" ColumnName="product_id" />
+          <ScalarProperty Name="stockopname_id" ColumnName="stockopname_id" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SP_LIST_SCAN_IN_STOCK_OPNAME" FunctionName="DBERP3Model.Store.SP_LIST_SCAN_IN_STOCK_OPNAME">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBERP3Model.SP_LIST_SCAN_IN_STOCK_OPNAME">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="stockopname_id" ColumnName="stockopname_id" />
+          <ScalarProperty Name="product_id" ColumnName="product_id" />
+          <ScalarProperty Name="barcode" ColumnName="barcode" />
+          <ScalarProperty Name="id_stock" ColumnName="id_stock" />
+          <ScalarProperty Name="create_at_qr_code" ColumnName="create_at_qr_code" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="MS_USERS">
+      <EntityTypeMapping TypeName="DBERP3Model.MS_USERS">
+        <MappingFragment StoreEntitySet="MS_USERS">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="user_erp" ColumnName="user_erp" />
+          <ScalarProperty Name="customer_id" ColumnName="customer_id" />
+          <ScalarProperty Name="general_id" ColumnName="general_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="avatar" ColumnName="avatar" />
+          <ScalarProperty Name="reset_password" ColumnName="reset_password" />
+          <ScalarProperty Name="invalid_login" ColumnName="invalid_login" />
+          <ScalarProperty Name="fcm_token" ColumnName="fcm_token" />
+          <ScalarProperty Name="refresh_token" ColumnName="refresh_token" />
+          <ScalarProperty Name="pin" ColumnName="pin" />
+          <ScalarProperty Name="otp" ColumnName="otp" />
+          <ScalarProperty Name="web_id" ColumnName="web_id" />
+          <ScalarProperty Name="device_id" ColumnName="device_id" />
+          <ScalarProperty Name="role_id" ColumnName="role_id" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="telepon" ColumnName="telepon" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MS_LOG_LOGIN">
+      <EntityTypeMapping TypeName="DBERP3Model.MS_LOG_LOGIN">
+        <MappingFragment StoreEntitySet="MS_LOG_LOGIN">
+          <ScalarProperty Name="message" ColumnName="message" />
+          <ScalarProperty Name="login_status" ColumnName="login_status" />
+          <ScalarProperty Name="login_at" ColumnName="login_at" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_LOGIN">
+      <EntityTypeMapping TypeName="DBERP3Model.V_LOGIN">
+        <MappingFragment StoreEntitySet="V_LOGIN">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="role" ColumnName="role" />
+          <ScalarProperty Name="role_id" ColumnName="role_id" />
+          <ScalarProperty Name="reset_password" ColumnName="reset_password" />
+          <ScalarProperty Name="invalid_login" ColumnName="invalid_login" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="telepon" ColumnName="telepon" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="general_id" ColumnName="general_id" />
+          <ScalarProperty Name="user_erp" ColumnName="user_erp" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USER_ACCESS_DATA">
+      <EntityTypeMapping TypeName="DBERP3Model.USER_ACCESS_DATA">
+        <MappingFragment StoreEntitySet="USER_ACCESS_DATA">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="deleted_at" ColumnName="deleted_at" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="product_category_id" ColumnName="product_category_id" />
+          <ScalarProperty Name="product_group_id" ColumnName="product_group_id" />
+          <ScalarProperty Name="wh_id" ColumnName="wh_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_WORK_ORDER_ASSEMBLY_DASHBOARD">
+      <EntityTypeMapping TypeName="DBERP3Model.V_WORK_ORDER_ASSEMBLY_DASHBOARD">
+        <MappingFragment StoreEntitySet="V_WORK_ORDER_ASSEMBLY_DASHBOARD">
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="note" ColumnName="note" />
+          <ScalarProperty Name="qty_done" ColumnName="qty_done" />
+          <ScalarProperty Name="m3_requested" ColumnName="m3_requested" />
+          <ScalarProperty Name="qty_requested" ColumnName="qty_requested" />
+          <ScalarProperty Name="m3_spp" ColumnName="m3_spp" />
+          <ScalarProperty Name="qty_spp" ColumnName="qty_spp" />
+          <ScalarProperty Name="m3_order" ColumnName="m3_order" />
+          <ScalarProperty Name="qty_order" ColumnName="qty_order" />
+          <ScalarProperty Name="tall" ColumnName="tall" />
+          <ScalarProperty Name="wide" ColumnName="wide" />
+          <ScalarProperty Name="long" ColumnName="long" />
+          <ScalarProperty Name="variant_name" ColumnName="variant_name" />
+          <ScalarProperty Name="variant_id" ColumnName="variant_id" />
+          <ScalarProperty Name="dimention" ColumnName="dimention" />
+          <ScalarProperty Name="product_name" ColumnName="product_name" />
+          <ScalarProperty Name="product_id" ColumnName="product_id" />
+          <ScalarProperty Name="product_group_id" ColumnName="product_group_id" />
+          <ScalarProperty Name="wh_id" ColumnName="wh_id" />
+          <ScalarProperty Name="so_id" ColumnName="so_id" />
+          <ScalarProperty Name="finished_operation_date" ColumnName="finished_operation_date" />
+          <ScalarProperty Name="operation_date" ColumnName="operation_date" />
+          <ScalarProperty Name="work_order_name" ColumnName="work_order_name" />
+          <ScalarProperty Name="priority_status" ColumnName="priority_status" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="operation_id" ColumnName="operation_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

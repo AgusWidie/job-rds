@@ -1,0 +1,383 @@
+@model IEnumerable<WEB_ERP_TSJ.Models.V_WORK_ORDER_ASSEMBLY_DASHBOARD>
+
+@{
+    ViewBag.Title = "Dashboard Inventory";
+    Layout = null;
+}
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Dashboard Tri Sukses Jaya</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="bootstrap-4.3.1-dist/css/sticky-footer-navbar.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="" style="background-image: url('bootstrap-4.3.1-dist/images/bg-image.jpg');">
+
+    <header class="mb-4 ">
+        <input type="text" class="form-control" id="wh_id" value="@Session["wh_id"]" hidden />
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md #66b9af fixed-top bg-light border" style="background-color: #66b9af;">
+            <a class="navbar-brand" href="#"><img class="" height="60" width="60" src="bootstrap-4.3.1-dist/images/vita1.png"> TRI SUKSES JAYA</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                </ul>
+                <form class="form-inline mt-2 mt-md-0">
+                    @using (Html.BeginForm("Index", "Home", FormMethod.Get, new { @class = "form-inline mb-2" }))
+                    {
+                        <div class="input-group date mt-2 mr-2" id="start-date">
+
+                            <span class="input-group-append">
+                                <input type="date" id="fDateWorkOrder" name="fDateWorkOrder" class="multisteps-form__input form-control" style="font-size:18px;">
+                            </span>
+                            <div id="" class="invalid-feedback">
+
+                            </div>
+                        </div>
+                        <div class="input-group date mt-2" id="start-date">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                            @*<button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="GetDataWorkOrderDashBoard();">Search</button>*@
+                        </div>
+                    }
+
+                </form> &nbsp;&nbsp;
+                <a class="nav-link" href="@Url.Action("Index", "Auth")">
+                
+                    <img src="~/Content/img/inventory adjustment close.png" style="height: 20px; width: 20px;" />
+                    <span class="nav-link-text ms-2 ps-1">Sign Out</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main" class="containers gy-4" style="padding: 20px;">
+        <div class="row" style="margin-top: 60px;">
+            <div class="col-10">
+                <div class="card h-100">
+                    <h5 class="card-header"><span id="WarehouseName"></span> TASK LIST</h5>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-flush" id="TableCuttingList" style="font-size: 16px; width: 100%;">
+                                <thead>
+                                    <tr>
+                                        <th class="text-uppercase text-center text-sm font-weight-bolder opacity-7" style="width:150px;">WORK ORDER</th>
+                                        <th class="text-uppercase text-center text-sm font-weight-bolder opacity-7" style="width:250px;">MATERIAL</th>
+                                        <th class="text-uppercase text-center text-sm font-weight-bolder opacity-7" style="width:20px;">DIMENTION</th>
+                                        <th class="text-uppercase text-center text-sm font-weight-bolder opacity-7" style="width:20px;">M3</th>
+                                        <th class="text-uppercase text-center text-sm font-weight-bolder opacity-7" style="width:20px;">QTY</th>
+                                        <th class="text-uppercase text-center text-sm font-weight-bolder opacity-7" style="width:20px;">DONE</th>
+                                        <th class="text-uppercase text-center text-sm font-weight-bolder opacity-7" style="width:20px;">OUTSTANDING</th>
+                                        <th class="text-uppercase text-center text-sm font-weight-bolder opacity-7" style="width:20px;">STATUS</th>
+                                        <th class="text-uppercase text-center text-sm font-weight-bolder opacity-7" style="width:200px;">NOTE</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    @{
+                                        int no = 1;
+                                        int total_work_oder = 0;
+                                        int qty_outstanding = 0;
+                                        int total_outstanding = 0;
+                                        int total_success = 0;
+                                        //string operation_id = "";
+                                    }
+
+                                    @foreach (var item in Model)
+                                    {
+
+                                        string status = "";
+                                        if (item.qty_requested != null && item.qty_done != null)
+                                        {
+                                            if (item.qty_requested > item.qty_done && item.qty_done > 0)
+                                            {
+                                                status = "ON PROGRESS";
+                                            }
+                                            else if (item.qty_requested > item.qty_done && item.qty_done == 0)
+                                            {
+                                                status = "PENDING";
+                                            }
+                                            else
+                                            {
+                                                status = "DONE";
+                                            }
+                                        }
+
+                                        //if (item.operation_id != operation_id)
+                                        //{
+                                        //    total_work_oder = total_work_oder + 1;
+                                        //    operation_id = item.operation_id;
+                                        //}
+
+                                        if (item.qty_requested > item.qty_done)
+                                        {
+                                            qty_outstanding = (int)item.qty_requested - (int)item.qty_done;
+                                            total_outstanding = total_outstanding + qty_outstanding;
+                                        }
+
+                                        total_success = total_success + item.qty_done;
+
+                                        <tr>
+                                           
+                                            <td>
+                                                <p class="text-left font-weight-normal mb-0">@item.operation_id</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-left font-weight-normal mb-0">@item.product_name</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-left font-weight-normal mb-0">@item.dimention</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-right font-weight-normal mb-0">@item.m3_requested</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-right font-weight-normal mb-0">@item.qty_requested</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-right font-weight-normal mb-0">@item.qty_done</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-right font-weight-normal mb-0">@qty_outstanding</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-left font-weight-normal mb-0">@status</p>
+                                            </td>
+                                            <td>
+                                                <p class="text-left font-weight-normal mb-0">@item.note</p>
+                                            </td>
+                                        </tr>
+
+                                        no++;
+                                        total_work_oder = total_work_oder + 1;
+
+                                    }
+
+                                    @{
+                                        TempData["TotalWorkOrder"] = total_work_oder.ToString();
+                                        TempData["TotalOutstanding"] = total_outstanding.ToString();
+                                        TempData["TotalSuccess"] = total_success.ToString();
+                                    }
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5">
+                            <div class="dataTables_info mx-4 text-xs font-weight-bolder" aria-live="polite">Showing @ViewBag.Pagination.currentPage to @ViewBag.Pagination.pageSize of @ViewBag.Pagination.totalCount entries</div>
+                        </div>
+                        <div class="col-7 float-end">
+                            <nav>
+                                <div class="navigation mx-2 text-xs float-end">
+                                    @if (ViewBag.Pagination.endPage > 1)
+                                    {
+                                        <ul class="pagination">
+                                            @if (ViewBag.Pagination.currentPage > 1)
+                                            {
+                                                <li class="page-item @ViewBag.Pagination.previousPage.Class"><a class="page-link" href="?fDateWorkOrder=@ViewData["F1"]&pNumber=@ViewBag.Pagination.previousPage.Page&pSize=@ViewData["pSize"]">&laquo;</a></li>
+                                            }
+
+                                            @for (var page = ViewBag.Pagination.startPage; page <= ViewBag.Pagination.endPage; page++)
+                                            {
+                                                <li class="page-item @(page == ViewBag.Pagination.currentPage ? "active" : "")"><a class="page-link" href="?fDateWorkOrder=@ViewData["F1"]&pNumber=@page&pSize=@ViewData["pSize"]">@page</a></li>
+                                            }
+
+                                            @if (ViewBag.Pagination.currentPage < ViewBag.Pagination.totalPages)
+                                            {
+                                                <li class="page-item @ViewBag.Pagination.nextPage.Class"><a class="page-link" href="?fDateWorkOrder=@ViewData["F1"]&pNumber=@ViewBag.Pagination.nextPage.Page&pSize=@ViewData["pSize"]">&raquo;</a></li>
+
+                                            }
+                                        </ul>
+
+                                    }
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card h-100">
+                    <h5 class="card-header">STATUS</h5>
+                    <div class="card-body">
+                        <div class="card text-center text-primary">
+                            <h5 class="card-header">TOTAL WORK ORDER</h5>
+                            <div class="card-body">
+                                <h5 class="card-title"><span id="TotalWorkOrder">0</span></h5>
+                            </div>
+                        </div>
+                        <div class="card text-center text-danger mt-4">
+                            <h5 class="card-header">OUTSTANDING</h5>
+                            <div class="card-body">
+                                <h5 class="card-title"><span id="TotalOutstanding">0</span></h5>
+                            </div>
+                        </div>
+                        <div class="card text-center text-success mt-4">
+                            <h5 class="card-header">SUCCESS</h5>
+                            <div class="card-body">
+                                <h5 class="card-title"><span id="TotalSuccess">0</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="row ">
+            <div class="col-10" style="background-color: black;">
+                <div class="" style="display:flex; text-align: center; align-items: center; height: 100%;">
+                    <marquee style="color: white;"><h3>Utamakan keselamatan kerja. Gunakan APD dan terapkan 5R Ringkas, Rapi, Resik, Rawat, dan Rajin </h3></marquee>
+                </div>
+            </div>
+            <div class="col-2 text-center">
+                <div class="" style="font-size: xx-large; font-weight: bold;" id="clock">
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        function updateTime() {
+            var now = new Date();
+            var hours = now.getHours().toString().padStart(2, '0');
+            var minutes = now.getMinutes().toString().padStart(2, '0');
+            var seconds = now.getSeconds().toString().padStart(2, '0');
+            document.getElementById('clock').textContent = hours + ':' + minutes + ':' + seconds;
+        }
+
+        setInterval(updateTime, 1000);
+        updateTime(); // initial call to display time immediately
+    </script>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="~/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+    @*<script>
+            var today = new Date();
+            var lastDate = new Date(today.getFullYear(), today.getMonth(0) + 3, today.getDate(0));
+            $(document).ready(function () {
+                $(function () {
+                    $('#start-date').datepicker({
+                        autoclose: true,
+                        format: "yyyy-mm-dd",
+                        immediateUpdates: true,
+                        todayBtn: true,
+                        todayHighlight: true,
+                        startDate: '-1m',
+                        endDate: lastDate
+                    }).datepicker("setDate", today);
+                });
+            });
+        </script>*@
+
+
+
+    @*<link href="~/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css">
+        <link href="~/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css">
+        <link href="~/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css">
+
+        <script src="~/Content/js/datatables.js"></script>
+        <script src="~/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+        <script src="~/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>*@
+
+
+    @*<link href="~/Content/css/bootstrap4-toggle.min.css" rel="stylesheet">
+        <link href="~/Content/css/jquery.dataTables.min.css" rel="stylesheet">
+
+        <script src="~/Content/js/bootstrap4-toggle.min.js"></script>
+        <script src="~/Content/js/jquery-3.7.0.js"></script>
+        <script src="~/Content/js/jquery.dataTables.min.js"></script>*@
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+
+    <!-- Signal R -->
+    <script src="~/Scripts/signalr.js"></script>
+    <script src="~/Scripts/signalr.min.js"></script>
+
+
+    <script>
+
+        //const rowsPerPage = 10;
+        //let currentPage = 1;
+
+        var WorkOrderDate = '@TempData["fWorkOrderDate"]';
+        document.getElementById("fDateWorkOrder").value = WorkOrderDate;
+
+        document.getElementById("WarehouseName").innerHTML = '@Session["WarehouseName"]';
+        document.getElementById("TotalWorkOrder").innerHTML = '@TempData["TotalWorkOrder"]';
+        document.getElementById("TotalOutstanding").innerHTML = '@TempData["TotalOutstanding"]';
+        document.getElementById("TotalSuccess").innerHTML = '@TempData["TotalSuccess"]';
+
+        (function setupConnection() {
+
+            var connection = new signalR
+                .HubConnectionBuilder()
+                .withUrl("http://120.29.152.134:8000/signal_poc/chat")
+                .withAutomaticReconnect()
+                .build();
+
+
+            connection.on("WorkOrderProses", function (work_order_process) {
+                console.log("WorkOrderProses SignalR --> " + work_order_process);
+
+                GetDataWorkOrderProcess();
+
+            });
+
+            connection.start().catch(err => console.error(err.toString())).then(response => console.log("connected"));
+        })();
+
+        var myInterval = setInterval(GetDataWorkOrderProcess, 150000);
+        function GetDataWorkOrderProcess() {
+
+            console.log("GetDataWorkOrderProcess");
+
+            var work_order_date = document.getElementById("fDateWorkOrder").value;
+            var actionUrl = '@Url.Action("Index", "Home", new { fDateWorkOrder = "fDateWorkOrder" } )';
+            actionUrl = actionUrl.replace('fDateWorkOrder', work_order_date);
+            window.location.href = actionUrl.replaceAll('amp;', "");
+
+        }
+
+       
+    </script>
+
+</body>
+
+</html>

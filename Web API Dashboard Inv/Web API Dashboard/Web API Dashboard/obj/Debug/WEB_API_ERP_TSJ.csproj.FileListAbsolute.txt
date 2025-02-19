@@ -1,0 +1,732 @@
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\WEB_API_ERP_TSJ.dll.config
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\WEB_API_ERP_TSJ.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\WEB_API_ERP_TSJ.pdb
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\csc.exe
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\csc.exe.config
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\csc.rsp
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\csi.exe
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\csi.exe.config
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\csi.rsp
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.AppContext.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Collections.Immutable.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Console.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Globalization.Calendars.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.IO.Compression.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.IO.FileSystem.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Net.Http.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Net.Sockets.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Reflection.Metadata.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.ValueTuple.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Xml.XPath.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\vbc.exe
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\vbc.exe.config
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\vbc.rsp
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\VBCSCompiler.exe
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\VBCSCompiler.exe.config
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Antlr3.Runtime.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.Web.Infrastructure.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Newtonsoft.Json.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Net.Http.Formatting.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Helpers.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Http.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Http.WebHost.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Mvc.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Optimization.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Razor.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.WebPages.Deployment.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.WebPages.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.WebPages.Razor.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\WebGrease.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Helpers.xml
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Mvc.xml
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Optimization.xml
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Razor.xml
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.WebPages.xml
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.WebPages.Deployment.xml
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.WebPages.Razor.xml
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Newtonsoft.Json.xml
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Antlr3.Runtime.pdb
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Net.Http.Formatting.xml
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Http.xml
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Http.WebHost.xml
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\obj\Debug\WEB_API_ERP_TSJ.csproj.CoreCompileInputs.cache
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\obj\Debug\WEB_API_ERP_TSJ.csproj.CopyComplete
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\obj\Debug\WEB_API_ERP_TSJ.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\obj\Debug\WEB_API_ERP_TSJ.pdb
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\EntityFramework.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\EntityFramework.SqlServer.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.Abstractions.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.Logging.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.Tokens.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Buffers.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Memory.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Numerics.Vectors.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Text.Encodings.Web.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Text.Json.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Threading.Tasks.Extensions.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.ValueTuple.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Cors.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Http.Cors.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\EntityFramework.xml
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\EntityFramework.SqlServer.xml
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.Abstractions.xml
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.Logging.xml
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.Tokens.xml
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Buffers.xml
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Memory.xml
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Numerics.Vectors.xml
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Text.Encodings.Web.xml
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Text.Json.xml
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Threading.Tasks.Extensions.xml
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.ValueTuple.xml
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Http.Cors.xml
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\BCrypt.Net-Next.dll
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\BCrypt.Net-Next.xml
+D:\Project\ERP TSJ\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\obj\Debug\WEB_API_ERP_TSJ.csproj.AssemblyReference.cache
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\WEB_API_ERP_TSJ.dll.config
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\WEB_API_ERP_TSJ.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\WEB_API_ERP_TSJ.pdb
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\csc.exe
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\csc.exe.config
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\csc.rsp
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\csi.exe
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\csi.exe.config
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\csi.rsp
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.AppContext.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Collections.Immutable.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Console.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Globalization.Calendars.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.IO.Compression.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.IO.FileSystem.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Net.Http.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Net.Sockets.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Reflection.Metadata.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.ValueTuple.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Xml.XPath.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\vbc.exe
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\vbc.exe.config
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\vbc.rsp
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\VBCSCompiler.exe
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\VBCSCompiler.exe.config
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Antlr3.Runtime.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\BCrypt.Net-Next.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\EntityFramework.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\EntityFramework.SqlServer.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.Abstractions.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.Logging.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.Tokens.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.Web.Infrastructure.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Newtonsoft.Json.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Buffers.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Memory.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Net.Http.Formatting.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Numerics.Vectors.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Text.Encodings.Web.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Text.Json.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Threading.Tasks.Extensions.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.ValueTuple.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Cors.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Helpers.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Http.Cors.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Http.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Http.WebHost.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Mvc.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Optimization.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Razor.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.WebPages.Deployment.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.WebPages.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.WebPages.Razor.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\WebGrease.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\BCrypt.Net-Next.xml
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\EntityFramework.xml
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\EntityFramework.SqlServer.xml
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.Abstractions.xml
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.Logging.xml
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.Tokens.xml
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Buffers.xml
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Memory.xml
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Net.Http.Formatting.xml
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Numerics.Vectors.xml
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Text.Encodings.Web.xml
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Text.Json.xml
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Threading.Tasks.Extensions.xml
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.ValueTuple.xml
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Http.xml
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Http.Cors.xml
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Helpers.xml
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Mvc.xml
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Optimization.xml
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Razor.xml
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.WebPages.xml
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.WebPages.Deployment.xml
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.WebPages.Razor.xml
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Newtonsoft.Json.xml
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Antlr3.Runtime.pdb
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Http.WebHost.xml
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\obj\Debug\WEB_API_ERP_TSJ.csproj.CoreCompileInputs.cache
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\obj\Debug\WEB_API_ERP_TSJ.csproj.CopyComplete
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\obj\Debug\WEB_API_ERP_TSJ.dll
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\obj\Debug\WEB_API_ERP_TSJ.pdb
+D:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\obj\Debug\WEB_API_ERP_TSJ.csproj.AssemblyReference.cache
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\WEB_API_ERP_TSJ.dll.config
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\WEB_API_ERP_TSJ.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\WEB_API_ERP_TSJ.pdb
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\csc.exe
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\csc.exe.config
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\csc.rsp
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\csi.exe
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\csi.exe.config
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\csi.rsp
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.Managed.Core.targets
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.AppContext.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Collections.Immutable.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Console.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Globalization.Calendars.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.IO.Compression.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.IO.FileSystem.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Net.Http.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Net.Sockets.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Reflection.Metadata.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.ValueTuple.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Xml.XmlDocument.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Xml.XPath.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\vbc.exe
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\vbc.exe.config
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\vbc.rsp
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\VBCSCompiler.exe
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\VBCSCompiler.exe.config
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Antlr3.Runtime.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\BCrypt.Net-Next.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\EntityFramework.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\EntityFramework.SqlServer.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.Abstractions.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.Logging.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.Tokens.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.Web.Infrastructure.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Newtonsoft.Json.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Buffers.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Memory.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Net.Http.Formatting.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Numerics.Vectors.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Text.Encodings.Web.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Text.Json.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Threading.Tasks.Extensions.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.ValueTuple.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Cors.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Helpers.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Http.Cors.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Http.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Http.WebHost.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Mvc.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Optimization.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Razor.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.WebPages.Deployment.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.WebPages.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.WebPages.Razor.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\WebGrease.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\BCrypt.Net-Next.xml
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\EntityFramework.xml
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\EntityFramework.SqlServer.xml
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.Abstractions.xml
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.Logging.xml
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.Tokens.xml
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Buffers.xml
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Memory.xml
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Net.Http.Formatting.xml
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Numerics.Vectors.xml
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Text.Encodings.Web.xml
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Text.Json.xml
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Threading.Tasks.Extensions.xml
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.ValueTuple.xml
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Http.xml
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Http.Cors.xml
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Helpers.xml
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Mvc.xml
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Optimization.xml
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Razor.xml
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.WebPages.xml
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.WebPages.Deployment.xml
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.WebPages.Razor.xml
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Newtonsoft.Json.xml
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Antlr3.Runtime.pdb
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Http.WebHost.xml
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\obj\Debug\WEB_API_ERP_TSJ.csproj.AssemblyReference.cache
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\obj\Debug\WEB_API_ERP_TSJ.csproj.CoreCompileInputs.cache
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\obj\Debug\WEB_API_ERP_TSJ.csproj.CopyComplete
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\obj\Debug\WEB_API_ERP_TSJ.dll
+D:\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\obj\Debug\WEB_API_ERP_TSJ.pdb
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\WEB_API_ERP_TSJ.dll.config
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\WEB_API_ERP_TSJ.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\WEB_API_ERP_TSJ.pdb
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\csc.exe
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\csc.exe.config
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\csc.rsp
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\csi.exe
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\csi.exe.config
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\csi.rsp
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.AppContext.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Collections.Immutable.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Console.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Globalization.Calendars.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.IO.Compression.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.IO.FileSystem.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Net.Http.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Net.Sockets.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Reflection.Metadata.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.ValueTuple.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Xml.XPath.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\vbc.exe
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\vbc.exe.config
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\vbc.rsp
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\VBCSCompiler.exe
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\roslyn\VBCSCompiler.exe.config
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Antlr3.Runtime.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\BCrypt.Net-Next.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\EntityFramework.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\EntityFramework.SqlServer.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.Abstractions.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.Logging.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.Web.Infrastructure.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Newtonsoft.Json.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Buffers.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Memory.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Net.Http.Formatting.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Numerics.Vectors.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Text.Encodings.Web.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Text.Json.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Threading.Tasks.Extensions.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.ValueTuple.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Cors.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Helpers.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Http.Cors.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Http.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Http.WebHost.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Mvc.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Optimization.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Razor.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.WebPages.Deployment.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.WebPages.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.WebPages.Razor.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\WebGrease.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\BCrypt.Net-Next.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\EntityFramework.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\EntityFramework.SqlServer.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.Abstractions.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.Logging.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Buffers.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Memory.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Net.Http.Formatting.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Numerics.Vectors.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Text.Encodings.Web.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Text.Json.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Threading.Tasks.Extensions.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.ValueTuple.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Http.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Http.Cors.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Helpers.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Mvc.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Optimization.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Razor.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.WebPages.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.WebPages.Deployment.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.WebPages.Razor.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Newtonsoft.Json.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Antlr3.Runtime.pdb
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\System.Web.Http.WebHost.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\obj\Debug\WEB_API_ERP_TSJ.csproj.AssemblyReference.cache
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\obj\Debug\WEB_API_ERP_TSJ.csproj.CoreCompileInputs.cache
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\obj\Debug\WEB_API_ERP_TSJ.csproj.CopyComplete
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\obj\Debug\WEB_API_ERP_TSJ.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ\WEB_API_ERP_TSJ\obj\Debug\WEB_API_ERP_TSJ.pdb
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\WEB_API_ERP_TSJ.dll.config
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\WEB_API_ERP_TSJ.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\WEB_API_ERP_TSJ.pdb
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\csc.exe
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\csc.exe.config
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\csc.rsp
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\csi.exe
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\csi.exe.config
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\csi.rsp
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\System.AppContext.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\System.Collections.Immutable.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\System.Console.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\System.Globalization.Calendars.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\System.IO.Compression.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\System.IO.FileSystem.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\System.Net.Http.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\System.Net.Sockets.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\System.Reflection.Metadata.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\System.ValueTuple.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\System.Xml.XPath.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\vbc.exe
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\vbc.exe.config
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\vbc.rsp
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\VBCSCompiler.exe
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\roslyn\VBCSCompiler.exe.config
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\Antlr3.Runtime.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\BCrypt.Net-Next.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\EntityFramework.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\EntityFramework.SqlServer.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.Abstractions.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.Logging.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\Microsoft.Web.Infrastructure.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\Newtonsoft.Json.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.Buffers.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.Memory.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.Net.Http.Formatting.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.Numerics.Vectors.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.Text.Encodings.Web.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.Text.Json.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.Threading.Tasks.Extensions.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.ValueTuple.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.Web.Cors.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.Web.Helpers.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.Web.Http.Cors.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.Web.Http.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.Web.Http.WebHost.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.Web.Mvc.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.Web.Optimization.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.Web.Razor.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.Web.WebPages.Deployment.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.Web.WebPages.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.Web.WebPages.Razor.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\WebGrease.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\BCrypt.Net-Next.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\EntityFramework.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\EntityFramework.SqlServer.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.Abstractions.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.Logging.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.Buffers.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.Memory.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.Net.Http.Formatting.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.Numerics.Vectors.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.Text.Encodings.Web.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.Text.Json.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.Threading.Tasks.Extensions.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.ValueTuple.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.Web.Http.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.Web.Http.Cors.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.Web.Helpers.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.Web.Mvc.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.Web.Optimization.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.Web.Razor.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.Web.WebPages.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.Web.WebPages.Deployment.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.Web.WebPages.Razor.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\Newtonsoft.Json.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\Antlr3.Runtime.pdb
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\System.Web.Http.WebHost.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\obj\Debug\WEB_API_ERP_TSJ.csproj.AssemblyReference.cache
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\obj\Debug\WEB_API_ERP_TSJ.csproj.CoreCompileInputs.cache
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\obj\Debug\WEB_API_ERP_TSJ.csproj.CopyComplete
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\obj\Debug\WEB_API_ERP_TSJ.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - uat\WEB_API_ERP_TSJ\obj\Debug\WEB_API_ERP_TSJ.pdb
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\obj\Debug\WEB_API_ERP_TSJ.csproj.AssemblyReference.cache
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\obj\Debug\WEB_API_ERP_TSJ.csproj.CoreCompileInputs.cache
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\WEB_API_ERP_TSJ.dll.config
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\WEB_API_ERP_TSJ.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\WEB_API_ERP_TSJ.pdb
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\csc.exe
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\csc.exe.config
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\csc.rsp
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\csi.exe
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\csi.exe.config
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\csi.rsp
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\System.AppContext.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\System.Collections.Immutable.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\System.Console.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\System.Globalization.Calendars.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\System.IO.Compression.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\System.IO.FileSystem.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\System.Net.Http.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\System.Net.Sockets.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\System.Reflection.Metadata.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\System.ValueTuple.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\System.Xml.XPath.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\vbc.exe
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\vbc.exe.config
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\vbc.rsp
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\VBCSCompiler.exe
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\roslyn\VBCSCompiler.exe.config
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\Antlr3.Runtime.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\BCrypt.Net-Next.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\EntityFramework.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\EntityFramework.SqlServer.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.Abstractions.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.Logging.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\Microsoft.Web.Infrastructure.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\Newtonsoft.Json.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.Buffers.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.Memory.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.Net.Http.Formatting.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.Numerics.Vectors.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.Text.Encodings.Web.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.Text.Json.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.Threading.Tasks.Extensions.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.ValueTuple.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.Web.Cors.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.Web.Helpers.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.Web.Http.Cors.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.Web.Http.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.Web.Http.WebHost.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.Web.Mvc.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.Web.Optimization.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.Web.Razor.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.Web.WebPages.Deployment.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.Web.WebPages.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.Web.WebPages.Razor.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\WebGrease.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\BCrypt.Net-Next.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\EntityFramework.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\EntityFramework.SqlServer.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.Abstractions.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.Logging.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.Buffers.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.Memory.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.Net.Http.Formatting.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.Numerics.Vectors.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.Text.Encodings.Web.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.Text.Json.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.Threading.Tasks.Extensions.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.ValueTuple.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.Web.Http.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.Web.Http.Cors.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.Web.Helpers.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.Web.Mvc.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.Web.Optimization.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.Web.Razor.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.Web.WebPages.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.Web.WebPages.Deployment.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.Web.WebPages.Razor.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\Newtonsoft.Json.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\Antlr3.Runtime.pdb
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\System.Web.Http.WebHost.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\obj\Debug\WEB_API_ERP_TSJ.dll
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\obj\Debug\WEB_API_ERP_TSJ.pdb
+C:\Project\TSJ INVENTORY\WEB_API_ERP_TSJ - db_erp\WEB_API_ERP_TSJ\obj\Debug\WEB_API_.FA6965B4.Up2Date

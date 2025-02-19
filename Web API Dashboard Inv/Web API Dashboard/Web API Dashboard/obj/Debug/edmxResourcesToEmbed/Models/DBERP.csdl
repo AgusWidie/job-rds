@@ -1,0 +1,628 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBERP3Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="DBERPEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="SP_RN_REQ_MANUAL" ReturnType="Collection(String)" />
+    <FunctionImport Name="SP_RN_REQ_MANUAL_DOC" ReturnType="Collection(String)" />
+    <FunctionImport Name="SP_TEMP_DT_OPERATION_SO" ReturnType="Collection(DBERP3Model.SP_TEMP_DT_OPERATION_SO_Result)">
+      <Parameter Name="operation_id" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_RN_FOAM" ReturnType="Collection(String)" />
+    <FunctionImport Name="SP_RN_UOM" ReturnType="Collection(String)" />
+    <FunctionImport Name="SP_RN_PRODUCT_CATEGORY" ReturnType="Collection(String)" />
+    <FunctionImport Name="SP_RN_PRODUCT_GROUP" ReturnType="Collection(String)" />
+    <FunctionImport Name="SP_RN_PRODUCT_TYPE" ReturnType="Collection(String)" />
+    <FunctionImport Name="SP_RN_MACHINE" ReturnType="Collection(String)" />
+    <FunctionImport Name="SP_RN_PRODUCT_VARIANT" ReturnType="Collection(String)" />
+    <FunctionImport Name="SP_RN_PRODUCT" ReturnType="Collection(String)" />
+    <FunctionImport Name="SP_RN_SUPPLIER" ReturnType="Collection(String)" />
+    <FunctionImport Name="SP_REPORT_CALCULATE_LOG_STOCK_MOVE" ReturnType="Collection(DBERP3Model.SP_REPORT_CALCULATE_LOG_STOCK_MOVE)">
+      <Parameter Name="UserId" Mode="In" Type="String" />
+      <Parameter Name="ProductId" Mode="In" Type="String" />
+      <Parameter Name="StartDate" Mode="In" Type="String" />
+      <Parameter Name="EndDate" Mode="In" Type="String" />
+      <Parameter Name="WHID" Mode="In" Type="String" />
+      <Parameter Name="CompanyID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_REPORT_CALCULATE_LOG_STOCK_MOVE_WARHOUSE" ReturnType="Collection(DBERP3Model.SP_REPORT_CALCULATE_LOG_STOCK_MOVE_WAREHOUSE)">
+      <Parameter Name="UserId" Mode="In" Type="String" />
+      <Parameter Name="WHID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GET_DATA_ITEM_SO" ReturnType="Collection(DBERP3Model.SP_GET_DATA_ITEM_SO)">
+      <Parameter Name="item_code" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_RN_INV_TRANSFER" ReturnType="Collection(String)" />
+    <FunctionImport Name="SP_CHECK_UOM" ReturnType="Collection(String)">
+      <Parameter Name="long" Mode="In" Type="Decimal" />
+      <Parameter Name="wide" Mode="In" Type="Decimal" />
+      <Parameter Name="tall" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GROUP_ITEM" ReturnType="Collection(DBERP3Model.SP_GROUP_ITEM)">
+      <Parameter Name="bulan" Mode="In" Type="Int32" />
+      <Parameter Name="tahun" Mode="In" Type="Int32" />
+      <Parameter Name="product_group" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_PRODUCT_ITEM" ReturnType="Collection(DBERP3Model.SP_PRODUCT_ITEM)">
+      <Parameter Name="bulan" Mode="In" Type="Int32" />
+      <Parameter Name="tahun" Mode="In" Type="Int32" />
+      <Parameter Name="product_group" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_RPT_STOCK" ReturnType="Collection(DBERP3Model.SP_RPT_STOCK)" />
+    <FunctionImport Name="SP_RN_MACHINE_TYPE" ReturnType="Collection(String)" />
+    <FunctionImport Name="SP_GET_PRODUCT_BOM" ReturnType="Collection(DBERP3Model.SP_GET_PRODUCT_BOM)">
+      <Parameter Name="BomType" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GET_PRODUCT_BOM_DETAIL" ReturnType="Collection(DBERP3Model.SP_GET_PRODUCT_BOM_DETAIL)">
+      <Parameter Name="BomType" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_RN_OPERATION" ReturnType="Collection(String)" />
+    <FunctionImport Name="SP_USER" ReturnType="Collection(String)" />
+    <FunctionImport Name="SP_RN_ITEM" ReturnType="Collection(String)" />
+    <FunctionImport Name="SP_SUMARY_STOCK" ReturnType="Collection(DBERP3Model.SP_SUMARY_STOCK)">
+      <Parameter Name="bulan" Mode="In" Type="Int32" />
+      <Parameter Name="tahun" Mode="In" Type="Int32" />
+      <Parameter Name="product_group" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_SUMARY_STOCK_LONG_WIDE" ReturnType="Collection(DBERP3Model.SP_SUMARY_STOCK_LONG_WIDE)">
+      <Parameter Name="bulan" Mode="In" Type="Int32" />
+      <Parameter Name="tahun" Mode="In" Type="Int32" />
+      <Parameter Name="product_group" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_SUMARY_STOCK_LONG_WIDE_BLOCK" ReturnType="Collection(DBERP3Model.SP_SUMARY_STOCK_LONG_WIDE_BLOCK)">
+      <Parameter Name="bulan" Mode="In" Type="Int32" />
+      <Parameter Name="tahun" Mode="In" Type="Int32" />
+      <Parameter Name="product_group" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_SUMARY_STOCK_LONG_WIDE_BLOCK_EXPORT" ReturnType="Collection(DBERP3Model.SP_SUMARY_STOCK_LONG_WIDE_BLOCK_EXPORT)">
+      <Parameter Name="fromBulan" Mode="In" Type="Int32" />
+      <Parameter Name="toBulan" Mode="In" Type="Int32" />
+      <Parameter Name="tahun" Mode="In" Type="Int32" />
+      <Parameter Name="product_group" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_SUMARY_STOCK_LONG_WIDE_COVER_EXPORT" ReturnType="Collection(DBERP3Model.SP_SUMARY_STOCK_LONG_WIDE_COVER_EXPORT)">
+      <Parameter Name="fromBulan" Mode="In" Type="Int32" />
+      <Parameter Name="toBulan" Mode="In" Type="Int32" />
+      <Parameter Name="tahun" Mode="In" Type="Int32" />
+      <Parameter Name="product_group" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_SUMARY_STOCK_LONG_WIDE_COVER" ReturnType="Collection(DBERP3Model.SP_SUMARY_STOCK_LONG_WIDE_COVER)">
+      <Parameter Name="bulan" Mode="In" Type="Int32" />
+      <Parameter Name="tahun" Mode="In" Type="Int32" />
+      <Parameter Name="product_group" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_DATE_SUMARY_STOCK" ReturnType="Collection(DBERP3Model.SP_DATE_SUMARY_STOCK)">
+      <Parameter Name="from" Mode="In" Type="DateTime" />
+      <Parameter Name="to" Mode="In" Type="DateTime" />
+      <Parameter Name="product_group" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_RN_HD_BOM" ReturnType="Collection(String)" />
+    <FunctionImport Name="SP_GET_PRODUCT_BOM_DETAIL_DIMENTION" ReturnType="Collection(DBERP3Model.SP_GET_PRODUCT_BOM_DETAIL_DIMENTION)">
+      <Parameter Name="BomType" Mode="In" Type="Int32" />
+      <Parameter Name="long" Mode="In" Type="Decimal" />
+      <Parameter Name="wide" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="SP_GET_DIMENTION_BOM" ReturnType="Collection(DBERP3Model.SP_GET_DIMENTION_BOM)">
+      <Parameter Name="BomType" Mode="In" Type="Int32" />
+      <Parameter Name="ItemId" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_RN_STOCKOPNAME" ReturnType="Collection(String)" />
+    <FunctionImport Name="SP_ON_HAND_STOCK_OPNAME" ReturnType="Collection(DBERP3Model.SP_ON_HAND_STOCK_OPNAME)">
+      <Parameter Name="StockOpnameId" Mode="In" Type="String" />
+      <Parameter Name="WhId" Mode="In" Type="String" />
+      <Parameter Name="CreateBy" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_LIST_DT_QTY_SCAN_OUT_STOCK_OPNAME" ReturnType="Collection(DBERP3Model.SP_LIST_DT_QTY_SCAN_OUT_STOCK_OPNAME)">
+      <Parameter Name="StockOpnameID" Mode="In" Type="String" />
+      <Parameter Name="ProductID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_ON_HAND_STOCK_OPNAME_COVER" ReturnType="Collection(DBERP3Model.SP_ON_HAND_STOCK_OPNAME_COVER)">
+      <Parameter Name="StockOpnameId" Mode="In" Type="String" />
+      <Parameter Name="WhId" Mode="In" Type="String" />
+      <Parameter Name="CreateBy" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_LIST_QR_BEFORE_SCAN" ReturnType="Collection(DBERP3Model.SP_LIST_QR_BEFORE_SCAN)">
+      <Parameter Name="StockOpnameID" Mode="In" Type="String" />
+      <Parameter Name="ProductID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_RN_SO_IN" ReturnType="Collection(String)" />
+    <FunctionImport Name="SP_RN_WH_IN" ReturnType="Collection(String)" />
+    <FunctionImport Name="SP_SUMARY_STOCK_LONG_WIDE_BLOCK_DAILY" ReturnType="Collection(DBERP3Model.SP_SUMARY_STOCK_LONG_WIDE_BLOCK)">
+      <Parameter Name="start_date" Mode="In" Type="DateTime" />
+      <Parameter Name="tahun" Mode="In" Type="Int32" />
+      <Parameter Name="product_group" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_SUMARY_STOCK_LONG_WIDE_COVER_DAILY" ReturnType="Collection(DBERP3Model.SP_SUMARY_STOCK_LONG_WIDE_COVER)">
+      <Parameter Name="start_date" Mode="In" Type="DateTime" />
+      <Parameter Name="tahun" Mode="In" Type="Int32" />
+      <Parameter Name="product_group" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_REPORT_DETAIL_LOG_STOCK_MOVE" ReturnType="Collection(DBERP3Model.SP_REPORT_DETAIL_LOG_STOCK_MOVE_Result)">
+      <Parameter Name="UserId" Mode="In" Type="String" />
+      <Parameter Name="ProductId" Mode="In" Type="String" />
+      <Parameter Name="StartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="EndDate" Mode="In" Type="DateTime" />
+      <Parameter Name="FromWHId" Mode="In" Type="String" />
+      <Parameter Name="ToWHId" Mode="In" Type="String" />
+      <Parameter Name="ScanInOut" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="SP_DT_MATERIAL_BOM" ReturnType="Collection(DBERP3Model.SP_DT_MATERIAL_BOM)">
+      <Parameter Name="TotalQR" Mode="In" Type="Int32" />
+      <Parameter Name="ProductId" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_DT_MATERIAL_SUMMARY" ReturnType="Collection(DBERP3Model.SP_DT_MATERIAL_SUMMARY)">
+      <Parameter Name="WorkOrderId" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_WORK_ORDER_ASSEMBLY_LIST" ReturnType="Collection(DBERP3Model.SP_WORK_ORDER_ASSEMBLY_LIST)">
+      <Parameter Name="CompanyId" Mode="In" Type="String" />
+      <Parameter Name="WorkOrderDate" Mode="In" Type="String" />
+      <Parameter Name="SPKId" Mode="In" Type="String" />
+      <Parameter Name="ProductGroup" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_DT_MATERIAL_BOM_INSUFICIENT" ReturnType="Collection(DBERP3Model.SP_DT_MATERIAL_BOM)">
+      <Parameter Name="TotalQR" Mode="In" Type="Int32" />
+      <Parameter Name="ProductId" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_RN_DISASSEMBLY" ReturnType="Collection(String)" />
+    <FunctionImport Name="SP_UPDATE_SUBMIT_SIPOT">
+      <Parameter Name="work_order_id" Mode="In" Type="String" />
+      <Parameter Name="product_id" Mode="In" Type="String" />
+      <Parameter Name="so_id" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_LIST_COUNT_STOCK_OPNAME" ReturnType="Collection(DBERP3Model.SP_LIST_COUNT_STOCK_OPNAME)">
+      <Parameter Name="StockOpnameID" Mode="In" Type="String" />
+      <Parameter Name="ProductID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_LIST_COUNT_STOCK_OPNAME_COVER" ReturnType="Collection(DBERP3Model.SP_LIST_COUNT_STOCK_OPNAME_COVER)">
+      <Parameter Name="IdStock" Mode="In" Type="String" />
+      <Parameter Name="StockOpnameID" Mode="In" Type="String" />
+      <Parameter Name="ProductID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="SP_LIST_SCAN_IN_STOCK_OPNAME" ReturnType="Collection(DBERP3Model.SP_LIST_SCAN_IN_STOCK_OPNAME)">
+      <Parameter Name="StockOpnameID" Mode="In" Type="String" />
+      <Parameter Name="ProductID" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="MS_USERS" EntityType="DBERP3Model.MS_USERS" />
+    <EntitySet Name="MS_LOG_LOGIN" EntityType="DBERP3Model.MS_LOG_LOGIN" />
+    <EntitySet Name="V_LOGIN" EntityType="DBERP3Model.V_LOGIN" />
+    <EntitySet Name="USER_ACCESS_DATA" EntityType="DBERP3Model.USER_ACCESS_DATA" />
+    <EntitySet Name="V_WORK_ORDER_ASSEMBLY_DASHBOARD" EntityType="DBERP3Model.V_WORK_ORDER_ASSEMBLY_DASHBOARD" />
+  </EntityContainer>
+  <ComplexType Name="SP_TEMP_DT_OPERATION_SO_Result">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="operation_id" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="so_id" Nullable="true" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="SP_REPORT_DETAIL_LOG_STOCK_MOVE_Result">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="company_id" Nullable="false" />
+    <Property Type="String" Name="move_date" Nullable="false" />
+    <Property Type="String" Name="move_date_filter" Nullable="false" />
+    <Property Type="String" Name="product_id" Nullable="false" />
+    <Property Type="String" Name="product_name" Nullable="false" />
+    <Property Type="String" Name="from_wh_id" Nullable="false" />
+    <Property Type="String" Name="to_wh_id" Nullable="false" />
+    <Property Type="String" Name="from_wh_name" Nullable="false" />
+    <Property Type="String" Name="to_wh_name" Nullable="false" />
+    <Property Type="Int32" Name="qty_done" Nullable="false" />
+    <Property Type="String" Name="lot" Nullable="false" />
+    <Property Type="String" Name="scan_status" Nullable="false" />
+    <Property Type="String" Name="created_by" Nullable="false" />
+    <Property Type="String" Name="product_group_id" Nullable="false" />
+    <Property Type="String" Name="product_group_name" Nullable="false" />
+    <Property Type="Int32" Name="transfer_status" Nullable="false" />
+    <Property Type="String" Name="product_category_name" Nullable="false" />
+    <Property Type="String" Name="variant_id" Nullable="false" />
+    <Property Type="String" Name="variant_name" Nullable="false" />
+    <Property Type="String" Name="allow_material_finish_good" Nullable="false" />
+    <Property Type="String" Name="id_stock" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_REPORT_CALCULATE_LOG_STOCK_MOVE">
+    <Property Type="String" Name="product_id" Nullable="false" />
+    <Property Type="String" Name="wh_id" Nullable="false" />
+    <Property Type="String" Name="company_id" Nullable="false" />
+    <Property Type="Int32" Name="stock_after" Nullable="false" />
+    <Property Type="String" Name="product_name" Nullable="false" />
+    <Property Type="String" Name="product_category_id" Nullable="false" />
+    <Property Type="DateTime" Name="move_date" Nullable="false" />
+    <Property Type="String" Name="product_category_name" Nullable="false" />
+    <Property Type="Int32" Name="stock_before" Nullable="false" />
+    <Property Type="Int32" Name="qty_done" Nullable="false" />
+    <Property Type="DateTime" Name="updated_at" Nullable="false" />
+    <Property Type="String" Name="scan_status" Nullable="false" />
+    <Property Type="String" Name="product_group_id" Nullable="false" />
+    <Property Type="String" Name="product_group_name" Nullable="false" />
+    <Property Type="String" Name="allow_material_finish_good" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_REPORT_CALCULATE_LOG_STOCK_MOVE_WAREHOUSE">
+    <Property Type="String" Name="wh_id" Nullable="false" />
+    <Property Type="String" Name="company_id" Nullable="false" />
+    <Property Type="Int32" Name="stock_after" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_GET_DATA_ITEM_SO">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="company_id" Nullable="false" />
+    <Property Type="String" Name="external_id" Nullable="false" />
+    <Property Type="String" Name="item_code_1" Nullable="false" />
+    <Property Type="String" Name="item_code_2" Nullable="false" />
+    <Property Type="String" Name="item_code_3" Nullable="false" />
+    <Property Type="String" Name="item_code_4" Nullable="false" />
+    <Property Type="String" Name="item_code_5" Nullable="false" />
+    <Property Type="String" Name="item_code_6" Nullable="false" />
+    <Property Type="String" Name="uom_id" Nullable="false" />
+    <Property Type="Int32" Name="status" Nullable="false" />
+    <Property Type="DateTime" Name="created_at" Nullable="false" />
+    <Property Type="DateTime" Name="updated_at" Nullable="false" />
+    <Property Type="DateTime" Name="last_updated_at" Nullable="false" />
+    <Property Type="String" Name="created_by" Nullable="false" />
+    <Property Type="String" Name="item_id" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_SUMARY_STOCK">
+    <Property Type="String" Name="item_id" Nullable="false" />
+    <Property Type="String" Name="product_id" Nullable="false" />
+    <Property Type="String" Name="product_name" Nullable="false" />
+    <Property Type="String" Name="size" Nullable="false" />
+    <Property Type="String" Name="variant_id" Nullable="false" />
+    <Property Type="String" Name="uom_id" Nullable="false" />
+    <Property Type="Decimal" Name="panjang" Nullable="false" />
+    <Property Type="Decimal" Name="lebar" Nullable="false" />
+    <Property Type="Decimal" Name="tinggi" Nullable="false" />
+    <Property Type="String" Name="product_item" Nullable="false" />
+    <Property Type="Int32" Name="minimum_stock" Nullable="false" />
+    <Property Type="Int32" Name="on_hand_stock" Nullable="false" />
+    <Property Type="Int32" Name="tahun" Nullable="false" />
+    <Property Type="Int32" Name="bulan" Nullable="false" />
+    <Property Type="Int32" Name="stok" Nullable="false" />
+    <Property Type="Int32" Name="stok_in" Nullable="false" />
+    <Property Type="Int32" Name="stok_out" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_DATE_SUMARY_STOCK">
+    <Property Type="String" Name="item_id" Nullable="false" />
+    <Property Type="String" Name="product_id" Nullable="false" />
+    <Property Type="String" Name="product_name" Nullable="false" />
+    <Property Type="String" Name="size" Nullable="false" />
+    <Property Type="String" Name="variant_id" Nullable="false" />
+    <Property Type="String" Name="uom_id" Nullable="false" />
+    <Property Type="Decimal" Name="panjang" Nullable="false" />
+    <Property Type="Decimal" Name="lebar" Nullable="false" />
+    <Property Type="Decimal" Name="tinggi" Nullable="false" />
+    <Property Type="String" Name="product_item" Nullable="false" />
+    <Property Type="Int32" Name="minimum_stock" Nullable="false" />
+    <Property Type="Int32" Name="on_hand_stock" Nullable="false" />
+    <Property Type="Int32" Name="bulan" Nullable="false" />
+    <Property Type="Int32" Name="tahun" Nullable="false" />
+    <Property Type="Int32" Name="stock" Nullable="false" />
+    <Property Type="Int32" Name="stock_in" Nullable="false" />
+    <Property Type="Int32" Name="stock_out" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_SUMARY_STOCK_LONG_WIDE">
+    <Property Type="String" Name="item_id" Nullable="false" />
+    <Property Type="String" Name="product_name" Nullable="false" />
+    <Property Type="String" Name="product_item" Nullable="false" />
+    <Property Type="Int32" Name="minimum_stock" Nullable="false" />
+    <Property Type="Int32" Name="on_hand_stock" Nullable="false" />
+    <Property Type="Int32" Name="stok_in" Nullable="false" />
+    <Property Type="Int32" Name="stok_out" Nullable="false" />
+    <Property Type="Int32" Name="stok" Nullable="false" />
+    <Property Type="Decimal" Name="on_hand_stock_m3" Nullable="false" />
+    <Property Type="Decimal" Name="stok_in_m3" Nullable="false" />
+    <Property Type="Decimal" Name="stok_out_m3" Nullable="false" />
+    <Property Type="Decimal" Name="stok_m3" Nullable="false" />
+    <Property Type="Decimal" Name="panjang" Nullable="false" />
+    <Property Type="Decimal" Name="lebar" Nullable="false" />
+    <Property Type="Decimal" Name="tinggi" Nullable="false" />
+    <Property Type="String" Name="dimensi" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_GROUP_ITEM">
+    <Property Type="String" Name="item_id" Nullable="false" />
+    <Property Type="String" Name="product_name" Nullable="false" />
+    <Property Type="Int32" Name="minimum_stock" Nullable="false" />
+    <Property Type="Int32" Name="on_hand_stock" Nullable="false" />
+    <Property Type="Int32" Name="stok_in" Nullable="false" />
+    <Property Type="Int32" Name="stok_out" Nullable="false" />
+    <Property Type="Int32" Name="stok" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_PRODUCT_ITEM">
+    <Property Type="String" Name="item_id" Nullable="false" />
+    <Property Type="String" Name="product_name" Nullable="false" />
+    <Property Type="String" Name="product_item" Nullable="false" />
+    <Property Type="Int32" Name="minimum_stock" Nullable="false" />
+    <Property Type="Int32" Name="on_hand_stock" Nullable="false" />
+    <Property Type="Int32" Name="stok_in" Nullable="false" />
+    <Property Type="Int32" Name="stok_out" Nullable="false" />
+    <Property Type="Int32" Name="stok" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_SUMARY_STOCK_LONG_WIDE_BLOCK">
+    <Property Type="String" Name="item_id" Nullable="false" />
+    <Property Type="Decimal" Name="lebar" Nullable="false" />
+    <Property Type="Decimal" Name="panjang" Nullable="false" />
+    <Property Type="Int32" Name="minimum_stock" Nullable="false" />
+    <Property Type="Int32" Name="on_hand_stock" Nullable="false" />
+    <Property Type="Int32" Name="stok" Nullable="false" />
+    <Property Type="Int32" Name="stok_in" Nullable="false" />
+    <Property Type="Int32" Name="stok_out" Nullable="false" />
+    <Property Type="Decimal" Name="stok_in_m3" Nullable="false" />
+    <Property Type="Decimal" Name="stok_out_m3" Nullable="false" />
+    <Property Type="Decimal" Name="stok_m3" Nullable="false" />
+    <Property Type="String" Name="product_item" Nullable="false" />
+    <Property Type="String" Name="product_name" Nullable="false" />
+    <Property Type="Decimal" Name="on_hand_stock_m3" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_SUMARY_STOCK_LONG_WIDE_COVER">
+    <Property Type="String" Name="item_id" Nullable="false" />
+    <Property Type="Decimal" Name="lebar" Nullable="false" />
+    <Property Type="Int32" Name="minimum_stock" Nullable="false" />
+    <Property Type="Int32" Name="on_hand_stock" Nullable="false" />
+    <Property Type="Decimal" Name="panjang" Nullable="false" />
+    <Property Type="String" Name="product_item" Nullable="false" />
+    <Property Type="String" Name="product_name" Nullable="false" />
+    <Property Type="Int32" Name="stok" Nullable="false" />
+    <Property Type="Int32" Name="stok_in" Nullable="false" />
+    <Property Type="Decimal" Name="stok_in_m3" Nullable="false" />
+    <Property Type="Decimal" Name="stok_m3" Nullable="false" />
+    <Property Type="Int32" Name="stok_out" Nullable="false" />
+    <Property Type="Decimal" Name="stok_out_m3" Nullable="false" />
+    <Property Type="Decimal" Name="on_hand_stock_m3" Nullable="false" />
+    <Property Type="String" Name="dimensi" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_RPT_STOCK">
+    <Property Type="String" Name="product_group_id" Nullable="false" />
+    <Property Type="String" Name="product_item" Nullable="false" />
+    <Property Type="Int32" Name="stock" Nullable="false" />
+    <Property Type="Int32" Name="scan_in" Nullable="false" />
+    <Property Type="Int32" Name="scan_out" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_SUMARY_STOCK_LONG_WIDE_BLOCK_EXPORT">
+    <Property Type="String" Name="product_item" Nullable="false" />
+    <Property Type="String" Name="product_name" Nullable="false" />
+    <Property Type="String" Name="item_id" Nullable="false" />
+    <Property Type="String" Name="size" Nullable="false" />
+    <Property Type="Int32" Name="minimum_stock" Nullable="false" />
+    <Property Type="Int32" Name="on_hand_stock" Nullable="false" />
+    <Property Type="Int32" Name="stock_in" Nullable="false" />
+    <Property Type="Int32" Name="stock_out" Nullable="false" />
+    <Property Type="Int32" Name="stock" Nullable="false" />
+    <Property Type="Int32" Name="bulan" Nullable="false" />
+    <Property Type="Int32" Name="tahun" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_SUMARY_STOCK_LONG_WIDE_COVER_EXPORT">
+    <Property Type="Int32" Name="bulan" Nullable="false" />
+    <Property Type="String" Name="item_id" Nullable="false" />
+    <Property Type="Int32" Name="minimum_stock" Nullable="false" />
+    <Property Type="Int32" Name="on_hand_stock" Nullable="false" />
+    <Property Type="String" Name="product_item" Nullable="false" />
+    <Property Type="String" Name="product_name" Nullable="false" />
+    <Property Type="String" Name="size" Nullable="false" />
+    <Property Type="Int32" Name="stock" Nullable="false" />
+    <Property Type="Int32" Name="stock_in" Nullable="false" />
+    <Property Type="Int32" Name="stock_out" Nullable="false" />
+    <Property Type="Int32" Name="tahun" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_GET_PRODUCT_BOM">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="company_id" Nullable="false" />
+    <Property Type="String" Name="company_name" Nullable="false" />
+    <Property Type="String" Name="group_item_id" Nullable="false" />
+    <Property Type="String" Name="item_id" Nullable="false" />
+    <Property Type="String" Name="product_id" Nullable="false" />
+    <Property Type="String" Name="supplier_id" Nullable="false" />
+    <Property Type="String" Name="alias_customer" Nullable="false" />
+    <Property Type="String" Name="measurement" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_GET_DIMENTION_BOM">
+    <Property Type="String" Name="uom_id" Nullable="false" />
+    <Property Type="String" Name="uom_name" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_GET_PRODUCT_BOM_DETAIL">
+    <Property Type="String" Name="company_id" Nullable="false" />
+    <Property Type="String" Name="company_name" Nullable="false" />
+    <Property Type="String" Name="product_group_id" Nullable="false" />
+    <Property Type="String" Name="item_id" Nullable="false" />
+    <Property Type="String" Name="product_id" Nullable="false" />
+    <Property Type="String" Name="product_name" Nullable="false" />
+    <Property Type="String" Name="measurement" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_DT_MATERIAL_SUMMARY">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="operation_id" Nullable="false" />
+    <Property Type="String" Name="so_id" Nullable="false" />
+    <Property Type="String" Name="variant_name" Nullable="false" />
+    <Property Type="Decimal" Name="wide" Nullable="false" />
+    <Property Type="Int32" Name="qty" Nullable="false" />
+    <Property Type="Decimal" Name="meter_kubik" Nullable="false" />
+    <Property Type="Decimal" Name="long" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_WORK_ORDER_ASSEMBLY_LIST">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="operation_id" Nullable="false" />
+    <Property Type="DateTime" Name="operation_date" Nullable="false" />
+    <Property Type="String" Name="operation_date_str" Nullable="false" />
+    <Property Type="Int32" Name="hd_operation_status" Nullable="false" />
+    <Property Type="String" Name="hd_operation_status_name" Nullable="false" />
+    <Property Type="String" Name="company_id" Nullable="false" />
+    <Property Type="String" Name="company_name" Nullable="false" />
+    <Property Type="Boolean" Name="priority_status" Nullable="false" />
+    <Property Type="Boolean" Name="work_order_internal" Nullable="false" />
+    <Property Type="String" Name="note_close" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_GET_PRODUCT_BOM_DETAIL_DIMENTION">
+    <Property Type="String" Name="company_id" Nullable="false" />
+    <Property Type="String" Name="company_name" Nullable="false" />
+    <Property Type="String" Name="product_group_id" Nullable="false" />
+    <Property Type="String" Name="item_id" Nullable="false" />
+    <Property Type="String" Name="product_id" Nullable="false" />
+    <Property Type="String" Name="product_name" Nullable="false" />
+    <Property Type="String" Name="measurement" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_ON_HAND_STOCK_OPNAME">
+    <Property Type="String" Name="stockopname_id" Nullable="false" />
+    <Property Type="String" Name="product_id" Nullable="false" />
+    <Property Type="Int32" Name="on_hand_stock" Nullable="false" />
+    <Property Type="Int32" Name="status" Nullable="false" />
+    <Property Type="String" Name="product_name" Nullable="false" />
+    <Property Type="String" Name="last_updated_stock" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_ON_HAND_STOCK_OPNAME_COVER">
+    <Property Type="Int32" Name="on_hand_stock" Nullable="false" />
+    <Property Type="String" Name="product_id" Nullable="false" />
+    <Property Type="String" Name="product_name" Nullable="false" />
+    <Property Type="String" Name="stockopname_id" Nullable="false" />
+    <Property Type="Int32" Name="status" Nullable="false" />
+    <Property Type="String" Name="last_updated_stock" Nullable="false" />
+    <Property Type="String" Name="id_stock" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_LIST_DT_QTY_SCAN_OUT_STOCK_OPNAME">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="product_id" Nullable="false" />
+    <Property Type="String" Name="barcode_qr_code" Nullable="false" />
+    <Property Type="String" Name="create_at_qr_code" Nullable="false" />
+    <Property Type="String" Name="id_stock" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_LIST_SCAN_IN_STOCK_OPNAME">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="stockopname_id" Nullable="false" />
+    <Property Type="String" Name="product_id" Nullable="false" />
+    <Property Type="String" Name="barcode" Nullable="false" />
+    <Property Type="String" Name="id_stock" Nullable="false" />
+    <Property Type="String" Name="create_at_qr_code" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_LIST_QR_BEFORE_SCAN">
+    <Property Type="String" Name="id_stock" Nullable="false" />
+    <Property Type="String" Name="product_id" Nullable="false" />
+    <Property Type="String" Name="barcode_qr_code" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_LIST_COUNT_STOCK_OPNAME_COVER">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="barcode" Nullable="false" />
+    <Property Type="String" Name="product_id" Nullable="false" />
+    <Property Type="String" Name="stockopname_id" Nullable="false" />
+    <Property Type="Int32" Name="qty" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_DT_MATERIAL_BOM">
+    <Property Type="String" Name="product_id_header" Nullable="false" />
+    <Property Type="String" Name="bom_id" Nullable="false" />
+    <Property Type="String" Name="product_id" Nullable="false" />
+    <Property Type="String" Name="product_name" Nullable="false" />
+    <Property Type="Int32" Name="on_hand_stock" Nullable="false" />
+    <Property Type="Int32" Name="quantity" Nullable="false" />
+    <Property Type="String" Name="allow_material_finish_good" Nullable="false" />
+    <Property Type="DateTime" Name="created_at" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="SP_LIST_COUNT_STOCK_OPNAME">
+    <Property Type="String" Name="barcode" Nullable="false" />
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="product_id" Nullable="false" />
+    <Property Type="Int32" Name="qty" Nullable="false" />
+  </ComplexType>
+  <EntityType Name="MS_USERS">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="user_id" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="username" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="telepon" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="password" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="role_id" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="device_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="web_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="otp" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="pin" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="refresh_token" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fcm_token" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="invalid_login" Type="Int32" />
+    <Property Name="reset_password" Type="Int32" />
+    <Property Name="avatar" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="status" Type="Int32" />
+    <Property Name="company_id" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="general_id" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="customer_id" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="user_erp" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="created_at" Type="DateTime" Precision="3" />
+    <Property Name="updated_at" Type="DateTime" Precision="3" />
+    <Property Name="last_updated_at" Type="DateTime" Precision="3" />
+    <Property Name="created_by" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="MS_LOG_LOGIN">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="user_id" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="login_at" Type="DateTime" Precision="3" />
+    <Property Name="login_status" Type="Int32" />
+    <Property Name="message" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="V_LOGIN">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="company_id" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="user_id" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="user_erp" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="general_id" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="username" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="telepon" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="password" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="invalid_login" Type="Int32" />
+    <Property Name="reset_password" Type="Int32" />
+    <Property Name="role_id" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="role" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="status" Type="Int32" />
+  </EntityType>
+  <EntityType Name="USER_ACCESS_DATA">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="user_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="wh_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="product_group_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="product_category_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="created_at" Type="DateTime" Precision="3" />
+    <Property Name="updated_at" Type="DateTime" Precision="3" />
+    <Property Name="last_updated_at" Type="DateTime" Precision="3" />
+    <Property Name="deleted_at" Type="DateTime" Precision="3" />
+    <Property Name="created_by" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="V_WORK_ORDER_ASSEMBLY_DASHBOARD">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="work_order_name" />
+      <PropertyRef Name="wh_id" />
+      <PropertyRef Name="long" />
+      <PropertyRef Name="wide" />
+      <PropertyRef Name="tall" />
+      <PropertyRef Name="qty_done" />
+      <PropertyRef Name="note" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="operation_id" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="company_id" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="priority_status" Type="Boolean" />
+    <Property Name="work_order_name" Type="String" Nullable="false" MaxLength="23" FixedLength="false" Unicode="false" />
+    <Property Name="operation_date" Type="DateTime" Precision="0" />
+    <Property Name="finished_operation_date" Type="DateTime" Precision="0" />
+    <Property Name="so_id" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="wh_id" Type="String" Nullable="false" MaxLength="7" FixedLength="false" Unicode="false" />
+    <Property Name="product_group_id" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="product_id" Type="String" MaxLength="35" FixedLength="false" Unicode="false" />
+    <Property Name="product_name" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="dimention" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="variant_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="variant_name" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="long" Type="Int32" Nullable="false" />
+    <Property Name="wide" Type="Int32" Nullable="false" />
+    <Property Name="tall" Type="Int32" Nullable="false" />
+    <Property Name="qty_order" Type="Int32" />
+    <Property Name="m3_order" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="qty_spp" Type="Int32" />
+    <Property Name="m3_spp" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="qty_requested" Type="Int32" />
+    <Property Name="m3_requested" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="qty_done" Type="Int32" Nullable="false" />
+    <Property Name="note" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="created_at" Type="DateTime" Precision="3" />
+  </EntityType>
+</Schema>

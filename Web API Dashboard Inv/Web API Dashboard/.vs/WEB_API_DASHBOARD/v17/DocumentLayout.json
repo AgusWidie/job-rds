@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Project\\TSJ INVENTORY\\WEB_DASHBOARD_INVENTORY\\Web API Dashboard Inv\\Web API Dashboard\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F664DEEE-0972-49D2-90FE-C714AC53232D}|Web API Dashboard\\WEB_API_DASHBOARD.csproj|c:\\project\\tsj inventory\\web_dashboard_inventory\\web api dashboard inv\\web api dashboard\\web api dashboard\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F664DEEE-0972-49D2-90FE-C714AC53232D}|Web API Dashboard\\WEB_API_DASHBOARD.csproj|solutionrelative:web api dashboard\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F664DEEE-0972-49D2-90FE-C714AC53232D}|Web API Dashboard\\WEB_API_DASHBOARD.csproj|C:\\Project\\TSJ INVENTORY\\WEB_DASHBOARD_INVENTORY\\Web API Dashboard Inv\\Web API Dashboard\\web api dashboard\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F664DEEE-0972-49D2-90FE-C714AC53232D}|Web API Dashboard\\WEB_API_DASHBOARD.csproj|solutionrelative:web api dashboard\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F664DEEE-0972-49D2-90FE-C714AC53232D}|Web API Dashboard\\WEB_API_DASHBOARD.csproj|C:\\Project\\TSJ INVENTORY\\WEB_DASHBOARD_INVENTORY\\Web API Dashboard Inv\\Web API Dashboard\\web api dashboard\\services\\tokenvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F664DEEE-0972-49D2-90FE-C714AC53232D}|Web API Dashboard\\WEB_API_DASHBOARD.csproj|solutionrelative:web api dashboard\\services\\tokenvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Project\\TSJ INVENTORY\\WEB_DASHBOARD_INVENTORY\\Web API Dashboard Inv\\Web API Dashboard\\Web API Dashboard\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "Web API Dashboard\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Project\\TSJ INVENTORY\\WEB_DASHBOARD_INVENTORY\\Web API Dashboard Inv\\Web API Dashboard\\Web API Dashboard\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "Web API Dashboard\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAwwFAAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-07T07:31:56.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Project\\TSJ INVENTORY\\WEB_DASHBOARD_INVENTORY\\Web API Dashboard Inv\\Web API Dashboard\\Web API Dashboard\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Web API Dashboard\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Project\\TSJ INVENTORY\\WEB_DASHBOARD_INVENTORY\\Web API Dashboard Inv\\Web API Dashboard\\Web API Dashboard\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Web API Dashboard\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T10:32:28.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TokenValidation.cs",
+              "DocumentMoniker": "C:\\Project\\TSJ INVENTORY\\WEB_DASHBOARD_INVENTORY\\Web API Dashboard Inv\\Web API Dashboard\\Web API Dashboard\\Services\\TokenValidation.cs",
+              "RelativeDocumentMoniker": "Web API Dashboard\\Services\\TokenValidation.cs",
+              "ToolTip": "C:\\Project\\TSJ INVENTORY\\WEB_DASHBOARD_INVENTORY\\Web API Dashboard Inv\\Web API Dashboard\\Web API Dashboard\\Services\\TokenValidation.cs",
+              "RelativeToolTip": "Web API Dashboard\\Services\\TokenValidation.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAuwBkAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T04:06:56.362Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

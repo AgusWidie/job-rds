@@ -1,0 +1,1955 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBERPModelStoreContainer" CdmEntityContainer="DBSOEntities">
+    <EntitySetMapping Name="V_USER">
+      <EntityTypeMapping TypeName="DBERPModel.V_USER">
+        <MappingFragment StoreEntitySet="V_USER">
+          <ScalarProperty Name="user_erp" ColumnName="user_erp" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="avatar" ColumnName="avatar" />
+          <ScalarProperty Name="reset_password" ColumnName="reset_password" />
+          <ScalarProperty Name="invalid_login" ColumnName="invalid_login" />
+          <ScalarProperty Name="refresh_token" ColumnName="refresh_token" />
+          <ScalarProperty Name="fcm_token" ColumnName="fcm_token" />
+          <ScalarProperty Name="device_id" ColumnName="device_id" />
+          <ScalarProperty Name="telepon" ColumnName="telepon" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="role" ColumnName="role" />
+          <ScalarProperty Name="general_id" ColumnName="general_id" />
+          <ScalarProperty Name="parent_phone" ColumnName="parent_phone" />
+          <ScalarProperty Name="parent_name" ColumnName="parent_name" />
+          <ScalarProperty Name="parent_id" ColumnName="parent_id" />
+          <ScalarProperty Name="role_id" ColumnName="role_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_LOGIN">
+      <EntityTypeMapping TypeName="DBERPModel.V_LOGIN">
+        <MappingFragment StoreEntitySet="V_LOGIN">
+          <ScalarProperty Name="user_erp" ColumnName="user_erp" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="role" ColumnName="role" />
+          <ScalarProperty Name="role_id" ColumnName="role_id" />
+          <ScalarProperty Name="reset_password" ColumnName="reset_password" />
+          <ScalarProperty Name="invalid_login" ColumnName="invalid_login" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="telepon" ColumnName="telepon" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="general_id" ColumnName="general_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MS_LOG_LOGIN">
+      <EntityTypeMapping TypeName="DBERPModel.MS_LOG_LOGIN">
+        <MappingFragment StoreEntitySet="MS_LOG_LOGIN">
+          <ScalarProperty Name="message" ColumnName="message" />
+          <ScalarProperty Name="login_status" ColumnName="login_status" />
+          <ScalarProperty Name="login_at" ColumnName="login_at" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MS_USERS">
+      <EntityTypeMapping TypeName="DBERPModel.MS_USERS">
+        <MappingFragment StoreEntitySet="MS_USERS">
+          <ScalarProperty Name="user_erp" ColumnName="user_erp" />
+          <ScalarProperty Name="customer_id" ColumnName="customer_id" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="general_id" ColumnName="general_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="avatar" ColumnName="avatar" />
+          <ScalarProperty Name="reset_password" ColumnName="reset_password" />
+          <ScalarProperty Name="invalid_login" ColumnName="invalid_login" />
+          <ScalarProperty Name="fcm_token" ColumnName="fcm_token" />
+          <ScalarProperty Name="refresh_token" ColumnName="refresh_token" />
+          <ScalarProperty Name="pin" ColumnName="pin" />
+          <ScalarProperty Name="otp" ColumnName="otp" />
+          <ScalarProperty Name="web_id" ColumnName="web_id" />
+          <ScalarProperty Name="device_id" ColumnName="device_id" />
+          <ScalarProperty Name="role_id" ColumnName="role_id" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="telepon" ColumnName="telepon" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MS_FIELDS">
+      <EntityTypeMapping TypeName="DBERPModel.MS_FIELDS">
+        <MappingFragment StoreEntitySet="MS_FIELDS">
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="field_value" ColumnName="field_value" />
+          <ScalarProperty Name="field_name" ColumnName="field_name" />
+          <ScalarProperty Name="field_key" ColumnName="field_key" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MS_COMPANY">
+      <EntityTypeMapping TypeName="DBERPModel.MS_COMPANY">
+        <MappingFragment StoreEntitySet="MS_COMPANY">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="deleted_at" ColumnName="deleted_at" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="fax" ColumnName="fax" />
+          <ScalarProperty Name="telepon" ColumnName="telepon" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="company_name" ColumnName="company_name" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="APPROVAL_ORDER">
+      <EntityTypeMapping TypeName="DBERPModel.APPROVAL_ORDER">
+        <MappingFragment StoreEntitySet="APPROVAL_ORDER">
+          <ScalarProperty Name="approve_by" ColumnName="approve_by" />
+          <ScalarProperty Name="approve_at" ColumnName="approve_at" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="remark_approve" ColumnName="remark_approve" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="status_approve" ColumnName="status_approve" />
+          <ScalarProperty Name="status_order" ColumnName="status_order" />
+          <ScalarProperty Name="to_order_type" ColumnName="to_order_type" />
+          <ScalarProperty Name="from_order_type" ColumnName="from_order_type" />
+          <ScalarProperty Name="dimention" ColumnName="dimention" />
+          <ScalarProperty Name="volume" ColumnName="volume" />
+          <ScalarProperty Name="to_qty" ColumnName="to_qty" />
+          <ScalarProperty Name="from_qty" ColumnName="from_qty" />
+          <ScalarProperty Name="item_code_2" ColumnName="item_code_2" />
+          <ScalarProperty Name="item_code_1" ColumnName="item_code_1" />
+          <ScalarProperty Name="alias_customer" ColumnName="alias_customer" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="so_id" ColumnName="so_id" />
+          <ScalarProperty Name="order_id" ColumnName="order_id" />
+          <ScalarProperty Name="id_detail" ColumnName="id_detail" />
+          <ScalarProperty Name="user_approve" ColumnName="user_approve" />
+          <ScalarProperty Name="approve_id" ColumnName="approve_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CHATs">
+      <EntityTypeMapping TypeName="DBERPModel.CHAT">
+        <MappingFragment StoreEntitySet="CHAT">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="message" ColumnName="message" />
+          <ScalarProperty Name="so_id" ColumnName="so_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DRAFT_DT_DNSP">
+      <EntityTypeMapping TypeName="DBERPModel.DRAFT_DT_DNSP">
+        <MappingFragment StoreEntitySet="DRAFT_DT_DNSP">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="received_at" ColumnName="received_at" />
+          <ScalarProperty Name="status_received" ColumnName="status_received" />
+          <ScalarProperty Name="pick_at" ColumnName="pick_at" />
+          <ScalarProperty Name="status_pick" ColumnName="status_pick" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="dimention" ColumnName="dimention" />
+          <ScalarProperty Name="volume" ColumnName="volume" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="item_code_2" ColumnName="item_code_2" />
+          <ScalarProperty Name="item_code_1" ColumnName="item_code_1" />
+          <ScalarProperty Name="alias_customer" ColumnName="alias_customer" />
+          <ScalarProperty Name="so_detail_id" ColumnName="so_detail_id" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="so_id" ColumnName="so_id" />
+          <ScalarProperty Name="header_id" ColumnName="header_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DRIVERs">
+      <EntityTypeMapping TypeName="DBERPModel.DRIVER">
+        <MappingFragment StoreEntitySet="DRIVER">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="deleted_at" ColumnName="deleted_at" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="vehicel_id" ColumnName="vehicel_id" />
+          <ScalarProperty Name="tax_id" ColumnName="tax_id" />
+          <ScalarProperty Name="nationality" ColumnName="nationality" />
+          <ScalarProperty Name="occupation" ColumnName="occupation" />
+          <ScalarProperty Name="marital_status" ColumnName="marital_status" />
+          <ScalarProperty Name="religion" ColumnName="religion" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="districts" ColumnName="districts" />
+          <ScalarProperty Name="village" ColumnName="village" />
+          <ScalarProperty Name="rw" ColumnName="rw" />
+          <ScalarProperty Name="rt" ColumnName="rt" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="date_of_birth" ColumnName="date_of_birth" />
+          <ScalarProperty Name="place_of_birth" ColumnName="place_of_birth" />
+          <ScalarProperty Name="full_name" ColumnName="full_name" />
+          <ScalarProperty Name="nik" ColumnName="nik" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DT_DNPSP">
+      <EntityTypeMapping TypeName="DBERPModel.DT_DNPSP">
+        <MappingFragment StoreEntitySet="DT_DNPSP">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="received_at" ColumnName="received_at" />
+          <ScalarProperty Name="status_received" ColumnName="status_received" />
+          <ScalarProperty Name="pick_at" ColumnName="pick_at" />
+          <ScalarProperty Name="status_pick" ColumnName="status_pick" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="dimention" ColumnName="dimention" />
+          <ScalarProperty Name="volume" ColumnName="volume" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="item_code_2" ColumnName="item_code_2" />
+          <ScalarProperty Name="item_code_1" ColumnName="item_code_1" />
+          <ScalarProperty Name="alias_customer" ColumnName="alias_customer" />
+          <ScalarProperty Name="so_detail_id" ColumnName="so_detail_id" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="so_id" ColumnName="so_id" />
+          <ScalarProperty Name="header_id" ColumnName="header_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DT_ITEMS">
+      <EntityTypeMapping TypeName="DBERPModel.DT_ITEMS">
+        <MappingFragment StoreEntitySet="DT_ITEMS">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="deleted_at" ColumnName="deleted_at" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="uom_id" ColumnName="uom_id" />
+          <ScalarProperty Name="item_code_6" ColumnName="item_code_6" />
+          <ScalarProperty Name="item_code_5" ColumnName="item_code_5" />
+          <ScalarProperty Name="item_code_4" ColumnName="item_code_4" />
+          <ScalarProperty Name="item_code_3" ColumnName="item_code_3" />
+          <ScalarProperty Name="item_code_2" ColumnName="item_code_2" />
+          <ScalarProperty Name="item_code_1" ColumnName="item_code_1" />
+          <ScalarProperty Name="external_id" ColumnName="external_id" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DT_ORDER">
+      <EntityTypeMapping TypeName="DBERPModel.DT_ORDER">
+        <MappingFragment StoreEntitySet="DT_ORDER">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="remark_detail" ColumnName="remark_detail" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="order_type" ColumnName="order_type" />
+          <ScalarProperty Name="dimention" ColumnName="dimention" />
+          <ScalarProperty Name="volume" ColumnName="volume" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="item_code_2" ColumnName="item_code_2" />
+          <ScalarProperty Name="item_code_1" ColumnName="item_code_1" />
+          <ScalarProperty Name="alias_customer" ColumnName="alias_customer" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="so_id" ColumnName="so_id" />
+          <ScalarProperty Name="order_id" ColumnName="order_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EMAIL_SETUP">
+      <EntityTypeMapping TypeName="DBERPModel.EMAIL_SETUP">
+        <MappingFragment StoreEntitySet="EMAIL_SETUP">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="bcc" ColumnName="bcc" />
+          <ScalarProperty Name="enable_ssl" ColumnName="enable_ssl" />
+          <ScalarProperty Name="credentials" ColumnName="credentials" />
+          <ScalarProperty Name="smtp_port" ColumnName="smtp_port" />
+          <ScalarProperty Name="smtp_server" ColumnName="smtp_server" />
+          <ScalarProperty Name="mail_address" ColumnName="mail_address" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAVORITE_ITEMS">
+      <EntityTypeMapping TypeName="DBERPModel.FAVORITE_ITEMS">
+        <MappingFragment StoreEntitySet="FAVORITE_ITEMS">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="is_favorite" ColumnName="is_favorite" />
+          <ScalarProperty Name="detail_item_id" ColumnName="detail_item_id" />
+          <ScalarProperty Name="customer_id" ColumnName="customer_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FILES">
+      <EntityTypeMapping TypeName="DBERPModel.FILE">
+        <MappingFragment StoreEntitySet="FILES">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="file_base64" ColumnName="file_base64" />
+          <ScalarProperty Name="file_binary" ColumnName="file_binary" />
+          <ScalarProperty Name="file_path" ColumnName="file_path" />
+          <ScalarProperty Name="content_type" ColumnName="content_type" />
+          <ScalarProperty Name="file_ext" ColumnName="file_ext" />
+          <ScalarProperty Name="file_name" ColumnName="file_name" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="snippet" ColumnName="snippet" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="file_group" ColumnName="file_group" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HD_DNPSP">
+      <EntityTypeMapping TypeName="DBERPModel.HD_DNPSP">
+        <MappingFragment StoreEntitySet="HD_DNPSP">
+          <ScalarProperty Name="sj_base64" ColumnName="sj_base64" />
+          <ScalarProperty Name="sj_file" ColumnName="sj_file" />
+          <ScalarProperty Name="driver_sign" ColumnName="driver_sign" />
+          <ScalarProperty Name="recived_sign" ColumnName="recived_sign" />
+          <ScalarProperty Name="received_name" ColumnName="received_name" />
+          <ScalarProperty Name="received_by" ColumnName="received_by" />
+          <ScalarProperty Name="recived_at" ColumnName="recived_at" />
+          <ScalarProperty Name="security_sign" ColumnName="security_sign" />
+          <ScalarProperty Name="security_check_at" ColumnName="security_check_at" />
+          <ScalarProperty Name="security_check" ColumnName="security_check" />
+          <ScalarProperty Name="security" ColumnName="security" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="deleted_at" ColumnName="deleted_at" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="total_volume" ColumnName="total_volume" />
+          <ScalarProperty Name="total_qty" ColumnName="total_qty" />
+          <ScalarProperty Name="end_time" ColumnName="end_time" />
+          <ScalarProperty Name="start_time" ColumnName="start_time" />
+          <ScalarProperty Name="rit" ColumnName="rit" />
+          <ScalarProperty Name="vehicel_id" ColumnName="vehicel_id" />
+          <ScalarProperty Name="volume_m3" ColumnName="volume_m3" />
+          <ScalarProperty Name="driver_id" ColumnName="driver_id" />
+          <ScalarProperty Name="delivery_date" ColumnName="delivery_date" />
+          <ScalarProperty Name="delivery_id" ColumnName="delivery_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HD_ORDER">
+      <EntityTypeMapping TypeName="DBERPModel.HD_ORDER">
+        <MappingFragment StoreEntitySet="HD_ORDER">
+          <ScalarProperty Name="group_status" ColumnName="group_status" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="deleted_at" ColumnName="deleted_at" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="source_name" ColumnName="source_name" />
+          <ScalarProperty Name="invoice_base64_price" ColumnName="invoice_base64_price" />
+          <ScalarProperty Name="invoice_file_price" ColumnName="invoice_file_price" />
+          <ScalarProperty Name="invoice_base64" ColumnName="invoice_base64" />
+          <ScalarProperty Name="invoice_file" ColumnName="invoice_file" />
+          <ScalarProperty Name="remark_header_10" ColumnName="remark_header_10" />
+          <ScalarProperty Name="remark_header_9" ColumnName="remark_header_9" />
+          <ScalarProperty Name="remark_header_8" ColumnName="remark_header_8" />
+          <ScalarProperty Name="remark_header_7" ColumnName="remark_header_7" />
+          <ScalarProperty Name="remark_header_6" ColumnName="remark_header_6" />
+          <ScalarProperty Name="remark_header_5" ColumnName="remark_header_5" />
+          <ScalarProperty Name="remark_header_4" ColumnName="remark_header_4" />
+          <ScalarProperty Name="remark_header_3" ColumnName="remark_header_3" />
+          <ScalarProperty Name="remark_header_2" ColumnName="remark_header_2" />
+          <ScalarProperty Name="remark_header_1" ColumnName="remark_header_1" />
+          <ScalarProperty Name="dbf_by" ColumnName="dbf_by" />
+          <ScalarProperty Name="dbf_at" ColumnName="dbf_at" />
+          <ScalarProperty Name="dbf_status" ColumnName="dbf_status" />
+          <ScalarProperty Name="export_by" ColumnName="export_by" />
+          <ScalarProperty Name="export_at" ColumnName="export_at" />
+          <ScalarProperty Name="export_status" ColumnName="export_status" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="shipping_id" ColumnName="shipping_id" />
+          <ScalarProperty Name="customer_id" ColumnName="customer_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="so_id" ColumnName="so_id" />
+          <ScalarProperty Name="cancel_date" ColumnName="cancel_date" />
+          <ScalarProperty Name="completed_date" ColumnName="completed_date" />
+          <ScalarProperty Name="admin_so_approve_date" ColumnName="admin_so_approve_date" />
+          <ScalarProperty Name="sales_approve_date" ColumnName="sales_approve_date" />
+          <ScalarProperty Name="order_date" ColumnName="order_date" />
+          <ScalarProperty Name="order_id" ColumnName="order_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOG_DELIVERY">
+      <EntityTypeMapping TypeName="DBERPModel.LOG_DELIVERY">
+        <MappingFragment StoreEntitySet="LOG_DELIVERY">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="longitude" ColumnName="longitude" />
+          <ScalarProperty Name="latitude" ColumnName="latitude" />
+          <ScalarProperty Name="driver_sign" ColumnName="driver_sign" />
+          <ScalarProperty Name="recived_sign" ColumnName="recived_sign" />
+          <ScalarProperty Name="received_name" ColumnName="received_name" />
+          <ScalarProperty Name="receiver" ColumnName="receiver" />
+          <ScalarProperty Name="recived_at" ColumnName="recived_at" />
+          <ScalarProperty Name="type_delivery" ColumnName="type_delivery" />
+          <ScalarProperty Name="so_id" ColumnName="so_id" />
+          <ScalarProperty Name="delivery_id" ColumnName="delivery_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOG_TRANSACTION">
+      <EntityTypeMapping TypeName="DBERPModel.LOG_TRANSACTION">
+        <MappingFragment StoreEntitySet="LOG_TRANSACTION">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="status_color" ColumnName="status_color" />
+          <ScalarProperty Name="line_color" ColumnName="line_color" />
+          <ScalarProperty Name="circle_color" ColumnName="circle_color" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="order_id" ColumnName="order_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MS_CS_SPECIAL_PRODUCT">
+      <EntityTypeMapping TypeName="DBERPModel.MS_CS_SPECIAL_PRODUCT">
+        <MappingFragment StoreEntitySet="MS_CS_SPECIAL_PRODUCT">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="deleted_at" ColumnName="deleted_at" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="commission_persentage" ColumnName="commission_persentage" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="customer_id" ColumnName="customer_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MS_CUSTOMER">
+      <EntityTypeMapping TypeName="DBERPModel.MS_CUSTOMER">
+        <MappingFragment StoreEntitySet="MS_CUSTOMER">
+          <ScalarProperty Name="count_usage" ColumnName="count_usage" />
+          <ScalarProperty Name="limit_order_usage" ColumnName="limit_order_usage" />
+          <ScalarProperty Name="limit_usage" ColumnName="limit_usage" />
+          <ScalarProperty Name="limit_order" ColumnName="limit_order" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="deleted_at" ColumnName="deleted_at" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="parent_id" ColumnName="parent_id" />
+          <ScalarProperty Name="is_parent" ColumnName="is_parent" />
+          <ScalarProperty Name="bank_name" ColumnName="bank_name" />
+          <ScalarProperty Name="bank_id" ColumnName="bank_id" />
+          <ScalarProperty Name="bank_account" ColumnName="bank_account" />
+          <ScalarProperty Name="coa_id" ColumnName="coa_id" />
+          <ScalarProperty Name="special_product" ColumnName="special_product" />
+          <ScalarProperty Name="margin" ColumnName="margin" />
+          <ScalarProperty Name="term" ColumnName="term" />
+          <ScalarProperty Name="limit" ColumnName="limit" />
+          <ScalarProperty Name="tax_type" ColumnName="tax_type" />
+          <ScalarProperty Name="tax_id" ColumnName="tax_id" />
+          <ScalarProperty Name="nationality" ColumnName="nationality" />
+          <ScalarProperty Name="occupation" ColumnName="occupation" />
+          <ScalarProperty Name="marital_status" ColumnName="marital_status" />
+          <ScalarProperty Name="religion" ColumnName="religion" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="districts" ColumnName="districts" />
+          <ScalarProperty Name="village" ColumnName="village" />
+          <ScalarProperty Name="rw" ColumnName="rw" />
+          <ScalarProperty Name="rt" ColumnName="rt" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="date_of_birth" ColumnName="date_of_birth" />
+          <ScalarProperty Name="place_of_birth" ColumnName="place_of_birth" />
+          <ScalarProperty Name="full_name" ColumnName="full_name" />
+          <ScalarProperty Name="nik" ColumnName="nik" />
+          <ScalarProperty Name="longitude" ColumnName="longitude" />
+          <ScalarProperty Name="latitude" ColumnName="latitude" />
+          <ScalarProperty Name="customer_address" ColumnName="customer_address" />
+          <ScalarProperty Name="fax" ColumnName="fax" />
+          <ScalarProperty Name="telepon2" ColumnName="telepon2" />
+          <ScalarProperty Name="telepon1" ColumnName="telepon1" />
+          <ScalarProperty Name="telepon" ColumnName="telepon" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="customer_name" ColumnName="customer_name" />
+          <ScalarProperty Name="customer_id" ColumnName="customer_id" />
+          <ScalarProperty Name="region_id" ColumnName="region_id" />
+          <ScalarProperty Name="sales_id" ColumnName="sales_id" />
+          <ScalarProperty Name="group_id" ColumnName="group_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MS_FOAM">
+      <EntityTypeMapping TypeName="DBERPModel.MS_FOAM">
+        <MappingFragment StoreEntitySet="MS_FOAM">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="deleted_at" ColumnName="deleted_at" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="external_id" ColumnName="external_id" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="initials" ColumnName="initials" />
+          <ScalarProperty Name="density" ColumnName="density" />
+          <ScalarProperty Name="foam_name" ColumnName="foam_name" />
+          <ScalarProperty Name="foam_id_6" ColumnName="foam_id_6" />
+          <ScalarProperty Name="foam_id_5" ColumnName="foam_id_5" />
+          <ScalarProperty Name="foam_id_4" ColumnName="foam_id_4" />
+          <ScalarProperty Name="foam_id_3" ColumnName="foam_id_3" />
+          <ScalarProperty Name="foam_id_2" ColumnName="foam_id_2" />
+          <ScalarProperty Name="foam_id_1" ColumnName="foam_id_1" />
+          <ScalarProperty Name="foam_id" ColumnName="foam_id" />
+          <ScalarProperty Name="supplier_id" ColumnName="supplier_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MS_GROUP_ACCESS">
+      <EntityTypeMapping TypeName="DBERPModel.MS_GROUP_ACCESS">
+        <MappingFragment StoreEntitySet="MS_GROUP_ACCESS">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="parent_id" ColumnName="parent_id" />
+          <ScalarProperty Name="menu_id" ColumnName="menu_id" />
+          <ScalarProperty Name="role_id" ColumnName="role_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MS_GROUP_CUSTOMER">
+      <EntityTypeMapping TypeName="DBERPModel.MS_GROUP_CUSTOMER">
+        <MappingFragment StoreEntitySet="MS_GROUP_CUSTOMER">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="deleted_at" ColumnName="deleted_at" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="group_name" ColumnName="group_name" />
+          <ScalarProperty Name="group_id" ColumnName="group_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MS_GROUP_ITEMS">
+      <EntityTypeMapping TypeName="DBERPModel.MS_GROUP_ITEMS">
+        <MappingFragment StoreEntitySet="MS_GROUP_ITEMS">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="deleted_at" ColumnName="deleted_at" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="group_item_name" ColumnName="group_item_name" />
+          <ScalarProperty Name="group_item_id" ColumnName="group_item_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MS_HOME_SLIDERS">
+      <EntityTypeMapping TypeName="DBERPModel.MS_HOME_SLIDERS">
+        <MappingFragment StoreEntitySet="MS_HOME_SLIDERS">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="file_base64" ColumnName="file_base64" />
+          <ScalarProperty Name="file_binary" ColumnName="file_binary" />
+          <ScalarProperty Name="file_path" ColumnName="file_path" />
+          <ScalarProperty Name="content_type" ColumnName="content_type" />
+          <ScalarProperty Name="file_ext" ColumnName="file_ext" />
+          <ScalarProperty Name="file_name" ColumnName="file_name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MS_ITEMS">
+      <EntityTypeMapping TypeName="DBERPModel.MS_ITEMS">
+        <MappingFragment StoreEntitySet="MS_ITEMS">
+          <ScalarProperty Name="file_path" ColumnName="file_path" />
+          <ScalarProperty Name="content_type" ColumnName="content_type" />
+          <ScalarProperty Name="file_ext" ColumnName="file_ext" />
+          <ScalarProperty Name="file_name" ColumnName="file_name" />
+          <ScalarProperty Name="base64_image" ColumnName="base64_image" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="deleted_at" ColumnName="deleted_at" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="measurement" ColumnName="measurement" />
+          <ScalarProperty Name="is_po_visible" ColumnName="is_po_visible" />
+          <ScalarProperty Name="alias_po" ColumnName="alias_po" />
+          <ScalarProperty Name="alias_customer" ColumnName="alias_customer" />
+          <ScalarProperty Name="item_name_10" ColumnName="item_name_10" />
+          <ScalarProperty Name="item_name_9" ColumnName="item_name_9" />
+          <ScalarProperty Name="item_name_8" ColumnName="item_name_8" />
+          <ScalarProperty Name="item_name_7" ColumnName="item_name_7" />
+          <ScalarProperty Name="item_name_6" ColumnName="item_name_6" />
+          <ScalarProperty Name="item_name_5" ColumnName="item_name_5" />
+          <ScalarProperty Name="item_name_4" ColumnName="item_name_4" />
+          <ScalarProperty Name="item_name_3" ColumnName="item_name_3" />
+          <ScalarProperty Name="item_name_2" ColumnName="item_name_2" />
+          <ScalarProperty Name="item_name_1" ColumnName="item_name_1" />
+          <ScalarProperty Name="external_id_6" ColumnName="external_id_6" />
+          <ScalarProperty Name="external_id_5" ColumnName="external_id_5" />
+          <ScalarProperty Name="external_id_4" ColumnName="external_id_4" />
+          <ScalarProperty Name="external_id_3" ColumnName="external_id_3" />
+          <ScalarProperty Name="external_id_2" ColumnName="external_id_2" />
+          <ScalarProperty Name="external_id_1" ColumnName="external_id_1" />
+          <ScalarProperty Name="foam_id_6" ColumnName="foam_id_6" />
+          <ScalarProperty Name="foam_id_5" ColumnName="foam_id_5" />
+          <ScalarProperty Name="foam_id_4" ColumnName="foam_id_4" />
+          <ScalarProperty Name="foam_id_3" ColumnName="foam_id_3" />
+          <ScalarProperty Name="foam_id_2" ColumnName="foam_id_2" />
+          <ScalarProperty Name="foam_id_1" ColumnName="foam_id_1" />
+          <ScalarProperty Name="foam_id" ColumnName="foam_id" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="group_item_id" ColumnName="group_item_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MS_MENU">
+      <EntityTypeMapping TypeName="DBERPModel.MS_MENU">
+        <MappingFragment StoreEntitySet="MS_MENU">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="sequance" ColumnName="sequance" />
+          <ScalarProperty Name="parent_id" ColumnName="parent_id" />
+          <ScalarProperty Name="parent" ColumnName="parent" />
+          <ScalarProperty Name="icon" ColumnName="icon" />
+          <ScalarProperty Name="site_url" ColumnName="site_url" />
+          <ScalarProperty Name="menu_name_shortcut" ColumnName="menu_name_shortcut" />
+          <ScalarProperty Name="menu_name" ColumnName="menu_name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MS_NOTIFICATION">
+      <EntityTypeMapping TypeName="DBERPModel.MS_NOTIFICATION">
+        <MappingFragment StoreEntitySet="MS_NOTIFICATION">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="publish_at" ColumnName="publish_at" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="message" ColumnName="message" />
+          <ScalarProperty Name="snippet" ColumnName="snippet" />
+          <ScalarProperty Name="subject" ColumnName="subject" />
+          <ScalarProperty Name="notif_to" ColumnName="notif_to" />
+          <ScalarProperty Name="topic" ColumnName="topic" />
+          <ScalarProperty Name="notif_from" ColumnName="notif_from" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MS_REGION">
+      <EntityTypeMapping TypeName="DBERPModel.MS_REGION">
+        <MappingFragment StoreEntitySet="MS_REGION">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="deleted_at" ColumnName="deleted_at" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="region_name" ColumnName="region_name" />
+          <ScalarProperty Name="region_id" ColumnName="region_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MS_ROLES">
+      <EntityTypeMapping TypeName="DBERPModel.MS_ROLES">
+        <MappingFragment StoreEntitySet="MS_ROLES">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="role_name" ColumnName="role_name" />
+          <ScalarProperty Name="role_id" ColumnName="role_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MS_SALES">
+      <EntityTypeMapping TypeName="DBERPModel.MS_SALES">
+        <MappingFragment StoreEntitySet="MS_SALES">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="deleted_at" ColumnName="deleted_at" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="bank_name" ColumnName="bank_name" />
+          <ScalarProperty Name="bank_id" ColumnName="bank_id" />
+          <ScalarProperty Name="bank_account" ColumnName="bank_account" />
+          <ScalarProperty Name="coa_id" ColumnName="coa_id" />
+          <ScalarProperty Name="tax_type" ColumnName="tax_type" />
+          <ScalarProperty Name="tax_id" ColumnName="tax_id" />
+          <ScalarProperty Name="nationality" ColumnName="nationality" />
+          <ScalarProperty Name="occupation" ColumnName="occupation" />
+          <ScalarProperty Name="marital_status" ColumnName="marital_status" />
+          <ScalarProperty Name="religion" ColumnName="religion" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="districts" ColumnName="districts" />
+          <ScalarProperty Name="village" ColumnName="village" />
+          <ScalarProperty Name="rw" ColumnName="rw" />
+          <ScalarProperty Name="rt" ColumnName="rt" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="date_of_birth" ColumnName="date_of_birth" />
+          <ScalarProperty Name="place_of_birth" ColumnName="place_of_birth" />
+          <ScalarProperty Name="full_name" ColumnName="full_name" />
+          <ScalarProperty Name="nik" ColumnName="nik" />
+          <ScalarProperty Name="sales_address" ColumnName="sales_address" />
+          <ScalarProperty Name="telepon" ColumnName="telepon" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="sales_name" ColumnName="sales_name" />
+          <ScalarProperty Name="sales_id" ColumnName="sales_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MS_SEND_NOTIFICATION">
+      <EntityTypeMapping TypeName="DBERPModel.MS_SEND_NOTIFICATION">
+        <MappingFragment StoreEntitySet="MS_SEND_NOTIFICATION">
+          <ScalarProperty Name="read_date" ColumnName="read_date" />
+          <ScalarProperty Name="read_by" ColumnName="read_by" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="action_link" ColumnName="action_link" />
+          <ScalarProperty Name="message" ColumnName="message" />
+          <ScalarProperty Name="fcm_token" ColumnName="fcm_token" />
+          <ScalarProperty Name="snippet" ColumnName="snippet" />
+          <ScalarProperty Name="subject" ColumnName="subject" />
+          <ScalarProperty Name="notif_to" ColumnName="notif_to" />
+          <ScalarProperty Name="topic" ColumnName="topic" />
+          <ScalarProperty Name="notif_from" ColumnName="notif_from" />
+          <ScalarProperty Name="notif_type" ColumnName="notif_type" />
+          <ScalarProperty Name="notif_id" ColumnName="notif_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MS_SHIPPING_ADDRESS">
+      <EntityTypeMapping TypeName="DBERPModel.MS_SHIPPING_ADDRESS">
+        <MappingFragment StoreEntitySet="MS_SHIPPING_ADDRESS">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="deleted_at" ColumnName="deleted_at" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="longitude" ColumnName="longitude" />
+          <ScalarProperty Name="latitude" ColumnName="latitude" />
+          <ScalarProperty Name="shipping_address" ColumnName="shipping_address" />
+          <ScalarProperty Name="telepon" ColumnName="telepon" />
+          <ScalarProperty Name="recipient" ColumnName="recipient" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="customer_id" ColumnName="customer_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MS_SUPPLIER">
+      <EntityTypeMapping TypeName="DBERPModel.MS_SUPPLIER">
+        <MappingFragment StoreEntitySet="MS_SUPPLIER">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="deleted_at" ColumnName="deleted_at" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="pic_email" ColumnName="pic_email" />
+          <ScalarProperty Name="pic_telepon" ColumnName="pic_telepon" />
+          <ScalarProperty Name="pic_name" ColumnName="pic_name" />
+          <ScalarProperty Name="bank_name" ColumnName="bank_name" />
+          <ScalarProperty Name="bank_id" ColumnName="bank_id" />
+          <ScalarProperty Name="bank_account" ColumnName="bank_account" />
+          <ScalarProperty Name="coa_id" ColumnName="coa_id" />
+          <ScalarProperty Name="tax_id" ColumnName="tax_id" />
+          <ScalarProperty Name="address3" ColumnName="address3" />
+          <ScalarProperty Name="address2" ColumnName="address2" />
+          <ScalarProperty Name="address1" ColumnName="address1" />
+          <ScalarProperty Name="region_id" ColumnName="region_id" />
+          <ScalarProperty Name="fax" ColumnName="fax" />
+          <ScalarProperty Name="telepon2" ColumnName="telepon2" />
+          <ScalarProperty Name="telepon1" ColumnName="telepon1" />
+          <ScalarProperty Name="telepon" ColumnName="telepon" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="supplier_name" ColumnName="supplier_name" />
+          <ScalarProperty Name="supplier_id" ColumnName="supplier_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MS_UOM">
+      <EntityTypeMapping TypeName="DBERPModel.MS_UOM">
+        <MappingFragment StoreEntitySet="MS_UOM">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="deleted_at" ColumnName="deleted_at" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="measurement" ColumnName="measurement" />
+          <ScalarProperty Name="tall" ColumnName="tall" />
+          <ScalarProperty Name="wide" ColumnName="wide" />
+          <ScalarProperty Name="long" ColumnName="long" />
+          <ScalarProperty Name="dimention" ColumnName="dimention" />
+          <ScalarProperty Name="uom_id" ColumnName="uom_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NEWS">
+      <EntityTypeMapping TypeName="DBERPModel.NEWS">
+        <MappingFragment StoreEntitySet="NEWS">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="expired_at" ColumnName="expired_at" />
+          <ScalarProperty Name="start_at" ColumnName="start_at" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="top_seq" ColumnName="top_seq" />
+          <ScalarProperty Name="top_status" ColumnName="top_status" />
+          <ScalarProperty Name="file_base64" ColumnName="file_base64" />
+          <ScalarProperty Name="file_binary" ColumnName="file_binary" />
+          <ScalarProperty Name="file_path" ColumnName="file_path" />
+          <ScalarProperty Name="content_type" ColumnName="content_type" />
+          <ScalarProperty Name="file_ext" ColumnName="file_ext" />
+          <ScalarProperty Name="file_name" ColumnName="file_name" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="snippet" ColumnName="snippet" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PENDING_ORDER">
+      <EntityTypeMapping TypeName="DBERPModel.PENDING_ORDER">
+        <MappingFragment StoreEntitySet="PENDING_ORDER">
+          <ScalarProperty Name="approve_by" ColumnName="approve_by" />
+          <ScalarProperty Name="approve_at" ColumnName="approve_at" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="remark_approve" ColumnName="remark_approve" />
+          <ScalarProperty Name="remark_header_10" ColumnName="remark_header_10" />
+          <ScalarProperty Name="remark_header_9" ColumnName="remark_header_9" />
+          <ScalarProperty Name="remark_header_8" ColumnName="remark_header_8" />
+          <ScalarProperty Name="remark_header_7" ColumnName="remark_header_7" />
+          <ScalarProperty Name="remark_header_6" ColumnName="remark_header_6" />
+          <ScalarProperty Name="remark_header_5" ColumnName="remark_header_5" />
+          <ScalarProperty Name="remark_header_4" ColumnName="remark_header_4" />
+          <ScalarProperty Name="remark_header_3" ColumnName="remark_header_3" />
+          <ScalarProperty Name="remark_header_2" ColumnName="remark_header_2" />
+          <ScalarProperty Name="remark_header_1" ColumnName="remark_header_1" />
+          <ScalarProperty Name="export_by" ColumnName="export_by" />
+          <ScalarProperty Name="export_at" ColumnName="export_at" />
+          <ScalarProperty Name="export_status" ColumnName="export_status" />
+          <ScalarProperty Name="status_approve" ColumnName="status_approve" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="shipping_id" ColumnName="shipping_id" />
+          <ScalarProperty Name="customer_id" ColumnName="customer_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="so_id" ColumnName="so_id" />
+          <ScalarProperty Name="completed_date" ColumnName="completed_date" />
+          <ScalarProperty Name="admin_so_approve_date" ColumnName="admin_so_approve_date" />
+          <ScalarProperty Name="sales_approve_date" ColumnName="sales_approve_date" />
+          <ScalarProperty Name="order_date" ColumnName="order_date" />
+          <ScalarProperty Name="order_id" ColumnName="order_id" />
+          <ScalarProperty Name="approve_id" ColumnName="approve_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SUPPLIER_PRICE">
+      <EntityTypeMapping TypeName="DBERPModel.SUPPLIER_PRICE">
+        <MappingFragment StoreEntitySet="SUPPLIER_PRICE">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="special_price" ColumnName="special_price" />
+          <ScalarProperty Name="net_price" ColumnName="net_price" />
+          <ScalarProperty Name="discount_5" ColumnName="discount_5" />
+          <ScalarProperty Name="discount_4" ColumnName="discount_4" />
+          <ScalarProperty Name="discount_3" ColumnName="discount_3" />
+          <ScalarProperty Name="discount_2" ColumnName="discount_2" />
+          <ScalarProperty Name="discount_1" ColumnName="discount_1" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="seq" ColumnName="seq" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="supplier_id" ColumnName="supplier_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TEMP_AVAILABLE_DN">
+      <EntityTypeMapping TypeName="DBERPModel.TEMP_AVAILABLE_DN">
+        <MappingFragment StoreEntitySet="TEMP_AVAILABLE_DN">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="selected" ColumnName="selected" />
+          <ScalarProperty Name="icon" ColumnName="icon" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="volume" ColumnName="volume" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="text" ColumnName="text" />
+          <ScalarProperty Name="parent_id" ColumnName="parent_id" />
+          <ScalarProperty Name="parent" ColumnName="parent" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idNo" ColumnName="idNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TEMP_DN">
+      <EntityTypeMapping TypeName="DBERPModel.TEMP_DN">
+        <MappingFragment StoreEntitySet="TEMP_DN">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="selected" ColumnName="selected" />
+          <ScalarProperty Name="icon" ColumnName="icon" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="volume" ColumnName="volume" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="text" ColumnName="text" />
+          <ScalarProperty Name="parent_id" ColumnName="parent_id" />
+          <ScalarProperty Name="parent" ColumnName="parent" />
+          <ScalarProperty Name="hd_dnsp_id" ColumnName="hd_dnsp_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idNo" ColumnName="idNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TMP_ITEMS">
+      <EntityTypeMapping TypeName="DBERPModel.TMP_ITEMS">
+        <MappingFragment StoreEntitySet="TMP_ITEMS">
+          <ScalarProperty Name="item_name_10" ColumnName="item_name_10" />
+          <ScalarProperty Name="item_name_9" ColumnName="item_name_9" />
+          <ScalarProperty Name="item_name_8" ColumnName="item_name_8" />
+          <ScalarProperty Name="item_name_7" ColumnName="item_name_7" />
+          <ScalarProperty Name="item_name_6" ColumnName="item_name_6" />
+          <ScalarProperty Name="item_name_5" ColumnName="item_name_5" />
+          <ScalarProperty Name="item_name_4" ColumnName="item_name_4" />
+          <ScalarProperty Name="item_name_3" ColumnName="item_name_3" />
+          <ScalarProperty Name="item_name_2" ColumnName="item_name_2" />
+          <ScalarProperty Name="item_name_1" ColumnName="item_name_1" />
+          <ScalarProperty Name="kelompok_barang" ColumnName="kelompok_barang" />
+          <ScalarProperty Name="satuan" ColumnName="satuan" />
+          <ScalarProperty Name="kode_3" ColumnName="kode_3" />
+          <ScalarProperty Name="kode_2" ColumnName="kode_2" />
+          <ScalarProperty Name="kode_1" ColumnName="kode_1" />
+          <ScalarProperty Name="kode" ColumnName="kode" />
+          <ScalarProperty Name="ukuran" ColumnName="ukuran" />
+          <ScalarProperty Name="tall" ColumnName="tall" />
+          <ScalarProperty Name="wide" ColumnName="wide" />
+          <ScalarProperty Name="long" ColumnName="long" />
+          <ScalarProperty Name="mobile_item" ColumnName="mobile_item" />
+          <ScalarProperty Name="group_item" ColumnName="group_item" />
+          <ScalarProperty Name="nama_barang" ColumnName="nama_barang" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VEHICLEs">
+      <EntityTypeMapping TypeName="DBERPModel.VEHICLE">
+        <MappingFragment StoreEntitySet="VEHICLE">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="deleted_at" ColumnName="deleted_at" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="volume_m3" ColumnName="volume_m3" />
+          <ScalarProperty Name="weight" ColumnName="weight" />
+          <ScalarProperty Name="fuel" ColumnName="fuel" />
+          <ScalarProperty Name="bpkb_number" ColumnName="bpkb_number" />
+          <ScalarProperty Name="coding" ColumnName="coding" />
+          <ScalarProperty Name="machine_number" ColumnName="machine_number" />
+          <ScalarProperty Name="chassis_number" ColumnName="chassis_number" />
+          <ScalarProperty Name="horse_power" ColumnName="horse_power" />
+          <ScalarProperty Name="color" ColumnName="color" />
+          <ScalarProperty Name="assembly_year" ColumnName="assembly_year" />
+          <ScalarProperty Name="model" ColumnName="model" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="brand_type" ColumnName="brand_type" />
+          <ScalarProperty Name="police_number" ColumnName="police_number" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MV_CS_ITEMS">
+      <EntityTypeMapping TypeName="DBERPModel.MV_CS_ITEMS">
+        <MappingFragment StoreEntitySet="MV_CS_ITEMS">
+          <ScalarProperty Name="status_cover" ColumnName="status_cover" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="customer_id" ColumnName="customer_id" />
+          <ScalarProperty Name="is_po_visible" ColumnName="is_po_visible" />
+          <ScalarProperty Name="alias_po" ColumnName="alias_po" />
+          <ScalarProperty Name="alias_customer" ColumnName="alias_customer" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="group_item_id" ColumnName="group_item_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MV_ITEMS">
+      <EntityTypeMapping TypeName="DBERPModel.MV_ITEMS">
+        <MappingFragment StoreEntitySet="MV_ITEMS">
+          <ScalarProperty Name="is_po_visible" ColumnName="is_po_visible" />
+          <ScalarProperty Name="alias_po" ColumnName="alias_po" />
+          <ScalarProperty Name="alias_customer" ColumnName="alias_customer" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="group_item_id" ColumnName="group_item_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_APPROVAL">
+      <EntityTypeMapping TypeName="DBERPModel.V_APPROVAL">
+        <MappingFragment StoreEntitySet="V_APPROVAL">
+          <ScalarProperty Name="approve_name" ColumnName="approve_name" />
+          <ScalarProperty Name="approve_by" ColumnName="approve_by" />
+          <ScalarProperty Name="approve_at" ColumnName="approve_at" />
+          <ScalarProperty Name="created_name" ColumnName="created_name" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="remark_approve" ColumnName="remark_approve" />
+          <ScalarProperty Name="remark" ColumnName="remark" />
+          <ScalarProperty Name="approve_status_name" ColumnName="approve_status_name" />
+          <ScalarProperty Name="status_approve" ColumnName="status_approve" />
+          <ScalarProperty Name="status_order_name" ColumnName="status_order_name" />
+          <ScalarProperty Name="status_order" ColumnName="status_order" />
+          <ScalarProperty Name="to_order_type" ColumnName="to_order_type" />
+          <ScalarProperty Name="from_order_type" ColumnName="from_order_type" />
+          <ScalarProperty Name="dimention" ColumnName="dimention" />
+          <ScalarProperty Name="volume" ColumnName="volume" />
+          <ScalarProperty Name="to_qty" ColumnName="to_qty" />
+          <ScalarProperty Name="from_qty" ColumnName="from_qty" />
+          <ScalarProperty Name="item_code_2" ColumnName="item_code_2" />
+          <ScalarProperty Name="item_code_1" ColumnName="item_code_1" />
+          <ScalarProperty Name="alias_customer" ColumnName="alias_customer" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="company_name" ColumnName="company_name" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="so_id" ColumnName="so_id" />
+          <ScalarProperty Name="order_id" ColumnName="order_id" />
+          <ScalarProperty Name="id_detail" ColumnName="id_detail" />
+          <ScalarProperty Name="user_approve" ColumnName="user_approve" />
+          <ScalarProperty Name="approve_id" ColumnName="approve_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_CART_HEADER">
+      <EntityTypeMapping TypeName="DBERPModel.V_CART_HEADER">
+        <MappingFragment StoreEntitySet="V_CART_HEADER">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="deleted_at" ColumnName="deleted_at" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="telepon" ColumnName="telepon" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="recipient" ColumnName="recipient" />
+          <ScalarProperty Name="shipping_address" ColumnName="shipping_address" />
+          <ScalarProperty Name="shipping_id" ColumnName="shipping_id" />
+          <ScalarProperty Name="customer_id" ColumnName="customer_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="so_id" ColumnName="so_id" />
+          <ScalarProperty Name="order_date" ColumnName="order_date" />
+          <ScalarProperty Name="order_id" ColumnName="order_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_CHAT">
+      <EntityTypeMapping TypeName="DBERPModel.V_CHAT">
+        <MappingFragment StoreEntitySet="V_CHAT">
+          <ScalarProperty Name="order_id" ColumnName="order_id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="message" ColumnName="message" />
+          <ScalarProperty Name="so_id" ColumnName="so_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_CS_SPECIAL_PRODUCT">
+      <EntityTypeMapping TypeName="DBERPModel.V_CS_SPECIAL_PRODUCT">
+        <MappingFragment StoreEntitySet="V_CS_SPECIAL_PRODUCT">
+          <ScalarProperty Name="group_item_name" ColumnName="group_item_name" />
+          <ScalarProperty Name="group_item_id" ColumnName="group_item_id" />
+          <ScalarProperty Name="id_cust" ColumnName="id_cust" />
+          <ScalarProperty Name="item_id_price" ColumnName="item_id_price" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="deleted_at" ColumnName="deleted_at" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="commission_persentage" ColumnName="commission_persentage" />
+          <ScalarProperty Name="alias_customer" ColumnName="alias_customer" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="customer_name" ColumnName="customer_name" />
+          <ScalarProperty Name="customer_id" ColumnName="customer_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_CUSTOMER">
+      <EntityTypeMapping TypeName="DBERPModel.V_CUSTOMER">
+        <MappingFragment StoreEntitySet="V_CUSTOMER">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="deleted_at" ColumnName="deleted_at" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="parent_id" ColumnName="parent_id" />
+          <ScalarProperty Name="is_parent" ColumnName="is_parent" />
+          <ScalarProperty Name="bank_name" ColumnName="bank_name" />
+          <ScalarProperty Name="bank_id" ColumnName="bank_id" />
+          <ScalarProperty Name="bank_account" ColumnName="bank_account" />
+          <ScalarProperty Name="coa_id" ColumnName="coa_id" />
+          <ScalarProperty Name="special_product" ColumnName="special_product" />
+          <ScalarProperty Name="margin" ColumnName="margin" />
+          <ScalarProperty Name="term" ColumnName="term" />
+          <ScalarProperty Name="limit" ColumnName="limit" />
+          <ScalarProperty Name="tax_type" ColumnName="tax_type" />
+          <ScalarProperty Name="tax_id" ColumnName="tax_id" />
+          <ScalarProperty Name="nationality" ColumnName="nationality" />
+          <ScalarProperty Name="occupation" ColumnName="occupation" />
+          <ScalarProperty Name="marital_status" ColumnName="marital_status" />
+          <ScalarProperty Name="religion" ColumnName="religion" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="districts" ColumnName="districts" />
+          <ScalarProperty Name="village" ColumnName="village" />
+          <ScalarProperty Name="rw" ColumnName="rw" />
+          <ScalarProperty Name="rt" ColumnName="rt" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="date_of_birth" ColumnName="date_of_birth" />
+          <ScalarProperty Name="place_of_birth" ColumnName="place_of_birth" />
+          <ScalarProperty Name="full_name" ColumnName="full_name" />
+          <ScalarProperty Name="nik" ColumnName="nik" />
+          <ScalarProperty Name="longitude" ColumnName="longitude" />
+          <ScalarProperty Name="latitude" ColumnName="latitude" />
+          <ScalarProperty Name="customer_address" ColumnName="customer_address" />
+          <ScalarProperty Name="fax" ColumnName="fax" />
+          <ScalarProperty Name="telepon2" ColumnName="telepon2" />
+          <ScalarProperty Name="telepon1" ColumnName="telepon1" />
+          <ScalarProperty Name="telepon" ColumnName="telepon" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="customer_name" ColumnName="customer_name" />
+          <ScalarProperty Name="customer_id" ColumnName="customer_id" />
+          <ScalarProperty Name="region_name" ColumnName="region_name" />
+          <ScalarProperty Name="region_id" ColumnName="region_id" />
+          <ScalarProperty Name="sales_name" ColumnName="sales_name" />
+          <ScalarProperty Name="sales_id" ColumnName="sales_id" />
+          <ScalarProperty Name="group_name" ColumnName="group_name" />
+          <ScalarProperty Name="group_id" ColumnName="group_id" />
+          <ScalarProperty Name="company_name" ColumnName="company_name" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_DRIVER">
+      <EntityTypeMapping TypeName="DBERPModel.V_DRIVER">
+        <MappingFragment StoreEntitySet="V_DRIVER">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="deleted_at" ColumnName="deleted_at" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="police_number" ColumnName="police_number" />
+          <ScalarProperty Name="tax_id" ColumnName="tax_id" />
+          <ScalarProperty Name="nationality" ColumnName="nationality" />
+          <ScalarProperty Name="occupation" ColumnName="occupation" />
+          <ScalarProperty Name="marital_status" ColumnName="marital_status" />
+          <ScalarProperty Name="religion" ColumnName="religion" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="districts" ColumnName="districts" />
+          <ScalarProperty Name="village" ColumnName="village" />
+          <ScalarProperty Name="rw" ColumnName="rw" />
+          <ScalarProperty Name="rt" ColumnName="rt" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="date_of_birth" ColumnName="date_of_birth" />
+          <ScalarProperty Name="place_of_birth" ColumnName="place_of_birth" />
+          <ScalarProperty Name="full_name" ColumnName="full_name" />
+          <ScalarProperty Name="nik" ColumnName="nik" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_DT_CART">
+      <EntityTypeMapping TypeName="DBERPModel.V_DT_CART">
+        <MappingFragment StoreEntitySet="V_DT_CART">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="item_code_2" ColumnName="item_code_2" />
+          <ScalarProperty Name="item_code_1" ColumnName="item_code_1" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="volume" ColumnName="volume" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="dimention" ColumnName="dimention" />
+          <ScalarProperty Name="alias_customer" ColumnName="alias_customer" />
+          <ScalarProperty Name="order_id" ColumnName="order_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_DT_DELIVERY_DNSP">
+      <EntityTypeMapping TypeName="DBERPModel.V_DT_DELIVERY_DNSP">
+        <MappingFragment StoreEntitySet="V_DT_DELIVERY_DNSP">
+          <ScalarProperty Name="approve_id" ColumnName="approve_id" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="remark_detail" ColumnName="remark_detail" />
+          <ScalarProperty Name="status_header" ColumnName="status_header" />
+          <ScalarProperty Name="transaction_status" ColumnName="transaction_status" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="order_type" ColumnName="order_type" />
+          <ScalarProperty Name="dimention" ColumnName="dimention" />
+          <ScalarProperty Name="volume" ColumnName="volume" />
+          <ScalarProperty Name="qty_delivery" ColumnName="qty_delivery" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="item_code_2" ColumnName="item_code_2" />
+          <ScalarProperty Name="item_code_1" ColumnName="item_code_1" />
+          <ScalarProperty Name="alias_customer" ColumnName="alias_customer" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="so_id" ColumnName="so_id" />
+          <ScalarProperty Name="order_id" ColumnName="order_id" />
+          <ScalarProperty Name="header_id" ColumnName="header_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_DT_DELIVERY_ORDER">
+      <EntityTypeMapping TypeName="DBERPModel.V_DT_DELIVERY_ORDER">
+        <MappingFragment StoreEntitySet="V_DT_DELIVERY_ORDER">
+          <ScalarProperty Name="cover_dimention" ColumnName="cover_dimention" />
+          <ScalarProperty Name="cover_name" ColumnName="cover_name" />
+          <ScalarProperty Name="cover_id" ColumnName="cover_id" />
+          <ScalarProperty Name="approve_id" ColumnName="approve_id" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="remark_detail" ColumnName="remark_detail" />
+          <ScalarProperty Name="status_header" ColumnName="status_header" />
+          <ScalarProperty Name="transaction_status" ColumnName="transaction_status" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="order_type" ColumnName="order_type" />
+          <ScalarProperty Name="dimention" ColumnName="dimention" />
+          <ScalarProperty Name="volume" ColumnName="volume" />
+          <ScalarProperty Name="qty_delivery" ColumnName="qty_delivery" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="item_code_2" ColumnName="item_code_2" />
+          <ScalarProperty Name="item_code_1" ColumnName="item_code_1" />
+          <ScalarProperty Name="alias_customer" ColumnName="alias_customer" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="so_id" ColumnName="so_id" />
+          <ScalarProperty Name="order_id" ColumnName="order_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_DT_DNPSP">
+      <EntityTypeMapping TypeName="DBERPModel.V_DT_DNPSP">
+        <MappingFragment StoreEntitySet="V_DT_DNPSP">
+          <ScalarProperty Name="item_qrcode_inoac" ColumnName="item_qrcode_inoac" />
+          <ScalarProperty Name="item_qrcode" ColumnName="item_qrcode" />
+          <ScalarProperty Name="status_header" ColumnName="status_header" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="dimention" ColumnName="dimention" />
+          <ScalarProperty Name="volume" ColumnName="volume" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="item_code_2" ColumnName="item_code_2" />
+          <ScalarProperty Name="item_code_1" ColumnName="item_code_1" />
+          <ScalarProperty Name="alias_customer" ColumnName="alias_customer" />
+          <ScalarProperty Name="so_detail_id" ColumnName="so_detail_id" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="so_id" ColumnName="so_id" />
+          <ScalarProperty Name="header_id" ColumnName="header_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="delivery_id" ColumnName="delivery_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_DT_ITEM">
+      <EntityTypeMapping TypeName="DBERPModel.V_DT_ITEM">
+        <MappingFragment StoreEntitySet="V_DT_ITEM">
+          <ScalarProperty Name="status_cover" ColumnName="status_cover" />
+          <ScalarProperty Name="dt_cover" ColumnName="dt_cover" />
+          <ScalarProperty Name="group_item_id" ColumnName="group_item_id" />
+          <ScalarProperty Name="is_favorite" ColumnName="is_favorite" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="deleted_at" ColumnName="deleted_at" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="alias_po" ColumnName="alias_po" />
+          <ScalarProperty Name="alias_customer" ColumnName="alias_customer" />
+          <ScalarProperty Name="item_code_6" ColumnName="item_code_6" />
+          <ScalarProperty Name="item_code_5" ColumnName="item_code_5" />
+          <ScalarProperty Name="item_code_4" ColumnName="item_code_4" />
+          <ScalarProperty Name="item_code_3" ColumnName="item_code_3" />
+          <ScalarProperty Name="item_code_2" ColumnName="item_code_2" />
+          <ScalarProperty Name="item_code_1" ColumnName="item_code_1" />
+          <ScalarProperty Name="external_id" ColumnName="external_id" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="volume" ColumnName="volume" />
+          <ScalarProperty Name="measurement" ColumnName="measurement" />
+          <ScalarProperty Name="tall" ColumnName="tall" />
+          <ScalarProperty Name="wide" ColumnName="wide" />
+          <ScalarProperty Name="long" ColumnName="long" />
+          <ScalarProperty Name="Dimention" ColumnName="Dimention" />
+          <ScalarProperty Name="uom_id" ColumnName="uom_id" />
+          <ScalarProperty Name="company_name" ColumnName="company_name" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_DT_ORDER">
+      <EntityTypeMapping TypeName="DBERPModel.V_DT_ORDER">
+        <MappingFragment StoreEntitySet="V_DT_ORDER">
+          <ScalarProperty Name="cover_dimention" ColumnName="cover_dimention" />
+          <ScalarProperty Name="cover_name" ColumnName="cover_name" />
+          <ScalarProperty Name="cover_id" ColumnName="cover_id" />
+          <ScalarProperty Name="approve_id" ColumnName="approve_id" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="remark_detail" ColumnName="remark_detail" />
+          <ScalarProperty Name="status_header" ColumnName="status_header" />
+          <ScalarProperty Name="transaction_status" ColumnName="transaction_status" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="order_type" ColumnName="order_type" />
+          <ScalarProperty Name="dimention" ColumnName="dimention" />
+          <ScalarProperty Name="volume" ColumnName="volume" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="item_code_2" ColumnName="item_code_2" />
+          <ScalarProperty Name="item_code_1" ColumnName="item_code_1" />
+          <ScalarProperty Name="alias_customer" ColumnName="alias_customer" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="so_id" ColumnName="so_id" />
+          <ScalarProperty Name="order_id" ColumnName="order_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_DT_ORDER_DBF">
+      <EntityTypeMapping TypeName="DBERPModel.V_DT_ORDER_DBF">
+        <MappingFragment StoreEntitySet="V_DT_ORDER_DBF">
+          <ScalarProperty Name="item_code_1" ColumnName="item_code_1" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="volume" ColumnName="volume" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="tall" ColumnName="tall" />
+          <ScalarProperty Name="wide" ColumnName="wide" />
+          <ScalarProperty Name="long" ColumnName="long" />
+          <ScalarProperty Name="external_id_detail" ColumnName="external_id_detail" />
+          <ScalarProperty Name="external_id_sjs" ColumnName="external_id_sjs" />
+          <ScalarProperty Name="external_id_spk" ColumnName="external_id_spk" />
+          <ScalarProperty Name="external_id_so" ColumnName="external_id_so" />
+          <ScalarProperty Name="external_id" ColumnName="external_id" />
+          <ScalarProperty Name="export_status" ColumnName="export_status" />
+          <ScalarProperty Name="order_type" ColumnName="order_type" />
+          <ScalarProperty Name="seq" ColumnName="seq" />
+          <ScalarProperty Name="so_id" ColumnName="so_id" />
+          <ScalarProperty Name="order_id" ColumnName="order_id" />
+          <ScalarProperty Name="customer_id" ColumnName="customer_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="order_date" ColumnName="order_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_FAVORITE_ITEMS">
+      <EntityTypeMapping TypeName="DBERPModel.V_FAVORITE_ITEMS">
+        <MappingFragment StoreEntitySet="V_FAVORITE_ITEMS">
+          <ScalarProperty Name="is_favorite" ColumnName="is_favorite" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="deleted_at" ColumnName="deleted_at" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="alias_po" ColumnName="alias_po" />
+          <ScalarProperty Name="alias_customer" ColumnName="alias_customer" />
+          <ScalarProperty Name="item_code_2" ColumnName="item_code_2" />
+          <ScalarProperty Name="item_code_1" ColumnName="item_code_1" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="volume" ColumnName="volume" />
+          <ScalarProperty Name="measurement" ColumnName="measurement" />
+          <ScalarProperty Name="tall" ColumnName="tall" />
+          <ScalarProperty Name="wide" ColumnName="wide" />
+          <ScalarProperty Name="long" ColumnName="long" />
+          <ScalarProperty Name="Dimention" ColumnName="Dimention" />
+          <ScalarProperty Name="uom_id" ColumnName="uom_id" />
+          <ScalarProperty Name="company_name" ColumnName="company_name" />
+          <ScalarProperty Name="customer_id" ColumnName="customer_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_FILES">
+      <EntityTypeMapping TypeName="DBERPModel.V_FILES">
+        <MappingFragment StoreEntitySet="V_FILES">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="file_path" ColumnName="file_path" />
+          <ScalarProperty Name="content_type" ColumnName="content_type" />
+          <ScalarProperty Name="file_ext" ColumnName="file_ext" />
+          <ScalarProperty Name="file_name" ColumnName="file_name" />
+          <ScalarProperty Name="snippet" ColumnName="snippet" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="file_group" ColumnName="file_group" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_GROUP_ACCESS">
+      <EntityTypeMapping TypeName="DBERPModel.V_GROUP_ACCESS">
+        <MappingFragment StoreEntitySet="V_GROUP_ACCESS">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="parent_id" ColumnName="parent_id" />
+          <ScalarProperty Name="parent" ColumnName="parent" />
+          <ScalarProperty Name="icon" ColumnName="icon" />
+          <ScalarProperty Name="site_url" ColumnName="site_url" />
+          <ScalarProperty Name="menu_name" ColumnName="menu_name" />
+          <ScalarProperty Name="menu_id" ColumnName="menu_id" />
+          <ScalarProperty Name="role_name" ColumnName="role_name" />
+          <ScalarProperty Name="role_id" ColumnName="role_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_HD_DNSP">
+      <EntityTypeMapping TypeName="DBERPModel.V_HD_DNSP">
+        <MappingFragment StoreEntitySet="V_HD_DNSP">
+          <ScalarProperty Name="driver_sign" ColumnName="driver_sign" />
+          <ScalarProperty Name="recived_sign" ColumnName="recived_sign" />
+          <ScalarProperty Name="received_name" ColumnName="received_name" />
+          <ScalarProperty Name="received_by" ColumnName="received_by" />
+          <ScalarProperty Name="recived_at" ColumnName="recived_at" />
+          <ScalarProperty Name="security_sign" ColumnName="security_sign" />
+          <ScalarProperty Name="security_check_at" ColumnName="security_check_at" />
+          <ScalarProperty Name="security_check" ColumnName="security_check" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="deleted_at" ColumnName="deleted_at" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="status_delivery" ColumnName="status_delivery" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="end_time" ColumnName="end_time" />
+          <ScalarProperty Name="start_time" ColumnName="start_time" />
+          <ScalarProperty Name="rit" ColumnName="rit" />
+          <ScalarProperty Name="volume_m3" ColumnName="volume_m3" />
+          <ScalarProperty Name="police_number" ColumnName="police_number" />
+          <ScalarProperty Name="vehicel_id" ColumnName="vehicel_id" />
+          <ScalarProperty Name="driver_name" ColumnName="driver_name" />
+          <ScalarProperty Name="driver_id" ColumnName="driver_id" />
+          <ScalarProperty Name="customer_name" ColumnName="customer_name" />
+          <ScalarProperty Name="delivery_date" ColumnName="delivery_date" />
+          <ScalarProperty Name="surat_jalan" ColumnName="surat_jalan" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_HD_DT_ORDER">
+      <EntityTypeMapping TypeName="DBERPModel.V_HD_DT_ORDER">
+        <MappingFragment StoreEntitySet="V_HD_DT_ORDER">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="order_type" ColumnName="order_type" />
+          <ScalarProperty Name="detail_id" ColumnName="detail_id" />
+          <ScalarProperty Name="admin_so_approve_date" ColumnName="admin_so_approve_date" />
+          <ScalarProperty Name="sales_approve_date" ColumnName="sales_approve_date" />
+          <ScalarProperty Name="order_date" ColumnName="order_date" />
+          <ScalarProperty Name="SO_ID" ColumnName="SO_ID" />
+          <ScalarProperty Name="order_id" ColumnName="order_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_HD_ORDER">
+      <EntityTypeMapping TypeName="DBERPModel.V_HD_ORDER">
+        <MappingFragment StoreEntitySet="V_HD_ORDER">
+          <ScalarProperty Name="source_name" ColumnName="source_name" />
+          <ScalarProperty Name="source_id" ColumnName="source_id" />
+          <ScalarProperty Name="export_by" ColumnName="export_by" />
+          <ScalarProperty Name="export_at" ColumnName="export_at" />
+          <ScalarProperty Name="export_status" ColumnName="export_status" />
+          <ScalarProperty Name="invoice_base64" ColumnName="invoice_base64" />
+          <ScalarProperty Name="invoice_file" ColumnName="invoice_file" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="remark_header_10" ColumnName="remark_header_10" />
+          <ScalarProperty Name="remark_header_9" ColumnName="remark_header_9" />
+          <ScalarProperty Name="remark_header_8" ColumnName="remark_header_8" />
+          <ScalarProperty Name="remark_header_7" ColumnName="remark_header_7" />
+          <ScalarProperty Name="remark_header_6" ColumnName="remark_header_6" />
+          <ScalarProperty Name="remark_header_5" ColumnName="remark_header_5" />
+          <ScalarProperty Name="remark_header_4" ColumnName="remark_header_4" />
+          <ScalarProperty Name="remark_header_3" ColumnName="remark_header_3" />
+          <ScalarProperty Name="remark_header_2" ColumnName="remark_header_2" />
+          <ScalarProperty Name="remark_header_1" ColumnName="remark_header_1" />
+          <ScalarProperty Name="transaction_status" ColumnName="transaction_status" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="shipping_address" ColumnName="shipping_address" />
+          <ScalarProperty Name="telepon" ColumnName="telepon" />
+          <ScalarProperty Name="recipient" ColumnName="recipient" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="shipping_id" ColumnName="shipping_id" />
+          <ScalarProperty Name="customer_name" ColumnName="customer_name" />
+          <ScalarProperty Name="customer_id" ColumnName="customer_id" />
+          <ScalarProperty Name="company_name" ColumnName="company_name" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="so_id" ColumnName="so_id" />
+          <ScalarProperty Name="completed_date" ColumnName="completed_date" />
+          <ScalarProperty Name="admin_so_approve_date" ColumnName="admin_so_approve_date" />
+          <ScalarProperty Name="sales_approve_date" ColumnName="sales_approve_date" />
+          <ScalarProperty Name="order_date" ColumnName="order_date" />
+          <ScalarProperty Name="order_id" ColumnName="order_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_ITEM">
+      <EntityTypeMapping TypeName="DBERPModel.V_ITEM">
+        <MappingFragment StoreEntitySet="V_ITEM">
+          <ScalarProperty Name="file_path" ColumnName="file_path" />
+          <ScalarProperty Name="file_name" ColumnName="file_name" />
+          <ScalarProperty Name="base64_image" ColumnName="base64_image" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="deleted_at" ColumnName="deleted_at" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="is_po_visible" ColumnName="is_po_visible" />
+          <ScalarProperty Name="measurement" ColumnName="measurement" />
+          <ScalarProperty Name="alias_po" ColumnName="alias_po" />
+          <ScalarProperty Name="alias_customer" ColumnName="alias_customer" />
+          <ScalarProperty Name="external_id_5" ColumnName="external_id_5" />
+          <ScalarProperty Name="external_id_4" ColumnName="external_id_4" />
+          <ScalarProperty Name="external_id_3" ColumnName="external_id_3" />
+          <ScalarProperty Name="external_id_2" ColumnName="external_id_2" />
+          <ScalarProperty Name="external_id_1" ColumnName="external_id_1" />
+          <ScalarProperty Name="external_id" ColumnName="external_id" />
+          <ScalarProperty Name="supplier_id" ColumnName="supplier_id" />
+          <ScalarProperty Name="foam_id" ColumnName="foam_id" />
+          <ScalarProperty Name="item_name_10" ColumnName="item_name_10" />
+          <ScalarProperty Name="item_name_9" ColumnName="item_name_9" />
+          <ScalarProperty Name="item_name_8" ColumnName="item_name_8" />
+          <ScalarProperty Name="item_name_7" ColumnName="item_name_7" />
+          <ScalarProperty Name="item_name_6" ColumnName="item_name_6" />
+          <ScalarProperty Name="item_name_5" ColumnName="item_name_5" />
+          <ScalarProperty Name="item_name_4" ColumnName="item_name_4" />
+          <ScalarProperty Name="item_name_3" ColumnName="item_name_3" />
+          <ScalarProperty Name="item_name_2" ColumnName="item_name_2" />
+          <ScalarProperty Name="item_name_1" ColumnName="item_name_1" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="group_item_name" ColumnName="group_item_name" />
+          <ScalarProperty Name="group_item_id" ColumnName="group_item_id" />
+          <ScalarProperty Name="company_name" ColumnName="company_name" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_LOG_LOGIN">
+      <EntityTypeMapping TypeName="DBERPModel.V_LOG_LOGIN">
+        <MappingFragment StoreEntitySet="V_LOG_LOGIN">
+          <ScalarProperty Name="message" ColumnName="message" />
+          <ScalarProperty Name="login_status" ColumnName="login_status" />
+          <ScalarProperty Name="login_at" ColumnName="login_at" />
+          <ScalarProperty Name="role_name" ColumnName="role_name" />
+          <ScalarProperty Name="telepon" ColumnName="telepon" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_PENDING_ORDER">
+      <EntityTypeMapping TypeName="DBERPModel.V_PENDING_ORDER">
+        <MappingFragment StoreEntitySet="V_PENDING_ORDER">
+          <ScalarProperty Name="approve_name" ColumnName="approve_name" />
+          <ScalarProperty Name="approve_by" ColumnName="approve_by" />
+          <ScalarProperty Name="approve_at" ColumnName="approve_at" />
+          <ScalarProperty Name="created_name" ColumnName="created_name" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="export_by" ColumnName="export_by" />
+          <ScalarProperty Name="export_at" ColumnName="export_at" />
+          <ScalarProperty Name="export_status" ColumnName="export_status" />
+          <ScalarProperty Name="invoice_base64" ColumnName="invoice_base64" />
+          <ScalarProperty Name="invoice_file" ColumnName="invoice_file" />
+          <ScalarProperty Name="remark_approve" ColumnName="remark_approve" />
+          <ScalarProperty Name="remark_header_10" ColumnName="remark_header_10" />
+          <ScalarProperty Name="remark_header_9" ColumnName="remark_header_9" />
+          <ScalarProperty Name="remark_header_8" ColumnName="remark_header_8" />
+          <ScalarProperty Name="remark_header_7" ColumnName="remark_header_7" />
+          <ScalarProperty Name="remark_header_6" ColumnName="remark_header_6" />
+          <ScalarProperty Name="remark_header_5" ColumnName="remark_header_5" />
+          <ScalarProperty Name="remark_header_4" ColumnName="remark_header_4" />
+          <ScalarProperty Name="remark_header_3" ColumnName="remark_header_3" />
+          <ScalarProperty Name="remark_header_2" ColumnName="remark_header_2" />
+          <ScalarProperty Name="remark_header_1" ColumnName="remark_header_1" />
+          <ScalarProperty Name="approve_status_name" ColumnName="approve_status_name" />
+          <ScalarProperty Name="status_approve" ColumnName="status_approve" />
+          <ScalarProperty Name="transaction_status" ColumnName="transaction_status" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="shipping_address" ColumnName="shipping_address" />
+          <ScalarProperty Name="telepon" ColumnName="telepon" />
+          <ScalarProperty Name="recipient" ColumnName="recipient" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="shipping_id" ColumnName="shipping_id" />
+          <ScalarProperty Name="customer_name" ColumnName="customer_name" />
+          <ScalarProperty Name="customer_id" ColumnName="customer_id" />
+          <ScalarProperty Name="company_name" ColumnName="company_name" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="so_id" ColumnName="so_id" />
+          <ScalarProperty Name="completed_date" ColumnName="completed_date" />
+          <ScalarProperty Name="admin_so_approve_date" ColumnName="admin_so_approve_date" />
+          <ScalarProperty Name="sales_approve_date" ColumnName="sales_approve_date" />
+          <ScalarProperty Name="order_date" ColumnName="order_date" />
+          <ScalarProperty Name="order_id" ColumnName="order_id" />
+          <ScalarProperty Name="approve_id" ColumnName="approve_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_RPT_DNSP">
+      <EntityTypeMapping TypeName="DBERPModel.V_RPT_DNSP">
+        <MappingFragment StoreEntitySet="V_RPT_DNSP">
+          <ScalarProperty Name="source_name" ColumnName="source_name" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="item_code_6" ColumnName="item_code_6" />
+          <ScalarProperty Name="item_code_5" ColumnName="item_code_5" />
+          <ScalarProperty Name="item_code_4" ColumnName="item_code_4" />
+          <ScalarProperty Name="item_code_3" ColumnName="item_code_3" />
+          <ScalarProperty Name="item_code_2" ColumnName="item_code_2" />
+          <ScalarProperty Name="item_code_1" ColumnName="item_code_1" />
+          <ScalarProperty Name="end_time" ColumnName="end_time" />
+          <ScalarProperty Name="start_time" ColumnName="start_time" />
+          <ScalarProperty Name="order_type" ColumnName="order_type" />
+          <ScalarProperty Name="so_id" ColumnName="so_id" />
+          <ScalarProperty Name="delivery_date" ColumnName="delivery_date" />
+          <ScalarProperty Name="rit" ColumnName="rit" />
+          <ScalarProperty Name="police_number" ColumnName="police_number" />
+          <ScalarProperty Name="full_name" ColumnName="full_name" />
+          <ScalarProperty Name="driver_id" ColumnName="driver_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_SLIDERS">
+      <EntityTypeMapping TypeName="DBERPModel.V_SLIDERS">
+        <MappingFragment StoreEntitySet="V_SLIDERS">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="file_base64" ColumnName="file_base64" />
+          <ScalarProperty Name="file_path" ColumnName="file_path" />
+          <ScalarProperty Name="content_type" ColumnName="content_type" />
+          <ScalarProperty Name="file_ext" ColumnName="file_ext" />
+          <ScalarProperty Name="file_name" ColumnName="file_name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_SUPPLIER">
+      <EntityTypeMapping TypeName="DBERPModel.V_SUPPLIER">
+        <MappingFragment StoreEntitySet="V_SUPPLIER">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="deleted_at" ColumnName="deleted_at" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="pic_email" ColumnName="pic_email" />
+          <ScalarProperty Name="pic_telepon" ColumnName="pic_telepon" />
+          <ScalarProperty Name="pic_name" ColumnName="pic_name" />
+          <ScalarProperty Name="bank_name" ColumnName="bank_name" />
+          <ScalarProperty Name="bank_id" ColumnName="bank_id" />
+          <ScalarProperty Name="bank_account" ColumnName="bank_account" />
+          <ScalarProperty Name="coa_id" ColumnName="coa_id" />
+          <ScalarProperty Name="tax_id" ColumnName="tax_id" />
+          <ScalarProperty Name="address3" ColumnName="address3" />
+          <ScalarProperty Name="address2" ColumnName="address2" />
+          <ScalarProperty Name="address1" ColumnName="address1" />
+          <ScalarProperty Name="region_name" ColumnName="region_name" />
+          <ScalarProperty Name="region_id" ColumnName="region_id" />
+          <ScalarProperty Name="fax" ColumnName="fax" />
+          <ScalarProperty Name="telepon2" ColumnName="telepon2" />
+          <ScalarProperty Name="telepon1" ColumnName="telepon1" />
+          <ScalarProperty Name="telepon" ColumnName="telepon" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="supplier_name" ColumnName="supplier_name" />
+          <ScalarProperty Name="supplier_id" ColumnName="supplier_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_SUPPLIER_PRICE">
+      <EntityTypeMapping TypeName="DBERPModel.V_SUPPLIER_PRICE">
+        <MappingFragment StoreEntitySet="V_SUPPLIER_PRICE">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="special_price" ColumnName="special_price" />
+          <ScalarProperty Name="net_price" ColumnName="net_price" />
+          <ScalarProperty Name="discount_5" ColumnName="discount_5" />
+          <ScalarProperty Name="discount_4" ColumnName="discount_4" />
+          <ScalarProperty Name="discount_3" ColumnName="discount_3" />
+          <ScalarProperty Name="discount_2" ColumnName="discount_2" />
+          <ScalarProperty Name="discount_1" ColumnName="discount_1" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="max_seq" ColumnName="max_seq" />
+          <ScalarProperty Name="alias_po" ColumnName="alias_po" />
+          <ScalarProperty Name="alias_customer" ColumnName="alias_customer" />
+          <ScalarProperty Name="foam_id" ColumnName="foam_id" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="supplier_name" ColumnName="supplier_name" />
+          <ScalarProperty Name="supplier_id" ColumnName="supplier_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_TRANSACTION">
+      <EntityTypeMapping TypeName="DBERPModel.V_TRANSACTION">
+        <MappingFragment StoreEntitySet="V_TRANSACTION">
+          <ScalarProperty Name="sales_id" ColumnName="sales_id" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="deleted_at" ColumnName="deleted_at" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="transaction_status" ColumnName="transaction_status" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="volume" ColumnName="volume" />
+          <ScalarProperty Name="shipping_address" ColumnName="shipping_address" />
+          <ScalarProperty Name="telepon" ColumnName="telepon" />
+          <ScalarProperty Name="recipient" ColumnName="recipient" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="shipping_id" ColumnName="shipping_id" />
+          <ScalarProperty Name="customer_id" ColumnName="customer_id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="so_id" ColumnName="so_id" />
+          <ScalarProperty Name="report_date" ColumnName="report_date" />
+          <ScalarProperty Name="cancel_date" ColumnName="cancel_date" />
+          <ScalarProperty Name="admin_so_approve_date" ColumnName="admin_so_approve_date" />
+          <ScalarProperty Name="sales_approve_date" ColumnName="sales_approve_date" />
+          <ScalarProperty Name="completed_date" ColumnName="completed_date" />
+          <ScalarProperty Name="order_date" ColumnName="order_date" />
+          <ScalarProperty Name="order_id" ColumnName="order_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_UOM">
+      <EntityTypeMapping TypeName="DBERPModel.V_UOM">
+        <MappingFragment StoreEntitySet="V_UOM">
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="deleted_at" ColumnName="deleted_at" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="measurement" ColumnName="measurement" />
+          <ScalarProperty Name="volume" ColumnName="volume" />
+          <ScalarProperty Name="tall" ColumnName="tall" />
+          <ScalarProperty Name="wide" ColumnName="wide" />
+          <ScalarProperty Name="long" ColumnName="long" />
+          <ScalarProperty Name="dimention" ColumnName="dimention" />
+          <ScalarProperty Name="uom_id" ColumnName="uom_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_USER" FunctionName="DBERPModel.Store.SP_USER" />
+    <EntitySetMapping Name="MS_PRICE">
+      <EntityTypeMapping TypeName="DBERPModel.MS_PRICE">
+        <MappingFragment StoreEntitySet="MS_PRICE">
+          <ScalarProperty Name="hpp" ColumnName="hpp" />
+          <ScalarProperty Name="desc_10" ColumnName="desc_10" />
+          <ScalarProperty Name="price_10" ColumnName="price_10" />
+          <ScalarProperty Name="desc_9" ColumnName="desc_9" />
+          <ScalarProperty Name="price_9" ColumnName="price_9" />
+          <ScalarProperty Name="desc_8" ColumnName="desc_8" />
+          <ScalarProperty Name="price_8" ColumnName="price_8" />
+          <ScalarProperty Name="desc_7" ColumnName="desc_7" />
+          <ScalarProperty Name="price_7" ColumnName="price_7" />
+          <ScalarProperty Name="desc_6" ColumnName="desc_6" />
+          <ScalarProperty Name="price_6" ColumnName="price_6" />
+          <ScalarProperty Name="desc_5" ColumnName="desc_5" />
+          <ScalarProperty Name="price_5" ColumnName="price_5" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="coa_id" ColumnName="coa_id" />
+          <ScalarProperty Name="stop_at" ColumnName="stop_at" />
+          <ScalarProperty Name="start_at" ColumnName="start_at" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="seq" ColumnName="seq" />
+          <ScalarProperty Name="desc_4" ColumnName="desc_4" />
+          <ScalarProperty Name="price_4" ColumnName="price_4" />
+          <ScalarProperty Name="desc_3" ColumnName="desc_3" />
+          <ScalarProperty Name="price_3" ColumnName="price_3" />
+          <ScalarProperty Name="desc_2" ColumnName="desc_2" />
+          <ScalarProperty Name="price_2" ColumnName="price_2" />
+          <ScalarProperty Name="desc_1" ColumnName="desc_1" />
+          <ScalarProperty Name="price_1" ColumnName="price_1" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="V_MS_PRICE">
+      <EntityTypeMapping TypeName="DBERPModel.V_MS_PRICE">
+        <MappingFragment StoreEntitySet="V_MS_PRICE">
+          <ScalarProperty Name="desc_10" ColumnName="desc_10" />
+          <ScalarProperty Name="price_10" ColumnName="price_10" />
+          <ScalarProperty Name="desc_9" ColumnName="desc_9" />
+          <ScalarProperty Name="price_9" ColumnName="price_9" />
+          <ScalarProperty Name="desc_8" ColumnName="desc_8" />
+          <ScalarProperty Name="price_8" ColumnName="price_8" />
+          <ScalarProperty Name="desc_7" ColumnName="desc_7" />
+          <ScalarProperty Name="price_7" ColumnName="price_7" />
+          <ScalarProperty Name="desc_6" ColumnName="desc_6" />
+          <ScalarProperty Name="price_6" ColumnName="price_6" />
+          <ScalarProperty Name="desc_5" ColumnName="desc_5" />
+          <ScalarProperty Name="price_5" ColumnName="price_5" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="start_at" ColumnName="start_at" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="desc_4" ColumnName="desc_4" />
+          <ScalarProperty Name="price_4" ColumnName="price_4" />
+          <ScalarProperty Name="desc_3" ColumnName="desc_3" />
+          <ScalarProperty Name="price_3" ColumnName="price_3" />
+          <ScalarProperty Name="desc_2" ColumnName="desc_2" />
+          <ScalarProperty Name="price_2" ColumnName="price_2" />
+          <ScalarProperty Name="desc_1" ColumnName="desc_1" />
+          <ScalarProperty Name="price_1" ColumnName="price_1" />
+          <ScalarProperty Name="company_name" ColumnName="company_name" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="alias_po" ColumnName="alias_po" />
+          <ScalarProperty Name="alias_customer" ColumnName="alias_customer" />
+          <ScalarProperty Name="seq" ColumnName="seq" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_RN_ITEM" FunctionName="DBERPModel.Store.SP_RN_ITEM" />
+    <FunctionImportMapping FunctionImportName="SP_GET_DATA_ITEM_SO" FunctionName="DBERPModel.Store.SP_GET_DATA_ITEM_SO">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="DBERPModel.SP_GET_DATA_ITEM_SO">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="external_id" ColumnName="external_id" />
+          <ScalarProperty Name="item_code_1" ColumnName="item_code_1" />
+          <ScalarProperty Name="item_code_2" ColumnName="item_code_2" />
+          <ScalarProperty Name="item_code_3" ColumnName="item_code_3" />
+          <ScalarProperty Name="item_code_4" ColumnName="item_code_4" />
+          <ScalarProperty Name="item_code_5" ColumnName="item_code_5" />
+          <ScalarProperty Name="item_code_6" ColumnName="item_code_6" />
+          <ScalarProperty Name="uom_id" ColumnName="uom_id" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="updated_at" ColumnName="updated_at" />
+          <ScalarProperty Name="last_updated_at" ColumnName="last_updated_at" />
+          <ScalarProperty Name="deleted_at" ColumnName="deleted_at" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="V_SO_ID">
+      <EntityTypeMapping TypeName="DBERPModel.V_SO_ID">
+        <MappingFragment StoreEntitySet="V_SO_ID">
+          <ScalarProperty Name="company_id" ColumnName="company_id" />
+          <ScalarProperty Name="order_type" ColumnName="order_type" />
+          <ScalarProperty Name="dimention" ColumnName="dimention" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="alias_customer" ColumnName="alias_customer" />
+          <ScalarProperty Name="item_id" ColumnName="item_id" />
+          <ScalarProperty Name="so_id" ColumnName="so_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

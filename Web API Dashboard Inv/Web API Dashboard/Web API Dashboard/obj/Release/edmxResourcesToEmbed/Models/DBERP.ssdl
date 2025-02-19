@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBERP3Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="MS_LOG_LOGIN">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="user_id" Type="varchar" MaxLength="10" />
+    <Property Name="login_at" Type="datetime" />
+    <Property Name="login_status" Type="int" />
+    <Property Name="message" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="MS_USERS">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="user_id" Type="varchar" MaxLength="10" />
+    <Property Name="username" Type="varchar" MaxLength="60" />
+    <Property Name="email" Type="varchar" MaxLength="100" />
+    <Property Name="telepon" Type="varchar" MaxLength="100" />
+    <Property Name="password" Type="varchar" MaxLength="128" />
+    <Property Name="role_id" Type="varchar" MaxLength="255" />
+    <Property Name="device_id" Type="varchar" MaxLength="50" />
+    <Property Name="web_id" Type="varchar" MaxLength="50" />
+    <Property Name="otp" Type="varchar" MaxLength="6" />
+    <Property Name="pin" Type="varchar" MaxLength="10" />
+    <Property Name="refresh_token" Type="varchar" MaxLength="50" />
+    <Property Name="fcm_token" Type="varchar" MaxLength="255" />
+    <Property Name="invalid_login" Type="int" />
+    <Property Name="reset_password" Type="int" />
+    <Property Name="avatar" Type="varchar(max)" />
+    <Property Name="status" Type="int" />
+    <Property Name="company_id" Type="varchar" MaxLength="10" />
+    <Property Name="general_id" Type="varchar" MaxLength="10" />
+    <Property Name="customer_id" Type="varchar" MaxLength="10" />
+    <Property Name="user_erp" Type="varchar" MaxLength="10" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="last_updated_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="USER_ACCESS_DATA">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="user_id" Type="varchar" MaxLength="50" />
+    <Property Name="wh_id" Type="varchar" MaxLength="50" />
+    <Property Name="product_group_id" Type="varchar" MaxLength="50" />
+    <Property Name="product_category_id" Type="varchar" MaxLength="50" />
+    <Property Name="created_at" Type="datetime" />
+    <Property Name="updated_at" Type="datetime" />
+    <Property Name="last_updated_at" Type="datetime" />
+    <Property Name="deleted_at" Type="datetime" />
+    <Property Name="created_by" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBERP.dbo.V_LOGIN' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="V_LOGIN">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="company_id" Type="varchar" MaxLength="10" />
+    <Property Name="user_id" Type="varchar" MaxLength="10" />
+    <Property Name="user_erp" Type="varchar" MaxLength="10" />
+    <Property Name="general_id" Type="varchar" MaxLength="10" />
+    <Property Name="username" Type="varchar" MaxLength="60" />
+    <Property Name="email" Type="varchar" MaxLength="100" />
+    <Property Name="telepon" Type="varchar" MaxLength="100" />
+    <Property Name="password" Type="varchar" MaxLength="128" />
+    <Property Name="invalid_login" Type="int" />
+    <Property Name="reset_password" Type="int" />
+    <Property Name="role_id" Type="varchar" MaxLength="255" />
+    <Property Name="role" Type="varchar" MaxLength="50" />
+    <Property Name="status" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DBERP.dbo.V_WORK_ORDER_ASSEMBLY_DASHBOARD' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="V_WORK_ORDER_ASSEMBLY_DASHBOARD">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="work_order_name" />
+      <PropertyRef Name="wh_id" />
+      <PropertyRef Name="long" />
+      <PropertyRef Name="wide" />
+      <PropertyRef Name="tall" />
+      <PropertyRef Name="qty_done" />
+      <PropertyRef Name="note" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="operation_id" Type="varchar" MaxLength="20" />
+    <Property Name="company_id" Type="varchar" MaxLength="10" />
+    <Property Name="priority_status" Type="bit" />
+    <Property Name="work_order_name" Type="varchar" MaxLength="23" Nullable="false" />
+    <Property Name="operation_date" Type="date" />
+    <Property Name="finished_operation_date" Type="date" />
+    <Property Name="so_id" Type="varchar" MaxLength="20" />
+    <Property Name="wh_id" Type="varchar" MaxLength="7" Nullable="false" />
+    <Property Name="product_group_id" Type="varchar" MaxLength="3" />
+    <Property Name="product_id" Type="varchar" MaxLength="35" />
+    <Property Name="product_name" Type="varchar" MaxLength="1000" />
+    <Property Name="dimention" Type="varchar" MaxLength="50" />
+    <Property Name="variant_id" Type="varchar" MaxLength="50" />
+    <Property Name="variant_name" Type="varchar" MaxLength="500" />
+    <Property Name="long" Type="int" Nullable="false" />
+    <Property Name="wide" Type="int" Nullable="false" />
+    <Property Name="tall" Type="int" Nullable="false" />
+    <Property Name="qty_order" Type="int" />
+    <Property Name="m3_order" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="qty_spp" Type="int" />
+    <Property Name="m3_spp" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="qty_requested" Type="int" />
+    <Property Name="m3_requested" Type="decimal" Precision="18" Scale="2" />
+    <Property Name="qty_done" Type="int" Nullable="false" />
+    <Property Name="note" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="created_at" Type="datetime" />
+  </EntityType>
+  <Function Name="SP_CHECK_UOM" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="long" Type="decimal" Mode="In" />
+    <Parameter Name="wide" Type="decimal" Mode="In" />
+    <Parameter Name="tall" Type="decimal" Mode="In" />
+  </Function>
+  <Function Name="SP_DATE_SUMARY_STOCK" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="from" Type="datetime" Mode="In" />
+    <Parameter Name="to" Type="datetime" Mode="In" />
+    <Parameter Name="product_group" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_DT_MATERIAL_BOM" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TotalQR" Type="int" Mode="In" />
+    <Parameter Name="ProductId" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_DT_MATERIAL_BOM_INSUFICIENT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="TotalQR" Type="int" Mode="In" />
+    <Parameter Name="ProductId" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_DT_MATERIAL_SUMMARY" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="WorkOrderId" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_GET_DATA_ITEM_SO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="item_code" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_GET_DIMENTION_BOM" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="BomType" Type="int" Mode="In" />
+    <Parameter Name="ItemId" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_GET_PRODUCT_BOM" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="BomType" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_GET_PRODUCT_BOM_DETAIL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="BomType" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_GET_PRODUCT_BOM_DETAIL_DIMENTION" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="BomType" Type="int" Mode="In" />
+    <Parameter Name="long" Type="decimal" Mode="In" />
+    <Parameter Name="wide" Type="decimal" Mode="In" />
+  </Function>
+  <Function Name="SP_GROUP_ITEM" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="bulan" Type="int" Mode="In" />
+    <Parameter Name="tahun" Type="int" Mode="In" />
+    <Parameter Name="product_group" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_LIST_COUNT_STOCK_OPNAME" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="StockOpnameID" Type="varchar" Mode="In" />
+    <Parameter Name="ProductID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_LIST_COUNT_STOCK_OPNAME_COVER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdStock" Type="varchar" Mode="In" />
+    <Parameter Name="StockOpnameID" Type="varchar" Mode="In" />
+    <Parameter Name="ProductID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_LIST_DT_QTY_SCAN_OUT_STOCK_OPNAME" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="StockOpnameID" Type="varchar" Mode="In" />
+    <Parameter Name="ProductID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_LIST_QR_BEFORE_SCAN" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="StockOpnameID" Type="varchar" Mode="In" />
+    <Parameter Name="ProductID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_LIST_SCAN_IN_STOCK_OPNAME" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="StockOpnameID" Type="varchar" Mode="In" />
+    <Parameter Name="ProductID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_LIST_SCAN_IN_STOCK_OPNAME_COVER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdStock" Type="varchar" Mode="In" />
+    <Parameter Name="StockOpnameID" Type="varchar" Mode="In" />
+    <Parameter Name="ProductID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_ON_HAND_STOCK_OPNAME" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="StockOpnameId" Type="varchar" Mode="In" />
+    <Parameter Name="WhId" Type="varchar" Mode="In" />
+    <Parameter Name="CreateBy" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_ON_HAND_STOCK_OPNAME_COVER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="StockOpnameId" Type="varchar" Mode="In" />
+    <Parameter Name="WhId" Type="varchar" Mode="In" />
+    <Parameter Name="CreateBy" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_PRODUCT_ITEM" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="bulan" Type="int" Mode="In" />
+    <Parameter Name="tahun" Type="int" Mode="In" />
+    <Parameter Name="product_group" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_REPORT_CALCULATE_LOG_STOCK_MOVE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="varchar" Mode="In" />
+    <Parameter Name="ProductId" Type="varchar" Mode="In" />
+    <Parameter Name="StartDate" Type="varchar" Mode="In" />
+    <Parameter Name="EndDate" Type="varchar" Mode="In" />
+    <Parameter Name="WHID" Type="varchar" Mode="In" />
+    <Parameter Name="CompanyID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_REPORT_CALCULATE_LOG_STOCK_MOVE_WAREHOUSE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="varchar" Mode="In" />
+    <Parameter Name="WHID" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_REPORT_DETAIL_LOG_STOCK_MOVE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserId" Type="varchar" Mode="In" />
+    <Parameter Name="ProductId" Type="varchar" Mode="In" />
+    <Parameter Name="StartDate" Type="datetime" Mode="In" />
+    <Parameter Name="EndDate" Type="datetime" Mode="In" />
+    <Parameter Name="FromWHId" Type="varchar" Mode="In" />
+    <Parameter Name="ToWHId" Type="varchar" Mode="In" />
+    <Parameter Name="ScanInOut" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_RN_DISASSEMBLY" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_RN_FOAM" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_RN_HD_BOM" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_RN_INV_TRANSFER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_RN_ITEM" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_RN_MACHINE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_RN_MACHINE_TYPE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_RN_OPERATION" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_RN_PRODUCT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_RN_PRODUCT_CATEGORY" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_RN_PRODUCT_GROUP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_RN_PRODUCT_TYPE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_RN_PRODUCT_VARIANT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_RN_REQ_MANUAL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_RN_REQ_MANUAL_DOC" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_RN_SO_IN" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_RN_STOCKOPNAME" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_RN_SUPPLIER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_RN_UOM" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_RN_WH_IN" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_RPT_STOCK" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_STOCK_DAILY_BLOCK" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="bulan_param" Type="int" Mode="In" />
+    <Parameter Name="tahun_param" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_STOCK_DAILY_COVER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="bulan_param" Type="int" Mode="In" />
+    <Parameter Name="tahun_param" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_STOCK_MOVE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="start_date" Type="date" Mode="In" />
+    <Parameter Name="end_date" Type="date" Mode="In" />
+    <Parameter Name="product_group" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_STOCK_MOVE_BLOCK" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="start_month" Type="int" Mode="In" />
+    <Parameter Name="end_month" Type="int" Mode="In" />
+    <Parameter Name="year" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_STOCK_MOVE_COVER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="start_month" Type="int" Mode="In" />
+    <Parameter Name="end_month" Type="int" Mode="In" />
+    <Parameter Name="year" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_STOCK_YEARLY_BLOCK" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="year" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_STOCK_YEARLY_COVER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="year" Type="int" Mode="In" />
+  </Function>
+  <Function Name="SP_SUMARY_STOCK" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="bulan" Type="int" Mode="In" />
+    <Parameter Name="tahun" Type="int" Mode="In" />
+    <Parameter Name="product_group" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_SUMARY_STOCK_LONG_WIDE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="bulan" Type="int" Mode="In" />
+    <Parameter Name="tahun" Type="int" Mode="In" />
+    <Parameter Name="product_group" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_SUMARY_STOCK_LONG_WIDE_BLOCK" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="bulan" Type="int" Mode="In" />
+    <Parameter Name="tahun" Type="int" Mode="In" />
+    <Parameter Name="product_group" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_SUMARY_STOCK_LONG_WIDE_BLOCK_DAILY" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="start_date" Type="datetime" Mode="In" />
+    <Parameter Name="tahun" Type="int" Mode="In" />
+    <Parameter Name="product_group" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_SUMARY_STOCK_LONG_WIDE_BLOCK_EXPORT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="fromBulan" Type="int" Mode="In" />
+    <Parameter Name="toBulan" Type="int" Mode="In" />
+    <Parameter Name="tahun" Type="int" Mode="In" />
+    <Parameter Name="product_group" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_SUMARY_STOCK_LONG_WIDE_COVER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="bulan" Type="int" Mode="In" />
+    <Parameter Name="tahun" Type="int" Mode="In" />
+    <Parameter Name="product_group" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_SUMARY_STOCK_LONG_WIDE_COVER_DAILY" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="start_date" Type="datetime" Mode="In" />
+    <Parameter Name="tahun" Type="int" Mode="In" />
+    <Parameter Name="product_group" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_SUMARY_STOCK_LONG_WIDE_COVER_EXPORT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="fromBulan" Type="int" Mode="In" />
+    <Parameter Name="toBulan" Type="int" Mode="In" />
+    <Parameter Name="tahun" Type="int" Mode="In" />
+    <Parameter Name="product_group" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_SUMARY_STOCK_MOVE_BLOCK" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="bulan" Type="int" Mode="In" />
+    <Parameter Name="tahun" Type="int" Mode="In" />
+    <Parameter Name="product_group" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_SUMARY_STOCK_MOVE_COVER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="bulan" Type="int" Mode="In" />
+    <Parameter Name="tahun" Type="int" Mode="In" />
+    <Parameter Name="product_group" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_SUMMARY_DAILY_BLOCK" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="tanggal" Type="date" Mode="In" />
+  </Function>
+  <Function Name="SP_SUMMARY_DAILY_COVER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="tanggal" Type="date" Mode="In" />
+  </Function>
+  <Function Name="SP_TEMP_DT_OPERATION_SO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="operation_id" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_UPDATE_SUBMIT_SIPOT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="work_order_id" Type="varchar" Mode="In" />
+    <Parameter Name="product_id" Type="varchar" Mode="In" />
+    <Parameter Name="so_id" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="SP_USER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="SP_WORK_ORDER_ASSEMBLY_LIST" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CompanyId" Type="varchar" Mode="In" />
+    <Parameter Name="WorkOrderDate" Type="varchar" Mode="In" />
+    <Parameter Name="SPKId" Type="varchar" Mode="In" />
+    <Parameter Name="ProductGroup" Type="varchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="DBERP3ModelStoreContainer">
+    <EntitySet Name="MS_LOG_LOGIN" EntityType="Self.MS_LOG_LOGIN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MS_USERS" EntityType="Self.MS_USERS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="USER_ACCESS_DATA" EntityType="Self.USER_ACCESS_DATA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="V_LOGIN" EntityType="Self.V_LOGIN" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [V_LOGIN].[id] AS [id], 
+    [V_LOGIN].[company_id] AS [company_id], 
+    [V_LOGIN].[user_id] AS [user_id], 
+    [V_LOGIN].[user_erp] AS [user_erp], 
+    [V_LOGIN].[general_id] AS [general_id], 
+    [V_LOGIN].[username] AS [username], 
+    [V_LOGIN].[email] AS [email], 
+    [V_LOGIN].[telepon] AS [telepon], 
+    [V_LOGIN].[password] AS [password], 
+    [V_LOGIN].[invalid_login] AS [invalid_login], 
+    [V_LOGIN].[reset_password] AS [reset_password], 
+    [V_LOGIN].[role_id] AS [role_id], 
+    [V_LOGIN].[role] AS [role], 
+    [V_LOGIN].[status] AS [status]
+    FROM [dbo].[V_LOGIN] AS [V_LOGIN]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="V_WORK_ORDER_ASSEMBLY_DASHBOARD" EntityType="Self.V_WORK_ORDER_ASSEMBLY_DASHBOARD" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [V_WORK_ORDER_ASSEMBLY_DASHBOARD].[id] AS [id], 
+    [V_WORK_ORDER_ASSEMBLY_DASHBOARD].[operation_id] AS [operation_id], 
+    [V_WORK_ORDER_ASSEMBLY_DASHBOARD].[company_id] AS [company_id], 
+    [V_WORK_ORDER_ASSEMBLY_DASHBOARD].[priority_status] AS [priority_status], 
+    [V_WORK_ORDER_ASSEMBLY_DASHBOARD].[work_order_name] AS [work_order_name], 
+    [V_WORK_ORDER_ASSEMBLY_DASHBOARD].[operation_date] AS [operation_date], 
+    [V_WORK_ORDER_ASSEMBLY_DASHBOARD].[finished_operation_date] AS [finished_operation_date], 
+    [V_WORK_ORDER_ASSEMBLY_DASHBOARD].[so_id] AS [so_id], 
+    [V_WORK_ORDER_ASSEMBLY_DASHBOARD].[wh_id] AS [wh_id], 
+    [V_WORK_ORDER_ASSEMBLY_DASHBOARD].[product_group_id] AS [product_group_id], 
+    [V_WORK_ORDER_ASSEMBLY_DASHBOARD].[product_id] AS [product_id], 
+    [V_WORK_ORDER_ASSEMBLY_DASHBOARD].[product_name] AS [product_name], 
+    [V_WORK_ORDER_ASSEMBLY_DASHBOARD].[dimention] AS [dimention], 
+    [V_WORK_ORDER_ASSEMBLY_DASHBOARD].[variant_id] AS [variant_id], 
+    [V_WORK_ORDER_ASSEMBLY_DASHBOARD].[variant_name] AS [variant_name], 
+    [V_WORK_ORDER_ASSEMBLY_DASHBOARD].[long] AS [long], 
+    [V_WORK_ORDER_ASSEMBLY_DASHBOARD].[wide] AS [wide], 
+    [V_WORK_ORDER_ASSEMBLY_DASHBOARD].[tall] AS [tall], 
+    [V_WORK_ORDER_ASSEMBLY_DASHBOARD].[qty_order] AS [qty_order], 
+    [V_WORK_ORDER_ASSEMBLY_DASHBOARD].[m3_order] AS [m3_order], 
+    [V_WORK_ORDER_ASSEMBLY_DASHBOARD].[qty_spp] AS [qty_spp], 
+    [V_WORK_ORDER_ASSEMBLY_DASHBOARD].[m3_spp] AS [m3_spp], 
+    [V_WORK_ORDER_ASSEMBLY_DASHBOARD].[qty_requested] AS [qty_requested], 
+    [V_WORK_ORDER_ASSEMBLY_DASHBOARD].[m3_requested] AS [m3_requested], 
+    [V_WORK_ORDER_ASSEMBLY_DASHBOARD].[qty_done] AS [qty_done], 
+    [V_WORK_ORDER_ASSEMBLY_DASHBOARD].[note] AS [note], 
+    [V_WORK_ORDER_ASSEMBLY_DASHBOARD].[created_at] AS [created_at]
+    FROM [dbo].[V_WORK_ORDER_ASSEMBLY_DASHBOARD] AS [V_WORK_ORDER_ASSEMBLY_DASHBOARD]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>
