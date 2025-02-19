@@ -1,0 +1,854 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "API Barang Bukti",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/DtBarangBukti/AddDtBarangBukti": {
+      "post": {
+        "tags": [
+          "DtBarangBukti"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DtBarangBukti"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DtBarangBukti"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DtBarangBukti"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DtBarangBukti/UpdateDtBarangBukti": {
+      "put": {
+        "tags": [
+          "DtBarangBukti"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DtBarangBukti"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DtBarangBukti"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DtBarangBukti"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DtBarangBukti/ListDataDtBarangBukti": {
+      "get": {
+        "tags": [
+          "DtBarangBukti"
+        ],
+        "parameters": [
+          {
+            "name": "IdHdBarangBukti",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DtBarangBukti/GetPreviewFile": {
+      "get": {
+        "tags": [
+          "DtBarangBukti"
+        ],
+        "parameters": [
+          {
+            "name": "IdDtBarangBukti",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DtBarangBukti/ListItemDtBarangBukti": {
+      "get": {
+        "tags": [
+          "DtBarangBukti"
+        ],
+        "parameters": [
+          {
+            "name": "NoPerkara",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DtTransaksi/AddDtTransaksi": {
+      "post": {
+        "tags": [
+          "DtTransaksi"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DtTransaksi"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DtTransaksi"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DtTransaksi"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DtTransaksi/UpdateDtTransaksi": {
+      "put": {
+        "tags": [
+          "DtTransaksi"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DtTransaksi"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DtTransaksi"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DtTransaksi"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DtTransaksi/ListDataDtTransaksi": {
+      "get": {
+        "tags": [
+          "DtTransaksi"
+        ],
+        "parameters": [
+          {
+            "name": "IdTransaksi",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "NoPerkara",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DtTransaksi/GetPreviewFile": {
+      "get": {
+        "tags": [
+          "DtTransaksi"
+        ],
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HdBarangBukti/AddHdBarangBukti": {
+      "post": {
+        "tags": [
+          "HdBarangBukti"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HdBarangBukti"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HdBarangBukti"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/HdBarangBukti"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HdBarangBukti/UpdateHdBarangBukti": {
+      "put": {
+        "tags": [
+          "HdBarangBukti"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HdBarangBukti"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HdBarangBukti"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/HdBarangBukti"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HdBarangBukti/ListDataHdBarangBukti": {
+      "get": {
+        "tags": [
+          "HdBarangBukti"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HdBarangBukti/ListDataHdBarangBuktiById": {
+      "get": {
+        "tags": [
+          "HdBarangBukti"
+        ],
+        "parameters": [
+          {
+            "name": "IdHdBarangBukti",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HdBarangBukti/GetPreviewFile": {
+      "get": {
+        "tags": [
+          "HdBarangBukti"
+        ],
+        "parameters": [
+          {
+            "name": "IdHdBarangBukti",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HdTransaksi/AddHdTransaksi": {
+      "post": {
+        "tags": [
+          "HdTransaksi"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HdTransaksi"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HdTransaksi"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/HdTransaksi"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HdTransaksi/UpdateHdTransaksi": {
+      "put": {
+        "tags": [
+          "HdTransaksi"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HdTransaksi"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HdTransaksi"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/HdTransaksi"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HdTransaksi/ListDataHdTransaksi": {
+      "get": {
+        "tags": [
+          "HdTransaksi"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HdTransaksi/ListDataHdTransaksiById": {
+      "get": {
+        "tags": [
+          "HdTransaksi"
+        ],
+        "parameters": [
+          {
+            "name": "IdTransaction",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HdTransaksi/GetPreviewFile": {
+      "get": {
+        "tags": [
+          "HdTransaksi"
+        ],
+        "parameters": [
+          {
+            "name": "IdHdTransaksi",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "DtBarangBukti": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idDtBarangBukti": {
+            "type": "string",
+            "nullable": true
+          },
+          "namaBarangBukti": {
+            "type": "string",
+            "nullable": true
+          },
+          "identitas": {
+            "type": "string",
+            "nullable": true
+          },
+          "kondisi": {
+            "type": "string",
+            "nullable": true
+          },
+          "jumlah": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "statusEksekusi": {
+            "type": "string",
+            "nullable": true
+          },
+          "statusAkhir": {
+            "type": "string",
+            "nullable": true
+          },
+          "file": {
+            "type": "string",
+            "nullable": true
+          },
+          "createAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "deleteAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updateAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "idHdBarangBukti": {
+            "type": "string",
+            "nullable": true
+          },
+          "fileName": {
+            "type": "string",
+            "nullable": true
+          },
+          "contentType": {
+            "type": "string",
+            "nullable": true
+          },
+          "extension": {
+            "type": "string",
+            "nullable": true
+          },
+          "fileSize": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "base64File": {
+            "type": "string",
+            "nullable": true
+          },
+          "filePath": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DtTransaksi": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idTransaksi": {
+            "type": "string",
+            "nullable": true
+          },
+          "idBarangBukti": {
+            "type": "string",
+            "nullable": true
+          },
+          "pemenangLelangInstansi": {
+            "type": "string",
+            "nullable": true
+          },
+          "harga": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "tanggalTerjual": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "tanggalPenyerahan": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "file": {
+            "type": "string",
+            "nullable": true
+          },
+          "jenisTransaksi": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "createAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updateAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "deleteAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "fileName": {
+            "type": "string",
+            "nullable": true
+          },
+          "contentType": {
+            "type": "string",
+            "nullable": true
+          },
+          "extension": {
+            "type": "string",
+            "nullable": true
+          },
+          "fileSize": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "base64File": {
+            "type": "string",
+            "nullable": true
+          },
+          "filePath": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "HdBarangBukti": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idHdBarangBukti": {
+            "type": "string",
+            "nullable": true
+          },
+          "nama": {
+            "type": "string",
+            "nullable": true
+          },
+          "noRegistrasi": {
+            "type": "string",
+            "nullable": true
+          },
+          "noPerkara": {
+            "type": "string",
+            "nullable": true
+          },
+          "tanggalWaktuPenyerahan": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "instansi": {
+            "type": "string",
+            "nullable": true
+          },
+          "file": {
+            "type": "string",
+            "nullable": true
+          },
+          "disitaDari": {
+            "type": "string",
+            "nullable": true
+          },
+          "noBapPenyitaan": {
+            "type": "string",
+            "nullable": true
+          },
+          "tempatPenyitaan": {
+            "type": "string",
+            "nullable": true
+          },
+          "nomorSprintPenyitaan": {
+            "type": "string",
+            "nullable": true
+          },
+          "keterangan": {
+            "type": "string",
+            "nullable": true
+          },
+          "createAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "deleteAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updateAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "fileName": {
+            "type": "string",
+            "nullable": true
+          },
+          "contentType": {
+            "type": "string",
+            "nullable": true
+          },
+          "extension": {
+            "type": "string",
+            "nullable": true
+          },
+          "fileSize": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "base64File": {
+            "type": "string",
+            "nullable": true
+          },
+          "filePath": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "HdTransaksi": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idTransaksi": {
+            "type": "string",
+            "nullable": true
+          },
+          "namaTransaksi": {
+            "type": "string",
+            "nullable": true
+          },
+          "jenisTransaksi": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "judulTransaksi": {
+            "type": "string",
+            "nullable": true
+          },
+          "noPerkara": {
+            "type": "string",
+            "nullable": true
+          },
+          "pic": {
+            "type": "string",
+            "nullable": true
+          },
+          "tanggalTransaksi": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "file": {
+            "type": "string",
+            "nullable": true
+          },
+          "createAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "deleteAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updateAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "fileName": {
+            "type": "string",
+            "nullable": true
+          },
+          "contentType": {
+            "type": "string",
+            "nullable": true
+          },
+          "extension": {
+            "type": "string",
+            "nullable": true
+          },
+          "fileSize": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "base64File": {
+            "type": "string",
+            "nullable": true
+          },
+          "filePath": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

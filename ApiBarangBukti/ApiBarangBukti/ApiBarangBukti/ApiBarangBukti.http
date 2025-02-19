@@ -1,0 +1,6 @@
+@ApiBarangBukti_HostAddress = http://localhost:5174
+
+GET {{ApiBarangBukti_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

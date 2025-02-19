@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Project\\ApiBarangBukti\\ApiBarangBukti\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{229C049D-7CFE-4E32-9F95-8BECF59899D3}|ApiBarangBukti\\ApiBarangBukti.csproj|c:\\project\\apibarangbukti\\apibarangbukti\\apibarangbukti\\repository\\dttransaksirepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229C049D-7CFE-4E32-9F95-8BECF59899D3}|ApiBarangBukti\\ApiBarangBukti.csproj|solutionrelative:apibarangbukti\\repository\\dttransaksirepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229C049D-7CFE-4E32-9F95-8BECF59899D3}|ApiBarangBukti\\ApiBarangBukti.csproj|c:\\project\\apibarangbukti\\apibarangbukti\\apibarangbukti\\repository\\dtbarangbuktirepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229C049D-7CFE-4E32-9F95-8BECF59899D3}|ApiBarangBukti\\ApiBarangBukti.csproj|solutionrelative:apibarangbukti\\repository\\dtbarangbuktirepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229C049D-7CFE-4E32-9F95-8BECF59899D3}|ApiBarangBukti\\ApiBarangBukti.csproj|c:\\project\\apibarangbukti\\apibarangbukti\\apibarangbukti\\repository\\hdtransaksirepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229C049D-7CFE-4E32-9F95-8BECF59899D3}|ApiBarangBukti\\ApiBarangBukti.csproj|solutionrelative:apibarangbukti\\repository\\hdtransaksirepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{229C049D-7CFE-4E32-9F95-8BECF59899D3}|ApiBarangBukti\\ApiBarangBukti.csproj|c:\\project\\apibarangbukti\\apibarangbukti\\apibarangbukti\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{229C049D-7CFE-4E32-9F95-8BECF59899D3}|ApiBarangBukti\\ApiBarangBukti.csproj|solutionrelative:apibarangbukti\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DtTransaksiRepositories.cs",
+              "DocumentMoniker": "C:\\Project\\ApiBarangBukti\\ApiBarangBukti\\ApiBarangBukti\\Repository\\DtTransaksiRepositories.cs",
+              "RelativeDocumentMoniker": "ApiBarangBukti\\Repository\\DtTransaksiRepositories.cs",
+              "ToolTip": "C:\\Project\\ApiBarangBukti\\ApiBarangBukti\\ApiBarangBukti\\Repository\\DtTransaksiRepositories.cs",
+              "RelativeToolTip": "ApiBarangBukti\\Repository\\DtTransaksiRepositories.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAEwCwAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T07:39:46.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DtBarangBuktiRepositories.cs",
+              "DocumentMoniker": "C:\\Project\\ApiBarangBukti\\ApiBarangBukti\\ApiBarangBukti\\Repository\\DtBarangBuktiRepositories.cs",
+              "RelativeDocumentMoniker": "ApiBarangBukti\\Repository\\DtBarangBuktiRepositories.cs",
+              "ToolTip": "C:\\Project\\ApiBarangBukti\\ApiBarangBukti\\ApiBarangBukti\\Repository\\DtBarangBuktiRepositories.cs",
+              "RelativeToolTip": "ApiBarangBukti\\Repository\\DtBarangBuktiRepositories.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAACcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T06:51:57.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HdTransaksiRepositories.cs",
+              "DocumentMoniker": "C:\\Project\\ApiBarangBukti\\ApiBarangBukti\\ApiBarangBukti\\Repository\\HdTransaksiRepositories.cs",
+              "RelativeDocumentMoniker": "ApiBarangBukti\\Repository\\HdTransaksiRepositories.cs",
+              "ToolTip": "C:\\Project\\ApiBarangBukti\\ApiBarangBukti\\ApiBarangBukti\\Repository\\HdTransaksiRepositories.cs",
+              "RelativeToolTip": "ApiBarangBukti\\Repository\\HdTransaksiRepositories.cs",
+              "ViewState": "AgIAAFUBAAAAAAAAAAAAAFAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T02:49:20.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Project\\ApiBarangBukti\\ApiBarangBukti\\ApiBarangBukti\\Program.cs",
+              "RelativeDocumentMoniker": "ApiBarangBukti\\Program.cs",
+              "ToolTip": "C:\\Project\\ApiBarangBukti\\ApiBarangBukti\\ApiBarangBukti\\Program.cs",
+              "RelativeToolTip": "ApiBarangBukti\\Program.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCAAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T07:09:26.86Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

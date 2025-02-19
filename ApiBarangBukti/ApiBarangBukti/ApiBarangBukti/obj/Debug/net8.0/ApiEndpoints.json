@@ -1,0 +1,299 @@
+[
+  {
+    "ContainingType": "ApiBarangBukti.Controllers.DtBarangBuktiController",
+    "Method": "AddDtBarangBukti",
+    "RelativePath": "api/DtBarangBukti/AddDtBarangBukti",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "param",
+        "Type": "ApiBarangBukti.Models.DtBarangBukti",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiBarangBukti.Controllers.DtBarangBuktiController",
+    "Method": "GetPreviewFile",
+    "RelativePath": "api/DtBarangBukti/GetPreviewFile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdDtBarangBukti",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiBarangBukti.Controllers.DtBarangBuktiController",
+    "Method": "ListDataDtBarangBukti",
+    "RelativePath": "api/DtBarangBukti/ListDataDtBarangBukti",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdHdBarangBukti",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiBarangBukti.Controllers.DtBarangBuktiController",
+    "Method": "ListItemDtBarangBukti",
+    "RelativePath": "api/DtBarangBukti/ListItemDtBarangBukti",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "NoPerkara",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiBarangBukti.Controllers.DtBarangBuktiController",
+    "Method": "UpdateDtBarangBukti",
+    "RelativePath": "api/DtBarangBukti/UpdateDtBarangBukti",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "param",
+        "Type": "ApiBarangBukti.Models.DtBarangBukti",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiBarangBukti.Controllers.DtTransaksiController",
+    "Method": "AddDtTransaksi",
+    "RelativePath": "api/DtTransaksi/AddDtTransaksi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "param",
+        "Type": "ApiBarangBukti.Models.DtTransaksi",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiBarangBukti.Controllers.DtTransaksiController",
+    "Method": "GetPreviewFile",
+    "RelativePath": "api/DtTransaksi/GetPreviewFile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiBarangBukti.Controllers.DtTransaksiController",
+    "Method": "ListDataDtTransaksi",
+    "RelativePath": "api/DtTransaksi/ListDataDtTransaksi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdTransaksi",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NoPerkara",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiBarangBukti.Controllers.DtTransaksiController",
+    "Method": "UpdateDtTransaksi",
+    "RelativePath": "api/DtTransaksi/UpdateDtTransaksi",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "param",
+        "Type": "ApiBarangBukti.Models.DtTransaksi",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiBarangBukti.Controllers.HdBarangBuktiController",
+    "Method": "AddHdBarangBukti",
+    "RelativePath": "api/HdBarangBukti/AddHdBarangBukti",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "param",
+        "Type": "ApiBarangBukti.Models.HdBarangBukti",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiBarangBukti.Controllers.HdBarangBuktiController",
+    "Method": "GetPreviewFile",
+    "RelativePath": "api/HdBarangBukti/GetPreviewFile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdHdBarangBukti",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiBarangBukti.Controllers.HdBarangBuktiController",
+    "Method": "ListDataHdBarangBukti",
+    "RelativePath": "api/HdBarangBukti/ListDataHdBarangBukti",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiBarangBukti.Controllers.HdBarangBuktiController",
+    "Method": "ListDataHdBarangBuktiById",
+    "RelativePath": "api/HdBarangBukti/ListDataHdBarangBuktiById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdHdBarangBukti",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiBarangBukti.Controllers.HdBarangBuktiController",
+    "Method": "UpdateHdBarangBukti",
+    "RelativePath": "api/HdBarangBukti/UpdateHdBarangBukti",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "param",
+        "Type": "ApiBarangBukti.Models.HdBarangBukti",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiBarangBukti.Controllers.HdTransaksiController",
+    "Method": "AddHdTransaksi",
+    "RelativePath": "api/HdTransaksi/AddHdTransaksi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "param",
+        "Type": "ApiBarangBukti.Models.HdTransaksi",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiBarangBukti.Controllers.HdTransaksiController",
+    "Method": "GetPreviewFile",
+    "RelativePath": "api/HdTransaksi/GetPreviewFile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdHdTransaksi",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiBarangBukti.Controllers.HdTransaksiController",
+    "Method": "ListDataHdTransksi",
+    "RelativePath": "api/HdTransaksi/ListDataHdTransaksi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiBarangBukti.Controllers.HdTransaksiController",
+    "Method": "ListDataHdTransaksiById",
+    "RelativePath": "api/HdTransaksi/ListDataHdTransaksiById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdTransaction",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiBarangBukti.Controllers.HdTransaksiController",
+    "Method": "UpdateHdTransaksi",
+    "RelativePath": "api/HdTransaksi/UpdateHdTransaksi",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "param",
+        "Type": "ApiBarangBukti.Models.HdTransaksi",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "AWLBnEgl16geC14FRy8CTV+AiPNjuCCQBEcX8c/7IDI=",
+  "Source": "ApiBarangBukti",
+  "BasePath": "_content/ApiBarangBukti",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
