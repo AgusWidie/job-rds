@@ -1,0 +1,888 @@
+﻿@using WebDms.Help
+@model WebDms.ViewModels.DocumentIndexVM
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_LayoutDms.cshtml";
+}
+
+<body>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <div class="container-fluid">
+            </div><!-- /.container-fluid -->
+        </section>
+        <!-- /.content-header -->
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row my-flex-card">
+                    <div class="col-lg-2">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">@Model.document_type.document_type_name - Index</h3>
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body">
+                                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                                    <li class="nav-item">
+                                        <a asp-controller="DocumentTypes" asp-action="Index" class="nav-link">
+                                            <i class="nav-icon fa fa-object-ungroup"></i>
+                                            <p class="text">Document Types</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a asp-controller="Collections" asp-action="Index" class="nav-link">
+                                            <i class="nav-icon fa fa-object-group"></i>
+                                            <p class="text">Collections</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <hr />
+                                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+
+                                    <li class="nav-item">
+                                        <a asp-controller="Browser" asp-action="Favorite" asp-route-id="1" class="nav-link">
+                                            <i class="nav-icon far fa-star"></i>
+                                            <p class="text">Favorites</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a asp-controller="Browser" asp-action="Dir" asp-route-id="1" class="nav-link">
+                                            <i class="nav-icon fas fa-share-alt"></i>
+                                            <p class="text">Share</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a asp-controller="Browser" asp-action="Delete" asp-route-id="1" class="nav-link">
+                                            <i class="nav-icon far fa-trash-alt"></i>
+                                            <p class="text">Trash</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <hr />
+                                <div class="panel panel-info">
+                                    <div class="panel-heading">
+                                        Company Folders
+                                    </div>
+                                    <div class="panel-body">
+                                        <div id="html1">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- /.tree -->
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.col-lg-2 -->
+                    <div class="col-lg-10">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">@Model.document_type.document_type_name - Index</h3>
+                            </div>
+                            <br />
+                            <div class="card-header">
+                                <button type="button" class="btn btn-siram" onclick="CreateDataIndex('@Model.document_type.document_type_id')">Create New</button>
+                            </div>
+                            <!-- /.card-header -->
+
+                            <div class="card-body">
+                                <table id="example" class="table table-bordered table-striped dataTable dtr-inline">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>INDEX NAME</th>
+                                            <th>RULES</th>
+                                            <th>STATUS</th>
+                                            <th>CREATE DATE</th>
+                                            @* <th style="text-align: center;">ACTION</th> *@
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @{
+                                            var no = 1;
+                                        }
+
+                                        @if (Model.document_index != null)
+                                        {
+                                            foreach (var item in Model.document_index)
+                                            {
+
+                                                <tr>
+                                                    <td>@no</td>
+                                                    <td>@item.index_name</td>
+                                                    <td>@item.rules</td>
+                                                    @{
+                                                        string status = string.Empty;
+                                                        if (@item.status == 1)
+                                                        {
+                                                            status = "Aktif";
+                                                        }
+                                                        else
+                                                        {
+                                                            status = "Tidak Aktif";
+                                                        }
+                                                    }
+                                                    <td>@status</td>
+                                                    <td>@item.created_at.ToString("dd-MM-yyyy HH:mm:ss")</td>
+                                                    @* <td class="text-center">
+
+                                                        <button type="button" onclick="EditDataIndex('@item.id','@item.document_type_id','@item.index_name','@item.rules','@item.status')" class="btn btn-warning" style="color: aliceblue;"><i class="fa fa-edit">  Edit</i></button>&nbsp;
+                                                        <button type="button" onclick="DeleteIndex('@item.id','@item.index_name','@item.document_type_id')" class="btn btn-danger" style="color: aliceblue;"><i class="fa fa-trash">  Delete</i></button>&nbsp;
+                                                    </td> *@
+                                                </tr>
+                                                no++;
+                                            }
+                                        }
+                                        
+                                    </tbody>
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col-lg-8 -->
+
+
+                </div>
+                <!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <!-- Modal -->
+    @* <div class="modal fade" id="CreateIndex">
+        <div class="modal-dialog modal-lg">
+            <form asp-controller="DocumentIndex" asp-action="Create" method="post">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Create Index</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="text" class="form-control" id="document_type_id" name="document_type_id" hidden>
+                        <div class="form-group row">
+                            <label for="input-document_type_name" class="col-sm-2 col-form-label">Index Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="index_name" name="index_name" placeholder="Index Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="input-description" class="col-sm-2 col-form-label">Rules</label>
+                            <div class="col-sm-10">
+                                <select id="Rules" style="font-size: 16px;" name="rules" asp-items="(IEnumerable<SelectListItem>)@ViewBag.Rules" class="form-control" onchange="onChangeRules();"></select>
+                            </div>
+                        </div>
+                        <div class="form-group row" id="RowRules">
+                            
+                        </div>
+                        <div class="form-group row">
+                            <label for="status" class="col-sm-2 col-form-label">Status</label>
+                            <div class="col-sm-10">
+                                <select class="form-control" name="status">
+                                    @foreach (var item in ViewBag.Status)
+                                    {
+                                        <option value="@item.value">@item.text</option>
+                                    }
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-siram">Save</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </form>
+        </div>
+        <!-- /.modal-dialog -->
+    </div> *@
+    <div class="modal fade" id="CreateIndex">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Create Index</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" class="form-control" id="document_type_id" name="document_type_id" hidden>
+                    <div class="form-group row">
+                        <label for="input-document_type_name" class="col-sm-2 col-form-label">Index Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="index_name" name="index_name" placeholder="Index Name">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="input-rules" class="col-sm-2 col-form-label">Rules</label>
+                        <div class="col-sm-10">
+                            <select id="Rules" style="font-size: 16px;" name="rules" asp-items="(IEnumerable<SelectListItem>)@ViewBag.Rules" class="form-control" onchange="onChangeRules();"></select>
+                        </div>
+                    </div>
+                    <div class="form-group row" id="RowRules">
+                    </div>
+                    <div class="form-group row">
+                        <label for="status" class="col-sm-2 col-form-label">Status</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" id="status" name="status">
+                                @foreach (var item in ViewBag.Status)
+                                {
+                                    <option value="@item.value">@item.text</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-siram" onclick="SaveDataIndex();">Save</button>
+                </div>
+            </div>
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    @* <div class="modal fade" id="EditIndex">
+        <div class="modal-dialog modal-lg">
+            <form asp-controller="DocumentIndex" asp-action="Edit" method="post">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Edit Index</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="text" class="form-control" id="id_edit" name="id" hidden>
+                        <input type="text" class="form-control" id="document_type_id_edit" name="document_type_id" hidden>
+                        <div class="form-group row">
+                            <label for="input-index_name" class="col-sm-2 col-form-label">Index Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="index_name_edit" name="index_name" placeholder="Index Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="input-index-value" class="col-sm-2 col-form-label">Rules</label>
+                            <div class="col-sm-10">
+                                <select id="Rules1" style="font-size: 16px;" name="rules" asp-items="(IEnumerable<SelectListItem>)@ViewBag.Rules" class="form-control" onchange="onChangeRulesEdit();"></select>
+                            </div>
+                        </div>
+                        <div class="form-group row" id="RowRulesEdit">
+
+                        </div>
+                        <div class="form-group row">
+                            <label for="status" class="col-sm-2 col-form-label">Status</label>
+                            <div class="col-sm-10">
+                                <select class="form-control" id="status_edit" name="status">
+                                    @foreach (var item in ViewBag.Status)
+                                    {
+                                        <option value="@item.value">@item.text</option>
+                                    }
+                                </select>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-siram">Update</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </form>
+        </div>
+        <!-- /.modal-dialog -->
+    </div> *@
+
+    
+    <!-- /.modal -->
+</body>
+
+<link href="~/content/select2.min.css" rel="stylesheet">
+<script src="~/content/select2.min.js"></script>
+
+<link href="~/content/select2/select2-bootstrap.css" rel="stylesheet">
+<link href="~/content/select2/select2.min.css" rel="stylesheet">
+<script src="~/content/select2/select2.full.js"></script>
+
+<link href="~/adminlte/plugins/sweetalert2/sweetalert2.min.css" rel="stylesheet">
+<script src="~/adminlte/plugins/sweetalert2/sweetalert2.min.js"></script>
+
+<script>
+
+    function CreateDataIndex(document_type_id) {
+        document.getElementById("document_type_id").value = document_type_id;
+
+        $('#CreateIndex').modal({
+            backdrop: 'static',
+            keyboard: false
+        });
+
+        $('#CreateIndex').modal('show');
+    }
+
+    function EditDataIndex(id, document_type_id, index_name, index_value, status){
+
+        document.getElementById("id_edit").value = id;
+        document.getElementById("document_type_id_edit").value = document_type_id;
+        document.getElementById("index_name_edit").value = index_name;
+        document.getElementById("index_value_edit").value = index_value;
+        document.getElementById("status_edit").value = status;
+
+        $('#EditIndex').modal({
+            backdrop: 'static',
+            keyboard: false
+        });
+
+        $('#EditIndex').modal('show');
+    }
+
+    function DeleteIndex(id, index_name, document_type_id) {
+
+        if (confirm('Are you sure you want to delete index name : ' + index_name + ' ?')) {
+
+            $.ajax({
+                type: "GET",
+                url: "@Url.Action("DeleteIndex", "DocumentIndex")",
+                data: { id: id},
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (data) {
+
+                    var actionUrl = '@Url.Action("Index", "DocumentIndex", new { document_type_id = "PLACEHOLDER1" })';
+                    actionUrl = actionUrl.replace('PLACEHOLDER1', document_type_id);
+                    window.location.href = actionUrl.replaceAll('amp;', "");
+                },
+                error: function (error) { },
+            });
+
+        } else {
+
+        }
+    }
+
+    // $("#Rules").select2({
+    //     placeholder: "",
+    //     width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+    // });
+
+    // $("#Rules1").select2({
+    //     placeholder: "",
+    //     width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+    // });
+
+    function onChangeRules() {
+       
+        var rules = document.getElementById("Rules").value;
+        if(rules == "Text") {
+
+            var RowRulesElement = document.getElementById("RowRules");
+            while (RowRulesElement.hasChildNodes()) {
+                RowRulesElement.removeChild(RowRulesElement.firstChild);
+            }
+
+            var divRequired = document.createElement("div");
+            divRequired.className = "col-sm-10";
+
+            var labelCheck = document.createElement("label");
+            labelCheck.className = "col-sm-2 col-form-label";
+            labelCheck.innerHTML = "Required";
+
+            var inputCheckBox = document.createElement("input");
+            inputCheckBox.id = "CheckRequired";
+            inputCheckBox.type = "checkbox";
+            inputCheckBox.className = "form-check-input";
+            inputCheckBox.style.margin = "5px";
+
+            RowRulesElement.appendChild(labelCheck);
+            divRequired.appendChild(inputCheckBox);
+            RowRulesElement.appendChild(divRequired);
+
+            var br = document.createElement("br");
+            divRequired.appendChild(br);
+
+            var divMinLength = document.createElement("div");
+            divMinLength.className = "col-sm-10";
+
+            var labelMinLength = document.createElement("label");
+            labelMinLength.className = "col-sm-2 col-form-label";
+
+            var inputMinLength = document.createElement("input");
+            inputMinLength.id = "MinLength";
+            inputMinLength.type = "number";
+            inputMinLength.placeholder = "Min Length";
+            inputMinLength.className = "form-control";
+
+            RowRulesElement.appendChild(labelMinLength);
+            divMinLength.appendChild(inputMinLength);
+            RowRulesElement.appendChild(divMinLength);
+
+            var br = document.createElement("br");
+            divMinLength.appendChild(br);
+
+            var divMaxLength = document.createElement("div");
+            divMaxLength.className = "col-sm-10";
+
+            var labelMaxLength = document.createElement("label");
+            labelMaxLength.className = "col-sm-2 col-form-label";
+            RowRulesElement.appendChild(labelMaxLength);
+
+            var inputMaxLength = document.createElement("input");
+            inputMaxLength.id = "MaxLength";
+            inputMaxLength.type = "number";
+            inputMaxLength.placeholder = "Max Length";
+            inputMaxLength.className = "form-control";
+            divMaxLength.appendChild(inputMaxLength);
+
+            RowRulesElement.appendChild(divMaxLength);
+
+        }
+
+        if(rules == "Number") {
+
+            var RowRulesElement = document.getElementById("RowRules");
+            while (RowRulesElement.hasChildNodes()) {
+                RowRulesElement.removeChild(RowRulesElement.firstChild);
+            }
+
+            var divRequired = document.createElement("div");
+            divRequired.className = "col-sm-10";
+
+            var labelCheck = document.createElement("label");
+            labelCheck.className = "col-sm-2 col-form-label";
+            labelCheck.innerHTML = "Required";
+
+            var inputCheckBox = document.createElement("input");
+            inputCheckBox.id = "CheckRequired";
+            inputCheckBox.type = "checkbox";
+            inputCheckBox.className = "form-check-input";
+            inputCheckBox.style.margin = "5px";
+
+            RowRulesElement.appendChild(labelCheck);
+            divRequired.appendChild(inputCheckBox);
+            RowRulesElement.appendChild(divRequired);
+
+            var labelNumber = document.createElement("label");
+            labelNumber.className = "col-sm-2 col-form-label";
+
+            RowRulesElement.appendChild(labelNumber);
+            var divNumber = document.createElement("div");
+            divNumber.className = "col-sm-10";
+
+            var inputNumber = document.createElement("input");
+            inputNumber.id = "MaxLength";
+            inputNumber.type = "number";
+            inputNumber.className = "form-control";
+            inputNumber.placeholder = "Max Length";
+            divNumber.appendChild(inputNumber);
+
+            RowRulesElement.appendChild(divNumber);
+
+        }
+
+        if(rules == "Date") {
+
+            var RowRulesElement = document.getElementById("RowRules");
+            while (RowRulesElement.hasChildNodes()) {
+                RowRulesElement.removeChild(RowRulesElement.firstChild);
+            }
+
+            var divRequired = document.createElement("div");
+            divRequired.className = "col-sm-10";
+
+            var labelCheck = document.createElement("label");
+            labelCheck.className = "col-sm-2 col-form-label";
+            labelCheck.innerHTML = "Required";
+
+            var inputCheckBox = document.createElement("input");
+            inputCheckBox.id = "CheckRequired";
+            inputCheckBox.type = "checkbox";
+            inputCheckBox.className = "form-check-input";
+            inputCheckBox.style.margin = "5px";
+         
+            RowRulesElement.appendChild(labelCheck);
+            divRequired.appendChild(inputCheckBox);
+            RowRulesElement.appendChild(divRequired);
+
+            var divDate = document.createElement("div");
+            divDate.className = "col-sm-10";
+
+            var labelDate = document.createElement("label");
+            labelDate.className = "col-sm-2 col-form-label";
+
+            var selectDate = document.createElement("select");
+            selectDate.id = "SelectDate";
+            selectDate.className = "form-control";
+
+            var option1 = document.createElement('option');
+            option1.innerHTML = "yy-mm-dd";
+            option1.value = "yy-mm-dd";
+
+            var option2 = document.createElement('option');
+            option2.innerHTML = "dd-mm-yy";
+            option2.value = "dd-mm-yy";
+
+            selectDate.appendChild(option1);
+            selectDate.appendChild(option2);
+
+            RowRulesElement.appendChild(labelDate);
+            divDate.appendChild(selectDate);
+            RowRulesElement.appendChild(divDate);
+
+
+        }
+
+    }
+
+ 
+    function onChangeRulesEdit() {
+
+        var rules = document.getElementById("Rules1").value;
+        if(rules == "Text") {
+
+            var RowRulesElement = document.getElementById("RowRules1");
+            while (RowRulesElement.hasChildNodes()) {
+                RowRulesElement.removeChild(RowRulesElement.firstChild);
+            }
+
+           var divRequired = document.createElement("div");
+            divRequired.className = "col-sm-10";
+
+            var labelCheck = document.createElement("label");
+            labelCheck.className = "col-sm-2 col-form-label";
+            labelCheck.innerHTML = "Required";
+
+            var inputCheckBox = document.createElement("input");
+            inputCheckBox.id = "CheckRequired1";
+            inputCheckBox.type = "checkbox";
+            inputCheckBox.className = "form-check-input";
+            inputCheckBox.style.margin = "5px";
+
+            RowRulesElement.appendChild(labelCheck);
+            divRequired.appendChild(inputCheckBox);
+            RowRulesElement.appendChild(divRequired);
+
+            var br = document.createElement("br");
+            divRequired.appendChild(br);
+
+            var divMinLength = document.createElement("div");
+            divMinLength.className = "col-sm-10";
+
+            var labelMinLength = document.createElement("label");
+            labelMinLength.className = "col-sm-2 col-form-label";
+
+            var inputMinLength = document.createElement("input");
+            inputMinLength.id = "MinLength1";
+            inputMinLength.type = "number";
+            inputMinLength.placeholder = "Min Length";
+            inputMinLength.className = "form-control";
+
+            RowRulesElement.appendChild(labelMinLength);
+            divMinLength.appendChild(inputMinLength);
+            RowRulesElement.appendChild(divMinLength);
+
+            var br = document.createElement("br");
+            divMinLength.appendChild(br);
+
+            var divMaxLength = document.createElement("div");
+            divMaxLength.className = "col-sm-10";
+
+            var labelMaxLength = document.createElement("label");
+            labelMaxLength.className = "col-sm-2 col-form-label";
+            RowRulesElement.appendChild(labelMaxLength);
+
+            var inputMaxLength = document.createElement("input");
+            inputMaxLength.id = "MaxLength1";
+            inputMaxLength.type = "number";
+            inputMaxLength.placeholder = "Max Length";
+            inputMaxLength.className = "form-control";
+            divMaxLength.appendChild(inputMaxLength);
+
+            RowRulesElement.appendChild(divMaxLength);
+
+        }
+
+        if(rules == "Number") {
+
+            var RowRulesElement = document.getElementById("RowRules1");
+            while (RowRulesElement.hasChildNodes()) {
+                RowRulesElement.removeChild(RowRulesElement.firstChild);
+            }
+
+            var divRequired = document.createElement("div");
+            divRequired.className = "col-sm-10";
+
+            var labelCheck = document.createElement("label");
+            labelCheck.className = "col-sm-2 col-form-label";
+            labelCheck.innerHTML = "Required";
+
+            var inputCheckBox = document.createElement("input");
+            inputCheckBox.id = "CheckRequired1";
+            inputCheckBox.type = "checkbox";
+            inputCheckBox.className = "form-check-input";
+            inputCheckBox.style.margin = "5px";
+
+            RowRulesElement.appendChild(labelCheck);
+            divRequired.appendChild(inputCheckBox);
+            RowRulesElement.appendChild(divRequired);
+
+            var labelNumber = document.createElement("label");
+            labelNumber.className = "col-sm-2 col-form-label";
+
+            RowRulesElement.appendChild(labelNumber);
+            var divNumber = document.createElement("div");
+            divNumber.className = "col-sm-10";
+
+            var inputNumber = document.createElement("input");
+            inputNumber.id = "MaxLength1";
+            inputNumber.type = "number";
+            inputNumber.className = "form-control";
+            inputNumber.placeholder = "Max Length";
+            divNumber.appendChild(inputNumber);
+
+            RowRulesElement.appendChild(divNumber);
+
+        }
+
+        if(rules == "Date") {
+
+            var RowRulesElement = document.getElementById("RowRules1");
+
+            while (RowRulesElement.hasChildNodes()) {
+                RowRulesElement.removeChild(RowRulesElement.firstChild);
+            }
+
+
+            var divRequired = document.createElement("div");
+            divRequired.className = "col-sm-10";
+
+            var labelCheck = document.createElement("label");
+            labelCheck.className = "col-sm-2 col-form-label";
+            labelCheck.innerHTML = "Required";
+
+            var inputCheckBox = document.createElement("input");
+            inputCheckBox.id = "CheckRequired1";
+            inputCheckBox.type = "checkbox";
+            inputCheckBox.className = "form-check-input";
+            inputCheckBox.style.margin = "5px";
+
+            RowRulesElement.appendChild(labelCheck);
+            divRequired.appendChild(inputCheckBox);
+            RowRulesElement.appendChild(divRequired);
+
+            var divDate = document.createElement("div");
+            divDate.className = "col-sm-10";
+
+            var labelDate = document.createElement("label");
+            labelDate.className = "col-sm-2 col-form-label";
+
+            var selectDate = document.createElement("select");
+            selectDate.id = "SelectDate1";
+            selectDate.className = "form-control";
+
+            var option1 = document.createElement('option');
+            option1.innerHTML = "yy-mm-dd";
+            option1.value = "yy-mm-dd";
+
+            var option2 = document.createElement('option');
+            option2.innerHTML = "dd-mm-yy";
+            option2.value = "dd-mm-yy";
+
+            selectDate.appendChild(option1);
+            selectDate.appendChild(option2);
+
+            RowRulesElement.appendChild(labelDate);
+            divDate.appendChild(selectDate);
+            RowRulesElement.appendChild(divDate);
+
+        }
+    }
+
+    function SaveDataIndex() {
+
+        var rules_data = "";
+
+        var rules = document.getElementById("Rules").value;
+        if(rules == "Text") {
+
+            var required = "true";
+
+            var minLength = document.getElementById("MinLength").value;
+            var maxLength = document.getElementById("MaxLength").value;
+
+            if(parseInt(minLength) > parseInt(maxLength)) {
+
+                Swal.fire({
+                    title: "Save Data Index !",
+                    text: "Min Length Cannot Be More Than maxLength Length !",
+                    icon: "warning"
+                });
+
+                return;
+            }
+
+            if(parseInt(minLength) <= 0) {
+
+                Swal.fire({
+                    title: "Save Data Index !",
+                    text: "Min Length Cannot Be Less Than 0 !",
+                    icon: "warning"
+                });
+
+                return;
+            }
+
+            if(parseInt(maxLength) <= 0) {
+
+                Swal.fire({
+                    title: "Save Data Index !",
+                    text: "Max Length Cannot Be Less Than 0 !",
+                    icon: "warning"
+                });
+
+                return;
+            }
+
+            const checkRequired = document.getElementById('CheckRequired');
+
+            if(checkRequired.checked == true) {
+                required = "true";
+            } else {
+                required = "false";
+            }
+
+            var dataRules = {
+
+                required: "" + required + "",
+                type: rules,
+                min_length: minLength,
+                max_length: maxLength
+            };
+
+            rules_data = JSON.stringify(dataRules);
+        }
+
+        if(rules == "Number") {
+
+            var required = "true";
+            var maxLength = document.getElementById("MaxLength").value;
+
+            if(parseInt(maxLength) <= 0) {
+                    
+                Swal.fire({
+                  title: "Max Length Cannot Be Less Than 0 !",
+                  icon: "warning",
+                  draggable: true
+                });
+
+                return;
+            }
+
+            const checkRequired = document.getElementById('CheckRequired');
+
+            if(checkRequired.checked == true) {
+                required = "true";
+            } else {
+                required = "false";
+            }
+
+            var dataRules = {
+
+                required: "" + required + "",
+                type: rules,
+                max_length: maxLength
+            };
+
+            rules_data = JSON.stringify(dataRules);
+        }
+
+        if(rules == "Date") {
+
+            var required = "true";
+            var selectDate = document.getElementById("SelectDate").value;
+            
+            const checkRequired = document.getElementById('CheckRequired');
+
+            if(checkRequired.checked == true) {
+                required = "true";
+            } else {
+                required = "false";
+            }
+
+            var dataRules = {
+                required: "" + required + "",
+                type: rules,
+                format: selectDate
+            };
+
+            rules_data = JSON.stringify(dataRules);
+        }
+
+        var document_type_id = document.getElementById("document_type_id").value;
+        var index_name = document.getElementById("index_name").value;
+        var status = document.getElementById("status").value;
+        
+        var dataJson = {
+
+            document_type_id: document_type_id,
+            index_name: index_name,
+            rules: rules_data,
+            status: parseInt(status)
+           
+        };
+
+        var stringData = JSON.stringify(dataJson);
+      
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("Create", "DocumentIndex")",
+            data: stringData,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (data) {
+
+                if (data.error == false) {
+
+                    Swal.fire({
+                        title: "Save Data Index !",
+                        text: "Save Data Index Success !",
+                        icon: "success"
+                    });
+
+                    var actionUrl = '@Url.Action("Index", "DocumentIndex", new { document_type_id = "PLACEHOLDER1" })';
+                    actionUrl = actionUrl.replace('PLACEHOLDER1', document_type_id);
+                    window.location.href = actionUrl.replaceAll('amp;', "");
+                  
+                }
+                else {
+
+                    Swal.fire({
+                        title: "Save Data Index !",
+                        text: "" + data.message + "",
+                        icon: "danger"
+                    });
+
+                    var actionUrl = '@Url.Action("Index", "DocumentIndex", new { document_type_id = "PLACEHOLDER1" })';
+                    actionUrl = actionUrl.replace('PLACEHOLDER1', document_type_id);
+                    window.location.href = actionUrl.replaceAll('amp;', "");
+                }
+            },
+            error: function (xhr, status, error) {
+
+                console.log("SaveDataIndex : " + xhr.status.toString() + ", Error : " + error);
+               
+            }
+        });
+    }
+</script>

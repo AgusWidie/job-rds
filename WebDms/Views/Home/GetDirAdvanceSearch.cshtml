@@ -1,0 +1,2301 @@
+﻿@using WebDms.Help
+@model WebDms.ViewModels.BrowserVM;
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_LayoutDms.cshtml";
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+    .bootstrap-tagsinput .tag {
+        background: #1E90FF;
+        padding: 5px;
+        font-size: 14px;
+        height: 45px;
+        width: 150px;
+    }
+</style>
+
+<style>
+    .bootstrap-adddoctags .tag {
+        background: #FF0000;
+        padding: 5px;
+        font-size: 14px;
+        height: 45px;
+        width: 150px;
+    }
+</style>
+
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content-header -->
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row my-flex-card">
+                <div class="col-lg-2">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Folders</h3>
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="card-body">
+                            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                                <li class="nav-item">
+                                    <a asp-controller="DocumentTypes" asp-action="Index" class="nav-link">
+                                        <i class="nav-icon fa fa-object-ungroup"></i>
+                                        <p class="text">Document Types</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a asp-controller="Collections" asp-action="Index" class="nav-link">
+                                        <i class="nav-icon fa fa-object-group"></i>
+                                        <p class="text">Collections</p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <hr />
+                            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+
+                                <li class="nav-item">
+                                    <a asp-controller="Home" asp-action="Favorite" asp-route-id="1" class="nav-link">
+                                        <i class="nav-icon far fa-star"></i>
+                                        <p class="text">Favorites</p>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a asp-controller="Home" asp-action="Share" asp-route-id="1" class="nav-link">
+                                        <i class="nav-icon fas fa-share-alt"></i>
+                                        <p class="text">Share</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a asp-controller="Home" asp-action="Delete" asp-route-id="1" class="nav-link">
+                                        <i class="nav-icon far fa-trash-alt"></i>
+                                        <p class="text">Trash</p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <hr />
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                    Collection Folders
+                                </div>
+                                <div class="panel-body">
+                                    <div id="html1">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- /.tree -->
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+                </div>
+                <!-- /.col-lg-2 -->
+                <div class="col-lg-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="row">
+                                <div class="col-sm-14">
+                                    <div class="form-group clearfix">
+
+                                        <div id="SearchIndex">
+                                            <form method="get" asp-controller="Home" asp-action="GetDirAdvanceSearch">
+                                                <input type="hidden" id="FDirectoryIdDocIndex" name="id_dir" />
+                                                <input type="hidden" id="FIndex" name="advance_search" />
+                                                <table id="tblSearchIndex" style="float:right;">
+
+                                                    <td style="width: 105px;">
+                                                        <button type="button" class="btn btn-outline-info" onclick="AddUploadFile();"><i class="fa fa-upload"></i> Upload</button>
+                                                    </td>
+                                                    <td style="width: 190px;">
+                                                        <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#createFolderModal"><i class="fa fa-folder"></i> Create Folder</button>
+                                                    </td>
+                                                    <td style="width: 220px;">
+                                                        <select id="fDocumentTypeId" name="document_type_id" asp-items="(IEnumerable<SelectListItem>)@ViewBag.lstDocTypes" class="form-control" onchange="onChangeDocumentTypeIndex();"></select>
+                                                    </td>
+
+                                                    <td style="width: 220px; text-align: left;" id="docIndex">
+                                                        <select id="fDocumentIndexId" name="document_index_id" class="form-control" style="font-size: 16px;" onchange="onChangeDocumentIndex();"></select>
+                                                    </td>
+                                                    <td style="width: 300px; text-align: left;" id="docIndexValue">
+                                                        <input type="text" id="fDocumentIndexValue" name="document_index_value" class="form-control">
+                                                    </td>
+                                                    <td id="docIndexSearch" style="text-align: left;">
+                                                        <button type="submit" title="Search" class="btn btn-sm btn-info" style="height: 38px;"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                    </td>
+                                                    <td id="docIndexRefresh" style="text-align: left;">
+                                                        <button type="button" title="Refresh" class="btn btn-sm btn-info" onclick="onChangeRefreshIndex();" style="height: 38px;"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+                                                    </td>
+                                                    <td id="btnAdvanceSearch" style="text-align: left; width: 220px;">
+                                                        <button type="button" title="Refresh" class="btn btn-sm btn-info" onclick="showModalAdvanceSearch();" style="height: 38px;"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;&nbsp; Advance Search</button>
+                                                    </td>
+                                                    @* <td id="backFilter">
+                                                        <button type="button" title="Back Filter" class="btn btn-sm btn-info" onclick="backFilter();" style="height: 38px;"><i class="fas fa-arrow-alt-circle-left" aria-hidden="true"></i></button>
+                                                    </td> *@
+
+                                                </table>
+                                            </form>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Library</li>
+                                </ol>
+                            </nav>
+
+                        </div>
+                        <!-- /.card-header -->
+
+                        <div class="card-body">
+                            <div id="example2_wrapper" class="dataTables_wrapper dt-bootstrap4">
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <table id="example2" class="table table-hover dataTable dtr-inline" aria-describedby="example2_info">
+                                            <tr>
+                                                <th>#</th>
+                                                <th>DOCUMENT NAME</th>
+                                                <th>DOCUMENT NO</th>
+                                                <th>DATE VERSION</th>
+                                                <th>EXPIRED DATE</th>
+                                                <th>CREATED AT</th>
+                                                <th style="text-align: center;">ACTION</th>
+                                            </tr>
+                                            @if (Model.documents != null)
+                                            {
+
+                                                @foreach (var item in Model.documents)
+                                                {
+                                                    string created_at = "";
+                                                    string updated_at = "";
+                                                    string date_version = "";
+                                                    string download_date = "";
+                                                    string expired_date = "";
+
+                                                    if (item.created_at != null)
+                                                    {
+                                                        created_at = item.created_at.ToString("yyyy-MM-dd HH:mm:ss");
+                                                    }
+
+                                                    if (item.updated_at != null)
+                                                    {
+                                                        updated_at = Convert.ToDateTime(item.updated_at).ToString("yyyy-MM-ddy HH:mm:ss");
+                                                    }
+
+                                                    if (item.date_version != null)
+                                                    {
+                                                        date_version = Convert.ToDateTime(item.date_version).ToString("yyyy-MM-dd");
+                                                    }
+
+                                                    if (item.download_date != null)
+                                                    {
+                                                        download_date = Convert.ToDateTime(item.download_date).ToString("yyyy-MM-dd HH:mm:ss");
+                                                    }
+
+                                                    if (item.expired_date != null)
+                                                    {
+                                                        expired_date = Convert.ToDateTime(item.expired_date).ToString("yyyy-MM-dd");
+                                                    }
+
+                                                        //byte[] fileBytes = System.IO.File.ReadAllBytes(item.file_path);
+
+                                                    <tr onclick="ViewFileInfo('@item.file_name','@item.file_path','@item.extension','@date_version','@created_at','@updated_at','@Convert.ToBase64String(@Crypto.DecryptSha256(@item.encrypt_file))','@item.content_type','@download_date','@String.Format("{0:C}", item.file_size).Replace("$","")','@item.tags_json')">
+                                                        <td class="mailbox-star" style="text-align: center; vertical-align: middle;">
+                                                            @if (item.favorite == true)
+                                                            {
+                                                                <button type="button" title="Update Favorite" class="btn btn-sm btn-info" onclick="UpdateFavoriteDoc('@item.id','@item.id_directory','@item.document_id','@item.document_name');"><i class="fas fa-star text-warning"></i></button>
+                                                                @* <a asp-controller="Home" title="Update Favorite" asp-action="UpdateFavoriteDoc" asp-route-id="@item.id" class="btn btn-sm btn-outline-info"> <i class="fas fa-star text-warning" aria-hidden="true"></i></a> *@
+                                                            }
+                                                            else
+                                                            {
+                                                                <button type="button" title="Update Favorite" class="btn btn-sm btn-info" onclick="UpdateFavoriteDoc('@item.id','@item.id_directory','@item.document_id','@item.document_name');"><i class="fas fa-star"></i></button>
+                                                                @* <a asp-controller="Home" title="Update Favorite" asp-action="UpdateFavoriteDoc" asp-route-id="@item.id" class="btn btn-sm btn-outline-info"> <i class="fas fa-star" aria-hidden="true"></i></a> *@
+                                                            }
+
+                                                        </td>
+                                                        <td class="products-list product-list-in-card pl-2 pr-2">
+                                                            <div class="item">
+                                                                <div class="product-img">
+                                                                    @if (item.extension == ".jpeg")
+                                                                    {
+                                                                        <img src="~/dist/img/image.png" alt="Product Image" class="img-size-50">
+                                                                    }
+                                                                    else if (item.extension == ".png")
+                                                                    {
+                                                                        <img src="~/dist/img/image.png" alt="Product Image" class="img-size-50">
+                                                                    }
+                                                                    else if (item.extension == ".xlsx")
+                                                                    {
+                                                                        <img src="~/dist/img/xlsx.png" alt="Product Image" class="img-size-50">
+                                                                    }
+                                                                    else if (item.extension == ".xls")
+                                                                    {
+                                                                        <img src="~/dist/img/xls.png" alt="Product Image" class="img-size-50">
+                                                                    }
+                                                                    else if (item.extension == ".pdf")
+                                                                    {
+                                                                        <img src="~/dist/img/pdf.png" alt="Product Image" class="img-size-50">
+                                                                    }
+                                                                    else if (item.extension == ".docx")
+                                                                    {
+                                                                        <img src="~/dist/img/doc.png" alt="Product Image" class="img-size-50">
+                                                                    }
+                                                                    else if (item.extension == ".rar")
+                                                                    {
+                                                                        <img src="~/dist/img/zip.png" alt="Product Image" class="img-size-50">
+                                                                    }
+                                                                    else if (item.extension == ".zip")
+                                                                    {
+                                                                        <img src="~/dist/img/xlsx.png" alt="Product Image" class="img-size-50">
+                                                                    }
+                                                                    else if (item.extension == ".txt")
+                                                                    {
+                                                                        <img src="~/dist/img/txt.png" alt="Product Image" class="img-size-50">
+                                                                    }
+                                                                    else
+                                                                    {
+                                                                        <img src="~/dist/img/undefine.png" alt="Product Image" class="img-size-50">
+                                                                    }
+
+                                                                </div>
+                                                                <div class="product-info">
+                                                                    <a href="javascript:void(0)" onclick="fileDescription(@item.id)" class="product-title">
+                                                                        <div class="" style="margin-top: 22px;">
+                                                                            @item.file_name
+                                                                        </div>
+
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td style="vertical-align: middle;" class="products-list product-list-in-card pl-2 pr-2">
+                                                            <div class="" style="margin-top: 22px;">
+                                                                @item.document_no
+                                                            </div>
+                                                        </td>
+                                                        <td style="vertical-align: middle;" class="products-list">
+                                                            <div class="" style="margin-top: 22px;">
+                                                                @Convert.ToDateTime(@item.date_version).ToString("dd-MM-yyyy")
+                                                            </div>
+                                                        </td>
+                                                        <td style="vertical-align: middle;" class="products-list">
+                                                            <div class="" style="margin-top: 22px;">
+                                                                @Convert.ToDateTime(@item.expired_date).ToString("dd-MM-yyyy")
+                                                            </div>
+                                                        </td>
+                                                        <td style="vertical-align: middle;" class="products-list">
+                                                            <div class="" style="margin-top: 22px;">
+                                                                @Convert.ToDateTime(@item.created_at).ToString("dd-MM-yyyy")
+                                                            </div>
+                                                        </td>
+                                                        <td style="text-align: center;">
+                                                            <div class="" style="margin-top: 22px;">
+                                                                <button type="button" title="Preview File" class="btn btn-sm btn-info" onclick="PreviewFile('@item.id','@item.extension');"><i class="fa fa-eye"></i></button>
+                                                                <button type="button" title="Annotation File" class="btn btn-sm btn-info" onclick="AnnotationFile('@item.id','@item.extension');"><i class="fas fa-file-signature"></i></button>
+                                                                <button type="button" title="Tags" class="btn btn-sm btn-info" onclick="AddTags('@item.document_id','@item.document_name','@item.tags_json');"><i class="fa fa-tags"></i></button>
+                                                                <a asp-controller="Home" title="Download File" asp-action="DownloadFiles" asp-route-id="@item.id" class="btn btn-sm btn-info"> <i class="fa fa-download" aria-hidden="true"></i></a>
+                                                                <button type="button" title="Edit" class="btn btn-sm btn-info" onclick="EditDataFile('@item.id','@item.id_directory','@item.collection_id','@item.document_type_id','@item.reference','@item.document_no','@item.document_name','@date_version','@expired_date');"><i class="fa fa-edit"></i></button>
+                                                                <button type="button" title="Delete" class="btn btn-sm btn-info" onclick="DeleteFile('@item.id','@item.id_directory','@item.document_name');"><i class="fa fa-trash"></i></button>
+                                                            </div>
+
+
+                                                        </td>
+                                                    </tr>
+                                                }
+                                            }
+
+                                        </table>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-5">
+                                        <div class="dataTables_info" id="example2_info" role="status" aria-live="polite">Showing 1 to 10 of 57 entries</div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-7">
+                                        <div class="dataTables_paginate paging_simple_numbers" id="example2_paginate">
+                                            <ul class="pagination">
+                                                <li class="paginate_button page-item previous disabled" id="example2_previous">
+                                                    <a href="#" aria-controls="example2" data-dt-idx="0" tabindex="0" class="page-link">Previous</a>
+                                                </li>
+                                                <li class="paginate_button page-item active">
+                                                    <a href="#" aria-controls="example2" data-dt-idx="1" tabindex="0" class="page-link">1</a>
+                                                </li>
+                                                <li class="paginate_button page-item "><a href="#" aria-controls="example2" data-dt-idx="2" tabindex="0" class="page-link">2</a></li>
+                                                <li class="paginate_button page-item "><a href="#" aria-controls="example2" data-dt-idx="3" tabindex="0" class="page-link">3</a></li>
+                                                <li class="paginate_button page-item "><a href="#" aria-controls="example2" data-dt-idx="4" tabindex="0" class="page-link">4</a></li>
+                                                <li class="paginate_button page-item "><a href="#" aria-controls="example2" data-dt-idx="5" tabindex="0" class="page-link">5</a></li>
+                                                <li class="paginate_button page-item "><a href="#" aria-controls="example2" data-dt-idx="6" tabindex="0" class="page-link">6</a></li>
+                                                <li class="paginate_button page-item next" id="example2_next"><a href="#" aria-controls="example2" data-dt-idx="7" tabindex="0" class="page-link">Next</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col-lg-8 -->
+
+                <div class="col-lg-2">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">File Information</h3>
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="card-body">
+
+                            <div class="text-center">
+                                @* <img src="~/dist/img/user1-128x128.jpg" alt="user-avatar" class="img img-fluid"> *@
+                                <img id="ImageFile" style="height: 100px; width: 120px;" class="img img-fluid">
+                            </div>
+                            <hr />
+
+                            @*<div class="col-7">
+                            <p class="text-muted text-sm"><b>File: </b> Guest.jpeg </p>
+                            <p class="text-muted text-sm"><b>Size: </b> 10 Mb </p>
+
+                            </div>*@
+
+                            <div class="row mt-4">
+                                <nav class="w-100">
+                                    <div class="nav nav-tabs" id="product-tab" role="tablist">
+                                        <a class="nav-item nav-link active" id="product-desc-tab" data-toggle="tab" href="#product-desc" role="tab" aria-controls="product-desc" aria-selected="true">Description</a>
+                                        <a class="nav-item nav-link" id="product-comments-tab" data-toggle="tab" href="#product-comments" role="tab" aria-controls="product-comments" aria-selected="false">Share</a>
+                                        <a class="nav-item nav-link" id="product-rating-tab" data-toggle="tab" href="#product-rating" role="tab" aria-controls="product-rating" aria-selected="false">Tag</a>
+                                        <a class="nav-item nav-link" id="product-log-tab" data-toggle="tab" href="#product-log" role="tab" aria-controls="product-log" aria-selected="false">Log</a>
+                                    </div>
+                                </nav>
+                                <div class="tab-content p-3" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="product-desc" role="tabpanel" aria-labelledby="product-desc-tab">
+
+                                        <strong class="text-muted"><i class="fas fa-file-alt mr-1"></i> Document Name</strong>
+                                        <p id="FileName" class="text-muted"></p>
+
+                                        <strong class="text-muted"><i class="fas fa-file-alt mr-1"></i> Size</strong>
+                                        <p id="FileSize" class="text-muted"></p>
+
+                                        <strong class="text-muted"><i class="fa fa-server mr-1"></i> Date Version</strong>
+                                        <p id="DateVersion" class="text-muted"></p>
+
+                                        <strong class="text-muted"><i class="fas fa-file-upload mr-1"></i> Upload</strong>
+                                        <p id="CreatedDate" class="text-muted"></p>
+
+                                        <strong class="text-muted"><i class="fas fa-file-download mr-1"></i> Download</strong>
+                                        <p id="UpdatedDate" class="text-muted"></p>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="product-comments" role="tabpanel" aria-labelledby="product-comments-tab">
+                                        <ul class="products-list product-list-in-card pl-2 pr-2 w-100">
+                                            <li class="item">
+                                                <div class="product-img">
+                                                    <img src="~/dist/img/user1-128x128.jpg" alt="Product Image" class="img-circle img-bordered-sm">
+                                                </div>
+                                                <div class="product-info">
+                                                    <a href="javascript:void(0)" class="product-title">
+                                                        Sarah
+                                                        <span class="badge badge-warning float-right">Unshared</span>
+                                                    </a>
+                                                    <span class="product-description">
+                                                        @DateTime.Now
+                                                    </span>
+                                                </div>
+                                            </li>
+
+                                            <li class="item">
+                                                <div class="product-img">
+                                                    <img src="~/dist/img/user2-160x160.jpg" alt="Product Image" class="img-circle img-bordered-sm">
+                                                </div>
+                                                <div class="product-info">
+                                                    <a href="javascript:void(0)" class="product-title">
+                                                        Adam
+                                                        <span class="badge badge-info float-right">Unshared</span>
+                                                    </a>
+                                                    <span class="product-description">
+                                                        @DateTime.Now
+                                                    </span>
+                                                </div>
+                                            </li>
+
+                                            <li class="item">
+                                                <div class="product-img">
+                                                    <img src="~/dist/img/user6-128x128.jpg" alt="Product Image" class="img-circle img-bordered-sm">
+                                                </div>
+                                                <div class="product-info">
+                                                    <a href="javascript:void(0)" class="product-title">
+                                                        Nero
+                                                        <span class="badge badge-danger float-right">
+                                                            Unshared
+                                                        </span>
+                                                    </a>
+                                                    <span class="product-description">
+                                                        @DateTime.Now
+                                                    </span>
+                                                </div>
+                                            </li>
+
+                                            <li class="item">
+                                                <div class="product-img">
+                                                    <img src="~/dist/img/user7-128x128.jpg" alt="Product Image" class="img-circle img-bordered-sm">
+                                                </div>
+                                                <div class="product-info">
+                                                    <a href="javascript:void(0)" class="product-title">
+                                                        Modotz
+                                                        <span class="badge badge-success float-right">Unshared</span>
+                                                    </a>
+                                                    <span class="product-description">
+                                                        @DateTime.Now
+                                                    </span>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="product-rating" role="tabpanel" aria-labelledby="product-rating-tab">
+                                        <span class="tag label label-info">
+                                            <span>Document Tags</span>
+                                            <a><i class="remove glyphicon glyphicon-remove-sign glyphicon-white"></i></a>
+                                        </span>
+                                        @*  <span class="badge badge-success">Ganteng</span>
+                                        <span class="badge badge-success">Pandai</span> *@
+                                    </div>
+                                    <div class="tab-pane fade" id="product-log" role="tabpanel" aria-labelledby="product-log-tab">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.tree -->
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+                </div>
+                <!-- /.col-lg-2 -->
+            </div>
+            <!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+    <!-- Modal -->
+    <div class="modal fade" id="createFolderModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <form asp-action="CreateFolder">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Create Folder</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="text" id="DirectoryId" name="directory_id" />
+                        <input type="text" id="CollectionId" name="collection_id" />
+                        <input type="hidden" id="ParentId" name="parent_id" />
+                        <div class="form-group">
+                            <label for="foldername">Folder name</label>
+                            <input type="text" class="form-control" id="directory_name" name="directory_name" placeholder="Enter folder name">
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="createFile" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <form method="post" asp-controller="Home" asp-action="UploadFiles" enctype="multipart/form-data">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Upload File</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <input type="hidden" id="FDirectoryId" name="directory_id" value="" />
+                        <input type="hidden" id="FCollectionId" name="collection_id" value="" />
+                        <input type="hidden" id="IndexValue" name="index_value" value="" />
+                        <div class="form-group">
+                            <label for="documenttype">Document Type</label>
+                            <select id="DocumentTypeId" name="document_type_id" asp-items="(IEnumerable<SelectListItem>)@ViewBag.lst_document_types_upload_file" class="form-control" onchange="onChangeDocumentType();"></select>
+                        </div>
+
+                        <div id="GroupDocumentType">
+                        </div>
+                        <div class="form-group">
+                            <label for="reference">Reference</label>
+                            <input type="text" class="form-control" id="Reference" name="reference" placeholder="Enter reference" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="documentname">Document Name</label>
+                            <input type="text" class="form-control" id="DocumentName" name="DocumentName" placeholder="Enter document name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="documentno">Document No</label>
+                            <input type="text" class="form-control" id="DocumentNo" name="document_no" placeholder="Enter document no" required>
+                        </div>
+                        <dl>
+                            <dt>
+                                <label for="filename"></label>
+                            </dt>
+                            <dd>
+                                <input type="file" name="files" multiple required>
+                                <span for="FileUpload FormFile"></span>
+                            </dd>
+                        </dl>
+                        @* <div class="form-group">
+                            <label for="tagging">Tag Document</label>
+                            <input type="text" id="DocTag" name="document_tag" hidden>
+                            <input type="text" id="InputTagDocument" name="InputTagDocument" placeholder="Enter Tag Document" value="" data-role="tagsinput">
+                        </div> *@
+                        <div class="form-group">
+                            <label for="dateversion">Date Version</label>
+                            <input type="date" class="form-control" id="DateVersion" name="date_version" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="expireddate">Expired Date</label>
+                            <input type="date" class="form-control" id="ExpiredDate" name="expired_date" required>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="editFile" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <form method="post" asp-controller="Home" asp-action="EditUploadFiles" enctype="multipart/form-data">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Edit Upload File</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="hidden" id="Id1" name="id" value="" />
+                        <input type="hidden" id="FDirectoryId1" name="directory_id" value="" />
+                        <input type="hidden" id="FCollectionId1" name="collection_id" value="" />
+                        <input type="hidden" id="IndexValue1" name="index_value" value="" />
+                        <div class="form-group">
+                            <label for="documenttype">Document Type</label>
+                            <select id="DocumentTypeId1" name="document_type_id" asp-items="(IEnumerable<SelectListItem>)@ViewBag.lst_document_types_upload_file" class="form-control" onchange="onChangeDocumentTypeEdit();"></select>
+                        </div>
+                        <div class="form-group" id="GroupDocumentType1">
+                        </div>
+                        <div class="form-group">
+                            <label for="reference">Reference</label>
+                            <input type="text" class="form-control" id="Reference1" name="reference" placeholder="Enter reference" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="documentname">Document Name</label>
+                            <input type="text" class="form-control" id="DocumentName1" name="DocumentName" placeholder="Enter document name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="documentno">Document No</label>
+                            <input type="text" class="form-control" id="DocumentNo1" name="document_no" placeholder="Enter document no" required>
+                        </div>
+                        <dl>
+                            <dt>
+                                <label for="filename"></label>
+                            </dt>
+                            <dd>
+                                <input type="file" name="files" multiple required>
+                                <span for="FileUpload FormFile"></span>
+                            </dd>
+                        </dl>
+                        @*  <div class="form-group">
+                            <label for="tagging">Tag Document</label>
+                            <input type="text" id="DocTag1" name="document_tag" hidden>
+                            <input type="text" id="InputTagDocument1" name="InputTagDocument1" placeholder="Enter Tag Document" value="" data-role="tagsinput">
+                        </div> *@
+                        <div class="form-group">
+                            <label for="dateversion">Date Version</label>
+                            <input type="date" class="form-control" id="DateVersion1" name="date_version" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="expireddate">Expired Date</label>
+                            <input type="date" class="form-control" id="ExpiredDate1" name="expired_date" required>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Update</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="addTags" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Add Tags</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" id="FDirectoryIdAddTags" name="id" value="" />
+                    <input type="hidden" id="DocumentIdAddTags" name="document_id" value="" />
+                    <input type="hidden" id="DocumentNameAddTags" name="document_name" value="" />
+
+                    <div id="AddTagsModal">
+                        <div class="form-group">
+                            <label for="documenttags">Document Tags</label>
+                            <input type="text" id="DocTag" name="tags_json" hidden>
+                            <input type="text" id="InputTagDocument" name="InputTagDocument" placeholder="Enter Tag Document" value="" data-role="tagsinput">
+                        </div>
+                        <div class="form-group" style="text-align: right;">
+                            <button type="button" onclick="SaveDataTags();" title="Save Tags" class="btn btn-sm btn-info" style="height: 38px;"><i class="fa fa-disk" aria-hidden="true"></i> Save</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="advanceSearch" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Advance Search</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form method="get" asp-controller="Home" asp-action="GetDirAdvanceSearch">
+                        <input type="hidden" id="FDirectoryIdAdvanceSearch" name="id_dir" />
+                        <input type="hidden" id="IndexValueAdvanceSearch" name="index_value"/>
+
+                        <div id="" style="text-align: center;">
+                            <table>
+                                <td style="text-align: right; width: 200px;">
+                                    <input class="form-check-input" type="radio" name="radio_doc_index" id="RadioIndex" onclick="onChangeDocIndex();" style="height: 16px; width: 25px;">&nbsp;&nbsp;
+                                    <label class="form-check-label" for="radio_doc_index">
+                                        Index
+                                    </label>
+                                </td>
+                                <td style="text-align: right; width: 200px;">
+                                    <input class="form-check-input" type="radio" name="radio_doc_content" id="RadioContent" onclick="onChangeDocContent();" style="height: 16px; width: 25px;">&nbsp;&nbsp;
+                                    <label class="form-check-label" for="radio_doc_tag">
+                                        Content
+                                    </label>
+                                </td>
+                                <td style="text-align: right; width: 200px;">
+                                    <input class="form-check-input" type="radio" name="radio_doc_tag" id="RadioTags" onclick="onChangeDocTags();" style="height: 16px; width: 25px;">&nbsp;&nbsp;
+                                    <label class="form-check-label" for="radio_doc_tag">
+                                        Tags
+                                    </label>
+                                </td>
+                            </table>
+                        </div>
+
+                  
+                        <div id="SearchIndexModal" hidden>
+
+                            <div class="form-group">
+                                <label for="documenttype">Document Type</label>
+                                <select id="DocumentTypeIdAdvanceSearch" name="document_type_id" asp-items="(IEnumerable<SelectListItem>)@ViewBag.lstDocTypesAdvanceSearch" class="form-control" onchange="onChangeDocumentTypeAdvanceSearch();"></select>
+                            </div>
+                            <div id="DocIndex">
+                            </div>
+                            <div class="form-group" style="text-align: right;">
+                                <button type="submit" title="Search" class="btn btn-sm btn-info" style="height: 38px;"><i class="fa fa-search" aria-hidden="true"></i> &nbsp; Search</button>
+                            </div>
+                        </div>
+
+                        <div id="SearchContentModal" hidden>
+                            <div class="form-group">
+                                <label for="documenttype">Document Content</label>
+                                <input type="text" id="DocContentAdvanceSearch" name="document_content" placeholder="Document Content" value="" class="form-control">
+                            </div>
+                            <div class="form-group" style="text-align: right;">
+                                <button type="submit" title="Search" class="btn btn-sm btn-info" style="height: 38px;"><i class="fa fa-search" aria-hidden="true"></i>&nbsp; Search</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div id="SearchTagsModal" hidden>
+                        <div class="form-group">
+                            <label for="documenttags">Document Tags</label>
+                            <input type="text" id="DocTagAdvanceSearch" name="tags_json" hidden>
+                            <input type="text" id="DocTagAdvance" name="DocTagAdvance" placeholder="Enter Tag Document" value="" data-role="tagsinput">
+                        </div>
+                        <div class="form-group" style="text-align: right;">
+                            <button type="button" onclick="SearchDocTags();" title="Search" class="btn btn-sm btn-info" style="height: 38px;"><i class="fa fa-search" aria-hidden="true"></i>&nbsp; Search</button>
+                        </div>
+                    </div>
+
+                </div>
+                @*  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div> *@
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="PreviewFilePDF" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Preview File</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    @* <button type="button" class="btn btn-secondary">Prev</button>&nbsp;<button type="button" class="btn btn-secondary">Next</button> *@
+                    <div id="pdf_container"></div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="PreviewFileDoc" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Preview File</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe id="FramePreviewFile" type="application/pdf" src="" width="640px;" height="300px;" frameborder="0">Preview File</iframe>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <link href="~/content/select2.min.css" rel="stylesheet">
+    <script src="~/content/select2.min.js"></script>
+
+    <link href="~/content/select2/select2-bootstrap.css" rel="stylesheet">
+    <link href="~/content/select2/select2.min.css" rel="stylesheet">
+    <script src="~/content/select2/select2.full.js"></script>
+
+    <link href="~/adminlte/plugins/sweetalert2/sweetalert2.min.css" rel="stylesheet">
+    <script src="~/adminlte/plugins/sweetalert2/sweetalert2.min.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf_viewer.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
+
+    <link href="~/tags/bootstrap-tagsinput.css" rel="stylesheet">
+    <script src="~/tags/bootstrap-tagsinput.js"></script>
+
+    <script>
+
+
+        $(function () {
+            let tree = '';
+            var collId = '@ViewBag.collId';
+            var dirId = '@ViewBag.dirId';
+
+            console.log('collId:', collId);
+            console.log('dirId:', dirId);
+
+            $('#CollectionId').val(collId);
+            $('#ParentId').val(dirId);
+            $('#DirectoryId').val(dirId);
+            $('#FDirectoryId').val(dirId);
+            $('#FCollectionId').val(collId);
+            $('#FDirectoryIdDocIndex').val(dirId);
+            $('#FDirectoryIdAddTags').val(dirId);
+            $('#FDirectoryIdAdvanceSearch').val(dirId);
+
+            $('#html1').jstree({
+                'core': {
+                    'data': {
+                        'url': '/Home/Folders?id=' + collId + '&idx=' + dirId,
+                        //'data': function (node) {
+                        //    return { 'id': node.id };
+                        //},
+                        'dataFilter': function (data) {
+                            // process the data any way you want (console.log(data) to see what you have, transform it and return the new object)
+                            // keep in mind for some jQuery versions (older ones) you will have to return a string and not an object - if that is the case "return JSON.stringify(new_data);" will do
+                            // console.log('data:',data);
+
+
+
+                            var datas = jQuery.parseJSON(data)
+                            //console.log(datas);
+                            for (let i = 0; i < datas.length; i++) {
+                                console.log('datas:', datas[i]);
+                                if (datas[i].id == dirId) {
+                                    //console.log('tree:',datas[i].tree);
+                                    tree = datas[i].tree;
+                                }
+                            }
+
+                            return data;
+                        }
+                    }
+                }
+            });
+
+            $('#html1').on('changed.jstree', function (e, data) {
+                console.log(data);
+                //console.log('selected:',data.selected[0]);
+                var id = data.selected[0];
+                location.href = "/Home/Dir/" + id;
+
+                var i, j, r = [];
+                for (i = 0, j = data.selected.length; i < j; i++) {
+                    r.push(data.instance.get_node(data.selected[i]).text);
+                }
+                // alert('Selected: ' + r.join(', '));
+                // $('#event_result').html('Selected: ' + r.join(', '));
+
+            }).jstree();
+
+            $('#html1').bind('ready.jstree', function (e, data) {
+                var $tree = $(this);
+
+                // untuk membuka tree yang aktif
+                const parents = tree.split(",");
+                for (let i = 0; i < parents.length; i++) {
+                    $tree.jstree().open_node({ "id": parents[i] });
+                }
+            });
+
+        });
+
+        function fileDescription(id) {
+            console.log('item:', id);
+            $.get("http://localhost:5285/Browser/FileInfo/" + id, {
+            },
+                function (response, status) {
+                    console.log(response);
+                    console.log(response.fileName);
+                    $('#fileName').text(response.file_name);
+                    //$('#pTest').text('test');
+                    //$('#pTest').text('test');
+                    $('#createdDate').text(response.created_date);
+                }
+            );
+        }
+
+        var fDocumentTypeId = '@TempData["fDocumentTypeId"]';
+        var fDocumentIndexId = '@TempData["fDocumentIndexId"]';
+        var fDocumentIndexValue = '@TempData["fDocumentIndexValue"]';
+
+        if(fDocumentTypeId != null && fDocumentTypeId != "") {
+             SetValueForSelect2("fDocumentTypeId", fDocumentTypeId);
+             SetValueForSelect2("fDocumentTypeIdAdvanceSearch", fDocumentTypeId);
+        } else {
+             SetValueForSelect2("fDocumentTypeId","SelectType");
+             SetValueForSelect2("fDocumentTypeIdAdvanceSearch", "");
+        }
+
+        if(fDocumentIndexId != null && fDocumentIndexId != "") {
+            SetValueForSelect2("fDocumentIndexId", fDocumentIndexId);
+            //SetValueForSelect2("fDocumentIndexIdAdvanceSearch", fDocumentIndexId);
+        } else {
+            SetValueForSelect2("fDocumentIndexId","SelectIndex");
+            //SetValueForSelect2("fDocumentIndexIdAdvanceSearch","");
+        }
+
+        if(fDocumentIndexValue != null && fDocumentIndexValue != "") {
+            document.getElementById("fDocumentIndexValue").value = fDocumentIndexValue;
+            //document.getElementById("fDocumentIndexValueAdvanceSearch").value = fDocumentIndexValue;
+        } else {
+            document.getElementById("fDocumentIndexValue").value = "";
+            //document.getElementById("fDocumentIndexValueAdvanceSearch").value = "";
+        }
+
+        $("#fDocumentTypeId").select2({
+            placeholder: "",
+            width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+        });
+
+        $("#fDocumentTypeIdAdvanceSearch").select2({
+            placeholder: "",
+            width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+            dropdownParent: $("#advanceSearch"),
+        });
+
+        $("#fDocumentIndexId").select2({
+            placeholder: "",
+            width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+        });
+
+        $("#DocumentTypeIdAdvanceSearch").select2({
+            placeholder: "",
+            width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+            dropdownParent: $("#advanceSearch"),
+        });
+
+        $("#DocumentTypeId").select2({
+            placeholder: "",
+            width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+            dropdownParent: $("#createFile"),
+        });
+
+        $("#DocumentTypeId1").select2({
+            placeholder: "",
+            width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+            dropdownParent: $("#editFile"),
+        });
+
+        function SetValueForSelect2(SelectId, Value) {
+            $("#" + SelectId).val(Value).trigger("change");
+
+        }
+
+        function ViewFileInfo(FileName, FilePath, Extention, DateVersion, CreatedDate, UpdatedDate, FileDecrypt, ContntType, DownloadDate, FileSize, TagsJson) {
+
+            document.getElementById("FileName").innerHTML = FileName;
+            document.getElementById("FileSize").innerHTML = FileSize;
+            document.getElementById("DateVersion").innerHTML = DateVersion;
+            document.getElementById("CreatedDate").innerHTML = CreatedDate;
+            document.getElementById("UpdatedDate").innerHTML = DownloadDate;
+
+            if (Extention == ".jpeg")
+            {
+                 document.getElementById("ImageFile").src = "data:" + ContntType + ";base64," + FileDecrypt;
+            }
+            else if (Extention == ".png")
+            {
+                 document.getElementById("ImageFile").src = "data:" + ContntType + ";base64," + FileDecrypt;
+            }
+            else if (Extention == ".xlsx")
+            {
+                document.getElementById("ImageFile").src = "/dist/img/xlsx.png";
+            }
+            else if (Extention == ".xls")
+            {
+                 document.getElementById("ImageFile").src = "/dist/img/xls.png";
+            }
+            else if (Extention == ".pdf")
+            {
+                document.getElementById("ImageFile").src = "/dist/img/pdf.png";
+            }
+            else if (Extention == ".docx")
+            {
+                document.getElementById("ImageFile").src = "/dist/img/doc.png";
+            }
+            else if (Extention == ".rar")
+            {
+                document.getElementById("ImageFile").src = "/dist/img/zip.png";
+            }
+            else if (Extention == ".zip")
+            {
+                document.getElementById("ImageFile").src = "/dist/img/zip.png";
+            }
+            else if (Extention == ".txt")
+            {
+                 document.getElementById("ImageFile").src = "/dist/img/txt.png";
+            }
+            else
+            {
+                document.getElementById("ImageFile").src = "data:" + ContntType + ";base64," + FileDecrypt;
+            }
+
+            var tag_span = document.getElementById("product-rating");
+            while (tag_span.hasChildNodes()) {
+                   tag_span.removeChild(tag_span.firstChild);
+            }
+
+            var jsonObject = JSON.parse(TagsJson);
+            jsonObject.forEach(data =>
+            {
+                var tag_rating = document.getElementById("product-rating");
+
+                // var blank = document.createElement("&nbsp;");
+                // var blank1 = document.createElement("&nbsp;");
+
+                // tag_rating.appendChild(blank);
+                // tag_rating.appendChild(blank1);
+
+                var spanTag = document.createElement("span");
+                spanTag.className = "badge badge-success";
+                spanTag.innerHTML = data.document_tag;
+
+                tag_rating.appendChild(spanTag);
+
+
+            });
+        }
+
+        function PreviewFile(Id, Extention)
+        {
+
+            $.ajax({
+                type: "GET",
+                url: "@Url.Action("PreviewFile", "Home")",
+                data: { id: Id},
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (data) {
+
+                    //alert(JSON.stringify(data));
+
+                    openFile(data.encrypt_file, data.content_type, Extention);
+                },
+                error: function (error) { },
+            });
+        }
+
+        function openFile(base64, content_type, extention) {
+
+            const arrayBuffer = base64ToArrayBuffer(base64);
+            const blob = new Blob([arrayBuffer], { type: '' + content_type + ''});
+            const url = window.URL.createObjectURL(blob);
+
+            //window.open(url, 'width=1024,height=768,resizable=yes,scrollbars=yes,toolbar=no,location=no,directories=no,status=no,menubar=no,copyhistory=no');
+            LoadPdfFromUrl(url);
+
+            $('#PreviewFilePDF').modal({
+                backdrop: 'static',
+                keyboard: false
+            });
+            $('#PreviewFilePDF').modal('show');
+
+        }
+
+        function base64ToArrayBuffer(base64) {
+
+            const binaryString =  window.atob(base64);
+            const binaryLen = binaryString.length;
+            const bytes = new Uint8Array(binaryLen);
+            for (let i = 0; i < binaryLen; i++)        {
+                const ascii = binaryString.charCodeAt(i);
+                bytes[i] = ascii;
+            }
+            return bytes;
+        }
+
+        function DeleteFile(id, idx, document_name) {
+
+            Swal.fire({
+                  title: "Are you sure?",
+                  text: "You won't delete document : " + document_name + "",
+                  icon: "warning",
+                  showCancelButton: true,
+                  confirmButtonColor: "#3085d6",
+                  cancelButtonColor: "#d33",
+                  confirmButtonText: "Yes, delete it!"
+
+            }).then((result) => {
+
+                if (result.isConfirmed) {
+
+                     $.ajax({
+                        type: "GET",
+                        url: "@Url.Action("DeleteFile", "Home")",
+                        data: { id: id, idx: idx},
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "json",
+                        success: function (data) {
+
+                            if (data.error === false) {
+
+                                 Swal.fire({
+                                      title: "Delete !",
+                                      text: "Your file deleted.",
+                                      icon: "success",
+                                      confirmButtonColor: "#3085d6",
+                                      confirmButtonText: "OK!"
+
+                                }).then((result) => {
+
+                                      if (result.isConfirmed) {
+                                            var actionUrl = '@Url.Action("Dir", "Home", new { id = "PLACEHOLDER1" })';
+                                            actionUrl = actionUrl.replace('PLACEHOLDER1', idx);
+                                            window.location.href = actionUrl.replaceAll('amp;', "");
+
+                                      } else {
+                                            var actionUrl = '@Url.Action("Dir", "Home", new { id = "PLACEHOLDER1" })';
+                                            actionUrl = actionUrl.replace('PLACEHOLDER1', idx);
+                                            window.location.href = actionUrl.replaceAll('amp;', "");
+                                      }
+                                });
+
+                                Swal.fire({
+                                      title: "Delete !",
+                                      text: "Your file deleted.",
+                                      icon: "success"
+                                });
+
+                                var actionUrl = '@Url.Action("Dir", "Home", new { id = "PLACEHOLDER1" })';
+                                actionUrl = actionUrl.replace('PLACEHOLDER1', idx);
+                                window.location.href = actionUrl.replaceAll('amp;', "");
+
+                            } else {
+
+                                Swal.fire({
+                                      title: "Error !",
+                                      text: "" + data.message + "",
+                                      icon: "danger"
+                                });
+
+                                var actionUrl = '@Url.Action("Dir", "Home", new { id = "PLACEHOLDER1" })';
+                                actionUrl = actionUrl.replace('PLACEHOLDER1', idx);
+                                window.location.href = actionUrl.replaceAll('amp;', "");
+                            }
+
+
+                        },
+                        error: function (error) { },
+                    });
+
+
+                }
+            });
+        }
+
+        function AddUploadFile() {
+
+            SetValueForSelect2("DocumentTypeId","");
+
+            $('#createFile').modal({
+                backdrop: 'static',
+                keyboard: false
+            });
+            $('#createFile').modal('show');
+        }
+
+        function EditDataFile(Id, DirectoryId, CollectionId, DocumentTypeId, Reference, DocumentNo, DocumentName, DateVersion, ExpiredDate)
+        {
+            document.getElementById("Id1").value = Id;
+            document.getElementById("FDirectoryId1").value = DirectoryId;
+            document.getElementById("FCollectionId1").value = CollectionId;
+            SetValueForSelect2("DocumentTypeId1", DocumentTypeId);
+            //document.getElementById("DocumentTypeId1").value = DocumentTypeId;
+            document.getElementById("Reference1").value = Reference;
+            document.getElementById("DocumentNo1").value = DocumentNo;
+            document.getElementById("DocumentName1").value = DocumentName;
+            document.getElementById("DateVersion1").value = DateVersion;
+            document.getElementById("ExpiredDate1").value = ExpiredDate;
+
+            onChangeDocumentTypeEdit();
+
+            $('#editFile').modal({
+                backdrop: 'static',
+                keyboard: false
+            });
+            $('#editFile').modal('show');
+        }
+
+        var IndexValueArray = [];
+        var IndexValueArrayEdit = [];
+        var IndexValueArrayAdvanceSearh = [];
+
+        function onChangeDataIndex(no, document_type_id, index_id) {
+
+            document.getElementById("IndexValue").value = "";
+            var index_value = document.getElementById("" + index_id + "").value;
+
+            var index = IndexValueArray.findIndex(x => x.index_id == index_id);
+            if(index !== -1) {
+               IndexValueArray.splice(index, 1);
+            }
+
+            var data = {
+                id: no,
+                index_id: index_id,
+                index_value: index_value
+            };
+
+            IndexValueArray.push(data);
+
+            var index_value_str = JSON.stringify(IndexValueArray);
+            //alert(index_value_str);
+
+            document.getElementById("IndexValue").value = index_value_str;
+        }
+
+        function onChangeDataIndexAdvanceSearch(no, document_type_id, index_id) {
+
+            document.getElementById("IndexValueAdvanceSearch").value = "";
+            var index_value = document.getElementById("" + index_id + "").value;
+
+            var index = IndexValueArrayAdvanceSearh.findIndex(x => x.index_id == index_id);
+            if(index !== -1) {
+               IndexValueArrayAdvanceSearh.splice(index, 1);
+            }
+
+            var data = {
+                id: no,
+                index_id: index_id,
+                index_value: index_value
+            };
+
+            IndexValueArrayAdvanceSearh.push(data);
+
+            var index_value_str = JSON.stringify(IndexValueArrayAdvanceSearh);
+            //alert(index_value_str);
+
+            document.getElementById("IndexValueAdvanceSearch").value = index_value_str;
+        }
+
+        function onChangeDataIndexEdit(no, document_type_id, index_id) {
+
+            document.getElementById("IndexValue1").value = "";
+            var index_value = document.getElementById("" + index_id + "").value;
+
+            var index = IndexValueArray.findIndex(x => x.index_id == index_id);
+            if(index !== -1) {
+               IndexValueArray.splice(index, 1);
+            }
+
+            var data = {
+                id: no,
+                index_id: index_id,
+                index_value: index_value
+            };
+
+            IndexValueArray.push(data);
+
+            var index_value_str = JSON.stringify(IndexValueArray);
+            //alert(index_value_str);
+
+            document.getElementById("IndexValue1").value = index_value_str;
+        }
+
+        function onChangeDocumentType() {
+
+            var document_type_id = document.getElementById("DocumentTypeId").value;
+
+            $.ajax({
+                type: "GET",
+                url: "@Url.Action("GetIndexDocType", "DocumentIndex")",
+                data: {
+                            DocumentTypeId: document_type_id
+                      },
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (data) {
+
+                    if(data.error == false) {
+
+                        var GroupDocumentTypeElement = document.getElementById("GroupDocumentType");
+                        while (GroupDocumentTypeElement.hasChildNodes()) {
+                            GroupDocumentTypeElement.removeChild(GroupDocumentTypeElement.firstChild);
+                        }
+
+                        var dataJSON = data.res;
+                        var no = 1;
+                        dataJSON.forEach(data =>
+                        {
+
+                            var rules = JSON.parse(data.rules);
+                            if(rules.type == "Text") {
+
+                                var divGroup = document.createElement("div");
+                                divGroup.className = "form-group";
+
+                                var labelIndex = document.createElement("label");
+                                labelIndex.innerHTML = "Index - " + data.index_name;
+
+                                var inputIndex = document.createElement("input");
+                                inputIndex.id = "" + data.index_id + "";
+                                inputIndex.type = "" + rules.type + "";
+                                inputIndex.placeholder = "" + data.index_name + "";
+                                inputIndex.className = "form-control";
+                                inputIndex.minLength = "" + rules.min_length + "";
+                                inputIndex.maxLength = "" + rules.max_length + "";
+                                inputIndex.setAttribute("onchange", "onChangeDataIndex('" + no + "','" + data.document_type_id + "','" + data.index_id + "');");
+                                if(rules.required == "true") {
+                                    inputIndex.setAttribute("required", "");
+                                }
+
+                                divGroup.appendChild(labelIndex);
+                                divGroup.appendChild(inputIndex);
+
+                                GroupDocumentTypeElement.appendChild(divGroup);
+
+
+                            }
+
+                            if(rules.type == "Number") {
+
+                                var divGroup = document.createElement("div");
+                                divGroup.className = "form-group";
+
+                                var labelIndex = document.createElement("label");
+                                labelIndex.innerHTML = "Index - " + data.index_name;
+
+                                var inputIndex = document.createElement("input");
+                                inputIndex.id = "" + data.index_id + "";
+                                inputIndex.type = "" + rules.type + "";
+                                inputIndex.placeholder = "" + data.index_name + "";
+                                inputIndex.className = "form-control";
+                                inputIndex.maxLength = "" + rules.max_length + "";
+                                inputIndex.setAttribute("onchange", "onChangeDataIndex('" + no + "','" + data.document_type_id + "','" + data.index_id + "');");
+                                if(rules.required == "true") {
+                                    inputIndex.setAttribute("required", "");
+                                }
+
+                                divGroup.appendChild(labelIndex);
+                                divGroup.appendChild(inputIndex);
+
+                                GroupDocumentTypeElement.appendChild(divGroup);
+                            }
+
+                            if(rules.type == "Date") {
+
+                                var divGroup = document.createElement("div");
+                                divGroup.className = "form-group";
+
+                                var labelIndex = document.createElement("label");
+                                labelIndex.innerHTML = "Index - " + data.index_name;
+
+                                var inputIndex = document.createElement("input");
+                                inputIndex.id = "" + data.index_id + "";
+                                inputIndex.type = "date";
+                                inputIndex.className = "form-control";
+                                inputIndex.setAttribute("onchange", "onChangeDataIndex('" + no + "','" + data.document_type_id + "','" + data.index_id + "');");
+                                if(rules.required == "true") {
+                                    inputIndex.setAttribute("required", "");
+                                }
+                                inputIndex.placeholder = "" + rules.format + "";
+
+                                divGroup.appendChild(labelIndex);
+                                divGroup.appendChild(inputIndex);
+
+                                GroupDocumentTypeElement.appendChild(divGroup);
+                            }
+
+                            no++;
+                        });
+                    }
+
+                },
+                error: function (xhr, status, error) {
+                    var err = JSON.parse(xhr.responseText);
+                    console.log("onChangeDocumentType : " + err);
+
+                }
+            });
+        }
+
+        function onChangeDocumentTypeAdvanceSearch() {
+
+            var document_type_id = document.getElementById("DocumentTypeIdAdvanceSearch").value;
+
+            $.ajax({
+                type: "GET",
+                url: "@Url.Action("GetIndexDocType", "DocumentIndex")",
+                data: {
+                            DocumentTypeId: document_type_id
+                      },
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (data) {
+
+                    if(data.error == false) {
+
+                        var GroupDocumentTypeElement = document.getElementById("DocIndex");
+                        while (GroupDocumentTypeElement.hasChildNodes()) {
+                            GroupDocumentTypeElement.removeChild(GroupDocumentTypeElement.firstChild);
+                        }
+
+                        var dataJSON = data.res;
+                        var no = 1;
+                        dataJSON.forEach(data =>
+                        {
+
+                            var rules = JSON.parse(data.rules);
+                            if(rules.type == "Text") {
+
+                                var divGroup = document.createElement("div");
+                                divGroup.className = "form-group";
+
+                                var labelIndex = document.createElement("label");
+                                labelIndex.innerHTML = "Index - " + data.index_name;
+
+                                var inputIndex = document.createElement("input");
+                                inputIndex.id = "" + data.index_id + "";
+                                inputIndex.id = "" + data.index_name + "";
+                                inputIndex.type = "" + rules.type + "";
+                                inputIndex.placeholder = "" + data.index_name + "";
+                                inputIndex.className = "form-control";
+                                inputIndex.minLength = "" + rules.min_length + "";
+                                inputIndex.maxLength = "" + rules.max_length + "";
+                                inputIndex.setAttribute("onchange", "onChangeDataIndexAdvanceSearch('" + no + "','" + data.document_type_id + "','" + data.index_id + "');");
+                                if(rules.required == "true") {
+                                    inputIndex.setAttribute("required", "");
+                                }
+
+                                divGroup.appendChild(labelIndex);
+                                divGroup.appendChild(inputIndex);
+
+                                GroupDocumentTypeElement.appendChild(divGroup);
+
+
+                            }
+
+                            if(rules.type == "Number") {
+
+                                var divGroup = document.createElement("div");
+                                divGroup.className = "form-group";
+
+                                var labelIndex = document.createElement("label");
+                                labelIndex.innerHTML = "Index - " + data.index_name;
+
+                                var inputIndex = document.createElement("input");
+                                inputIndex.id = "" + data.index_id + "";
+                                inputIndex.type = "" + rules.type + "";
+                                inputIndex.placeholder = "" + data.index_name + "";
+                                inputIndex.className = "form-control";
+                                inputIndex.maxLength = "" + rules.max_length + "";
+                                inputIndex.setAttribute("onchange", "onChangeDataIndexAdvanceSearch('" + no + "','" + data.document_type_id + "','" + data.index_id + "');");
+                                if(rules.required == "true") {
+                                    inputIndex.setAttribute("required", "");
+                                }
+
+                                divGroup.appendChild(labelIndex);
+                                divGroup.appendChild(inputIndex);
+
+                                GroupDocumentTypeElement.appendChild(divGroup);
+                            }
+
+                            if(rules.type == "Date") {
+
+                                var divGroup = document.createElement("div");
+                                divGroup.className = "form-group";
+
+                                var labelIndex = document.createElement("label");
+                                labelIndex.innerHTML = "Index - " + data.index_name;
+
+                                var inputIndex = document.createElement("input");
+                                inputIndex.id = "" + data.index_id + "";
+                                inputIndex.type = "date";
+                                inputIndex.className = "form-control";
+                                inputIndex.setAttribute("onchange", "onChangeDataIndexAdvanceSearch('" + no + "','" + data.document_type_id + "','" + data.index_id + "');");
+                                if(rules.required == "true") {
+                                    inputIndex.setAttribute("required", "");
+                                }
+                                inputIndex.placeholder = "" + rules.format + "";
+
+                                divGroup.appendChild(labelIndex);
+                                divGroup.appendChild(inputIndex);
+
+                                GroupDocumentTypeElement.appendChild(divGroup);
+                            }
+
+                            no++;
+                        });
+                    }
+
+                },
+                error: function (xhr, status, error) {
+                    var err = JSON.parse(xhr.responseText);
+                    console.log("onChangeDocumentTypeAdvanceSearch : " + err);
+
+                }
+            });
+        }
+
+        function onChangeDocumentTypeIndex() {
+
+            var document_type_id = document.getElementById("fDocumentTypeId").value;
+
+            // if(document_type_id != "" && document_type_id != null) {
+            //     document.getElementById("docIndex").hidden = false;
+            //     document.getElementById("docIndexValue").hidden = false;
+            //     document.getElementById("docIndexSearch").hidden = false;
+            // } else {
+            //     document.getElementById("docIndex").hidden = true;
+            //     document.getElementById("docIndexValue").hidden = true;
+            //     document.getElementById("docIndexSearch").hidden = true;
+            // }
+
+            $.ajax({
+                type: "GET",
+                url: "@Url.Action("GetIndexDocType", "DocumentIndex")",
+                data: {
+                            DocumentTypeId: document_type_id
+                      },
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (data) {
+
+                    if(data.error == false) {
+
+                         // $('#fDocumentIndexId').empty().append('<option selected="selected" value=""></option>');
+                        $('#fDocumentIndexId').empty().append('<option value="SelectIndex">Select Index</option>');
+                        var dataJSON = data.res;
+                        dataJSON.forEach(data =>
+                        {
+                           $('#fDocumentIndexId').append('<option value="' + data.index_id + '">' + data.index_name + '</option>');
+
+                        });
+
+                        if(fDocumentIndexId != null && fDocumentIndexId != "") {
+
+                            SetValueForSelect2("fDocumentIndexId","@TempData["fDocumentIndexId"]");
+
+                        } else {
+
+                            var selectType = $("#fDocumentTypeId option:selected").text();
+                            if(selectType == "Select Type" || selectType == "Document Name") {
+                                SetValueForSelect2("fDocumentIndexId","SelectIndex");
+                                $('#fDocumentIndexId').prop('disabled', true);
+                            } else {
+                                SetValueForSelect2("fDocumentIndexId","SelectIndex");
+                                $('#fDocumentIndexId').prop('disabled', false);
+                            }
+
+                        }
+
+                    }
+
+                },
+                error: function (xhr, status, error) {
+                    var err = JSON.parse(xhr.responseText);
+                    console.log("onChangeDocumentTypeIndex : " + err);
+
+                }
+            });
+        }
+
+        function onChangeDocumentIndex() {
+            var document_type_id = document.getElementById("fDocumentTypeId").value;
+            var document_index_id = document.getElementById("fDocumentIndexId").value;
+
+            $.ajax({
+                type: "GET",
+                url: "@Url.Action("GetIndex", "DocumentIndex")",
+                data: {
+                            DocumentTypeId: document_type_id,
+                            DocumentIndexId: document_index_id
+                      },
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (data) {
+
+                    if(data.error == false) {
+
+                        var dataJSON = data.res;
+                        dataJSON.forEach(data =>
+                        {
+                           var rules = JSON.parse(data.rules);
+                           if(rules.type == "Text") {
+                               document.getElementById("fDocumentIndexValue").type = "text";
+                           }
+
+                           if(rules.type == "Number") {
+                               document.getElementById("fDocumentIndexValue").type = "number";
+                           }
+
+                           if(rules.type == "Date") {
+                               document.getElementById("fDocumentIndexValue").type = "date";
+                           }
+
+                        });
+
+
+                    }
+
+                },
+                error: function (xhr, status, error) {
+                    var err = JSON.parse(xhr.responseText);
+                    console.log("onChangeDocumentTypeIndex : " + err);
+
+                }
+            });
+        }
+
+        function onChangeDocumentTypeEdit() {
+
+            var document_type_id = document.getElementById("DocumentTypeId1").value;
+
+            $.ajax({
+                type: "GET",
+                url: "@Url.Action("GetIndexDocType", "DocumentIndex")",
+                data: {
+                            DocumentTypeId: document_type_id
+                      },
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (data) {
+
+                    if(data.error == false) {
+
+                        var GroupDocumentTypeElement = document.getElementById("GroupDocumentType1");
+                        while (GroupDocumentTypeElement.hasChildNodes()) {
+                            GroupDocumentTypeElement.removeChild(GroupDocumentTypeElement.firstChild);
+                        }
+
+                        var dataJSON = data.res;
+                        //alert(JSON.stringify(dataJSON));
+
+                        var no = 1;
+                        dataJSON.forEach(data =>
+                        {
+                            // console.log(`Product ID: ${product.id},
+                            //     Name: ${product.name}, Price: $${product.price}`);
+
+                            var rules = JSON.parse(data.rules);
+                            if(rules.type == "Text") {
+
+                                var divGroup = document.createElement("div");
+                                divGroup.className = "form-group";
+
+                                var labelIndex = document.createElement("label");
+                                labelIndex.innerHTML = "Index - " + data.index_name;
+
+                                var inputIndex = document.createElement("input");
+                                inputIndex.id = "" + data.index_id + "1";
+                                inputIndex.type = "" + rules.type + "";
+                                inputIndex.placeholder = "" + data.index_name + "";
+                                inputIndex.className = "form-control";
+                                inputIndex.minLength = "" + rules.min_length + "";
+                                inputIndex.maxLength = "" + rules.max_length + "";
+                                inputIndex.setAttribute("onchange", "onChangeDataIndexEdit('" + no + "','" + data.document_type_id + "','" + data.index_id + "');");
+                                if(rules.required == "true") {
+                                    inputIndex.setAttribute("required", "");
+                                }
+
+                                divGroup.appendChild(labelIndex);
+                                divGroup.appendChild(inputIndex);
+
+                                GroupDocumentTypeElement.appendChild(divGroup);
+
+
+                            }
+
+                            if(rules.type == "Number") {
+
+                                var divGroup = document.createElement("div");
+                                divGroup.className = "form-group";
+
+                                var labelIndex = document.createElement("label");
+                                labelIndex.innerHTML = "Index - " + data.index_name;
+
+                                var inputIndex = document.createElement("input");
+                                inputIndex.id = "" + data.index_id + "1";
+                                inputIndex.type = "" + rules.type + "";
+                                inputIndex.placeholder = "" + data.index_name + "";
+                                inputIndex.className = "form-control";
+                                inputIndex.maxLength = "" + rules.max_length + "";
+                                inputIndex.setAttribute("onchange", "onChangeDataIndexEdit('" + no + "','" + data.document_type_id + "','" + data.index_id + "');");
+                                if(rules.required == "true") {
+                                    inputIndex.setAttribute("required", "");
+                                }
+
+                                divGroup.appendChild(labelIndex);
+                                divGroup.appendChild(inputIndex);
+
+                                GroupDocumentTypeElement.appendChild(divGroup);
+                            }
+
+                            if(rules.type == "Date") {
+
+                                var divGroup = document.createElement("div");
+                                divGroup.className = "form-group";
+
+                                var labelIndex = document.createElement("label");
+                                labelIndex.innerHTML = "Index - " + data.index_name;
+
+                                var inputIndex = document.createElement("input");
+                                inputIndex.id = "" + data.index_id + "1";
+                                inputIndex.type = "date";
+                                inputIndex.className = "form-control";
+                                inputIndex.setAttribute("onchange", "onChangeDataIndexEdit('" + no + "','" + data.document_type_id + "','" + data.index_id + "');");
+                                if(rules.required == "true") {
+                                    inputIndex.setAttribute("required", "");
+                                }
+                                inputIndex.placeholder = "" + rules.format + "";
+
+                                divGroup.appendChild(labelIndex);
+                                divGroup.appendChild(inputIndex);
+
+                                GroupDocumentTypeElement.appendChild(divGroup);
+                            }
+
+                            no++;
+                        });
+                    }
+
+                },
+                error: function (xhr, status, error) {
+                    var err = JSON.parse(xhr.responseText);
+                    console.log("onChangeDocumentTypeEdit : " + err);
+
+                }
+            });
+        }
+
+        var pdfjsLib = window['pdfjs-dist/build/pdf'];
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.worker.min.js';
+
+        var pdfDoc = null;
+        var scale = 1.8; //Set Scale for zooming PDF.
+        var resolution = 1; //Set Resolution to Adjust PDF clarity.
+
+        function LoadPdfFromUrl(url) {
+
+            while (pdf_container.hasChildNodes()) {
+                   pdf_container.removeChild(pdf_container.firstChild);
+            }
+            //Read PDF from URL.
+            pdfjsLib.getDocument(url).promise.then(function (pdfDoc_) {
+                pdfDoc = pdfDoc_;
+
+                //Reference the Container DIV.
+                var pdf_container = document.getElementById("pdf_container");
+                pdf_container.style.display = "block";
+
+                //Loop and render all pages.
+                for (var i = 1; i <= pdfDoc.numPages; i++) {
+                    RenderPage(pdf_container, i);
+                }
+            });
+        };
+
+        function RenderPage(pdf_container, num) {
+            pdfDoc.getPage(num).then(function (page) {
+                //Create Canvas element and append to the Container DIV.
+                var canvas = document.createElement('canvas');
+                canvas.id = 'pdf-' + num;
+                ctx = canvas.getContext('2d');
+                pdf_container.appendChild(canvas);
+
+                //Create and add empty DIV to add SPACE between pages.
+                var spacer = document.createElement("div");
+                spacer.style.height = "25px";
+                spacer.style.width = "600px";
+                pdf_container.appendChild(spacer);
+
+                //Set the Canvas dimensions using ViewPort and Scale.
+                var viewport = page.getViewport({ scale: scale });
+                canvas.height = resolution * viewport.height;
+                canvas.width = resolution * viewport.width;
+
+                //Render the PDF page.
+                var renderContext = {
+                    canvasContext: ctx,
+                    viewport: viewport,
+                    transform: [resolution, 0, 0, resolution, 0, 0]
+                };
+
+                page.render(renderContext);
+            });
+        };
+
+        function onChangeRefreshIndex() {
+
+             var id = document.getElementById("FDirectoryIdDocIndex").value;
+
+             // var document_type_id = $("#fDocumentTypeId option:selected").text();
+             // var document_index_id = $("#fDocumentIndexId option:selected").text();
+
+             // if(document_type_id == "Select Type") {
+             //    document_type_id = null;
+             // }
+
+             // if(document_index_id == "Select Index") {
+             //    document_index_id = null;
+             // }
+
+             var actionUrl = '@Url.Action("GetDirAdvanceSearch", "Home", new { id_dir = "PLACEHOLDER1" } )';
+             actionUrl = actionUrl.replace('PLACEHOLDER1', id);
+             window.location.href = actionUrl.replaceAll('amp;', "");
+         }
+
+        function onChangeRefreshTags() {
+
+            var id = document.getElementById("FDirectoryIdDocTag").value;
+            var document_type_id = $("#fDocumentTypeId option:selected").text();
+            var document_index_id = $("#fDocumentIndexId option:selected").text();
+
+            if(document_type_id == "Select Type") {
+                document_type_id = null;
+            }
+
+            if(document_index_id == "Select Index") {
+                document_index_id = null;
+            }
+
+            var actionUrl = '@Url.Action("GetDirAdvanceSearch", "Home", new { id_dir = "PLACEHOLDER1", document_type_id = "PLACEHOLDER2", document_index_id = "PLACEHOLDER3" })';
+            actionUrl = actionUrl.replace('PLACEHOLDER1', id);
+            actionUrl = actionUrl.replace('PLACEHOLDER2', document_type_id);
+            actionUrl = actionUrl.replace('PLACEHOLDER3', document_index_id);
+            window.location.href = actionUrl.replaceAll('amp;', "");
+        }
+
+        function UpdateFavoriteDoc(id, directory_id, document_id, document_name) {
+
+            Swal.fire({
+                  title: "Are you sure?",
+                  text: "You won't update favorite document : " + document_name + "",
+                  icon: "warning",
+                  showCancelButton: true,
+                  confirmButtonColor: "#3085d6",
+                  cancelButtonColor: "#d33",
+                  confirmButtonText: "Yes, favorite it!"
+
+            }).then((result) => {
+
+                if (result.isConfirmed) {
+                    var data = {
+
+                        id: parseInt(id),
+                        document_id: document_id,
+                        document_name: document_name
+                    };
+
+                    var stringData = JSON.stringify(data);
+
+                    $.ajax({
+                        type: "POST",
+                        url: "@Url.Action("UpdateFavorite", "Home")",
+                        data: stringData,
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "json",
+                        success: function (data) {
+                            if (data.error === false) {
+
+                                Swal.fire({
+                                      title: "Success",
+                                      text: "Update Favorite",
+                                      icon: "success",
+                                      confirmButtonColor: "#3085d6",
+                                      confirmButtonText: "OK!"
+                                }).then((result) => {
+
+                                      if (result.isConfirmed) {
+                                            var actionUrl = '@Url.Action("Dir", "Home", new { id = "PLACEHOLDER1" })';
+                                            actionUrl = actionUrl.replace('PLACEHOLDER1', directory_id);
+                                            window.location.href = actionUrl.replaceAll('amp;', "");
+
+                                      } else {
+                                            var actionUrl = '@Url.Action("Dir", "Home", new { id = "PLACEHOLDER1" })';
+                                            actionUrl = actionUrl.replace('PLACEHOLDER1', directory_id);
+                                            window.location.href = actionUrl.replaceAll('amp;', "");
+                                      }
+                                });
+
+                            }
+                            else {
+
+                                Swal.fire({
+                                  title: "Error Update Favorite",
+                                      text: "" + data.message + "",
+                                      icon: "danger",
+                                      confirmButtonColor: "#3085d6",
+                                      confirmButtonText: "OK!"
+                                }).then((result) => {
+
+                                      if (result.isConfirmed) {
+                                            var actionUrl = '@Url.Action("Dir", "Home", new { id = "PLACEHOLDER1" })';
+                                            actionUrl = actionUrl.replace('PLACEHOLDER1', directory_id);
+                                            window.location.href = actionUrl.replaceAll('amp;', "");
+
+                                      } else {
+                                            var actionUrl = '@Url.Action("Dir", "Home", new { id = "PLACEHOLDER1" })';
+                                            actionUrl = actionUrl.replace('PLACEHOLDER1', directory_id);
+                                            window.location.href = actionUrl.replaceAll('amp;', "");
+                                      }
+                                });
+                            }
+                        },
+                        error: function (error) { },
+                    });
+                }
+            });
+        }
+
+        var arrayDocumentTag = [];
+        var arrayDocumentTagEdit = [];
+        var arrayDocumentTagAdvanceSearch = [];
+
+        $('#InputTagDocument').on('itemAdded', function(event) {
+
+            //alert(event.item)
+
+            var index = arrayDocumentTag.findIndex(x => x.document_tag == event.item);
+            if(index !== -1) {
+
+                Swal.fire({
+                    title: "Add Tag!",
+                    text: "Data Tag : " + event.item + " Already Exist.",
+                    icon: "warning"
+                });
+
+                return;
+            }
+
+             var data = {
+                            document_tag: event.item
+                        };
+
+             arrayDocumentTag.push(data);
+
+             var array_tag_str = JSON.stringify(arrayDocumentTag);
+             //alert(array_tag_str);
+             document.getElementById("DocTag").value = array_tag_str;
+
+             document.getElementById("DocTag").focus();
+        });
+
+        $('#InputTagDocument').on('itemRemoved', function(event) {
+
+             //alert(event.item)
+
+             var index = arrayDocumentTag.findIndex(x => x.document_tag == event.item);
+             if(index !== -1) {
+                 arrayDocumentTag.splice(index, 1);
+             }
+
+             var array_tag_str = JSON.stringify(arrayDocumentTag);
+             document.getElementById("DocTag").value = array_tag_str;
+             document.getElementById("DocTag").focus();
+        });
+
+        // $('#InputTagDocument1').on('itemAdded', function(event) {
+
+        //     //alert(event.item)
+
+        //      var index = arrayDocumentTagEdit.findIndex(x => x.document_tag == event.item);
+        //      if(index !== -1) {
+
+        //         Swal.fire({
+        //             title: "Add Tag!",
+        //             text: "Data Tag : " + event.item + " Already Exist.",
+        //             icon: "warning"
+        //         });
+
+        //         return;
+        //      }
+
+        //      var data = {
+        //                     document_tag: event.item
+        //                 };
+
+        //      arrayDocumentTagEdit.push(data);
+
+        //      var array_tag_str = JSON.stringify(arrayDocumentTagEdit);
+        //      document.getElementById("DocTag1").value = array_tag_str;
+
+        //      document.getElementById("InputTagDocument1").focus();
+        // });
+
+        // $('#InputTagDocument1').on('itemRemoved', function(event) {
+
+        //      //alert(event.item)
+
+        //      var index = arrayDocumentTagEdit.findIndex(x => x.document_tag == event.item);
+        //      if(index !== -1) {
+        //          arrayDocumentTagEdit.splice(index, 1);
+        //      }
+
+        //      var array_tag_str = JSON.stringify(arrayDocumentTagEdit);
+        //      document.getElementById("DocTag1").value = array_tag_str;
+
+        //      document.getElementById("InputTagDocument1").focus();
+        // });
+
+        $('#DocTagAdvance').on('itemAdded', function(event) {
+
+            //alert(event.item)
+
+            var index = arrayDocumentTagAdvanceSearch.findIndex(x => x.document_tag == event.item);
+            if(index !== -1) {
+
+                Swal.fire({
+                    title: "Add Tag!",
+                    text: "Data Tag : " + event.item + " Already Exist.",
+                    icon: "warning"
+                });
+
+                return;
+            }
+
+             var data = {
+                            document_tag: event.item
+                        };
+
+             arrayDocumentTagAdvanceSearch.push(data);
+
+             var array_tag_str = JSON.stringify(arrayDocumentTagAdvanceSearch);
+             //alert(array_tag_str);
+             document.getElementById("DocTagAdvanceSearch").value = array_tag_str;
+             document.getElementById("DocTagAdvance").focus();
+        });
+
+        $('#DocTagAdvance').on('itemRemoved', function(event) {
+
+             //alert(event.item)
+
+             var index = arrayDocumentTagAdvanceSearch.findIndex(x => x.document_tag == event.item);
+             if(index !== -1) {
+                 arrayDocumentTagAdvanceSearch.splice(index, 1);
+             }
+
+             var array_tag_str = JSON.stringify(arrayDocumentTagAdvanceSearch);
+             document.getElementById("DocTagAdvanceSearch").value = array_tag_str;
+             document.getElementById("DocTagAdvance").focus();
+
+        });
+
+
+        function onChangeDocIndex() {
+
+            var GroupDocumentTypeElement = document.getElementById("DocIndex");
+            while (GroupDocumentTypeElement.hasChildNodes()) {
+                GroupDocumentTypeElement.removeChild(GroupDocumentTypeElement.firstChild);
+            }
+
+            SetValueForSelect2("DocumentTypeIdAdvanceSearch","");
+
+            document.getElementById("DocContentAdvanceSearch").value = "";
+            document.getElementById("DocTagAdvance").value = "";
+
+            document.getElementById("SearchIndexModal").hidden = false;
+            document.getElementById("SearchContentModal").hidden = true;
+            document.getElementById("SearchTagsModal").hidden = true;
+
+            document.getElementById("RadioIndex").checked = true;
+            document.getElementById("RadioContent").checked = false;
+            document.getElementById("RadioTags").checked = false;
+        }
+
+        function onChangeDocContent() {
+
+           var GroupDocumentTypeElement = document.getElementById("DocIndex");
+            while (GroupDocumentTypeElement.hasChildNodes()) {
+                GroupDocumentTypeElement.removeChild(GroupDocumentTypeElement.firstChild);
+            }
+
+            SetValueForSelect2("DocumentTypeIdAdvanceSearch","");
+
+            document.getElementById("DocTagAdvance").value = "";
+
+            document.getElementById("SearchIndexModal").hidden = true;
+            document.getElementById("SearchContentModal").hidden = false;
+            document.getElementById("SearchTagsModal").hidden = true;
+
+            document.getElementById("RadioIndex").checked = false;
+            document.getElementById("RadioContent").checked = true;
+            document.getElementById("RadioTags").checked = false;
+        }
+
+        function onChangeDocTags() {
+
+            var GroupDocumentTypeElement = document.getElementById("DocIndex");
+            while (GroupDocumentTypeElement.hasChildNodes()) {
+                GroupDocumentTypeElement.removeChild(GroupDocumentTypeElement.firstChild);
+            }
+
+            SetValueForSelect2("DocumentTypeIdAdvanceSearch","");
+
+            document.getElementById("DocContentAdvanceSearch").value = "";
+
+            document.getElementById("SearchIndexModal").hidden = true;
+            document.getElementById("SearchContentModal").hidden = true;
+            document.getElementById("SearchTagsModal").hidden = false;
+
+            document.getElementById("RadioIndex").checked = false;
+            document.getElementById("RadioContent").checked = false;
+            document.getElementById("RadioTags").checked = true;
+        }
+
+        function showModalAdvanceSearch() {
+
+            var GroupDocumentTypeElement = document.getElementById("DocIndex");
+            while (GroupDocumentTypeElement.hasChildNodes()) {
+                GroupDocumentTypeElement.removeChild(GroupDocumentTypeElement.firstChild);
+            }
+
+            SetValueForSelect2("DocumentTypeIdAdvanceSearch","");
+            document.getElementById("DocContentAdvanceSearch").value = "";
+            arrayDocumentTagAdvanceSearch.splice(0, arrayDocumentTagAdvanceSearch.length);
+            document.getElementById("DocTagAdvanceSearch").value = "";
+
+            $('#advanceSearch').modal({
+                backdrop: 'static',
+                keyboard: false
+            });
+            $('#advanceSearch').modal('show');
+
+        }
+
+        function SearchDocTags() {
+
+            var id = document.getElementById("FDirectoryIdAdvanceSearch").value;
+            var index_value = document.getElementById("IndexValueAdvanceSearch").value;
+            var document_content = document.getElementById("DocContentAdvanceSearch").value;
+            var tags_json = document.getElementById("DocTagAdvanceSearch").value;
+
+            var actionUrl = '@Url.Action("GetDirAdvanceSearch", "Home", new { id_dir = "PLACEHOLDER1", index_value = "PLACEHOLDER2", document_content = "PLACEHOLDER3", tags_json = "PLACEHOLDER4" })';
+            actionUrl = actionUrl.replace('PLACEHOLDER1', id);
+            actionUrl = actionUrl.replace('PLACEHOLDER2', index_value);
+            actionUrl = actionUrl.replace('PLACEHOLDER3', document_content);
+            actionUrl = actionUrl.replace('PLACEHOLDER4', tags_json);
+            window.location.href = actionUrl.replaceAll('amp;', "");
+        }
+
+        function AddTags(document_id, document_name, tags_json) {
+
+            document.getElementById("DocumentIdAddTags").value = document_id;
+            document.getElementById("DocumentNameAddTags").value = document_name;
+            document.getElementById("InputTagDocument").value = "";
+            document.getElementById("DocTag").value = tags_json;
+            arrayDocumentTag.splice(0, arrayDocumentTag.length);
+            $("#InputTagDocument").tagsinput('removeAll');
+
+            if(tags_json != null && tags_json != "") {
+                var jsonObject = JSON.parse(tags_json);
+                jsonObject.forEach(data =>
+                {
+                    var input = document.getElementById('InputTagDocument');
+                    $(input).tagsinput('add', data.document_tag);
+
+                });
+            }
+           
+            $('#addTags').modal({
+                backdrop: 'static',
+                keyboard: false
+            });
+            $('#addTags').modal('show');
+        }
+
+        function SaveDataTags()
+        {
+
+            var id_directory = document.getElementById("FDirectoryIdAddTags").value;
+            var document_id = document.getElementById("DocumentIdAddTags").value;
+            var document_name = document.getElementById("DocumentNameAddTags").value;
+            var tags_json = document.getElementById("DocTag").value;
+
+            if(tags_json == null || tags_json == "") {
+
+                Swal.fire({
+                    title: "Empty!",
+                    text: "Data Tag Empty",
+                    icon: "warning"
+                });
+
+                return;
+            }
+
+            Swal.fire({
+                  title: "Are you sure?",
+                  text: "You won't update tags document : " + document_name,
+                  icon: "warning",
+                  showCancelButton: true,
+                  confirmButtonColor: "#3085d6",
+                  cancelButtonColor: "#d33",
+                  confirmButtonText: "Yes, document it!"
+
+            }).then((result) => {
+
+                if (result.isConfirmed) {
+                    var data = {
+
+                        document_id: document_id,
+                        tags_json: tags_json
+                    };
+
+                    var stringData = JSON.stringify(data);
+
+                    $.ajax({
+                        type: "POST",
+                        url: "@Url.Action("AddTags", "Home")",
+                        data: stringData,
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "json",
+                        success: function (data) {
+                            if (data.error === false) {
+
+                                Swal.fire({
+                                      title: "Success",
+                                      text: "Save Tags",
+                                      icon: "success",
+                                      confirmButtonColor: "#3085d6",
+                                      confirmButtonText: "OK!"
+                                }).then((result) => {
+
+                                      if (result.isConfirmed) {
+                                            var actionUrl = '@Url.Action("Dir", "Home", new { id = "PLACEHOLDER1" })';
+                                            actionUrl = actionUrl.replace('PLACEHOLDER1', id_directory);
+                                            window.location.href = actionUrl.replaceAll('amp;', "");
+
+                                      } else {
+                                            var actionUrl = '@Url.Action("Dir", "Home", new { id = "PLACEHOLDER1" })';
+                                            actionUrl = actionUrl.replace('PLACEHOLDER1', id_directory);
+                                            window.location.href = actionUrl.replaceAll('amp;', "");
+                                      }
+                                });
+
+                            }
+                            else {
+
+                                Swal.fire({
+                                  title: "Error Save Tags",
+                                      text: "" + data.message + "",
+                                      icon: "danger",
+                                      confirmButtonColor: "#3085d6",
+                                      confirmButtonText: "OK!"
+                                }).then((result) => {
+
+                                      if (result.isConfirmed) {
+                                            var actionUrl = '@Url.Action("Dir", "Home", new { id = "PLACEHOLDER1" })';
+                                            actionUrl = actionUrl.replace('PLACEHOLDER1', id_directory);
+                                            window.location.href = actionUrl.replaceAll('amp;', "");
+
+                                      } else {
+                                            var actionUrl = '@Url.Action("Dir", "Home", new { id = "PLACEHOLDER1" })';
+                                            actionUrl = actionUrl.replace('PLACEHOLDER1', id_directory);
+                                            window.location.href = actionUrl.replaceAll('amp;', "");
+                                      }
+                                });
+                            }
+                        },
+                        error: function (error) { },
+                    });
+                }
+            });
+        }
+    </script>
+</div>
+<!-- /.content-wrapper -->

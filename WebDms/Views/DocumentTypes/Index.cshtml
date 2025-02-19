@@ -1,0 +1,275 @@
+﻿@model IEnumerable<WebDms.Models.DocumentType>
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_LayoutDms.cshtml";
+}
+
+<body>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <div class="container-fluid">
+            </div><!-- /.container-fluid -->
+        </section>
+        <!-- /.content-header -->
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row my-flex-card">
+                    <div class="col-lg-2">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Folders</h3>
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body">
+                                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                                    <li class="nav-item">
+                                        <a asp-controller="DocumentTypes" asp-action="Index" class="nav-link">
+                                            <i class="nav-icon fa fa-object-ungroup"></i>
+                                            <p class="text">Document Types</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a asp-controller="Collections" asp-action="Index" class="nav-link">
+                                            <i class="nav-icon fa fa-object-group"></i>
+                                            <p class="text">Collections</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <hr />
+                                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+
+                                    <li class="nav-item">
+                                        <a asp-controller="Browser" asp-action="Favorite" asp-route-id="1" class="nav-link">
+                                            <i class="nav-icon far fa-star"></i>
+                                            <p class="text">Favorites</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a asp-controller="Browser" asp-action="Dir" asp-route-id="1" class="nav-link">
+                                            <i class="nav-icon fas fa-share-alt"></i>
+                                            <p class="text">Share</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a asp-controller="Browser" asp-action="Delete" asp-route-id="1" class="nav-link">
+                                            <i class="nav-icon far fa-trash-alt"></i>
+                                            <p class="text">Trash</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <hr />
+                                <div class="panel panel-info">
+                                    <div class="panel-heading">
+                                        Company Folders
+                                    </div>
+                                    <div class="panel-body">
+                                        <div id="html1">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- /.tree -->
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.col-lg-2 -->
+                    <div class="col-lg-10">
+                        <div class="card">
+                            <div class="card-header">
+                                <button type="button" class="btn btn-siram" data-toggle="modal" data-target="#CreateDocumentType">Create New</button>
+                            </div>
+                            <!-- /.card-header -->
+
+                            <div class="card-body">
+                                <table id="example1" class="table table-bordered table-striped dataTable dtr-inline" aria-describedby="example1_info">
+                                    <thead>
+                                        <tr>
+                                            <th>Id</th>
+                                            <th>Name</th>
+                                            <th>Description</th>
+                                            <th>Status</th>
+                                            <th>Create Date</th>
+                                            <th style="text-align: center;">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var item in Model)
+                                        {
+                                            <tr class="odd">
+                                                <td class="dtr-control sorting_1" tabindex="0">@item.id</td>
+                                                <td>@item.document_type_name</td>
+                                                <td>@item.description</td>
+                                                @{
+                                                    string status = string.Empty;
+                                                    if (@item.status == 1)
+                                                    {
+                                                        status = "Aktif";
+                                                    }
+                                                    else
+                                                    {
+                                                        status = "Tidak Aktif";
+                                                    }
+                                                }
+                                                <td>@status</td>
+                                                <td>@item.created_at.ToString("dd-MM-yyyy HH:mm:ss")</td>
+                                                <td class="text-center">
+                                                    <a class="btn btn-warning" title="Edit" type="button" onclick="EditDocumentType('@item.id','@item.document_type_id','@item.document_type_name','@item.description','@item.status')">
+                                                        <i class="fa fa-edit" aria-hidden="false"></i>
+                                                    </a>&nbsp;
+                                                    <a class="btn btn-primary" title="Index" type="button" onclick="ListIndex('@item.document_type_id')">
+                                                        <i class="fa fa-clipboard" aria-hidden="false"></i>
+                                                    </a>
+                                                    
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col-lg-8 -->
+
+
+                </div>
+                <!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <!-- Modal -->
+    <div class="modal fade" id="CreateDocumentType">
+        <div class="modal-dialog modal-lg">
+            <form asp-controller="DocumentTypes" asp-action="Create" method="post">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Create Document Type</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group row">
+                            <label for="input-document_type_name" class="col-sm-2 col-form-label">Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="document_type_name" name="document_type_name" placeholder="Document type name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="input-description" class="col-sm-2 col-form-label">Description</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="description" name="description" placeholder="Description">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="status" class="col-sm-2 col-form-label">Status</label>
+                            <div class="col-sm-10">
+                                <select class="form-control" name="status">
+                                    @foreach (var item in ViewBag.Status)
+                                    {
+                                        <option value="@item.value">@item.text</option>
+                                    }
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-siram">Save</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </form>
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <div class="modal fade" id="EditDocumentType">
+        <div class="modal-dialog modal-lg">
+            <form asp-controller="DocumentTypes" asp-action="Edit" method="post">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Edit Document Type</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="text" class="form-control" id="id_edit" name="id" hidden>
+                        <input type="text" class="form-control" id="document_type_id_edit" name="document_type_id" hidden>
+                        <div class="form-group row">
+                            <label for="input-collection_name" class="col-sm-2 col-form-label">Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="document_type_name_edit" name="document_type_name" placeholder="document type name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="input-description" class="col-sm-2 col-form-label">Description</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="description_edit" name="description" placeholder="Description">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="status" class="col-sm-2 col-form-label">Status</label>
+                            <div class="col-sm-10">
+                                <select class="form-control" id="status_edit" name="status">
+                                    @foreach (var item in ViewBag.Status)
+                                    {
+                                        <option value="@item.value">@item.text</option>
+                                    }
+                                </select>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-siram">Update</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </form>
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <link href="~/adminlte/plugins/sweetalert2/sweetalert2.min.css" rel="stylesheet">
+    <script src="~/adminlte/plugins/sweetalert2/sweetalert2.min.js"></script>
+</body>
+
+<script>
+
+    function EditDocumentType(id, document_type_id, document_type_name, description, status){
+
+        document.getElementById("id_edit").value = id;
+        document.getElementById("document_type_id_edit").value = document_type_id;
+        document.getElementById("document_type_name_edit").value = document_type_name;
+        document.getElementById("description_edit").value = description;
+        document.getElementById("status_edit").value = status;
+
+        $('#EditDocumentType').modal({
+            backdrop: 'static',
+            keyboard: false
+        });
+
+        $('#EditDocumentType').modal('show');
+    }
+
+    function ListIndex(document_type_id) {
+
+         var actionUrl = '@Url.Action("Index", "DocumentIndex", new { document_type_id = "PLACEHOLDER1" })';
+         actionUrl = actionUrl.replace('PLACEHOLDER1', document_type_id);
+         window.open(actionUrl.replaceAll('amp;', ""));
+
+    }
+</script>
