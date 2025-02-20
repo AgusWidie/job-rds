@@ -5,12 +5,14 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Desktop_Warranty_TSJ
 {
@@ -210,8 +212,15 @@ namespace Desktop_Warranty_TSJ
             if (this.lstViewTemplatePrint.SelectedItems.Count == 0)
                 return;
 
-            string templateName = this.lstViewTemplatePrint.SelectedItems[1].Text;
+            string templateName = lstViewTemplatePrint.SelectedItems[0].SubItems[1].Text;
             TemplateName.Text = templateName;
+
+            byte[] imageBytes = Convert.FromBase64String(lstViewTemplatePrint.SelectedItems[0].SubItems[5].Text);
+            using (var ms = new MemoryStream(imageBytes, 0, imageBytes.Length))
+            {
+                pictureBox1.Image = Image.FromStream(ms, true);
+            }
+
         }
 
         private void Upload_Click(object sender, EventArgs e)

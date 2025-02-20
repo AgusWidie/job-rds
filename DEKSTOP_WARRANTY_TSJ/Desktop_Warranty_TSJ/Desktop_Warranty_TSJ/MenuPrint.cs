@@ -466,10 +466,11 @@ namespace Desktop_Warranty_TSJ
 
         private void lstViewSerialCode_SelectedIndexChanged(object sender, EventArgs e)
         {
+
             if (this.lstViewSerialCode.SelectedItems.Count == 0)
                 return;
 
-            string serialCode = this.lstViewSerialCode.SelectedItems[1].Text;
+            string serialCode = lstViewSerialCode.SelectedItems[0].SubItems[1].Text;
             SerialCode.Text = serialCode;
         }
     }
