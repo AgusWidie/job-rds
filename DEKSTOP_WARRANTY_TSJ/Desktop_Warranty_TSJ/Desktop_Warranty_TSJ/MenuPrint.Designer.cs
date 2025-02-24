@@ -254,6 +254,7 @@
             this.Name = "MenuPrint";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuPrint";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MenuPrint_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MenuPrint_FormClosed);
             this.Load += new System.EventHandler(this.MenuPrint_Load);
             this.groupBox1.ResumeLayout(false);

@@ -36,6 +36,7 @@ namespace Desktop_Warranty_TSJ
             SourcePrinter.Text = CommonVariable.SourcePrinter;
 
             progressBar1.Value = 0;
+            this.AutoSize = false;
         }
 
         private async void PrintSerialNumber_Click(object sender, EventArgs e)

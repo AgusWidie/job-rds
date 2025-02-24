@@ -8,7 +8,6 @@ namespace WEB_API_WARRANTY_TSJ.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
     public class ActivationQRController : ControllerBase
     {
 

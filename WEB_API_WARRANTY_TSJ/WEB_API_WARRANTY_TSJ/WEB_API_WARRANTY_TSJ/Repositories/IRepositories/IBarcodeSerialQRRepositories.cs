@@ -10,5 +10,6 @@ namespace WEB_API_WARRANTY_TSJ.Repositories.IRepositories
         Task<GlobalObjectResponse> AddBarcodeSerialQRInoac(BarcodeSerialQr parameter, CancellationToken cancellationToken);
         Task<GlobalObjectResponse> DeleteSerialCode(string SerialCode, string? Source, CancellationToken cancellationToken);
         Task<GlobalObjectListResponse> ListDataBarcodeSerialQR(string? SerialCode, string? Source, bool? SelectDate, DateTime? createdAtFrom, DateTime? createdAtTo, CancellationToken cancellationToken);
+        Task<GlobalObjectResponse> RePrintSerialNumberQR(string? SerialCode, string RegistrationCode, CancellationToken cancellationToken);
     }
 }

@@ -115,6 +115,7 @@
             this.Name = "UploadFileTemplatePrint";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Upload File TemplatePrint";
+            this.Load += new System.EventHandler(this.UploadFileTemplatePrint_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

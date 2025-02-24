@@ -222,6 +222,34 @@
         }
       }
     },
+    "/api/BarcodeSerialQR/RePrintSerialNumberQR": {
+      "get": {
+        "tags": [
+          "BarcodeSerialQR"
+        ],
+        "parameters": [
+          {
+            "name": "SerialCode",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "RegistrationCode",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Error/ListDataError": {
       "get": {
         "tags": [

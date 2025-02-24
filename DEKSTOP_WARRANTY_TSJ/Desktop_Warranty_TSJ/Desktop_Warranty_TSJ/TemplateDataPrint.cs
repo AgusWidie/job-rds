@@ -135,6 +135,7 @@ namespace Desktop_Warranty_TSJ
             lstViewTemplatePrint.Columns.Add("File Base64", 250);
 
             SumberPrint.Text = CommonVariable.SourcePrinter;
+            this.AutoSize = false;
         }
 
         private async void Hapus_Click(object sender, EventArgs e)

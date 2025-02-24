@@ -46,6 +46,17 @@ builder.Services.AddScoped<ITemplatePrintRepositories, TemplatePrintRepositories
 builder.Services.AddScoped<IPrinterService, PrinterService>();
 builder.Services.AddScoped<IErrorRepositories, ErrorRepositories>();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+     
+        policy.AllowAnyOrigin() 
+              .AllowAnyMethod() 
+              .AllowAnyHeader(); 
+    });
+});
+
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
@@ -62,6 +73,8 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidateIssuerSigningKey = true
         };
     });
+
+
 
 builder.Services.AddSwaggerGen(options =>
 {
@@ -121,4 +134,11 @@ app.UseAuthorization(); // <-- second
 
 app.MapControllers();
 
+//app.Use(async (context, next) =>
+//{
+//    context.Response.Headers["Referrer-Policy"] = "strict-origin-when-cross-origin";
+//    await next.Invoke();
+//});
+
+app.UseCors("AllowAll");
 app.Run();

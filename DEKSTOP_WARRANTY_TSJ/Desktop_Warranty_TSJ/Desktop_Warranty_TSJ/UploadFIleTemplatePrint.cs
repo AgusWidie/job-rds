@@ -40,6 +40,11 @@ namespace Desktop_Warranty_TSJ
             }
         }
 
+        private void UploadFileTemplatePrint_Load(object sender, EventArgs e)
+        {
+            this.AutoSize = false;
+        }
+
         private async void SaveFile_Click(object sender, EventArgs e)
         {
             if (FileBase64 == "")

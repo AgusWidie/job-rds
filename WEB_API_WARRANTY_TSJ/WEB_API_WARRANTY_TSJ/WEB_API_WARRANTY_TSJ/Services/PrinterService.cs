@@ -187,7 +187,7 @@ namespace WEB_API_WARRANTY_TSJ.Services
 
         //}
 
-        public async Task<GlobalObjectResponse> PrintBarcodeSerialQR(BarcodeSerialQr parameter, string PrinterName, CancellationToken cancellationToken)
+        public async Task<GlobalObjectResponse> PrintBarcodeSerialQR(BarcodeSerialQr parameter, string PrinterName, string Source, CancellationToken cancellationToken)
         {
             Microsoft.Reporting.WebForms.Warning[] warnings;
             string[] streamIds;
@@ -206,11 +206,11 @@ namespace WEB_API_WARRANTY_TSJ.Services
 
             try
             {
-                serialCode = "" + parameter.SerialQrId + "|" + Convert.ToDateTime(parameter.CreatedAt).ToString("yyyy-MM-dd HH:mm:ss") + "|" + parameter.SerialCode + "|TSJ";
+                serialCode = "www.vita-foam.com/serialnumber.php?SerialCode=" + parameter.SerialCode.ToUpper() + "|" + Convert.ToDateTime(parameter.CreatedAt).ToString("yyyy-MM-dd HH:mm:ss") + "|" + parameter.SerialCode + "|" + Source + "";
                 Bitmap barcode_serial_code = GenerateQRCode.ProcessQR(serialCode);
                 base64serialCode = GenerateQRCode.Base64FromBitmap(barcode_serial_code);
 
-                qrCode = "" + parameter.SerialQrId + "|" + Convert.ToDateTime(parameter.CreatedAt).ToString("yyyy-MM-dd HH:mm:ss") + "|" + parameter.RegistrationCode + "|TSJ";
+                qrCode = "www.vita-foam.com/warranty.php?RegistrationCode=" + parameter.RegistrationCode.ToUpper() + "|" + Convert.ToDateTime(parameter.CreatedAt).ToString("yyyy-MM-dd HH:mm:ss") + "|" + parameter.RegistrationCode + "|" + Source + "";
                 Bitmap barcode_qr_code = GenerateQRCode.ProcessQR(qrCode);
                 base64qrCode = GenerateQRCode.Base64FromBitmap(barcode_qr_code);
 
@@ -355,6 +355,127 @@ namespace WEB_API_WARRANTY_TSJ.Services
 
         }
 
+        public async Task<GlobalObjectResponse> PrintBarcodeSerialQRExist(string? SerialCode, string? RegistrationCode, DateTime? CreatedAt, string PrinterName, string Source, CancellationToken cancellationToken)
+        {
+            Microsoft.Reporting.WebForms.Warning[] warnings;
+            string[] streamIds;
+            string mimeType = string.Empty;
+            string encoding = string.Empty;     
+            string extension = string.Empty;
+
+            string fileName = "";
+            string serialCode = "";
+            string qrCode = "";
+            string base64qrCode = "";
+            string base64serialCode = "";
+
+            GlobalObjectResponse res = new GlobalObjectResponse();
+            LogError _addError = new LogError();
+
+            try
+            {
+                serialCode = "www.vita-foam.com/serialnumber.php?SerialCode=" + SerialCode.ToUpper() + "|" + Convert.ToDateTime(CreatedAt).ToString("yyyy-MM-dd HH:mm:ss") + "|" + SerialCode + "|" + Source + "";
+                Bitmap barcode_serial_code = GenerateQRCode.ProcessQR(serialCode);
+                base64serialCode = GenerateQRCode.Base64FromBitmap(barcode_serial_code);
+
+                qrCode = "www.vita-foam.com/warranty.php?RegistrationCode=" + RegistrationCode.ToUpper() + "|" + Convert.ToDateTime(CreatedAt).ToString("yyyy-MM-dd HH:mm:ss") + "|" + RegistrationCode + "|" + Source + "";
+                Bitmap barcode_qr_code = GenerateQRCode.ProcessQR(qrCode);
+                base64qrCode = GenerateQRCode.Base64FromBitmap(barcode_qr_code);
+
+                ReportViewer rptViewer = new ReportViewer();
+                rptViewer.ProcessingMode = ProcessingMode.Local;
+                rptViewer.LocalReport.ReportPath = UrlPathFile.filePathTemplateBarcode;
+                rptViewer.LocalReport.EnableExternalImages = true;
+
+                ReportParameterCollection reportparameter = new ReportParameterCollection();
+                reportparameter.Add(new ReportParameter("Base64QRCode", base64qrCode, true));
+                reportparameter.Add(new ReportParameter("Base64SerialCode", base64serialCode, true));
+                reportparameter.Add(new ReportParameter("SerialCode", SerialCode));
+                reportparameter.Add(new ReportParameter("RegistrationCode", RegistrationCode.ToUpper()));
+                reportparameter.Add(new ReportParameter("CreatedAt", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")));
+                rptViewer.LocalReport.SetParameters(reportparameter);
+                rptViewer.LocalReport.Refresh();
+                byte[] bytes = rptViewer.LocalReport.Render("Image", null, out mimeType, out encoding, out extension, out streamIds, out warnings);
+
+                fileName = "Serial_QR_Code_Warranty_New_" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".jpg";
+                var pathTempFile = Path.Combine(UrlPathFile.filePathTempFile, fileName);
+                filePath = pathTempFile;
+
+                using (FileStream fs = new FileStream(filePath, FileMode.Create))
+                {
+                    fs.Write(bytes, 0, bytes.Length);
+                    fs.Flush();
+                    fs.Dispose();
+
+                }
+
+                try
+                {
+                    PrintDocument pd = new PrintDocument();
+                    pd.PrinterSettings.PrinterName = PrinterName;
+                    pd.PrintPage += PrintPage;
+                    pd.PrinterSettings.Copies = 1;
+                    pd.Print();
+                    pd.Dispose();
+                }
+                catch (Exception ex)
+                {
+                    res.Code = 500;
+                    res.Message = MessageRepositories.MessageFailed + " Print Document : " + ex.Message;
+                    res.Error = true;
+
+                   
+                    await _errorRepositories.AddLogError(_addError, cancellationToken);
+
+                    return res;
+                }
+
+                res.Code = 200;
+                res.Message = MessageRepositories.MessageSuccess + " Print barcode Serial QR.";
+                res.Error = false;
+                return res;
+            }
+
+            catch (DbUpdateConcurrencyException ex)
+            {
+                string jsonStr = "";
+                if (ex.InnerException.Message != null)
+                {
+                    res.Code = 500;
+                    res.Message = MessageRepositories.MessageError + " : " + ex.InnerException.Message;
+                    res.Error = true;
+
+                  
+                    return res;
+                }
+                res.Code = 500;
+                res.Message = MessageRepositories.MessageError + " : " + ex.Message;
+                res.Error = true;
+
+              
+                return res;
+            }
+
+            catch (Exception ex)
+            {
+                string jsonStr = "";
+
+                if (ex.InnerException.Message != null)
+                {
+                    res.Code = 500;
+                    res.Message = MessageRepositories.MessageError + " : " + ex.InnerException.Message;
+                    res.Error = true;
+                    return res;
+                }
+                res.Code = 500;
+                res.Message = MessageRepositories.MessageError + " : " + ex.Message;
+                res.Error = true;
+                return res;
+            }
+
+
+        }
+
         private void PrintPage(object o, PrintPageEventArgs e)
         {
             System.Drawing.Image img = System.Drawing.Image.FromFile(filePath);
@@ -382,7 +503,7 @@ namespace WEB_API_WARRANTY_TSJ.Services
             try
             {
 
-                qrCode = "" + DateTime.Now.Ticks.ToString("x").ToUpper() + "|" + Convert.ToDateTime(parameter.CreatedAt).ToString("yyyy-MM-dd HH:mm:ss") + "|" + parameter.ActivationCode + "|TSJ";
+                qrCode = "www.vita-foam.com/activation.php?ActivationCode=" + parameter.ActivationCode.ToUpper() + "|" + Convert.ToDateTime(parameter.CreatedAt).ToString("yyyy-MM-dd HH:mm:ss") + "|" + parameter.ActivationCode + "|TSJ";
                 Bitmap barcode_qr_code = GenerateQRCode.ProcessQR(qrCode);
                 base64qrCode = GenerateQRCode.Base64FromBitmap(barcode_qr_code);
 

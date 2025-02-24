@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Project\\TSJ INVENTORY\\WEB_API_WARRANTY_TSJ\\WEB_API_WARRANTY_TSJ\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B98583B1-BD0D-423C-B3D3-70C7D02134E5}|WEB_API_WARRANTY_TSJ\\WEB_API_WARRANTY_TSJ.csproj|c:\\project\\tsj inventory\\web_api_warranty_tsj\\web_api_warranty_tsj\\web_api_warranty_tsj\\repositories\\warrantyrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B98583B1-BD0D-423C-B3D3-70C7D02134E5}|WEB_API_WARRANTY_TSJ\\WEB_API_WARRANTY_TSJ.csproj|solutionrelative:web_api_warranty_tsj\\repositories\\warrantyrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B98583B1-BD0D-423C-B3D3-70C7D02134E5}|WEB_API_WARRANTY_TSJ\\WEB_API_WARRANTY_TSJ.csproj|c:\\project\\tsj inventory\\web_api_warranty_tsj\\web_api_warranty_tsj\\web_api_warranty_tsj\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B98583B1-BD0D-423C-B3D3-70C7D02134E5}|WEB_API_WARRANTY_TSJ\\WEB_API_WARRANTY_TSJ.csproj|solutionrelative:web_api_warranty_tsj\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B98583B1-BD0D-423C-B3D3-70C7D02134E5}|WEB_API_WARRANTY_TSJ\\WEB_API_WARRANTY_TSJ.csproj|c:\\project\\tsj inventory\\web_api_warranty_tsj\\web_api_warranty_tsj\\web_api_warranty_tsj\\repositories\\warrantyrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B98583B1-BD0D-423C-B3D3-70C7D02134E5}|WEB_API_WARRANTY_TSJ\\WEB_API_WARRANTY_TSJ.csproj|solutionrelative:web_api_warranty_tsj\\repositories\\warrantyrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B98583B1-BD0D-423C-B3D3-70C7D02134E5}|WEB_API_WARRANTY_TSJ\\WEB_API_WARRANTY_TSJ.csproj|c:\\project\\tsj inventory\\web_api_warranty_tsj\\web_api_warranty_tsj\\web_api_warranty_tsj\\controllers\\warrantycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B98583B1-BD0D-423C-B3D3-70C7D02134E5}|WEB_API_WARRANTY_TSJ\\WEB_API_WARRANTY_TSJ.csproj|solutionrelative:web_api_warranty_tsj\\controllers\\warrantycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B98583B1-BD0D-423C-B3D3-70C7D02134E5}|WEB_API_WARRANTY_TSJ\\WEB_API_WARRANTY_TSJ.csproj|c:\\project\\tsj inventory\\web_api_warranty_tsj\\web_api_warranty_tsj\\web_api_warranty_tsj\\services\\printerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B98583B1-BD0D-423C-B3D3-70C7D02134E5}|WEB_API_WARRANTY_TSJ\\WEB_API_WARRANTY_TSJ.csproj|solutionrelative:web_api_warranty_tsj\\services\\printerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,27 +31,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "WarrantyRepositories.cs",
-              "DocumentMoniker": "C:\\Project\\TSJ INVENTORY\\WEB_API_WARRANTY_TSJ\\WEB_API_WARRANTY_TSJ\\WEB_API_WARRANTY_TSJ\\Repositories\\WarrantyRepositories.cs",
-              "RelativeDocumentMoniker": "WEB_API_WARRANTY_TSJ\\Repositories\\WarrantyRepositories.cs",
-              "ToolTip": "C:\\Project\\TSJ INVENTORY\\WEB_API_WARRANTY_TSJ\\WEB_API_WARRANTY_TSJ\\WEB_API_WARRANTY_TSJ\\Repositories\\WarrantyRepositories.cs",
-              "RelativeToolTip": "WEB_API_WARRANTY_TSJ\\Repositories\\WarrantyRepositories.cs",
-              "ViewState": "AgIAABABAAAAAAAAAAAcwBwBAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T09:11:12.13Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Project\\TSJ INVENTORY\\WEB_API_WARRANTY_TSJ\\WEB_API_WARRANTY_TSJ\\WEB_API_WARRANTY_TSJ\\Program.cs",
               "RelativeDocumentMoniker": "WEB_API_WARRANTY_TSJ\\Program.cs",
               "ToolTip": "C:\\Project\\TSJ INVENTORY\\WEB_API_WARRANTY_TSJ\\WEB_API_WARRANTY_TSJ\\WEB_API_WARRANTY_TSJ\\Program.cs",
               "RelativeToolTip": "WEB_API_WARRANTY_TSJ\\Program.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAkwCwAAABUAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAACkAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T07:28:40.288Z",
+              "WhenOpened": "2025-02-24T04:11:44.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WarrantyRepositories.cs",
+              "DocumentMoniker": "C:\\Project\\TSJ INVENTORY\\WEB_API_WARRANTY_TSJ\\WEB_API_WARRANTY_TSJ\\WEB_API_WARRANTY_TSJ\\Repositories\\WarrantyRepositories.cs",
+              "RelativeDocumentMoniker": "WEB_API_WARRANTY_TSJ\\Repositories\\WarrantyRepositories.cs",
+              "ToolTip": "C:\\Project\\TSJ INVENTORY\\WEB_API_WARRANTY_TSJ\\WEB_API_WARRANTY_TSJ\\WEB_API_WARRANTY_TSJ\\Repositories\\WarrantyRepositories.cs",
+              "RelativeToolTip": "WEB_API_WARRANTY_TSJ\\Repositories\\WarrantyRepositories.cs",
+              "ViewState": "AgIAAIIBAAAAAAAAAAAswIsBAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T03:49:24.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PrinterService.cs",
+              "DocumentMoniker": "C:\\Project\\TSJ INVENTORY\\WEB_API_WARRANTY_TSJ\\WEB_API_WARRANTY_TSJ\\WEB_API_WARRANTY_TSJ\\Services\\PrinterService.cs",
+              "RelativeDocumentMoniker": "WEB_API_WARRANTY_TSJ\\Services\\PrinterService.cs",
+              "ToolTip": "C:\\Project\\TSJ INVENTORY\\WEB_API_WARRANTY_TSJ\\WEB_API_WARRANTY_TSJ\\WEB_API_WARRANTY_TSJ\\Services\\PrinterService.cs",
+              "RelativeToolTip": "WEB_API_WARRANTY_TSJ\\Services\\PrinterService.cs",
+              "ViewState": "AgIAAHMBAAAAAAAAAAAUwIABAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T03:13:15.97Z",
               "EditorCaption": ""
             },
             {
@@ -58,7 +75,7 @@
               "RelativeDocumentMoniker": "WEB_API_WARRANTY_TSJ\\Controllers\\WarrantyController.cs",
               "ToolTip": "C:\\Project\\TSJ INVENTORY\\WEB_API_WARRANTY_TSJ\\WEB_API_WARRANTY_TSJ\\WEB_API_WARRANTY_TSJ\\Controllers\\WarrantyController.cs",
               "RelativeToolTip": "WEB_API_WARRANTY_TSJ\\Controllers\\WarrantyController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAYwDUAAAB8AAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAcwBAAAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-17T06:41:11.794Z",
               "EditorCaption": ""

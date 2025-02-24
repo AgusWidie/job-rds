@@ -1,6 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System.Collections.Concurrent;
+using System.Xml;
 using WEB_API_WARRANTY_TSJ.Help;
 using WEB_API_WARRANTY_TSJ.Models;
+using WEB_API_WARRANTY_TSJ.Models.QRCode;
 using WEB_API_WARRANTY_TSJ.Repositories.IRepositories;
 using WEB_API_WARRANTY_TSJ.Services.IService;
 
@@ -370,6 +373,96 @@ namespace WEB_API_WARRANTY_TSJ.Repositories
                 await _errorRepositories.AddLogError(_addError, cancellationToken);
 
                 return res;
+            }
+        }
+
+        public async Task<GlobalObjectResponse> RePrintSerialNumberQR(string? SerialCode, string RegistrationCode, CancellationToken cancellationToken)
+        {
+            GlobalObjectResponse res = new GlobalObjectResponse();
+            LogError _addError = new LogError();
+            ActivationQr request = new ActivationQr();
+
+            string printName = "";
+
+            using (var dbTrans = _context.Database.BeginTransaction(System.Data.IsolationLevel.ReadUncommitted))
+            {
+                try
+                {
+
+                    var set_printer = _context.SettingPrinters.Where(x => x.PrinterValue == "PrintLabelWarrantyTSJ").AsNoTracking().FirstOrDefault();
+                    if (set_printer != null)
+                    {
+
+                        printName = set_printer.PrinterName;
+                    }
+                    else
+                    {
+
+                        res.Code = 500;
+                        res.Message = MessageRepositories.MessageFailed + " Print Name Empty.";
+                        res.Error = true;
+                        return res;
+                    }
+
+                    var rePrint = _context.BarcodeSerialQrs.Where(x => x.SerialCode == SerialCode && x.RegistrationCode == RegistrationCode).FirstOrDefault();
+                    if (rePrint != null)
+                    {
+                        rePrint.UpdatedAt = DateTime.Now;
+                        _context.BarcodeSerialQrs.Update(rePrint);
+                        await _context.SaveChangesAsync();
+
+                        await _printerService.PrintBarcodeSerialQRExist(SerialCode, RegistrationCode, rePrint.CreatedAt, printName, rePrint.Source, cancellationToken);
+                    }
+
+                    dbTrans.Commit();
+                    dbTrans.Dispose();
+
+                    res.Code = 200;
+                    res.Message = MessageRepositories.MessageSuccess + " Re Print Serial Number QR ";
+                    res.Error = false;
+                    return res;
+                }
+
+                catch (DbUpdateConcurrencyException ex)
+                {
+                    dbTrans.Rollback();
+                    dbTrans.Dispose();
+
+                    if (ex.InnerException.Message != null)
+                    {
+                        res.Code = 500;
+                        res.Message = MessageRepositories.MessageError + " : " + ex.InnerException.Message;
+                        res.Error = true;
+                        return res;
+                    }
+                    res.Code = 500;
+                    res.Message = MessageRepositories.MessageError + " : " + ex.Message;
+                    res.Error = true;
+
+                    return res;
+                }
+
+                catch (Exception ex)
+                {
+                    dbTrans.Rollback();
+                    dbTrans.Dispose();
+
+                    string jsonStr = "";
+                    if (ex.InnerException.Message != null)
+                    {
+                        res.Code = 500;
+                        res.Message = MessageRepositories.MessageError + " : " + ex.InnerException.Message;
+                        res.Error = true;
+                        return res;
+                    }
+                    res.Code = 500;
+                    res.Message = MessageRepositories.MessageError + " : " + ex.Message;
+                    res.Error = true;
+
+                    await _errorRepositories.AddLogError(_addError, cancellationToken);
+                    return res;
+                }
+
             }
         }
     }

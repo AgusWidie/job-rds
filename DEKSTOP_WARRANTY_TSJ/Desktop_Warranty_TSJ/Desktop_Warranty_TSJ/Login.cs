@@ -34,6 +34,8 @@ namespace Desktop_Warranty_TSJ
             Password.Text = "";
             Password.PasswordChar = '*';
 
+            this.AutoSize = false;
+
         }
 
         private void Cancel_Click(object sender, EventArgs e)

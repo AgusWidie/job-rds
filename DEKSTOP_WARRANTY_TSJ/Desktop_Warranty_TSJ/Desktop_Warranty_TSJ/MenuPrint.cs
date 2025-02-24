@@ -13,16 +13,78 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Linq;
+using System.IO.Ports;
 
 namespace Desktop_Warranty_TSJ
 {
     public partial class MenuPrint : Form
     {
-        public static bool boolCheckSelectDate = false; 
+        public static bool boolCheckSelectDate = false;
+        private Timer printStatusTimer;
+        private SerialPort serialPort;
         public MenuPrint()
         {
             InitializeComponent();
+
+            // Setup serial port untuk berkomunikasi dengan printer Domino
+            serialPort = new SerialPort("COM1", 9600, Parity.None, 8, StopBits.One);
+            serialPort.Open();
+
+            printStatusTimer = new Timer();
+            printStatusTimer.Interval = 5000; // Memeriksa setiap 5 detik
+            printStatusTimer.Tick += PrintStatusTimer_Tick;
+            printStatusTimer.Start();
         }
+
+        private bool IsPrinterReady()
+        {
+            try
+            {
+                //serialPort.WriteLine("STATUS?"); 
+                serialPort.WriteLine("SENSOR_STATUS?");  // Perintah ini disesuaikan dengan perintah yang didukung oleh printer Domino
+
+                string response = serialPort.ReadLine();
+                if (response.Contains("READY") || response.Contains("OK"))
+                {
+                    return true;
+                }
+                else
+                {
+                    MessageBox.Show("Printer Not Ready : " + response);
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error Printer : " + ex.Message);
+                return false;
+            }
+        }
+
+        private void PrintDataDomino()
+        {
+            try
+            {
+                serialPort.WriteLine("PRINT DATA");
+                System.Windows.Forms.Button btnPrint = new System.Windows.Forms.Button();
+                btnPrint.Click += PrintData_Click;  // Event handler untuk tombol klik
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error Print: " + ex.Message);
+            }
+        }
+
+        private void PrintStatusTimer_Tick(object sender, EventArgs e)
+        {
+            if (IsPrinterReady())
+            {
+                // Printer siap, maka lakukan pencetakan
+                PrintDataDomino();
+            }
+        }
+
 
         private void MenuPrint_Load(object sender, EventArgs e)
         {
@@ -47,6 +109,8 @@ namespace Desktop_Warranty_TSJ
             lstViewSerialCode.Columns.Add("Created Date", 120);
 
             SelectDate.Checked = false;
+
+            this.AutoSize = false;
         }
 
         private async void Cari_Click(object sender, EventArgs e)
@@ -321,11 +385,11 @@ namespace Desktop_Warranty_TSJ
                 }
 
                 //print
-                serialCodeVar = "www.vita-foam.com/warranty/" + serialCode.ToUpper() + "|" + serialCode + "|" + CommonVariable.SourcePrinter + "";
+                serialCodeVar = "www.vita-foam.com/serialnumber.php?SerialCode=" + serialCode.ToUpper() + "|" + serialCode + "|" + CommonVariable.SourcePrinter + "";
                 Bitmap barcode_serial_code = GenerateQRCode.GenerateBarcode(serialCodeVar);
                 base64serialCode = GenerateQRCode.Base64FromBitmap(barcode_serial_code);
 
-                qrCode = "www.vita-foam.com/warranty/" + registrationCode.ToUpper() + "|" + registrationCode + "|" + CommonVariable.SourcePrinter + "";
+                qrCode = "www.vita-foam.com/warranty.php?RegistrationCode=" + registrationCode.ToUpper() + "|" + registrationCode + "|" + CommonVariable.SourcePrinter + "";
                 Bitmap barcode_qr_code = GenerateQRCode.ProcessQR(qrCode);
                 base64qrCode = GenerateQRCode.Base64FromBitmap(barcode_qr_code);
 
@@ -339,7 +403,7 @@ namespace Desktop_Warranty_TSJ
                 reportparameter.Add(new ReportParameter("Base64SerialCode", base64serialCode, true));
                 reportparameter.Add(new ReportParameter("Base64Logo", base64Logo, true));
                 reportparameter.Add(new ReportParameter("SerialCode", serialCode.ToUpper()));
-                reportparameter.Add(new ReportParameter("RegistrationCode", "www.vita-foam.com/warranty/" + registrationCode.ToUpper()));
+                reportparameter.Add(new ReportParameter("RegistrationCode", "www.vita-foam.com/warranty.php?RegistrationCode=" + registrationCode.ToUpper()));
                 reportparameter.Add(new ReportParameter("CreatedAt", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")));
 
                 rptViewer.LocalReport.SetParameters(reportparameter);
@@ -472,6 +536,14 @@ namespace Desktop_Warranty_TSJ
 
             string serialCode = lstViewSerialCode.SelectedItems[0].SubItems[1].Text;
             SerialCode.Text = serialCode;
+        }
+
+        private void MenuPrint_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (serialPort.IsOpen)
+            {
+                serialPort.Close();
+            }
         }
     }
 }

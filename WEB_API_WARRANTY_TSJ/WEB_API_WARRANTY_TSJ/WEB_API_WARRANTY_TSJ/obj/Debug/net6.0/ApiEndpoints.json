@@ -136,6 +136,27 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "WEB_API_WARRANTY_TSJ.Controllers.BarcodeSerialQRController",
+    "Method": "RePrintSerialNumberQR",
+    "RelativePath": "api/BarcodeSerialQR/RePrintSerialNumberQR",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SerialCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "RegistrationCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WEB_API_WARRANTY_TSJ.Controllers.ErrorController",
     "Method": "ListDataError",
     "RelativePath": "api/Error/ListDataError",

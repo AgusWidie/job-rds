@@ -367,7 +367,12 @@ namespace WEB_API_WARRANTY_TSJ.Repositories
                     res.Error = true;
                     return res;
                 }
+
                 lst_warranty = _context.LogWarranties.Where(x => x.RegistrationCode == registrationCode).OrderBy(x => x.Id).AsNoTracking().ToList();
+                if(lst_warranty == null)
+                {
+                    lst_warranty = _context.LogWarranties.Where(x => x.ActivationCode == registrationCode).OrderBy(x => x.Id).AsNoTracking().ToList();
+                }
 
                 res.Code = 200;
                 res.Data = lst_warranty.Cast<object>().ToList();
